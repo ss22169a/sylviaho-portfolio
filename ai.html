@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>How I Use AI | Sylvia Ho</title>
-  <meta name="description" content="How Sylvia Ho uses human-in-the-loop AI agents for market data, pricing intelligence, SEO audits and ad operations." />
+  <meta name="description" content="How Sylvia Ho uses human-in-the-loop AI agents for market data, pricing intelligence, SEO audits, ad operations and news-trend writing." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&family=Stack+Sans+Headline:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=8d8e8b4f" />
+  <link rel="stylesheet" href="style.css?v=d4d1b699" />
   <script>document.documentElement.classList.add("js");</script>
   <script src="js/matter.min.js" defer></script>
-  <script src="js/posts.js?v=8d8e8b4f" defer></script>
+  <script src="js/posts.js?v=d4d1b699" defer></script>
 </head>
 <body>
 
@@ -45,7 +45,7 @@
       <div class="page-head">
         <div><h1 class="page-title">How I Use AI</h1><p class="page-sub">AI does the data work; people make the calls. Six agent workflows, one governance framework for 14 agents.</p></div>
       </div>
-      <div class="kcards kc-ai"><a class="kcard" style="background:var(--lilac)" href="#connected-data"><span class="kcard-label">Connected market data</span><span class="kcard-num">01</span></a><a class="kcard" style="background:var(--lime)" href="#pricing-intel"><span class="kcard-label">Competitive &amp; pricing intelligence</span><span class="kcard-num">02</span></a><a class="kcard" style="background:var(--blue);color:#fff" href="#seo-audit"><span class="kcard-label">Automated SEO audits</span><span class="kcard-num">03</span></a><a class="kcard" style="background:var(--orange)" href="#ad-ops"><span class="kcard-label">Guardrailed ad operations</span><span class="kcard-num">04</span></a></div>
+      <div class="kcards kc-ai"><a class="kcard" style="background:var(--lilac)" href="#connected-data"><span class="kcard-label">Connected market data</span><span class="kcard-num">01</span></a><a class="kcard" style="background:var(--lime)" href="#pricing-intel"><span class="kcard-label">Competitive &amp; pricing intelligence</span><span class="kcard-num">02</span></a><a class="kcard" style="background:var(--blue);color:#fff" href="#seo-audit"><span class="kcard-label">Automated SEO audits</span><span class="kcard-num">03</span></a><a class="kcard" style="background:var(--orange)" href="#ad-ops"><span class="kcard-label">Guardrailed ad operations</span><span class="kcard-num">04</span></a><a class="kcard" style="background:var(--ink);color:#fff" href="#trend-writing"><span class="kcard-label">News-trend writing</span><span class="kcard-num">05</span></a></div>
 
       <section class="section">
         <div class="pipeline principles" data-pipeline>
@@ -87,6 +87,11 @@
         <div class="case-head"><div><span class="case-kicker">Google Ads automation · Manager account</span><h2>Guardrailed ad operations</h2><div class="tags"><span class="tag">Google Ads Scripts</span><span class="tag">Windsor.ai</span><span class="tag">Google Sheets</span></div></div></div>
         <dl class="case-body"><dt>Problem</dt><dd>Daily monitoring meant logging in and judging by eye whether numbers looked off, and every keyword or bid change was made by hand without a record.</dd><dt>How it works</dt><dd>Scripts run at manager-account level with a Google Sheet as the control panel. Module 1 compares yesterday with 7- and 14-day averages and emails alerts when spend, clicks or CTR cross a threshold. Module 2 classifies search terms by intent and uses n-gram analysis to find wasted root words. Both are read-only. Budget suggestions and AI-drafted ad copy are next.</dd><dt>Guardrails</dt><dd>Changes are capped at ±20% per step; suggestions expire after 7 days; every change logs the original value and who approved it; data is never mixed across accounts; new ads are created paused. Each suggestion must state the observation, cause, action, expected range, and the evidence against it.</dd><dt>Executed with approval</dt><dd>Negative keywords, 9 vehicle-specific ad groups, responsive search ads, CPC caps, pausing an underperforming product line, and location settings.</dd></dl>
         
+      </article>
+      <article class="case ai-case" id="trend-writing" style="--c:var(--ink)">
+        <div class="case-head"><div><span class="case-kicker">Content workflow · Industry news → bilingual articles and LinkedIn posts</span><h2>News-trend writing</h2><div class="tags"><span class="tag">Claude</span><span class="tag">Google Trends</span><span class="tag">SEMrush</span><span class="tag">LinkedIn</span><span class="tag">CMS</span></div></div></div>
+        <dl class="case-body"><dt>Problem</dt><dd>Hydrogen and automotive-sensor news moves fast, and every story needs to become an original, accurate article in two languages. Technical specs also rarely make it into posts that buyers actually read.</dd><dt>How it works</dt><dd>I pick the story or the spec sheet. Claude rewrites it into an original long-form article in Traditional Chinese (reworded, never copied), adds a short company viewpoint tied to that topic, translates it into English, tags it to one content category and one product line, and outputs CMS-ready Word and HTML files for both languages. For LinkedIn, the same process turns a datasheet into a six-slide carousel: one claim per slide, each backed by a measured spec.</dd><dt>Example</dt><dd>A MEMS hydrogen-sensor carousel: ready in 70 ms, 5.5× faster than the typical 390 ms benchmark; detection in under 1.5 s across 0–40,000 ppm; under 200 mW from −35 °C to +105 °C; a 2.0 mm footprint, 1/100 of conventional 15 mm designs; and silicon-to-module integration.</dd><dt>Human in the loop</dt><dd>Every number is checked against the datasheet before anything is published, and publishing is always a human step.</dd></dl>
+        <a class="btn btn-dark ai-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7503648848951685120" target="_blank" rel="noopener">Read the LinkedIn post <span>→</span></a>
       </article>
     </main>
     <footer class="footer">
