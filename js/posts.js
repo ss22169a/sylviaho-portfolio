@@ -36,7 +36,8 @@
     ".timeline",
     ".two-col > .prose",
     ".main > .prose",
-    ".vtl > .vtl-item"
+    ".vtl > .vtl-item",
+    ".cert-grid > .cert"
   ];
 
   function setupReveal() {
