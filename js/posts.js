@@ -64,7 +64,7 @@
     ".approvals-time", ".kanban > .kcol", ".cal > .cal-cell", ".main > .guide", ".logos > .logo-tile",
     ".swatches > .swatch", ".chips > .chip", ".empty", ".pipeline", ".notice", ".legal > *",
     ".ai-grid > .ai-card", ".main > .case", ".steps > .step", ".timeline", ".two-col > .prose",
-    ".main > .prose", ".vtl > .vtl-item", ".cert-grid > .cert"
+    ".main > .prose", ".jobs > .job", ".cert-grid > .cert"
   ];
   var io = null;
   function reveal(el, delay) {
