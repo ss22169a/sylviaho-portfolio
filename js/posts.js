@@ -1,5 +1,5 @@
 /* =========================================================
-   Motion & interactions (adapted from the Posts dashboard; no framework)
+   Posts — motion & interactions (no framework)
 
    1. Scroll reveal            8.  Notification panel
    2. Hero physics shapes      9.  Evaluation checklist
@@ -64,7 +64,8 @@
     ".approvals-time", ".kanban > .kcol", ".cal > .cal-cell", ".main > .guide", ".logos > .logo-tile",
     ".swatches > .swatch", ".chips > .chip", ".empty", ".pipeline", ".notice", ".legal > *",
     ".ai-grid > .ai-card", ".main > .case", ".steps > .step", ".timeline", ".two-col > .prose",
-    ".main > .prose", ".jobs > .job", ".cert-grid > .cert"
+    ".main > .prose", ".jobs > .job", ".cert-grid > .cert",
+    ".fn-funnel > .fn-step", ".fn-lenses > .fn-lens", ".fn-goals > .fn-goal", ".fn-two > .prose", ".section > .prose"
   ];
   var io = null;
   function reveal(el, delay) {
@@ -829,18 +830,6 @@
   }
 
   /* =========================================================
-     14) Mobile menu
-     ========================================================= */
-  function toggleMenu(force) {
-    var open = typeof force === "boolean" ? force : !document.body.classList.contains("menu-open");
-    document.body.classList.toggle("menu-open", open);
-    var b = $("[data-menu]");
-    if (b) { b.setAttribute("aria-expanded", open); b.setAttribute("aria-label", open ? "Close menu" : "Open menu"); }
-  }
-  function closeMenu() { if (document.body.classList.contains("menu-open")) toggleMenu(false); }
-
-
-  /* =========================================================
      Portfolio: count-up numbers ([data-count] animate 0 → value when seen)
      ========================================================= */
   function setupCountUp() {
@@ -866,6 +855,48 @@
   }
 
   /* =========================================================
+     Page change fallback
+     Chrome / Edge / Safari animate page changes with View Transitions
+     (see style.css). Other browsers: slide the sidebar line to the
+     clicked item and fade the content out, then navigate.
+     ========================================================= */
+  var nativePageTransitions = "PageRevealEvent" in window;
+  function setupNavFallback() {
+    if (nativePageTransitions || reduceMotion) return;
+    document.addEventListener("click", function (e) {
+      var a = e.target.closest("a[href$='.html']");
+      if (!a || e.defaultPrevented || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || a.target === "_blank") return;
+      if (a.getAttribute("href") === PAGE) { e.preventDefault(); return; }
+      e.preventDefault();
+      var ind = $(".nav-ind"), navTarget = a.closest(".nav") ? a : $('.nav a[href="' + a.getAttribute("href") + '"]');
+      if (ind && navTarget && ind.offsetParent) {
+        var from = ind.parentElement.getBoundingClientRect(), to = navTarget.getBoundingClientRect();
+        ind.style.transform = "translateY(" + (to.top - from.top) + "px)";
+      }
+      document.documentElement.classList.add("leaving");
+      setTimeout(function () { location.href = a.href; }, 230);
+    });
+    // coming back with the browser's Back button: undo the fade
+    window.addEventListener("pageshow", function (ev) {
+      if (ev.persisted) {
+        document.documentElement.classList.remove("leaving");
+        var ind = $(".nav-ind"); if (ind) ind.style.transform = "";
+      }
+    });
+  }
+
+  /* =========================================================
+     14) Mobile menu
+     ========================================================= */
+  function toggleMenu(force) {
+    var open = typeof force === "boolean" ? force : !document.body.classList.contains("menu-open");
+    document.body.classList.toggle("menu-open", open);
+    var b = $("[data-menu]");
+    if (b) { b.setAttribute("aria-expanded", open); b.setAttribute("aria-label", open ? "Close menu" : "Open menu"); }
+  }
+  function closeMenu() { if (document.body.classList.contains("menu-open")) toggleMenu(false); }
+
+  /* =========================================================
      Init
      ========================================================= */
   function init() {
@@ -873,6 +904,7 @@
     setupPhysics();
     setupCalendar();
     setupPipeline();
+    setupNavFallback();
     setupCountUp();
     if (PAGE === "reports.html") watchRoi();
     evalCount();

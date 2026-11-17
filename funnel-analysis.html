@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-commerce Funnel & Attribution Analysis with SQL | Sylvia Ho</title>
+  <meta name="description" content="SQL funnel and attribution analysis of Google Ads traffic to Amazon orders: four attribution lenses, budget-vs-demand alignment, and four goals." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&family=Stack+Sans+Headline:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=8d8e8b4f" />
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="js/matter.min.js" defer></script>
+  <script src="js/posts.js?v=8d8e8b4f" defer></script>
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="side-top">
+      <a href="index.html" class="logo"><span class="logo-mark" aria-hidden="true"><i class="lm lm-1"></i><i class="lm lm-2"></i><i class="lm lm-3"></i><i class="lm lm-4"></i></span>Sylvia Ho</a>
+      <button type="button" class="menu-btn" data-menu aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 16 16" width="18" height="18"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5"/></svg></button>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html" class="nav-item">Overview</a>
+      <a href="work.html" class="nav-item">Case Studies</a>
+      <a href="projects.html" class="nav-item active" aria-current="page"><span class="nav-ind" aria-hidden="true"></span><span class="arrow">→</span>Analytics Projects</a>
+      <a href="ai.html" class="nav-item">How I Use AI</a>
+      <a href="about.html" class="nav-item">About</a>
+      <a href="certifications.html" class="nav-item">Certifications</a>
+      <a href="resume.html" class="nav-item">Resume</a>
+    </nav>
+    <div class="sidebar-bottom">
+      <a href="mailto:werr2010@gmail.com" class="nav-item">Email</a>
+      <a href="https://www.linkedin.com/in/zi-yin-ho-4795a02a6/" class="nav-item">LinkedIn</a>
+      <div class="user">
+        <span class="avatar">S</span>
+        <div class="user-info"><strong>Sylvia Ho</strong><small>Hsinchu, Taiwan</small></div>
+      </div>
+    </div>
+  </aside>
+
+  <div class="page">
+    <main class="main">
+
+      <div class="page-head">
+        <div>
+          <a href="projects.html" class="back-link"><span aria-hidden="true">←</span> Analytics Projects</a>
+          <h1 class="page-title">E-commerce Funnel &amp; Attribution Analysis with SQL</h1>
+          <p class="page-sub">Where does paid traffic leak on its way to an Amazon order, how much of the revenue did the ads actually cause, and where should the next dollar go?</p>
+        </div>
+      </div>
+
+      <div class="tldr fn-tldr">
+        <div>Context<b>U.S. automotive aftermarket seller on Amazon</b></div>
+        <div>Window<b>Oct 7 – Nov 15, 2026 (40 days)</b></div>
+        <div>Stack<b>DuckDB SQL · Windsor.ai · Google Ads · Seller Central</b></div>
+        <div>Grain<b>Ad group × day · ASIN × day · order line</b></div>
+      </div>
+
+      <section class="section">
+        <div class="prose fn-answer">
+          <h3>The short answer</h3>
+          <p>The ads bought traffic, but most of the money went to searches that match no proven demand, a large share of the orders they did win were cancelled for lack of stock, and the revenue the ads actually caused covered only <b>38%</b> of the break-even bar. The fix is not a bigger budget. It is four changes in where the money goes and how success is measured.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>1 · The funnel</h2><span class="muted-note">Google Ads impressions → Amazon order kept</span></div>
+        <ol class="fn-funnel" data-reveal><li class="fn-step"><span class="fn-rate muted">start</span><b>21,091</b><span>Impressions</span></li><li class="fn-step"><span class="fn-rate">13.0%</span><b>2,734</b><span>Paid clicks</span></li><li class="fn-step fn-hot"><span class="fn-rate">14.6%</span><b>399</b><span>Product-page sessions</span><small class="fn-leak">85% of clicks never reach a product page</small></li><li class="fn-step"><span class="fn-rate">4.0%</span><b>16</b><span>Orders placed</span></li><li class="fn-step fn-hot"><span class="fn-rate">68.8%</span><b>11</b><span>Orders shipped</span><small class="fn-leak">5 of 16 cancelled after purchase</small></li><li class="fn-step"><span class="fn-rate">90.9%</span><b>10</b><span>Kept (not returned)</span></li></ol>
+        <p class="fn-caption">Google Ads cannot see Amazon checkouts, so the click → product-page hop is a blended ratio (all product-page sessions ÷ paid clicks), not a click-level join. Impressions cover Oct 18 – Nov 15, the range the ad-group API returned.</p>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>2 · Attribution: four lenses, not one ratio</h2></div>
+        <div class="fn-lenses">
+          <div class="fn-lens"><span class="fn-k">Blended return</span><b>65%</b><small>of break-even. Revenue ÷ spend, crediting the ads with every sale, including sales that would have happened anyway.</small></div>
+          <div class="fn-lens"><span class="fn-k">Incremental return</span><b>38%</b><small>of break-even. Revenue above the 28-day pre-ad baseline ÷ spend. Weekly orders rose from 1.3 to 1.9; break-even needs 3.3.</small></div>
+          <div class="fn-lens"><span class="fn-k">Coverage</span><b>4 of 11</b><small>shipped orders had a vehicle-specific ad group for the same segment live in the 3 days before purchase. The other 7 came from segments with no specific ad running.</small></div>
+          <div class="fn-lens"><span class="fn-k">Seasonality check</span><b>5 → 11</b><small>shipped orders in the same 40 days, 2025 vs. 2026. Some lift is real, but with orders in single digits, a single bulk order swings the result.</small></div>
+        </div>
+
+        <div class="fn-two">
+          <div class="prose">
+            <h3>The restructure moved traffic, not orders</h3>
+            <p>On Oct 21 the account moved from generic broad keywords landing on the store home page (S1) to category and vehicle keywords landing on store category pages (S2). A handful of vehicle groups added in November land directly on one product page, but they have received under 2% of spend so far.</p>
+            <table class="fn-table">
+              <thead><tr><th></th><th>S1 · 14 days</th><th>S2 · 26 days</th></tr></thead>
+              <tbody><tr><th>Click → product page</th><td>5.3%</td><td class="good">22.3% <span aria-hidden="true">▲</span></td></tr><tr><th>Cost per product-page session (index)</th><td>100</td><td class="good">27 <span aria-hidden="true">▲</span></td></tr><tr><th>Order per product-page session</th><td>7.7%</td><td class="bad">1.8% <span aria-hidden="true">▼</span></td></tr><tr><th>Incremental revenue vs. break-even bar</th><td>61%</td><td class="bad">21% <span aria-hidden="true">▼</span></td></tr></tbody>
+            </table>
+            <p class="fn-caption">S2 delivered four times the product-page traffic at a quarter of the cost, yet each session converted at a quarter of the rate. One S1 order was a 3-unit bulk purchase, so S1's lead is not statistically reliable either. Next-day clicks correlate with sessions (r = 0.51), but daily spend does not (r = 0.01): paying more per click did not buy more visits.</p>
+          </div>
+          <div class="prose">
+            <h3>Where the product-page sessions landed</h3>
+            <p><b>344</b> sessions spread across <b>111</b> products; 68 of them got exactly one visit. <b>42%</b> of sessions landed on products that have never sold, and only 8 products converted.</p>
+            <p>The single most-visited product (an F-150 alternator) drew 30 sessions and no orders. Its history shows 6 cancellations and a return for low charging voltage, so the ads were sending buyers to the listing least likely to close.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>3 · Does the budget follow demand?</h2></div>
+        <div class="prose fn-chart">
+          <div class="al-legend" aria-hidden="true"><span><i class="al-spend"></i>Share of ad spend · last 30 days</span><span><i class="al-demand"></i>Share of proven demand · shipped revenue, Jan 2025 – Nov 2026</span></div>
+          <div class="al-chart" role="img" aria-label="Share of ad spend versus share of proven demand by vehicle segment">
+          <div class="al-row" tabindex="0" aria-label="Passenger/SUV: 0.2% of ad spend, 32.0% of proven demand">
+            <span class="al-name">Passenger/SUV</span>
+            <div class="al-bars">
+              <div class="al-bar"><i class="al-spend" style="width:0.3%"></i><em>0.2%</em></div>
+              <div class="al-bar"><i class="al-demand" style="width:44.9%"></i><em>32.0%</em></div>
+            </div>
+            <span class="al-tip">Spend 0.2% · Demand 32.0% · AOV index 98</span>
+          </div>
+          <div class="al-row" tabindex="0" aria-label="Medium/heavy truck: 0.2% of ad spend, 27.4% of proven demand">
+            <span class="al-name">Medium/heavy truck</span>
+            <div class="al-bars">
+              <div class="al-bar"><i class="al-spend" style="width:0.3%"></i><em>0.2%</em></div>
+              <div class="al-bar"><i class="al-demand" style="width:38.4%"></i><em>27.4%</em></div>
+            </div>
+            <span class="al-tip">Spend 0.2% · Demand 27.4% · AOV index 126</span>
+          </div>
+          <div class="al-row" tabindex="0" aria-label="Pickup/van: 12.3% of ad spend, 24.7% of proven demand">
+            <span class="al-name">Pickup/van</span>
+            <div class="al-bars">
+              <div class="al-bar"><i class="al-spend" style="width:17.3%"></i><em>12.3%</em></div>
+              <div class="al-bar"><i class="al-demand" style="width:34.6%"></i><em>24.7%</em></div>
+            </div>
+            <span class="al-tip">Spend 12.3% · Demand 24.7% · AOV index 93</span>
+          </div>
+          <div class="al-row" tabindex="0" aria-label="Industrial/off-road: 0.0% of ad spend, 9.0% of proven demand">
+            <span class="al-name">Industrial/off-road</span>
+            <div class="al-bars">
+              <div class="al-bar"><i class="al-spend" style="width:0.0%"></i><em>0.0%</em></div>
+              <div class="al-bar"><i class="al-demand" style="width:12.6%"></i><em>9.0%</em></div>
+            </div>
+            <span class="al-tip">Spend 0.0% · Demand 9.0% · AOV index 83</span>
+          </div>
+          <div class="al-row" tabindex="0" aria-label="Starter: 9.6% of ad spend, 6.8% of proven demand">
+            <span class="al-name">Starter</span>
+            <div class="al-bars">
+              <div class="al-bar"><i class="al-spend" style="width:13.5%"></i><em>9.6%</em></div>
+              <div class="al-bar"><i class="al-demand" style="width:9.5%"></i><em>6.8%</em></div>
+            </div>
+            <span class="al-tip">Spend 9.6% · Demand 6.8% · AOV index 81</span>
+          </div>
+          <div class="al-row" tabindex="0" aria-label="NOx sensor: 6.5% of ad spend, 0.0% of proven demand">
+            <span class="al-name">NOx sensor</span>
+            <div class="al-bars">
+              <div class="al-bar"><i class="al-spend" style="width:9.1%"></i><em>6.5%</em></div>
+              <div class="al-bar"><i class="al-demand" style="width:0.0%"></i><em>0.0%</em></div>
+            </div>
+            <span class="al-tip">Spend 6.5% · Demand 0.0%</span>
+          </div>
+          <div class="al-row" tabindex="0" aria-label="No specific vehicle (generic, category, brand): 71.3% of ad spend, 0.0% of proven demand">
+            <span class="al-name">No specific vehicle (generic, category, brand)</span>
+            <div class="al-bars">
+              <div class="al-bar"><i class="al-spend" style="width:100.0%"></i><em>71.3%</em></div>
+              <div class="al-bar"><i class="al-demand" style="width:0.0%"></i><em>0.0%</em></div>
+            </div>
+            <span class="al-tip">Spend 71.3% · Demand 0.0%</span>
+          </div>
+          </div>
+          <details class="fn-data"><summary>View as table</summary>
+            <table class="fn-table"><thead><tr><th>Segment</th><th>Spend share</th><th>Demand share</th><th>Shipped orders</th></tr></thead><tbody><tr><td>Passenger/SUV</td><td>0.2%</td><td>32.0%</td><td>27</td></tr><tr><td>Medium/heavy truck</td><td>0.2%</td><td>27.4%</td><td>18</td></tr><tr><td>Pickup/van</td><td>12.3%</td><td>24.7%</td><td>22</td></tr><tr><td>Industrial/off-road</td><td>0.0%</td><td>9.0%</td><td>9</td></tr><tr><td>Starter</td><td>9.6%</td><td>6.8%</td><td>7</td></tr><tr><td>NOx sensor</td><td>6.5%</td><td>0.0%</td><td>0</td></tr><tr><td>No specific vehicle (generic, category, brand)</td><td>71.3%</td><td>0.0%</td><td>0</td></tr></tbody></table>
+          </details>
+          <p class="fn-caption">Demand is measured from shipped orders before and during the ads, so it reflects what buyers chose regardless of advertising. Passenger cars/SUVs and medium/heavy trucks are 59% of proven demand and received 0.4% of spend. Medium/heavy-truck orders are also the largest, with an average order value index of 126.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>4 · The leak after the click</h2></div>
+        <div class="fn-lenses fn-3">
+          <div class="fn-lens"><span class="fn-k">Orders cancelled</span><b>41%</b><small>58 of 141 orders placed since Jan 2025. Industrial/off-road parts run highest, at 59%.</small></div>
+          <div class="fn-lens"><span class="fn-k">Lost to stock-outs</span><b>97%</b><small>2026 stock-out cancellations, by value, measured against all revenue in the 40-day ad window. Stock-outs cause 46% of 2026 cancellations.</small></div>
+          <div class="fn-lens"><span class="fn-k">During the ads</span><b>3 of 5</b><small>cancellations in the 40-day ad window were stock-outs: the ads won the buyer, then the shelf lost them.</small></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>5 · Four goals worth rethinking the plan for</h2></div>
+        <div class="fn-goals">
+          <article class="fn-goal" style="--c:var(--lilac)">
+            <span class="fn-no">01</span>
+            <h3>Fund demand that already exists</h3>
+            <p>71% of spend buys searches that name no vehicle, and 6.5% goes to a sensor line that has never sold (priced 2–3× above aftermarket). Meanwhile the two segments that make up 59% of proven demand get almost nothing.</p>
+            <div class="fn-kpi"><span>Now<b>22%</b></span><span>Target<b>≥ 60%</b></span><em>of spend on vehicle or part-number groups mapped to segments with shipped orders</em></div>
+          </article>
+          <article class="fn-goal" style="--c:var(--lime)">
+            <span class="fn-no">02</span>
+            <h3>Fix the leak before opening the tap</h3>
+            <p>Every cancelled order is demand already paid for. 2026 stock-outs alone cost almost as much as the ads brought in. Ad groups should pause automatically when the product they promote runs low, and slow-to-ship parts should stop offering expedited delivery.</p>
+            <div class="fn-kpi"><span>Now<b>41%</b></span><span>Target<b>&lt; 10%</b></span><em>cancellation rate; zero ads on products with less than 3 units in stock</em></div>
+          </article>
+          <article class="fn-goal" style="--c:var(--blue);--t:#fff">
+            <span class="fn-no">03</span>
+            <h3>Buy intent, not traffic</h3>
+            <p>Raising product-page traffic fourfold cut conversion to a quarter. Each ad group should land on the few products it names, choosing listings with stock and clean return histories, and be judged on orders per session, not sessions per click.</p>
+            <div class="fn-kpi"><span>Now<b>2.3%</b></span><span>Target<b>2×</b></span><em>orders per product-page session, tracked per ad group</em></div>
+          </article>
+          <article class="fn-goal" style="--c:var(--orange)">
+            <span class="fn-no">04</span>
+            <h3>Measure increments, not ratios</h3>
+            <p>The blended ratio flatters the ads (it reaches 65% of break-even, against 38% incremental), and 11 orders cannot settle the question either way. Only 2 of 15 ad groups carry an Amazon Attribution tag. Tag every ad group, then run a two-week ads-off holdout.</p>
+            <div class="fn-kpi"><span>Now<b>2 / 15</b></span><span>Target<b>15 / 15</b></span><em>ad groups tagged; go/no-go rule: ≥ 3.3 orders a week</em></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>How it's built</h2></div>
+        <div class="fn-two">
+          <div class="prose">
+            <h3>Model</h3>
+            <ul>
+              <li><b>Staging:</b> Google Ads by ad group × day × network × device (TWD → USD at the company booking rate), Amazon Sales &amp; Traffic by ASIN × day, and order lines with status and returns.</li>
+              <li><b>Marts:</b> funnel by regime, ad-group economics, network leakage, ASIN traffic quality, cancellation causes, incrementality, budget–demand alignment, coverage, response lag, and break-even.</li>
+              <li><b>Segments:</b> every ad group and every order is mapped to the same vehicle segment, so spend and demand can be compared without a click-level join.</li>
+            </ul>
+            <h3>Limits, stated plainly</h3>
+            <ul>
+              <li>Order counts are small, so these findings set direction rather than prove effects; the holdout in goal 04 is how to prove them.</li>
+              <li>The pre-ad baseline is a single 28-day window, and the ad-platform API returns only the last 30 days.</li>
+              <li>Dollar values are withheld; shares and indexes come from the same queries.</li>
+            </ul>
+          </div>
+          <div class="prose">
+            <h3>Two of the queries</h3>
+            <pre class="fn-sql"><code>-- A1. Incrementality vs. the 28-day pre-ad baseline
+WITH base AS (SELECT revenue_usd / days AS rev_day FROM stg_baseline),
+     agg  AS (SELECT regime, COUNT(*) AS days,
+                     SUM(revenue_usd) AS rev, SUM(spend_usd) AS spend
+              FROM stg_daily GROUP BY regime)
+SELECT regime,
+       rev / spend                          AS blended_return,
+       (rev - b.rev_day * days) / spend     AS incremental_return
+FROM agg, base b;
+
+-- A3. Does the budget follow proven demand?
+SELECT segment,
+       spend_usd / SUM(spend_usd) OVER ()   AS spend_share,
+       demand_usd / SUM(demand_usd) OVER () AS demand_share
+FROM segment_spend FULL JOIN segment_demand USING (segment);</code></pre>
+            <p class="fn-caption"><a class="view-all" href="https://github.com/ss22169a/sylviaho-portfolio/tree/main/funnel-sql">Full SQL model on GitHub <span>→</span></a> The source data stays private.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <nav><a href="mailto:werr2010@gmail.com">werr2010@gmail.com</a><a href="https://www.linkedin.com/in/zi-yin-ho-4795a02a6/">LinkedIn</a><a href="resume.html">Resume</a></nav>
+      <p>© 2026 Sylvia Ho. Numbers on this site use percentages or indexed values where the underlying data is confidential.</p>
+    </footer>
+  </div>
+</body>
+</html>

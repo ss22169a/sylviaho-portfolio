@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Analytics Projects | Sylvia Ho</title>
-  <meta name="description" content="Public-data analytics projects: AI accelerator supply chain, SQL funnel analysis, and Amazon category intelligence." />
+  <meta name="description" content="Analytics projects: AI accelerator supply chain, SQL funnel and attribution analysis, and Amazon category intelligence." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&family=Stack+Sans+Headline:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=fa15e0d8" />
+  <link rel="stylesheet" href="style.css?v=8d8e8b4f" />
   <script>document.documentElement.classList.add("js");</script>
   <script src="js/matter.min.js" defer></script>
-  <script src="js/posts.js?v=fa15e0d8" defer></script>
+  <script src="js/posts.js?v=8d8e8b4f" defer></script>
 </head>
 <body>
 
@@ -23,7 +23,7 @@
     <nav class="nav" aria-label="Main">
       <a href="index.html" class="nav-item">Overview</a>
       <a href="work.html" class="nav-item">Case Studies</a>
-      <a href="projects.html" class="nav-item active" aria-current="page"><span class="arrow">→</span>Analytics Projects</a>
+      <a href="projects.html" class="nav-item active" aria-current="page"><span class="nav-ind" aria-hidden="true"></span><span class="arrow">→</span>Analytics Projects</a>
       <a href="ai.html" class="nav-item">How I Use AI</a>
       <a href="about.html" class="nav-item">About</a>
       <a href="certifications.html" class="nav-item">Certifications</a>
@@ -43,7 +43,7 @@
     <main class="main">
 
       <div class="page-head">
-        <div><h1 class="page-title">Analytics Projects</h1><p class="page-sub">Self-directed projects built on public data — every query and dashboard can be checked.</p></div>
+        <div><h1 class="page-title">Analytics Projects</h1><p class="page-sub">Projects where the method is the point: the queries, the assumptions, and the limits are all shown. Work data is anonymized and shown as shares or indexes.</p></div>
       </div>
 
       <article class="case">
@@ -52,9 +52,9 @@
         <div class="placeholder"><div><b>Dashboard coming soon</b>Looker Studio: supply-chain map and market-size model · memo PDF</div></div>
       </article>
       <article class="case">
-        <div class="case-head"><div><span class="case-kicker">Built for: Google</span><h2>E-commerce Funnel Analysis with SQL</h2><div class="tags"><span class="tag tag-lime">In progress</span></div></div></div>
-        <dl class="case-body"><dt>Question</dt><dd>Where does an online store lose shoppers, and which traffic sources bring the most valuable customers?</dd><dt>Data</dt><dd>Google's public GA4 sample e-commerce dataset (Google Merchandise Store) in BigQuery.</dd><dt>Deliverables</dt><dd>SQL queries on GitHub, a Looker Studio dashboard, and three business recommendations.</dd></dl>
-        <div class="placeholder"><div><b>Dashboard coming soon</b>BigQuery SQL + Looker Studio: conversion funnel and retention by traffic source · GitHub repo</div></div>
+        <div class="case-head"><div><span class="case-kicker">Built for: Google · Amazon</span><h2>E-commerce Funnel &amp; Attribution Analysis with SQL</h2><div class="tags"><span class="tag tag-lime">Analysis complete</span></div></div></div>
+        <dl class="case-body"><dt>Question</dt><dd>Where does paid traffic leak on its way to an Amazon order, how much revenue did the ads actually cause, and where should the next dollar go?</dd><dt>Data</dt><dd>A U.S. automotive aftermarket seller's Google Ads (ad group × day) and Amazon Seller Central data (ASIN × day, order lines), modeled in DuckDB SQL. Dollar values withheld; shares and indexes shown.</dd><dt>Deliverables</dt><dd>A six-step funnel, four attribution lenses, a budget-vs-demand check, and four goals with targets.</dd></dl>
+        <a class="btn btn-dark proj-open" href="funnel-analysis.html">Read the analysis <span>→</span></a>
       </article>
       <article class="case">
         <div class="case-head"><div><span class="case-kicker">Built for: Amazon</span><h2>Amazon Category Intelligence</h2><div class="tags"><span class="tag tag-orange">In progress</span></div></div></div>
