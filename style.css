@@ -1500,3 +1500,6 @@ a.ai-card:hover .ai-go span { transform: translateX(5px); }
 .nx-bar { display: flex; align-items: center; gap: 8px; }
 .nx-bar i { display: block; height: 14px; background: #e8743b; border-radius: 0 4px 4px 0; }
 .nx-bar em { font-style: normal; font-variant-numeric: tabular-nums; }
+.cx-bar { background: var(--blue); }
+.nx-bar i { background: var(--orange); }
+.cx-fix dl { border-top-color: var(--line); }
