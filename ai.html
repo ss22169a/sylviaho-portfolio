@@ -8,10 +8,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&family=Stack+Sans+Headline:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=d4d1b699" />
+  <link rel="stylesheet" href="style.css?v=cd7ece8d" />
   <script>document.documentElement.classList.add("js");</script>
   <script src="js/matter.min.js" defer></script>
-  <script src="js/posts.js?v=d4d1b699" defer></script>
+  <script src="js/posts.js?v=cd7ece8d" defer></script>
+  <script src="js/mems.js?v=cd7ece8d" defer></script>
 </head>
 <body>
 
@@ -91,7 +92,62 @@
       <article class="case ai-case" id="trend-writing" style="--c:var(--ink)">
         <div class="case-head"><div><span class="case-kicker">Content workflow · Industry news → bilingual articles and LinkedIn posts</span><h2>News-trend writing</h2><div class="tags"><span class="tag">Claude</span><span class="tag">Google Trends</span><span class="tag">SEMrush</span><span class="tag">LinkedIn</span><span class="tag">CMS</span></div></div></div>
         <dl class="case-body"><dt>Problem</dt><dd>Hydrogen and automotive-sensor news moves fast, and every story needs to become an original, accurate article in two languages. Technical specs also rarely make it into posts that buyers actually read.</dd><dt>How it works</dt><dd>I pick the story or the spec sheet. Claude rewrites it into an original long-form article in Traditional Chinese (reworded, never copied), adds a short company viewpoint tied to that topic, translates it into English, tags it to one content category and one product line, and outputs CMS-ready Word and HTML files for both languages. For LinkedIn, the same process turns a datasheet into a six-slide carousel: one claim per slide, each backed by a measured spec.</dd><dt>Example</dt><dd>A MEMS hydrogen-sensor carousel: ready in 70 ms, 5.5× faster than the typical 390 ms benchmark; detection in under 1.5 s across 0–40,000 ppm; under 200 mW from −35 °C to +105 °C; a 2.0 mm footprint, 1/100 of conventional 15 mm designs; and silicon-to-module integration.</dd><dt>Human in the loop</dt><dd>Every number is checked against the datasheet before anything is published, and publishing is always a human step.</dd></dl>
-        <a class="btn btn-dark ai-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7503648848951685120" target="_blank" rel="noopener">Read the LinkedIn post <span>→</span></a>
+        
+        <div class="ms-deck" data-mems>
+          <div class="ms-head"><span class="ms-cap">LinkedIn carousel · rebuilt from the Figma layers</span>
+            <div class="ms-nav"><button type="button" class="ms-btn" data-ms="-1" aria-label="Previous slide">←</button><button type="button" class="ms-btn" data-ms="1" aria-label="Next slide">→</button></div></div>
+          <div class="ms-track-row" tabindex="0" aria-label="MEMS hydrogen sensor carousel, 6 slides">
+    <div class="ms ms-1" role="group" aria-roledescription="slide" aria-label="1 of 6">
+      <div class="ms-bg"></div>
+      <h4 class="ms-title" style="left:6.3%;top:5.2%;width:88%">MEMS Hydrogen Sensing:<br />Redefining Speed &amp; Size</h4>
+      <img class="ms-chip" src="images/mems/chip.webp" alt="Isometric illustration of a MEMS sensor die on a circuit board" width="1000" height="823" loading="lazy" />
+      <span class="ms-pulse" style="left:66%;top:63%"></span>
+    </div>
+    <div class="ms ms-2" role="group" aria-roledescription="slide" aria-label="2 of 6">
+      <div class="ms-bg"></div>
+      <div class="ms-photo" style="top:52.3%;height:47.7%"><img src="images/mems/footprint.jpg" alt="A 2.0 mm MEMS sensor die on a blue block" width="1000" height="476" loading="lazy" /></div>
+      <h4 class="ms-title" style="left:8.1%;top:5.2%;width:88%">1/100 Footprint:<br />Silicon Micromachining</h4>
+      <p class="ms-body" style="left:8.1%;top:25.6%;width:86%">By replacing traditional mechanical machining (15 mm) with semiconductor silicon micromachining (2.0 mm), we reduce the sensor footprint to just 1/100 of conventional designs, allowing seamless integration into space-constrained fuel cell stacks and battery packs.</p>
+      <svg class="ms-callout" viewBox="0 0 1274 1274" aria-hidden="true"><polyline points="700,862 905,780 930,780" /></svg>
+      <span class="ms-tag" style="left:74.2%;top:59%">2.0 mm</span>
+      <div class="ms-scale" aria-hidden="true"><span class="ms-sq big"><em>15 mm</em></span><span class="ms-sq small"><em>2.0 mm</em></span></div>
+    </div>
+    <div class="ms ms-3" role="group" aria-roledescription="slide" aria-label="3 of 6">
+      <div class="ms-bg"></div>
+      <div class="ms-photo ms-streak" style="top:0;height:52.4%"><img src="images/mems/streaks.jpg" alt="" width="1000" height="524" loading="lazy" /></div>
+      <div class="ms-race" aria-hidden="true">
+        <div class="ms-lane"><span>MEMS</span><i class="ms-bar fast"></i><b>70 ms</b></div>
+        <div class="ms-lane"><span>Typical</span><i class="ms-bar slow"></i><b>390 ms</b></div>
+      </div>
+      <h4 class="ms-title" style="left:11.1%;top:57.2%;width:80%">Rapid Starting:<br />Ready in 70 ms</h4>
+      <p class="ms-body" style="left:11.1%;top:75.7%;width:77.6%">Thanks to minimal thermal mass, our MEMS sensor achieves full hydrogen detection readiness within 70 ms (&lt; 0.1s)—operating 5.5x faster than typical market benchmarks (390 ms) to eliminate startup sensing blind spots.</p>
+    </div>
+    <div class="ms ms-4" role="group" aria-roledescription="slide" aria-label="4 of 6">
+      <div class="ms-bg"></div>
+      <div class="ms-photo ms-streak" style="top:0;height:52.4%"><img src="images/mems/streaks.jpg" alt="" width="1000" height="524" loading="lazy" /></div>
+      <div class="ms-pwm" aria-hidden="true">
+        <svg viewBox="0 0 400 60" preserveAspectRatio="none"><path d="M0 50 H20 V10 H50 V50 H70 V10 H100 V50 H120 V10 H150 V50 H170 V10 H200 V50 H220 V10 H250 V50 H270 V10 H300 V50 H320 V10 H350 V50 H370 V10 H400" /></svg>
+        <div class="ms-ppm"><b data-to="40000">0</b><span>ppm H₂ tracked</span></div>
+      </div>
+      <h4 class="ms-title" style="left:11.1%;top:57.2%;width:80%">Instant Response:<br />&lt; 1.5s to Detection</h4>
+      <p class="ms-body" style="left:11.1%;top:75.7%;width:77.6%">The sensor delivers stable, real-time PWM tracking across a 0–40,000 ppm concentration range in under 1.5 seconds, allowing Electronic Control Units (ECUs) to trigger critical safety protocols before hazardous concentration thresholds are reached.</p>
+    </div>
+    <div class="ms ms-5" role="group" aria-roledescription="slide" aria-label="5 of 6">
+      <div class="ms-bg"></div>
+      <div class="ms-photo ms-batt" style="left:48.8%;top:0;width:51.2%;height:100%"><img src="images/mems/battery.jpg" alt="Robot hand holding a glowing battery" width="512" height="1000" loading="lazy" /></div>
+      <h4 class="ms-title" style="left:6%;top:6.2%;width:80%">Ultra-Low Power:<br />&lt; 200 mW Efficiency</h4>
+      <p class="ms-body" style="left:6%;top:26.6%;width:38.5%">Engineered for harsh automotive conditions, the sensor operates on less than 200 mW (at 25°C, &lt; 40 mA) with 4.5–36V DC supply, maintaining dependable zero-drift precision across an operating temperature range of -35°C to +105°C.</p>
+      <div class="ms-temp" aria-hidden="true"><div class="ms-track"><i></i></div><div class="ms-temp-l"><span>−35°C</span><span>+105°C</span></div></div>
+    </div>
+    <div class="ms ms-6" role="group" aria-roledescription="slide" aria-label="6 of 6">
+      <div class="ms-bg"></div>
+      <div class="ms-photo ms-car" style="top:50.7%;height:49.3%"><img src="images/mems/car.jpg" alt="Transparent rendering of a car showing its internal components" width="1000" height="493" loading="lazy" /></div>
+      <h4 class="ms-title" style="left:8%;top:7.7%;width:86%">Total Solution Provider:<br />Silicon to Module</h4>
+      <p class="ms-body" style="left:8.5%;top:26.6%;width:79.5%">e-Vehicle provides end-to-end integration covering Tier-4 MEMS microstructure design, Tier-3 ASIC controller ICs, and Tier-2 automotive module assembly—connect with our team to accelerate your hydrogen safety deployment.</p>
+      <ol class="ms-tiers" aria-hidden="true"><li><b>Tier 4</b>MEMS</li><li><b>Tier 3</b>ASIC</li><li><b>Tier 2</b>Module</li></ol>
+    </div>
+          </div>
+        </div><a class="btn btn-dark ai-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7503648848951685120" target="_blank" rel="noopener">Read the LinkedIn post <span>→</span></a>
       </article>
     </main>
     <footer class="footer">

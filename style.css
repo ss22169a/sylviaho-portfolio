@@ -1364,3 +1364,94 @@ a.ai-card:hover .ai-go span { transform: translateX(5px); }
 .ai-gallery { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(240px, 1fr); gap: 4.5px; overflow-x: auto; margin-top: 24px; scroll-snap-type: x mandatory; padding-bottom: 6px; }
 .ai-gallery img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 4.5px; scroll-snap-align: start; background: var(--bg); }
 .ai-link { margin-top: 21px; align-self: flex-start; display: inline-flex; }
+
+/* ---------- MEMS carousel: layered, animated rebuild of the Figma slides ---------- */
+.ms-deck { margin-top: 27px; }
+.ms-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.ms-cap { font-size: 15px; color: var(--muted); text-transform: uppercase; letter-spacing: .6px; }
+.ms-nav { display: flex; gap: 4.5px; }
+.ms-btn { width: 42px; height: 42px; border-radius: 50%; border: 1px solid var(--line); background: var(--card); font-size: 18px; cursor: pointer; transition: background .2s, color .2s; }
+.ms-btn:hover { background: var(--ink); color: #fff; }
+.ms-track-row { display: grid; grid-auto-flow: column; grid-auto-columns: min(460px, 82%); gap: 9px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; padding-bottom: 9px; outline: none; }
+.ms { --b: #0061e9; position: relative; aspect-ratio: 1; border-radius: 4.5px; overflow: hidden; scroll-snap-align: start; container-type: inline-size; color: #fff; font-family: "Inter", sans-serif; background: var(--b); }
+.ms-bg { position: absolute; inset: 0; background: var(--b); }
+.ms-title, .ms-body { position: absolute; margin: 0; z-index: 3; }
+.ms-title { font-size: 5.6cqw; font-weight: 400; line-height: 1.22; letter-spacing: -.01em; }
+.ms-body { font-size: 2.6cqw; font-weight: 400; line-height: 1.38; opacity: .95; }
+.ms-photo { position: absolute; left: 0; width: 100%; overflow: hidden; z-index: 1; }
+.ms-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+/* entrance: text rises, photo settles */
+.ms .ms-title, .ms .ms-body { opacity: 0; transform: translateY(14px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1); }
+.ms .ms-body { transition-delay: .15s; }
+.ms .ms-photo img { transform: scale(1.08); transition: transform 1.6s cubic-bezier(.2,.7,.2,1); }
+.ms.on .ms-title, .ms.on .ms-body { opacity: 1; transform: none; }
+.ms.on .ms-body { opacity: .95; }
+.ms.on .ms-photo img { transform: scale(1); }
+/* 01 chip floats, a signal pulses */
+.ms-chip { position: absolute; left: 4.9%; top: 21.7%; width: 95%; height: auto; z-index: 1; opacity: 0; transform: translateY(6%); transition: opacity .9s ease, transform 1.2s cubic-bezier(.2,.7,.2,1); }
+.ms-1.on .ms-chip { opacity: 1; transform: none; animation: ms-float 5s ease-in-out 1.2s infinite; }
+@keyframes ms-float { 50% { transform: translateY(-1.6%); } }
+.ms-pulse { position: absolute; width: 3cqw; height: 3cqw; margin: -1.5cqw; border-radius: 50%; background: #ff9be0; z-index: 2; opacity: 0; }
+.ms-1.on .ms-pulse { animation: ms-ping 2.4s ease-out 1.4s infinite; }
+@keyframes ms-ping { 0% { opacity: .9; transform: scale(.4); } 100% { opacity: 0; transform: scale(5); } }
+/* 02 callout draws, footprint shrinks 15 → 2 mm */
+.ms-callout { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 2; pointer-events: none; }
+.ms-callout polyline { fill: none; stroke: #fff; stroke-width: 3; stroke-dasharray: 280; stroke-dashoffset: 280; }
+.ms-2.on .ms-callout polyline { transition: stroke-dashoffset .9s ease .9s; stroke-dashoffset: 0; }
+.ms-tag { position: absolute; z-index: 3; font-size: 2.9cqw; opacity: 0; transition: opacity .5s ease 1.7s; }
+.ms-2.on .ms-tag { opacity: 1; }
+.ms-scale { position: absolute; right: 5%; bottom: 6%; z-index: 3; display: flex; align-items: flex-end; gap: 2cqw; }
+.ms-sq { display: grid; place-items: center; border: 1.5px dashed rgba(255,255,255,.85); border-radius: 3px; position: relative; }
+.ms-sq em { position: absolute; top: calc(100% + .6cqw); left: 50%; transform: translateX(-50%); font-style: normal; font-size: 1.9cqw; white-space: nowrap; color: #fff; text-shadow: 0 1px 4px rgba(0,0,0,.35); }
+.ms-sq.big { width: 15cqw; height: 15cqw; opacity: 0; transform: scale(.6); transition: opacity .6s ease 1.2s, transform .8s cubic-bezier(.2,.7,.2,1) 1.2s; }
+.ms-sq.small { width: 2cqw; height: 2cqw; background: #fff; border-style: solid; opacity: 0; transition: opacity .5s ease 2s; }
+.ms-2.on .ms-sq.big { opacity: 1; transform: none; }
+.ms-2.on .ms-sq.small { opacity: 1; }
+/* 03 / 04 light streaks drift */
+.ms-streak img { width: 115%; max-width: none; }
+.ms-3.on .ms-streak img, .ms-4.on .ms-streak img { animation: ms-drift 9s linear infinite alternate; }
+@keyframes ms-drift { from { transform: translateX(0); } to { transform: translateX(-12%); } }
+/* 03 start-up race, drawn to scale (70 vs 390 ms) */
+.ms-race { position: absolute; left: 11.1%; right: 8%; top: 22%; z-index: 3; display: grid; gap: 2.2cqw; }
+.ms-lane { display: grid; grid-template-columns: 13cqw 1fr auto; align-items: center; gap: 2cqw; font-size: 2.3cqw; }
+.ms-lane span { opacity: .85; }
+.ms-lane b { font-weight: 500; font-size: 3cqw; min-width: 11cqw; text-align: right; }
+.ms-bar { display: block; height: 2.2cqw; border-radius: 0 999px 999px 0; background: rgba(255,255,255,.18); position: relative; overflow: hidden; }
+.ms-bar::after { content: ""; position: absolute; inset: 0; background: #fff; transform-origin: left; transform: scaleX(0); }
+.ms-bar.fast::after { background: #7ef0ff; }
+.ms-3.on .ms-bar.fast::after { transform: scaleX(.18); transition: transform .35s ease-out .8s; }
+.ms-3.on .ms-bar.slow::after { transform: scaleX(1); transition: transform 1.95s linear .8s; }
+/* 04 PWM wave scrolls, ppm counts up */
+.ms-pwm { position: absolute; left: 11.1%; right: 8%; top: 14%; z-index: 3; }
+.ms-pwm svg { width: 100%; height: 12cqw; overflow: visible; }
+.ms-pwm path { fill: none; stroke: #7ef0ff; stroke-width: 2.5; vector-effect: non-scaling-stroke; stroke-dasharray: 1400; stroke-dashoffset: 1400; }
+.ms-4.on .ms-pwm path { transition: stroke-dashoffset 1.5s linear .6s; stroke-dashoffset: 0; }
+.ms-ppm { margin-top: 3cqw; display: flex; align-items: baseline; gap: 2cqw; }
+.ms-ppm b { font-size: 6cqw; font-weight: 500; font-variant-numeric: tabular-nums; }
+.ms-ppm span { font-size: 2.3cqw; opacity: .85; }
+/* 05 battery glows, temperature range fills */
+.ms-batt img { transform-origin: 30% 40%; }
+.ms-5.on .ms-batt img { animation: ms-glow 3.2s ease-in-out 1.4s infinite; }
+@keyframes ms-glow { 50% { filter: brightness(1.12) saturate(1.15); } }
+.ms-temp { position: absolute; left: 6%; width: 38.5%; bottom: 9%; z-index: 3; }
+.ms-temp .ms-track { height: 1.6cqw; border-radius: 999px; background: rgba(255,255,255,.22); overflow: hidden; }
+.ms-temp .ms-track i { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #7ef0ff, #fff, #ffb38a); transform-origin: left; transform: scaleX(0); }
+.ms-5.on .ms-temp .ms-track i { transform: scaleX(1); transition: transform 1.4s cubic-bezier(.2,.7,.2,1) 1s; }
+.ms-temp-l { display: flex; justify-content: space-between; font-size: 2.2cqw; margin-top: 1.2cqw; opacity: .9; }
+/* 06 car slowly pushes in, tiers stack up */
+.ms-6.on .ms-car img { transform: scale(1); animation: ms-push 12s ease-in-out 1.6s infinite alternate; }
+@keyframes ms-push { to { transform: scale(1.07) translateX(-2%); } }
+.ms-tiers { position: absolute; left: 8.5%; bottom: 6%; z-index: 3; list-style: none; margin: 0; padding: 0; display: flex; gap: 1.2cqw; }
+.ms-tiers li { background: rgba(10,20,60,.55); backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,.35); border-radius: 1cqw; padding: 1.2cqw 1.8cqw; font-size: 2.3cqw; display: grid; gap: .3cqw; opacity: 0; transform: translateY(40%); transition: opacity .5s ease, transform .6s cubic-bezier(.2,.7,.2,1); }
+.ms-tiers li b { font-weight: 500; font-size: 1.8cqw; opacity: .8; }
+.ms-6.on .ms-tiers li { opacity: 1; transform: none; }
+.ms-6.on .ms-tiers li:nth-child(1) { transition-delay: 1s; }
+.ms-6.on .ms-tiers li:nth-child(2) { transition-delay: 1.3s; }
+.ms-6.on .ms-tiers li:nth-child(3) { transition-delay: 1.6s; }
+@media (prefers-reduced-motion: reduce) {
+  .ms *, .ms *::after { animation: none !important; transition: none !important; }
+  .ms .ms-title, .ms .ms-body, .ms-chip, .ms-tag, .ms-sq.big, .ms-sq.small, .ms-tiers li { opacity: 1; transform: none; }
+  .ms .ms-photo img { transform: none; }
+  .ms-callout polyline, .ms-pwm path { stroke-dashoffset: 0; }
+  .ms-bar.fast::after { transform: scaleX(.18); } .ms-bar.slow::after, .ms-temp .ms-track i { transform: scaleX(1); }
+}

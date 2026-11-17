@@ -1,0 +1,42 @@
+/* MEMS carousel: animate each slide when it scrolls into view; arrow buttons page the row. */
+(function () {
+  var deck = document.querySelector("[data-mems]");
+  if (!deck) return;
+  var row = deck.querySelector(".ms-track-row");
+  var slides = [].slice.call(deck.querySelectorAll(".ms"));
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  function countUp(el) {
+    var to = +el.dataset.to, t0 = null, dur = 1500;
+    if (reduce) { el.textContent = to.toLocaleString("en-US"); return; }
+    function step(t) {
+      if (!t0) t0 = t;
+      var k = Math.min((t - t0) / dur, 1);
+      el.textContent = Math.round(to * k).toLocaleString("en-US");
+      if (k < 1) requestAnimationFrame(step);
+    }
+    setTimeout(function () { requestAnimationFrame(step); }, 600);
+  }
+
+  function play(s) {
+    if (s.classList.contains("on")) return;
+    s.classList.add("on");
+    var n = s.querySelector("[data-to]");
+    if (n) countUp(n);
+  }
+
+  if (!("IntersectionObserver" in window)) { slides.forEach(play); }
+  else {
+    var io = new IntersectionObserver(function (en) {
+      en.forEach(function (e) { if (e.isIntersecting) play(e.target); });
+    }, { root: null, threshold: 0.55 });
+    slides.forEach(function (s) { io.observe(s); });
+  }
+
+  deck.addEventListener("click", function (e) {
+    var b = e.target.closest("[data-ms]");
+    if (!b) return;
+    var w = slides[0].getBoundingClientRect().width + 9;
+    row.scrollBy({ left: +b.dataset.ms * w, behavior: reduce ? "auto" : "smooth" });
+  });
+})();
