@@ -816,12 +816,40 @@
   }
   function closeMenu() { if (document.body.classList.contains("menu-open")) toggleMenu(false); }
 
+
+  /* =========================================================
+     Portfolio: count-up numbers
+     Animates [data-count] tiles from 0 to their value when revealed.
+     ========================================================= */
+  function setupCountUp() {
+    var els = $$("[data-count]");
+    if (!els.length) return;
+    function run(el) {
+      var to = parseFloat(el.dataset.count), pre = el.dataset.pre || "", suf = el.dataset.suf || "";
+      if (reduceMotion) { el.textContent = pre + to + suf; return; }
+      var t0 = null, dur = 1100;
+      function step(t) {
+        if (!t0) t0 = t;
+        var k = Math.min((t - t0) / dur, 1), e = 1 - Math.pow(1 - k, 3);
+        el.textContent = pre + Math.round(to * e) + suf;
+        if (k < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    }
+    if (!("IntersectionObserver" in window)) { els.forEach(run); return; }
+    var o = new IntersectionObserver(function (en) {
+      en.forEach(function (x) { if (x.isIntersecting) { run(x.target); o.unobserve(x.target); } });
+    }, { threshold: 0.4 });
+    els.forEach(function (el) { o.observe(el); });
+  }
+
   /* =========================================================
      Init
      ========================================================= */
   function init() {
     setupReveal();
     setupPhysics();
+    setupCountUp();
     setupCalendar();
     if (PAGE === "reports.html") watchRoi();
     evalCount();

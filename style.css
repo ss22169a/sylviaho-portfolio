@@ -1089,3 +1089,26 @@ body.plain .footer { padding-left: 519px; }
 .cert-foot { margin-top: auto; padding-top: 12px; }
 @media (max-width: 1100px) { .cert-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 600px) { .cert-grid { grid-template-columns: 1fr; } .cert { min-height: 0; } }
+
+/* =========================================================
+   Portfolio: hover motion
+   ========================================================= */
+.row, .ai-card, .cert, .job, .case, .stat, .step, a.kcard {
+  transition: transform .25s cubic-bezier(.22,.61,.36,1), box-shadow .25s,
+              opacity .5s cubic-bezier(.22,.61,.36,1) var(--d, 0ms);
+}
+.js .reveal.in.row:hover, .js .reveal.in.ai-card:hover, .js .reveal.in.cert:hover,
+.js .reveal.in.job:hover, .stat:hover, a.kcard:hover, .js .reveal.in.step:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0,0,0,.08);
+}
+.row .meta span:last-child { transition: transform .2s; }
+.row:hover .meta span:last-child { transform: translateX(5px); }
+.cert .btn-sm span { display: inline-block; transition: transform .2s; }
+.cert .btn-sm:hover span { transform: translate(2px, -2px); }
+@media (prefers-reduced-motion: reduce) {
+  .row:hover, .ai-card:hover, .cert:hover, .job:hover, .stat:hover, a.kcard:hover, .step:hover { transform: none; }
+}
+.kc-work { grid-template-columns: 1.4fr repeat(5, 1fr); }
+@media (max-width: 1100px) { .kc-work { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 600px) { .kc-work { grid-template-columns: repeat(2, 1fr); } }

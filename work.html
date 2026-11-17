@@ -8,10 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&family=Stack+Sans+Headline:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=cdc2c926" />
+  <link rel="stylesheet" href="style.css?v=55527fbf" />
   <script>document.documentElement.classList.add("js");</script>
   <script src="js/matter.min.js" defer></script>
-  <script src="js/posts.js?v=cdc2c926" defer></script>
+  <script src="js/posts.js?v=55527fbf" defer></script>
 </head>
 <body>
 
@@ -42,17 +42,18 @@
     <main class="main">
 
       <div class="page-head">
-        <div><h1 class="page-title">Case Studies</h1><p class="page-sub">Business question → data → insight → decision → impact</p></div>
+        <div><h1 class="page-title">Case Studies</h1><p class="page-sub">Business question → data → insight → decision → impact. Tap a tile to focus on one case.</p></div>
       </div>
-      <div class="kcards kc-campaigns">
-        <a class="kcard k-dark" href="#amazon-paid-search"><span class="kcard-label">Automotive · Amazon US</span><span class="kcard-num">01</span></a>
-        <a class="kcard k-blue" href="#hydrogen-sensing"><span class="kcard-label">MEMS sensing</span><span class="kcard-num">02</span></a>
-        <a class="kcard k-lilac" href="#pufido-launch"><span class="kcard-label">Security key launch</span><span class="kcard-num">03</span></a>
-        <a class="kcard k-lime" href="#demand-shift"><span class="kcard-label">Clean energy B2B</span><span class="kcard-num">04</span></a>
-        <a class="kcard k-orange" href="#o2o-retail"><span class="kcard-label">Retail O2O</span><span class="kcard-num">05</span></a>
+      <div class="kcards kc-work">
+        <button type="button" class="kcard k-gray on" data-filter="all" aria-pressed="true"><span class="kcard-label">All case studies</span><span class="kcard-num" data-count="5">5</span></button>
+        <button type="button" class="kcard k-dark" data-filter="amazon-paid-search" aria-pressed="false"><span class="kcard-label">Automotive · Amazon US</span><span class="kcard-num">01</span></button>
+        <button type="button" class="kcard k-blue" data-filter="hydrogen-sensing" aria-pressed="false"><span class="kcard-label">MEMS sensing</span><span class="kcard-num">02</span></button>
+        <button type="button" class="kcard k-lilac" data-filter="pufido-launch" aria-pressed="false"><span class="kcard-label">Security key launch</span><span class="kcard-num">03</span></button>
+        <button type="button" class="kcard k-lime" data-filter="demand-shift" aria-pressed="false"><span class="kcard-label">Clean energy B2B</span><span class="kcard-num">04</span></button>
+        <button type="button" class="kcard k-orange" data-filter="o2o-retail" aria-pressed="false"><span class="kcard-label">Retail O2O</span><span class="kcard-num">05</span></button>
       </div>
 
-      <article class="case" id="amazon-paid-search">
+      <article class="case" id="amazon-paid-search" data-group="amazon-paid-search">
         <div class="case-head">
           <div><span class="case-kicker">e-vehicle Semiconductor · Automotive aftermarket parts · 2026</span><h2>Can Paid Search Pay Off on Amazon? Funnel & Break-even Analysis</h2><div class="tags"><span class="tag tag-orange">Automotive</span><span class="tag tag-dark">Amazon US</span><span class="tag ">Funnel analysis</span></div></div>
         </div>
@@ -60,7 +61,7 @@
         <dl class="case-body"><dt>Business question</dt><dd>Can Google Ads drive profitable Amazon US sales for a long-tail automotive parts catalog (alternators, starters, sensors) — and at what budget?</dd><dt>Data & method</dt><dd>Joined daily Google Ads spend and clicks with Amazon product-page sessions and orders; compared against a 4-week pre-ad baseline; analyzed product-level sales concentration; built a break-even model from average order value, margin, and organic order baseline; added Amazon unmet-demand data and competitor price checks.</dd><dt>Key insight</dt><dd>Google Ads cannot see Amazon purchases, so in-platform conversions read zero — the real signal had to come from Amazon sessions and orders. Broad category keywords drew clicks, but only about 5% of them reached a product page.</dd><dt>Decision</dt><dd>Rebuilt campaigns around product- and vehicle-specific keywords that land on product pages with Amazon Attribution tags; set a profitability threshold and two-week observation windows before any budget change; flagged overpriced listings and low-inventory SKUs.</dd><dt>Impact</dt><dd class="impact">Click-to-product-page rate 5% → 22%; weekly Amazon revenue +112% and orders +37% vs. the pre-ad baseline (Oct 7 – Nov 15, 2026); October 2026 was the store's best month in two years (+73% YoY).</dd><dt>What I'd do next</dt><dd>Shift budget toward on-Amazon ads for part-number searches, where buyers already know what they need, and keep the break-even model as the go/no-go rule for Google Ads.</dd></dl>
         <div class="placeholder"><div><b>Dashboard coming soon</b>SQL + Looker Studio: daily clicks → product-page sessions → orders, with the pre-ad baseline.</div></div>
       </article>
-      <article class="case" id="hydrogen-sensing">
+      <article class="case" id="hydrogen-sensing" data-group="hydrogen-sensing">
         <div class="case-head">
           <div><span class="case-kicker">e-vehicle Semiconductor · MEMS hydrogen sensing · 2026 · In progress</span><h2>Building an Evidence Base for a Challenger in Hydrogen Sensing</h2><div class="tags"><span class="tag tag-blue">Semiconductors</span><span class="tag tag-lilac">Market intelligence</span><span class="tag ">In progress</span></div></div>
         </div>
@@ -68,7 +69,7 @@
         <dl class="case-body"><dt>Business question</dt><dd>How does a new MEMS hydrogen-sensor entrant earn credibility with OEM and infrastructure buyers before it has third-party validation or brand recognition?</dd><dt>Data & method</dt><dd>Built a market-intelligence tracker covering MEMS and hydrogen-sensing market size (CAGR recalculated and checked against each source's claim), demand-side indicators (FCEV sales, fueling stations, regulations) cross-checked across two or more independent sources, competitor specs from datasheets, competitor go-to-market stages, and market caps.</dd><dt>Rigor</dt><dd>Every number carries an evidence grade, from A (primary source) to D (unverified). Only A and B grades can be cited externally; facts and inferences live in separate tabs; gaps stay marked as gaps.</dd><dt>Key insight</dt><dd>The gap is credibility, not technology. Supporting evidence for every external claim has been assembled; third-party validation is the next milestone.</dd><dt>Status</dt><dd>Validation results (certifications, test reports, customer references) will be added here once available.</dd></dl>
         <div class="placeholder"><div><b>Dashboard coming soon</b>Looker Studio: market-size ranges and a competitor map by sensing principle and go-to-market stage.</div></div>
       </article>
-      <article class="case" id="pufido-launch">
+      <article class="case" id="pufido-launch" data-group="pufido-launch">
         <div class="case-head">
           <div><span class="case-kicker">SecuX · Hardware security · 2025</span><h2>Launching a First-of-its-Kind Security Key on Amazon US</h2><div class="tags"><span class="tag tag-blue">Hardware</span><span class="tag tag-dark">Amazon US</span><span class="tag ">Launch research</span></div></div>
         </div>
@@ -76,7 +77,7 @@
         <dl class="case-body"><dt>Business question</dt><dd>How do we position the world's first unclonable FIDO2 security key against established brands, and where should a limited ad budget go?</dd><dt>Data & method</dt><dd>Competitor technical and product teardown; Google Trends and SEMrush keyword forecasting; a pain-point survey; a post-launch feedback loop through Zendesk, Hotjar, and GA4 that fed the next product spec.</dd><dt>Key insight</dt><dd>Users feared lost passwords and account takeovers and were curious about passwordless login, but didn't understand it — so the barrier was education, not demand.</dd><dt>Decision</dt><dd>Positioned on two tracks: "no app, works with Google and Facebook, simple" for mainstream users; "FIDO2/U2F, cross-platform, hardware security" for security professionals. Allocated U.S./EU budget by market and built a 4-tier reputation-response framework from brand-mention data.</dd><dt>Impact</dt><dd class="impact">Top 5 in its Amazon category within 30 days of launch; U.S. paid ads ROAS 2.3 (+60%), CPC −30%, conversion rate +12% (2025).</dd></dl>
         <div class="placeholder"><div><b>Dashboard coming soon</b>Looker Studio: ad performance by market (CPC, CTR, conversion) and a competitor positioning matrix.</div></div>
       </article>
-      <article class="case" id="demand-shift">
+      <article class="case" id="demand-shift" data-group="demand-shift">
         <div class="case-head">
           <div><span class="case-kicker">Tellus Materials · Green hydrogen materials, B2B</span><h2>Catching a Demand Shift Before Competitors</h2><div class="tags"><span class="tag tag-lime">Clean energy</span><span class="tag ">B2B</span><span class="tag tag-lilac">Search intelligence</span></div></div>
         </div>
@@ -84,7 +85,7 @@
         <dl class="case-body"><dt>Business question</dt><dd>Which applications should a hydrogen-materials company prioritize in its content and outreach?</dd><dt>Data & method</dt><dd>SEMrush keyword trend monitoring, GA4 event tracking, and inquiry funnel data.</dd><dt>Key insight</dt><dd>Energy-storage search volume grew 180% month-over-month — a demand shift the existing content plan ignored.</dd><dt>Decision</dt><dd>Re-prioritized the Q2 content roadmap toward energy storage and rebuilt product pages around the questions decision-makers ask.</dd><dt>Impact</dt><dd class="impact">Product-page bounce rate 68% → 42%; segmented EDM lifted inquiry conversion from 0.2% to 2.5%; organic sessions grew from 2 to 104 in the first 28 days after the new site launched.</dd></dl>
         <div class="placeholder"><div><b>Dashboard coming soon</b>Looker Studio: SEMrush energy-storage keyword trend and GA4 bounce rate before and after the rebuild.</div></div>
       </article>
-      <article class="case" id="o2o-retail">
+      <article class="case" id="o2o-retail" data-group="o2o-retail">
         <div class="case-head">
           <div><span class="case-kicker">BLANK SPACE · Co-founder · Fashion e-commerce & retail</span><h2>Taking a Digital-Native Brand Offline Without Breaking the Funnel</h2><div class="tags"><span class="tag tag-orange">Retail</span><span class="tag ">O2O</span><span class="tag tag-lilac">Consumer research</span></div></div>
         </div>
