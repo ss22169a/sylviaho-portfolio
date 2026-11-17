@@ -1212,3 +1212,26 @@ a.ai-card:hover .ai-go span { transform: translateX(5px); }
   .job-year, .timeline .tl, .timeline .tl b { transition: none; }
 }
 .stat-num.sm { transform-origin: 100% 100%; }
+
+/* Operating principles: neutral autonomy scale (secondary to the color tiles) */
+.principles { padding: 24px 24px 21px; }
+.pr-head { display: flex; justify-content: space-between; align-items: baseline; gap: 18px; flex-wrap: wrap; }
+.pr-head h2 { font-size: 24px; font-weight: 500; }
+.pr-head p { font-size: 16.5px; color: var(--muted); }
+.pr-axis { display: flex; justify-content: space-between; font-size: 14px; color: var(--muted); margin: 18px 0 9px; }
+.pr-axis span:first-child::before { content: "← "; }
+.pr-axis span:last-child::after { content: " →"; }
+.pr-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 5px; }
+.pr { display: flex; flex-direction: column; gap: 6px; cursor: pointer; transition: opacity .3s, filter .3s; }
+.pr .bar { width: 100%; height: 24px; border-radius: 40px; background: var(--c); margin-bottom: 6px; }
+.pr b { font-family: "Fustat", sans-serif; font-size: 26px; font-weight: 700; letter-spacing: -.03em; line-height: .92;
+  align-self: flex-start; transform-origin: 0 0; transition: transform .3s var(--spring); }
+.pr strong { font-size: 18px; font-weight: 500; }
+.pr small { font-size: 15.75px; color: var(--muted); line-height: 1.45; }
+.principles.has-focus .pr:not(.is-focus) { opacity: .25; filter: saturate(0); }
+.pr.is-focus b { transform: scale(1.35); }
+.pr-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; margin-top: 21px; padding-top: 18px; border-top: 1px solid var(--line); }
+.pr-label { font-size: 15px; font-weight: 500; margin-right: 4px; }
+.pr-note { flex-basis: 100%; font-size: 15px; color: var(--muted); margin-top: 6px; }
+@media (max-width: 1100px) { .pr-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 18px; } }
+@media (prefers-reduced-motion: reduce) { .pr, .pr b { transition: none; } }

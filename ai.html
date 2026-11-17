@@ -8,10 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&family=Stack+Sans+Headline:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=3ecf07f3" />
+  <link rel="stylesheet" href="style.css?v=646cb0bf" />
   <script>document.documentElement.classList.add("js");</script>
   <script src="js/matter.min.js" defer></script>
-  <script src="js/posts.js?v=3ecf07f3" defer></script>
+  <script src="js/posts.js?v=646cb0bf" defer></script>
 </head>
 <body>
 
@@ -48,14 +48,24 @@
       <div class="kcards kc-ai"><a class="kcard" style="background:var(--lilac)" href="#connected-data"><span class="kcard-label">Connected market data</span><span class="kcard-num">01</span></a><a class="kcard" style="background:var(--lime)" href="#pricing-intel"><span class="kcard-label">Competitive &amp; pricing intelligence</span><span class="kcard-num">02</span></a><a class="kcard" style="background:var(--blue);color:#fff" href="#seo-audit"><span class="kcard-label">Automated SEO audits</span><span class="kcard-num">03</span></a><a class="kcard" style="background:var(--orange)" href="#ad-ops"><span class="kcard-label">Guardrailed ad operations</span><span class="kcard-num">04</span></a></div>
 
       <section class="section">
-        <div class="section-head"><h2>Operating principles</h2></div>
-        <div class="steps">
-          <div class="step" style="background:#fff"><b>L0 · Read only</b>Pull and analyze data; change nothing.</div>
-          <div class="step" style="background:var(--lilac)"><b>L1 · Draft</b>Prepare reports, rewrites and suggestions for review.</div>
-          <div class="step" style="background:var(--lime)"><b>L2 · Approve, then act</b>Make a change only after a named person approves it.</div>
-          <div class="step" style="background:var(--ink);color:#fff"><b>L3 · Automatic</b>Reserved for low-risk, reversible tasks.</div>
+        <div class="pipeline principles" data-pipeline>
+          <div class="pr-head">
+            <h2>Operating principles</h2>
+            <p>Every agent is assigned one autonomy level.</p>
+          </div>
+          <div class="pr-axis"><span>More human control</span><span>More automation</span></div>
+          <div class="pr-grid">
+            <div class="pr" data-i="0" style="--c:#e2e2e2"><span class="bar"></span><b>L0</b><strong>Read only</strong><small>Pull and analyze data; change nothing.</small></div>
+            <div class="pr" data-i="1" style="--c:#c7c7c7"><span class="bar"></span><b>L1</b><strong>Draft</strong><small>Prepare reports, rewrites and suggestions for review.</small></div>
+            <div class="pr" data-i="2" style="--c:#8a8a8a"><span class="bar"></span><b>L2</b><strong>Approve, then act</strong><small>Change something only after a named person approves it.</small></div>
+            <div class="pr" data-i="3" style="--c:var(--ink)"><span class="bar"></span><b>L3</b><strong>Automatic</strong><small>Reserved for low-risk, reversible tasks.</small></div>
+          </div>
+          <div class="pr-foot">
+            <span class="pr-label">Always needs human approval</span>
+            <span class="tag">Publishing</span><span class="tag">Account settings</span><span class="tag">Spending</span>
+            <span class="pr-note">Each agent also has a written charter (can do · must ask · never does) and a data classification (public · internal · confidential).</span>
+          </div>
         </div>
-        <p class="ai-note">Each agent has a written charter: what it can do, what it must ask about, and what it never does — plus a data classification (public, internal, confidential). Publishing, account settings and spending always need human approval.</p>
       </section>
 
       <article class="case ai-case" id="connected-data" style="--c:var(--lilac)">
