@@ -1503,3 +1503,5 @@ a.ai-card:hover .ai-go span { transform: translateX(5px); }
 .cx-bar { background: var(--blue); }
 .nx-bar i { background: var(--orange); }
 .cx-fix dl { border-top-color: var(--line); }
+.al-spend { background: var(--orange); }
+.al-demand { background: var(--blue); }
