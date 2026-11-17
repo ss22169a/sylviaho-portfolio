@@ -10,7 +10,7 @@ Static HTML + CSS, no build step. The visual system is adapted from the Posts da
 | `work.html` | Case studies (question → data → insight → decision → impact) |
 | `projects.html` | Analytics projects on public data |
 | `about.html` | About, How I Work, toolkit, certifications |
-| `resume.html` | Online résumé (links to `resume.pdf`) |
+| `resume.html` | Online resume (links to `resume.pdf`) |
 
 `style.css` holds every style; colors live in `:root` at the top.
 

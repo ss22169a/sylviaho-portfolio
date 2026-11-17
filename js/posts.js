@@ -35,7 +35,8 @@
     ".steps > .step",
     ".timeline",
     ".two-col > .prose",
-    ".main > .prose"
+    ".main > .prose",
+    ".vtl > .vtl-item"
   ];
 
   function setupReveal() {

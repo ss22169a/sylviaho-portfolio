@@ -749,3 +749,60 @@ body.plain .footer { padding-left: 519px; }
   .hero h1 br { display: none; }
   .hero.has-physics { padding-bottom: 150px; }
 }
+
+/* =========================================================
+   Resume timeline
+   ========================================================= */
+.vtl { list-style: none; }
+.vtl-item {
+  display: grid;
+  grid-template-columns: 210px 42px minmax(0, 1fr);
+  position: relative;
+}
+.vtl-when {
+  font-family: "Fustat", sans-serif;
+  font-size: 19.5px; font-weight: 500;
+  padding-top: 21px; text-align: right; padding-right: 6px;
+}
+.vtl-dot { position: relative; }
+.vtl-dot::before {               /* line */
+  content: ""; position: absolute;
+  left: 50%; top: 0; bottom: 0; width: 3px;
+  transform: translateX(-50%);
+  background: #d6d6d6;
+}
+.vtl-item:first-child .vtl-dot::before { top: 27px; }
+.vtl-item:last-child .vtl-dot::before { bottom: auto; height: 27px; }
+.vtl-dot::after {                /* marker */
+  content: ""; position: absolute;
+  left: 50%; top: 24px; width: 18px; height: 18px;
+  transform: translateX(-50%);
+  background: var(--c); border-radius: 4px;
+  box-shadow: 0 0 0 4px var(--bg);
+}
+.vtl-card {
+  background: var(--card); border-radius: var(--radius);
+  padding: 21px 24px 24px; margin-bottom: 6px;
+  border-left: 6px solid var(--c);
+}
+.vtl-head { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.vtl-head h3 { font-size: 24px; font-weight: 600; letter-spacing: -.3px; }
+.vtl-org { font-size: 16.5px; color: var(--muted); margin: 6px 0 12px; }
+.vtl-org b { color: var(--ink); }
+.vtl-card ul { list-style: disc; padding-left: 24px; font-size: 18px; line-height: 1.55; color: #333; }
+.vtl-card li + li { margin-top: 8px; }
+
+@media (max-width: 1100px) {
+  .vtl-item { grid-template-columns: 30px minmax(0, 1fr); }
+  .vtl-when { grid-column: 2; text-align: left; padding: 6px 0 9px; font-size: 18px; }
+  .vtl-dot { grid-column: 1; grid-row: 1 / span 2; }
+  .vtl-card { grid-column: 2; }
+  .vtl-item:first-child .vtl-dot::before { top: 15px; }
+  .vtl-dot::after { top: 9px; width: 15px; height: 15px; }
+  .vtl-item:last-child .vtl-dot::before { height: 15px; }
+}
+@media (max-width: 600px) {
+  .vtl-card { padding: 16px 16px 18px; }
+  .vtl-card ul { font-size: 16px; padding-left: 18px; }
+  .vtl-head h3 { font-size: 21px; }
+}
