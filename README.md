@@ -18,6 +18,7 @@ Static HTML + CSS, no build step. The visual system is adapted from the Posts da
 - `js/posts.js` — scroll reveal (rows, cards and panels fade up in sequence) and the hero physics: shapes fall in, stack, and get pushed around by the mouse.
 - `js/matter.min.js` — Matter.js 0.19.0 physics engine (MIT), bundled so nothing loads from a CDN.
 - - `js/posts.js` also handles the mobile menu and the category filter on the Certifications page. The Posts app's welcome dialog and guided tour are switched off.
+- Hover details follow the Posts framework: tile numbers grow, the career path focuses one company at a time.
 - Visitors with "reduce motion" turned on get the still version. Without JavaScript every page still shows in full.
 
 ## To fill in

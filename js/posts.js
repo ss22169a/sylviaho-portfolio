@@ -806,6 +806,29 @@
   });
 
   /* =========================================================
+     Asset pipeline: hovering a column or legend item focuses it
+     ========================================================= */
+  function setupPipeline() {
+    var box = $("[data-pipeline]");
+    if (!box) return;
+    function focus(i) {
+      box.classList.toggle("has-focus", i !== null);
+      $$("[data-i]", box).forEach(function (el) { el.classList.toggle("is-focus", el.dataset.i === i); });
+    }
+    box.addEventListener("pointerover", function (e) {
+      var t = e.target.closest("[data-i]");
+      focus(t ? t.dataset.i : null);
+    });
+    box.addEventListener("pointerleave", function () { focus(null); });
+    // keyboard: make columns focusable too
+    $$("[data-i]", box).forEach(function (el) {
+      el.tabIndex = 0;
+      el.addEventListener("focus", function () { focus(el.dataset.i); });
+      el.addEventListener("blur", function () { focus(null); });
+    });
+  }
+
+  /* =========================================================
      14) Mobile menu
      ========================================================= */
   function toggleMenu(force) {
@@ -818,8 +841,7 @@
 
 
   /* =========================================================
-     Portfolio: count-up numbers
-     Animates [data-count] tiles from 0 to their value when revealed.
+     Portfolio: count-up numbers ([data-count] animate 0 → value when seen)
      ========================================================= */
   function setupCountUp() {
     var els = $$("[data-count]");
@@ -849,8 +871,9 @@
   function init() {
     setupReveal();
     setupPhysics();
-    setupCountUp();
     setupCalendar();
+    setupPipeline();
+    setupCountUp();
     if (PAGE === "reports.html") watchRoi();
     evalCount();
 

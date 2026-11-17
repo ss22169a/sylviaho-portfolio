@@ -592,7 +592,6 @@ body.plain .page { margin-left: 0; }
 /* Small hover details */
 .btn span, .view-all span { display: inline-block; transition: transform .2s; }
 .btn:hover span, .view-all:hover span { transform: translateX(4.5px); }
-.kcard, .stat { transition: transform .2s; }
 
 @media (prefers-reduced-motion: reduce) {
   .js .reveal { opacity: 1; transform: none; transition: none; }
@@ -614,7 +613,6 @@ button.nav-item { background: none; border: 0; text-align: left; width: 100%; fo
 /* selectable stat cards + chips */
 button.kcard { border: 0; text-align: left; font: inherit; cursor: pointer;
   box-shadow: inset 0 0 0 2px transparent; transition: box-shadow .15s ease, transform .2s, opacity .5s cubic-bezier(.22,.61,.36,1) var(--d,0ms); }
-button.kcard:hover { transform: translateY(-2px); }
 button.kcard.on { box-shadow: inset 0 0 0 2px rgba(38,38,38,.35); }
 button.kcard.k-dark.on { box-shadow: inset 0 0 0 2px rgba(255,255,255,.35); }
 .chip { transition: background .15s, color .15s; }
@@ -863,6 +861,72 @@ button.date-pill:hover { background: #f7f7f7; }
   .tab-in, .slide-next, .slide-prev, .shake { animation: none; }
 }
 
+
+/* =========================================================
+   Hover details (measured from the original site)
+   ========================================================= */
+:root { --pipe-draft: #aaaaaa; --spring: cubic-bezier(.22, .61, .36, 1); }
+
+/* Dashboard stat boards + Campaigns/Assets cards: number grows 1.2x from bottom-right */
+a.stat, a.stat-mini { color: inherit; }
+.stat { position: relative; overflow: hidden; cursor: pointer; box-shadow: 0 1px 2px rgba(0,0,0,.05); }
+.stat-num, .kcard-num {
+  display: inline-block;
+  transform-origin: 83% 100%;
+  transition: transform .3s var(--spring);
+}
+.stat:hover .stat-num, .stat:focus-visible .stat-num,
+.kcard:hover .kcard-num, .kcard:focus-visible .kcard-num { transform: scale(1.2); }
+.kcard { overflow: hidden; }
+button.kcard:hover { box-shadow: inset 0 0 0 1.5px rgba(38, 38, 38, .15); }
+button.kcard.on, button.kcard.on:hover { box-shadow: inset 0 0 0 2px rgba(38, 38, 38, .35); }
+button.kcard.k-dark.on, button.kcard.k-dark.on:hover { box-shadow: inset 0 0 0 2px rgba(255, 255, 255, .35); }
+.stat-mini { transition: background .15s; }
+.stat-mini:hover { background: var(--ink-dark); }
+
+/* Hero buttons */
+.btn-light { transition: background .15s, color .15s; }
+.btn-light:hover { background: var(--ink); color: #fff; }
+
+/* Needs Attention status pills: icon turns half a circle */
+.badge {
+  gap: 8px;
+  padding: 4px 12px;
+  font-size: 14px; font-weight: 500;
+  color: var(--ink);
+  cursor: default;
+}
+.badge-rejected, .badge-changes, .badge-review { color: var(--ink); }
+.badge .ico {
+  width: 14px; height: 14px; flex-shrink: 0;
+  display: inline-flex; align-items: center; justify-content: center;
+  transition: transform .35s ease;
+}
+.badge .ico svg { width: 14px; height: 14px; fill: var(--ink); display: block; }
+.badge:hover .ico { transform: rotate(180deg); }
+
+/* Asset pipeline: equal pill bars; hover a column or legend item to focus it */
+.pipe-grid { gap: 5px; }
+.pipe { cursor: pointer; transition: opacity .3s, filter .3s; }
+.pipe b {
+  align-self: flex-start;
+  font-family: "Fustat", sans-serif; font-weight: 700; font-size: 26px; letter-spacing: -.03em; line-height: .92;
+  transform-origin: 0 0;
+  transition: transform .3s var(--spring);
+}
+.pipe small { font-size: 16px; }
+.pipe .bar { width: 100%; height: 24px; border-radius: 40px; background: var(--c); }
+.pipe-legend li { cursor: pointer; transition: opacity .3s, filter .3s; font-size: 15px; gap: 8px; }
+.pipe-legend .gl { width: 14px; height: 14px; display: inline-flex; }
+.pipe-legend .gl svg { width: 14px; height: 14px; fill: var(--c); color: var(--c); }
+.pipeline.has-focus .pipe:not(.is-focus),
+.pipeline.has-focus .pipe-legend li:not(.is-focus) { opacity: .2; filter: saturate(0); }
+.pipe.is-focus b { transform: scale(1.35); }
+
+@media (prefers-reduced-motion: reduce) {
+  .stat-num, .kcard-num, .badge .ico, .pipe, .pipe b, .pipe-legend li { transition: none; }
+}
+
 /* =========================================================
    Footer
    ========================================================= */
@@ -1093,12 +1157,12 @@ body.plain .footer { padding-left: 519px; }
 /* =========================================================
    Portfolio: hover motion
    ========================================================= */
-.row, .ai-card, .cert, .job, .case, .stat, .step, a.kcard {
+.row, .ai-card, .cert, .job, .case, .step {
   transition: transform .25s cubic-bezier(.22,.61,.36,1), box-shadow .25s,
               opacity .5s cubic-bezier(.22,.61,.36,1) var(--d, 0ms);
 }
 .js .reveal.in.row:hover, .js .reveal.in.ai-card:hover, .js .reveal.in.cert:hover,
-.js .reveal.in.job:hover, .stat:hover, a.kcard:hover, .js .reveal.in.step:hover {
+.js .reveal.in.job:hover, .js .reveal.in.step:hover {
   transform: translateY(-4px);
   box-shadow: 0 10px 28px rgba(0,0,0,.08);
 }
@@ -1107,7 +1171,7 @@ body.plain .footer { padding-left: 519px; }
 .cert .btn-sm span { display: inline-block; transition: transform .2s; }
 .cert .btn-sm:hover span { transform: translate(2px, -2px); }
 @media (prefers-reduced-motion: reduce) {
-  .row:hover, .ai-card:hover, .cert:hover, .job:hover, .stat:hover, a.kcard:hover, .step:hover { transform: none; }
+  .row:hover, .ai-card:hover, .cert:hover, .job:hover, .step:hover { transform: none; }
 }
 .kc-work { grid-template-columns: 1.4fr repeat(5, 1fr); }
 @media (max-width: 1100px) { .kc-work { grid-template-columns: repeat(3, 1fr); } }
@@ -1129,3 +1193,22 @@ a.ai-card:hover .ai-go span { transform: translateX(5px); }
 .ai-table td:nth-child(2) { font-family: "Fustat", sans-serif; font-weight: 500; white-space: nowrap; }
 @media (max-width: 1100px) { .kc-ai { grid-template-columns: repeat(2, 1fr); } }
 .ai-note + * , section + .ai-case { margin-top: 33px; }
+
+/* =========================================================
+   Portfolio: framework hover details applied to portfolio parts
+   ========================================================= */
+/* resume year grows like stat numbers */
+.job-year { display: inline-block; transform-origin: 100% 100%; transition: transform .3s var(--spring); }
+.job:hover .job-year { transform: scale(1.2); }
+/* career path: hover a company to focus it, others fade */
+.timeline .tl { cursor: pointer; transition: opacity .3s, filter .3s; }
+.timeline .tl .bar { border-radius: 40px; height: 24px; }
+.timeline .tl b { transform-origin: 0 0; transition: transform .3s var(--spring); }
+.timeline.has-focus .tl:not(.is-focus) { opacity: .2; filter: saturate(0); }
+.timeline .tl.is-focus b { transform: scale(1.12); }
+/* tags behave like framework pills */
+.case .tag, .cert .tag { transition: background .15s, color .15s; }
+@media (prefers-reduced-motion: reduce) {
+  .job-year, .timeline .tl, .timeline .tl b { transition: none; }
+}
+.stat-num.sm { transform-origin: 100% 100%; }
