@@ -14,6 +14,11 @@ Static HTML + CSS, no build step. The visual system is adapted from the Posts da
 
 `style.css` holds every style; colors live in `:root` at the top.
 
+## Motion (`js/`)
+- `js/posts.js` — scroll reveal (rows, cards and panels fade up in sequence) and the hero physics: shapes fall in, stack, and get pushed around by the mouse.
+- `js/matter.min.js` — Matter.js 0.19.0 physics engine (MIT), bundled so nothing loads from a CDN.
+- Visitors with "reduce motion" turned on get the still version. Without JavaScript every page still shows in full.
+
 ## To fill in
 - **Dashboards:** every "Dashboard coming soon" block is a placeholder. Replace the `<div class="placeholder">…</div>` with a Looker Studio embed, e.g.
   `<iframe src="https://lookerstudio.google.com/embed/reporting/…" width="100%" height="450" frameborder="0" allowfullscreen></iframe>`
