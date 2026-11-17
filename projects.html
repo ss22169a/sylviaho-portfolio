@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analytics Projects | Sylvia Ho</title>
+  <meta name="description" content="Public-data analytics projects: AI accelerator supply chain, SQL funnel analysis, and Amazon category intelligence." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&family=Stack+Sans+Headline:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <aside class="sidebar">
+    <a href="index.html" class="logo"><span class="logo-mark" aria-hidden="true"><i class="lm lm-1"></i><i class="lm lm-2"></i><i class="lm lm-3"></i><i class="lm lm-4"></i></span>Sylvia Ho</a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html" class="nav-item">Overview</a>
+      <a href="work.html" class="nav-item">Case Studies</a>
+      <a href="projects.html" class="nav-item active" aria-current="page"><span class="arrow">→</span>Analytics Projects</a>
+      <a href="about.html" class="nav-item">About</a>
+      <a href="resume.html" class="nav-item">Résumé</a>
+    </nav>
+    <div class="sidebar-bottom">
+      <a href="mailto:werr2010@gmail.com" class="nav-item">Email</a>
+      <a href="https://www.linkedin.com/in/zi-yin-ho-4795a02a6/" class="nav-item">LinkedIn</a>
+      <div class="user">
+        <span class="avatar">S</span>
+        <div class="user-info"><strong>Sylvia Ho</strong><small>Hsinchu, Taiwan</small></div>
+      </div>
+    </div>
+  </aside>
+
+  <div class="page">
+    <main class="main">
+
+      <div class="page-head">
+        <div><h1 class="page-title">Analytics Projects</h1><p class="page-sub">Self-directed projects built on public data — every query and dashboard can be checked.</p></div>
+      </div>
+
+      <article class="case">
+        <div class="case-head"><div><span class="case-kicker">Built for: NVIDIA · Google AI infrastructure</span><h2>AI Accelerator Supply Chain &amp; Market Landscape</h2><div class="tags"><span class="tag tag-blue">In progress</span></div></div></div>
+        <dl class="case-body"><dt>Question</dt><dd>Where are the bottlenecks in the AI accelerator supply chain, and which component costs and capacities most constrain shipments?</dd><dt>Data</dt><dd>Public earnings calls and annual reports, public industry report summaries, and news.</dd><dt>Deliverables</dt><dd>Supply-chain map (foundry → advanced packaging → HBM → server ODM), a market-size model, and a one-page executive memo.</dd></dl>
+        <div class="placeholder"><div><b>Dashboard coming soon</b>Looker Studio: supply-chain map and market-size model · memo PDF</div></div>
+      </article>
+      <article class="case">
+        <div class="case-head"><div><span class="case-kicker">Built for: Google</span><h2>E-commerce Funnel Analysis with SQL</h2><div class="tags"><span class="tag tag-lime">In progress</span></div></div></div>
+        <dl class="case-body"><dt>Question</dt><dd>Where does an online store lose shoppers, and which traffic sources bring the most valuable customers?</dd><dt>Data</dt><dd>Google's public GA4 sample e-commerce dataset (Google Merchandise Store) in BigQuery.</dd><dt>Deliverables</dt><dd>SQL queries on GitHub, a Looker Studio dashboard, and three business recommendations.</dd></dl>
+        <div class="placeholder"><div><b>Dashboard coming soon</b>BigQuery SQL + Looker Studio: conversion funnel and retention by traffic source · GitHub repo</div></div>
+      </article>
+      <article class="case">
+        <div class="case-head"><div><span class="case-kicker">Built for: Amazon</span><h2>Amazon Category Intelligence</h2><div class="tags"><span class="tag tag-orange">In progress</span></div></div></div>
+        <dl class="case-body"><dt>Question</dt><dd>In one Amazon category, what are the price bands, rating patterns, and customer pain points — and where is the gap for a new brand?</dd><dt>Data</dt><dd>Public academic Amazon review datasets (only public data, never employer or client data).</dd><dt>Deliverables</dt><dd>A category dashboard, AI-assisted review-theme tagging, and an entry-strategy recommendation.</dd></dl>
+        <div class="placeholder"><div><b>Dashboard coming soon</b>SQL or Python + Looker Studio: price bands, rating distribution, review themes · GitHub repo</div></div>
+      </article>
+    </main>
+    <footer class="footer">
+      <nav><a href="mailto:werr2010@gmail.com">werr2010@gmail.com</a><a href="https://www.linkedin.com/in/zi-yin-ho-4795a02a6/">LinkedIn</a><a href="resume.html">Résumé</a></nav>
+      <p>© 2026 Sylvia Ho. Numbers on this site use percentages or indexed values where the underlying data is confidential.</p>
+    </footer>
+  </div>
+</body>
+</html>
