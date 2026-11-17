@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How I Use AI | Sylvia Ho</title>
+  <meta name="description" content="How Sylvia Ho uses human-in-the-loop AI agents for market data, pricing intelligence, SEO audits and ad operations." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&family=Stack+Sans+Headline:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=f56afa21" />
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="js/matter.min.js" defer></script>
+  <script src="js/posts.js?v=f56afa21" defer></script>
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="side-top">
+      <a href="index.html" class="logo"><span class="logo-mark" aria-hidden="true"><i class="lm lm-1"></i><i class="lm lm-2"></i><i class="lm lm-3"></i><i class="lm lm-4"></i></span>Sylvia Ho</a>
+      <button type="button" class="menu-btn" data-menu aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 16 16" width="18" height="18"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5"/></svg></button>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html" class="nav-item">Overview</a>
+      <a href="work.html" class="nav-item">Case Studies</a>
+      <a href="projects.html" class="nav-item">Analytics Projects</a>
+      <a href="ai.html" class="nav-item active" aria-current="page"><span class="arrow">→</span>How I Use AI</a>
+      <a href="about.html" class="nav-item">About</a>
+      <a href="certifications.html" class="nav-item">Certifications</a>
+      <a href="resume.html" class="nav-item">Resume</a>
+    </nav>
+    <div class="sidebar-bottom">
+      <a href="mailto:werr2010@gmail.com" class="nav-item">Email</a>
+      <a href="https://www.linkedin.com/in/zi-yin-ho-4795a02a6/" class="nav-item">LinkedIn</a>
+      <div class="user">
+        <span class="avatar">S</span>
+        <div class="user-info"><strong>Sylvia Ho</strong><small>Hsinchu, Taiwan</small></div>
+      </div>
+    </div>
+  </aside>
+
+  <div class="page">
+    <main class="main">
+
+      <div class="page-head">
+        <div><h1 class="page-title">How I Use AI</h1><p class="page-sub">AI does the data work; people make the calls. Six agent workflows, one governance framework for 14 agents.</p></div>
+      </div>
+      <div class="kcards kc-ai"><a class="kcard" style="background:var(--lilac)" href="#connected-data"><span class="kcard-label">Connected market data</span><span class="kcard-num">01</span></a><a class="kcard" style="background:var(--lime)" href="#pricing-intel"><span class="kcard-label">Competitive &amp; pricing intelligence</span><span class="kcard-num">02</span></a><a class="kcard" style="background:var(--blue);color:#fff" href="#seo-audit"><span class="kcard-label">Automated SEO audits</span><span class="kcard-num">03</span></a><a class="kcard" style="background:var(--orange)" href="#ad-ops"><span class="kcard-label">Guardrailed ad operations</span><span class="kcard-num">04</span></a></div>
+
+      <section class="section">
+        <div class="section-head"><h2>Operating principles</h2></div>
+        <div class="steps">
+          <div class="step" style="background:#fff"><b>L0 · Read only</b>Pull and analyze data; change nothing.</div>
+          <div class="step" style="background:var(--lilac)"><b>L1 · Draft</b>Prepare reports, rewrites and suggestions for review.</div>
+          <div class="step" style="background:var(--lime)"><b>L2 · Approve, then act</b>Make a change only after a named person approves it.</div>
+          <div class="step" style="background:var(--ink);color:#fff"><b>L3 · Automatic</b>Reserved for low-risk, reversible tasks.</div>
+        </div>
+        <p class="ai-note">Each agent has a written charter: what it can do, what it must ask about, and what it never does — plus a data classification (public, internal, confidential). Publishing, account settings and spending always need human approval.</p>
+      </section>
+
+      <article class="case ai-case" id="connected-data" style="--c:var(--lilac)">
+        <div class="case-head"><div><span class="case-kicker">Data pipeline · Amazon US automotive parts</span><h2>Connected market data</h2><div class="tags"><span class="tag">Windsor.ai</span><span class="tag">Google Sheets</span><span class="tag">Google Ads</span><span class="tag">Amazon Seller Central</span><span class="tag">Amazon Ads</span></div></div></div>
+        <dl class="case-body"><dt>Problem</dt><dd>Google Ads sends traffic to Amazon but cannot see Amazon purchases. Every weekly report meant exporting several reports from Google Ads and Seller Central, then lining them up by date by hand.</dd><dt>How it works</dt><dd>Windsor.ai connectors read Google Ads, Amazon Seller Central (Sales &amp; Traffic and All Orders reports) and Amazon Ads, and write into a single Google Sheet: weekly overview, Google-to-Amazon comparison, KPIs, product stats, cancellations and returns. GA4 and Search Console are next, through Looker Studio.</dd><dt>Rules</dt><dd>Weeks always run Monday to Sunday. Amazon order data lags one to two days, so recent days are marked pending and backfilled. Google-to-Amazon comparisons are treated as time correlation, not attribution. Every number records its source, query and extraction date.</dd><dt>Human in the loop</dt><dd>Amazon Attribution and Brand Analytics are still exported by hand. Seller Central access is used for reading only — the AI never edits listings.</dd><dt>Result</dt><dd class="impact">The first week of joined data showed only about 6% of Google clicks became Amazon product-page sessions, because ads landed on the storefront instead of product pages. Fixing that landing path lifted click-to-product-page rate to 22%.</dd></dl>
+        
+      </article>
+      <article class="case ai-case" id="pricing-intel" style="--c:var(--lime)">
+        <div class="case-head"><div><span class="case-kicker">Market analysis · Amazon category data</span><h2>Competitive &amp; pricing intelligence</h2><div class="tags"><span class="tag">Amazon Product Opportunity Explorer</span><span class="tag">Claude</span><span class="tag">Google Sheets</span></div></div></div>
+        <dl class="case-body"><dt>Problem</dt><dd>Checking our catalog against the market meant searching Amazon product by product and comparing prices one listing at a time.</dd><dt>How it works</dt><dd>Product Opportunity Explorer exports for alternators, starters and NOx sensors are grouped and matched against our own order history. The analysis flags parts we have sold but no longer list, discontinued models, and same-part competitor prices.</dd><dt>Finding</dt><dd class="impact">All 10 NOx sensor SKUs had same-part competitors priced 72–273% lower. The problem was price, not visibility, so ads for that line were paused. Alternators made up about 93% of revenue, so budget and ad groups now prioritize alternators and starters.</dd><dt>Human in the loop</dt><dd>I download the source data and decide the strategy; the agent does the grouping and comparison.</dd></dl>
+        
+      </article>
+      <article class="case ai-case" id="seo-audit" style="--c:var(--blue)">
+        <div class="case-head"><div><span class="case-kicker">Website quality · Product pages and press releases</span><h2>Automated SEO audits</h2><div class="tags"><span class="tag">Claude</span><span class="tag">Custom web tool</span><span class="tag">Markdown reports</span></div></div></div>
+        <dl class="case-body"><dt>Scope</dt><dd>Product pages and press releases in four languages (English, Traditional Chinese, Japanese, Korean), with reports in English.</dd><dt>How it works</dt><dd>31 checks in five modules. 16 fixed rules run in the browser so results stay consistent; 15 checks need judgment, so Claude reviews meaning and drafts rewrites using only facts already on the page. Every issue is tagged: fix it myself, check the CMS first, or hand to the web vendor — and vendor items become a drafted request email. Scores are logged so trends are visible.</dd><dt>Pilot</dt><dd class="impact">On Oct 13, 2026 the audit found 13 issues across 2 pages. 7 were template-level — a meta description copying the title, a missing H1, four languages sharing one URL, and a cookie notice naming another company — which showed that fixing pages one by one would not work.</dd><dt>Human in the loop</dt><dd>I paste the page source, decide which fixes to adopt, and make the CMS changes.</dd><dt>Next</dt><dd>Time each audit against the manual process, and connect Search Console to track whether fixes move rankings.</dd></dl>
+        <div class="ai-table-wrap"><table class="ai-table"><thead><tr><th>Module</th><th>Weight</th><th>What it checks</th></tr></thead><tbody><tr><td>Technical on-page</td><td>25</td><td>Title, meta description, single H1, heading order, canonical, alt text, internal links</td></tr><tr><td>Structured data</td><td>15</td><td>Organization, Product, Article, BreadcrumbList, FAQPage</td></tr><tr><td>B2B technical content</td><td>25</td><td>Engineer search terms, spec completeness, datasheet path, applications, inquiry path</td></tr><tr><td>E-E-A-T &amp; trust</td><td>15</td><td>Company credentials, evidence for claims, consistent contact details, leftover template text</td></tr><tr><td>Multilingual &amp; AI search</td><td>20</td><td>One URL per language, hreflang, localized meta, citable summaries, FAQ, AI-crawler readability</td></tr></tbody></table></div>
+      </article>
+      <article class="case ai-case" id="ad-ops" style="--c:var(--orange)">
+        <div class="case-head"><div><span class="case-kicker">Google Ads automation · Manager account</span><h2>Guardrailed ad operations</h2><div class="tags"><span class="tag">Google Ads Scripts</span><span class="tag">Windsor.ai</span><span class="tag">Google Sheets</span></div></div></div>
+        <dl class="case-body"><dt>Problem</dt><dd>Daily monitoring meant logging in and judging by eye whether numbers looked off, and every keyword or bid change was made by hand without a record.</dd><dt>How it works</dt><dd>Scripts run at manager-account level with a Google Sheet as the control panel. Module 1 compares yesterday with 7- and 14-day averages and emails alerts when spend, clicks or CTR cross a threshold. Module 2 classifies search terms by intent and uses n-gram analysis to find wasted root words. Both are read-only. Budget suggestions and AI-drafted ad copy are next.</dd><dt>Guardrails</dt><dd>Changes are capped at ±20% per step; suggestions expire after 7 days; every change logs the original value and who approved it; data is never mixed across accounts; new ads are created paused. Each suggestion must state the observation, cause, action, expected range, and the evidence against it.</dd><dt>Executed with approval</dt><dd>Negative keywords, 9 vehicle-specific ad groups, responsive search ads, CPC caps, pausing an underperforming product line, and location settings.</dd></dl>
+        
+      </article>
+    </main>
+    <footer class="footer">
+      <nav><a href="mailto:werr2010@gmail.com">werr2010@gmail.com</a><a href="https://www.linkedin.com/in/zi-yin-ho-4795a02a6/">LinkedIn</a><a href="resume.html">Resume</a></nav>
+      <p>© 2026 Sylvia Ho. Numbers on this site use percentages or indexed values where the underlying data is confidential.</p>
+    </footer>
+  </div>
+</body>
+</html>
