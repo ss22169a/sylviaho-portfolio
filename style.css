@@ -1455,3 +1455,48 @@ a.ai-card:hover .ai-go span { transform: translateX(5px); }
   .ms-callout polyline, .ms-pwm path { stroke-dashoffset: 0; }
   .ms-bar.fast::after { transform: scaleX(.18); } .ms-bar.slow::after, .ms-temp .ms-track i { transform: scaleX(1); }
 }
+
+/* ---------- Project C: category intelligence ---------- */
+.fn-lens small strong { font-weight: 600; color: var(--ink); }
+.cx-stack { display: flex; gap: 2px; height: 42px; margin: 18px 0 15px; }
+.cx-stack i { display: block; height: 100%; min-width: 3px; transform-origin: left; transition: transform .9s cubic-bezier(.2,.7,.2,1); }
+.cx-stack i:first-child { border-radius: 4px 0 0 4px; } .cx-stack i:last-child { border-radius: 0 4px 4px 0; }
+.cx-legend { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 12px 18px; font-size: 16.5px; }
+.cx-legend li { display: grid; grid-template-columns: 14px 1fr; column-gap: 8px; align-items: baseline; }
+.cx-legend .sw { width: 14px; height: 14px; border-radius: 3px; display: inline-block; }
+.cx-legend b { font-family: "Fustat", sans-serif; font-size: 24px; font-weight: 600; margin-right: 6px; }
+.cx-legend em { grid-column: 2; font-style: normal; font-size: 14.25px; color: var(--muted); line-height: 1.4; }
+.nx-axis { display: flex; justify-content: space-between; font-size: 13.5px; color: var(--muted); margin-top: 18px; }
+.nx-track { position: relative; height: 96px; border-top: 1px solid var(--line); background: linear-gradient(90deg, transparent calc(33.33% - .5px), var(--line) calc(33.33% - .5px), var(--line) 33.33%, transparent 33.33%, transparent calc(66.66% - .5px), var(--line) calc(66.66% - .5px), var(--line) 66.66%, transparent 66.66%); }
+.nx-dot { position: absolute; width: 14px; height: 14px; margin-left: -7px; border-radius: 50%; background: #e8743b; border: 2px solid #fff; top: 14px; outline: none; }
+.nx-dot:nth-child(even) { top: 50px; }
+.nx-dot em { position: absolute; top: 18px; left: 50%; transform: translateX(-50%); font-style: normal; font-size: 13.5px; white-space: nowrap; color: var(--ink); }
+.nx-dot:hover, .nx-dot:focus-visible { background: var(--ink); }
+.cx-fixes { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 4.5px; }
+.cx-fix { background: var(--card); border-radius: var(--radius); padding: 24px 27px; display: grid; grid-template-columns: 48px 1fr; gap: 6px 12px; transition: transform .25s ease; }
+.cx-fix:hover { transform: translateY(-3px); }
+.cx-fix:nth-child(1), .cx-fix:nth-child(2) { background: var(--lime); }
+.cx-fix .fn-no { font-size: 24px; padding-top: 3px; }
+.cx-fix h3 { font-size: 24px; font-weight: 600; line-height: 1.25; margin-bottom: 9px; }
+.cx-fix p { font-size: 17.25px; line-height: 1.55; color: #333; }
+.cx-fix dl { display: grid; grid-template-columns: 150px 1fr; gap: 6px 12px; margin-top: 15px; padding-top: 12px; border-top: 1px solid rgba(0,0,0,.12); font-size: 15.75px; }
+.cx-fix dt { color: var(--muted); text-transform: uppercase; letter-spacing: .5px; font-size: 13.5px; padding-top: 2px; }
+.cx-fix dd { font-weight: 500; }
+@media (max-width: 1100px) { .cx-legend { grid-template-columns: repeat(2, minmax(0,1fr)); } .cx-fixes { grid-template-columns: 1fr; } }
+@media (max-width: 600px) { .cx-legend { grid-template-columns: 1fr; } .cx-fix { grid-template-columns: 1fr; } .cx-fix dl { grid-template-columns: 1fr; } }
+.footer nav { flex-wrap: wrap; row-gap: 6px; }
+.cx-legend li { display: block; }
+.cx-legend .sw { margin-right: 8px; vertical-align: 2px; }
+.cx-legend .lg-l { display: block; margin-top: 2px; }
+.cx-legend em { display: block; margin-top: 3px; }
+.st-chart .al-row { grid-template-columns: 1fr; gap: 4px; }
+.st-chart .al-bar { height: auto; flex-wrap: wrap; row-gap: 3px; }
+.st-chart .al-bar i { height: 16px; }
+.st-chart .al-bar em { white-space: nowrap; }
+.nx-list { display: grid; gap: 6px; margin-top: 12px; }
+.nx-row { position: relative; display: grid; grid-template-columns: 120px 1fr; gap: 12px; align-items: center; font-size: 14.25px; padding: 2px 0; outline: none; border-radius: 4px; }
+.nx-row:hover, .nx-row:focus-visible { background: var(--bg); }
+.nx-p { color: #333; font-variant-numeric: tabular-nums; padding-left: 4px; }
+.nx-bar { display: flex; align-items: center; gap: 8px; }
+.nx-bar i { display: block; height: 14px; background: #e8743b; border-radius: 0 4px 4px 0; }
+.nx-bar em { font-style: normal; font-variant-numeric: tabular-nums; }
