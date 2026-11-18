@@ -1647,3 +1647,24 @@ a.ai-card:hover .ai-go span { transform: translateX(5px); }
 .dm-zone { box-shadow: none; }
 .dm-view[data-on="hero"] .dm-zone[data-z="hero"], .dm-view[data-on="perf"] .dm-zone[data-z="perf"],
 .dm-view[data-on="spec"] .dm-zone[data-z="spec"], .dm-view[data-on="apps"] .dm-zone[data-z="apps"] { box-shadow: 0 0 0 9999px rgba(38,38,38,.45); }
+
+/* Case 01 detail */
+.page-head .case-kicker { display: block; margin-bottom: 6px; }
+.case-cta { margin-top: 24px; }
+.c1-table th:not(:first-child), .c1-table td { text-align: right; }
+.c1-table td.c1-win { background: var(--lime); color: var(--ink); font-weight: 600; border-radius: 4px; }
+.c1-embed { background: var(--card); border-radius: var(--radius); padding: 12px; margin-bottom: 4.5px; }
+.c1-embed iframe { display: block; width: 100%; aspect-ratio: 1200 / 1900; border: 0; border-radius: 4px; }
+.c1-mobile { display: none; background: var(--card); border-radius: var(--radius); padding: 21px; margin-bottom: 4.5px; font-size: 17px; color: var(--muted); }
+.c1-mobile p { margin-bottom: 12px; }
+.c1-ph { margin-top: 0; margin-bottom: 4.5px; }
+.c1-rules .c1-go { background: var(--lime); }
+.c1-rules .c1-hold { background: var(--lilac); }
+.c1-rules .c1-nogo { background: var(--orange); }
+.c1-rules .fn-k { color: var(--ink); }
+@media (max-width: 760px) {
+  .c1-embed { display: none; }
+  .c1-mobile { display: block; }
+  .c1-table { font-size: 15px; }
+  .c1-table td, .c1-table th { white-space: normal; }
+}

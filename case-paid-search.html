@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Can Paid Search Pay Off on Amazon? | Sylvia Ho</title>
+  <meta name="description" content="Funnel and break-even analysis of Google Ads traffic to an Amazon store, with a Looker Studio go/no-go dashboard." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&family=Stack+Sans+Headline:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=51bb35ae" />
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="js/matter.min.js" defer></script>
+  <script src="js/posts.js?v=51bb35ae" defer></script>
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="side-top">
+      <a href="index.html" class="logo"><span class="logo-mark" aria-hidden="true"><i class="lm lm-1"></i><i class="lm lm-2"></i><i class="lm lm-3"></i><i class="lm lm-4"></i></span>Sylvia Ho</a>
+      <button type="button" class="menu-btn" data-menu aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 16 16" width="18" height="18"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5"/></svg></button>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html" class="nav-item">Overview</a>
+      <a href="work.html" class="nav-item active" aria-current="page"><span class="nav-ind" aria-hidden="true"></span><span class="arrow">→</span>Case Studies</a>
+      <a href="projects.html" class="nav-item">Analytics Projects</a>
+      <a href="ai.html" class="nav-item">How I Use AI</a>
+      <a href="about.html" class="nav-item">About</a>
+      <a href="certifications.html" class="nav-item">Certifications</a>
+      <a href="resume.html" class="nav-item">Resume</a>
+    </nav>
+    <div class="sidebar-bottom">
+      <a href="mailto:werr2010@gmail.com" class="nav-item">Email</a>
+      <a href="https://www.linkedin.com/in/zi-yin-ho-4795a02a6/" class="nav-item">LinkedIn</a>
+      <div class="user">
+        <span class="avatar">S</span>
+        <div class="user-info"><strong>Sylvia Ho</strong><small>Hsinchu, Taiwan</small></div>
+      </div>
+    </div>
+  </aside>
+
+  <div class="page">
+    <main class="main">
+
+      <div class="page-head">
+        <div>
+          <a href="work.html#amazon-paid-search" class="back-link"><span aria-hidden="true">←</span> Case Studies</a>
+          <span class="case-kicker">Case 01 · Automotive aftermarket brand · Amazon US</span>
+          <h1 class="page-title">Can Paid Search Pay Off on Amazon?</h1>
+          <p class="page-sub">A funnel and break-even read of Google Ads traffic to an Amazon store, and the go/no-go rule that came out of it.</p>
+        </div>
+      </div>
+
+      <div class="tldr">
+        <div>Role<b>Project Manager</b></div>
+        <div>Period<b>Oct 7 – Nov 15, 2026</b></div>
+        <div>Tools<b>Google Ads · Windsor.ai · Sheets · Looker Studio</b></div>
+        <div>Result<b>Traffic quality ×4, not yet break-even → go/no-go rule</b></div>
+      </div>
+
+      <section class="section">
+        <div class="prose fn-answer">
+          <h3>The short answer</h3>
+          <p>Rebuilding the campaigns around category and vehicle pages made the traffic four times more likely to reach a product page and cut the cost of each product-page visit by 73%. It did not make the account profitable: product pages converted less often, and weekly revenue reached only <b>65%</b> of the break-even line. So the next decision is not about budget. It is a rule for when budget is allowed to move.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>1 · The metric that looked like a win</h2><span class="muted-note">S1 Oct 7–20 · S2 Oct 21 – Nov 15</span></div>
+        <div class="fn-two">
+          <div class="prose">
+            <table class="fn-table c1-table">
+              <thead><tr><th></th><th>S1 · Store home, broad terms</th><th>S2 · Category &amp; vehicle pages</th></tr></thead>
+              <tbody><tr><th>Click → product page</th><td>5.3%</td><td class="c1-win">22.3%</td></tr><tr><th>Cost per product-page session (index)</th><td>100</td><td class="c1-win">27</td></tr><tr><th>Product page → order</th><td class="c1-win">7.7%</td><td>1.8%</td></tr><tr><th>Incremental return per ad dollar</th><td class="c1-win">1.77</td><td>0.60</td></tr><tr><th>Orders</th><td>5</td><td>6</td></tr></tbody>
+            </table>
+            <p class="fn-caption">Highlighted cell = the better phase on that line. Five and six orders: read the phase comparison as directional.</p>
+          </div>
+          <div class="prose">
+            <h3>What changed my mind</h3>
+            <p>Click → product page went from 5% to 22%, which is the number a weekly report would celebrate. Put next to the next step of the funnel, it says something else: the new landing pages likely sent shoppers into a long catalog where most part numbers never sell (8 of 111 visited listings converted), so more visits ended without an order.</p>
+            <p>The incremental return, revenue above the 28-day pre-ad baseline per ad dollar, fell from 1.77 to 0.60. Break-even needs 2.9.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>2 · The dashboard</h2><span class="muted-note">Looker Studio · anonymized source</span></div>
+        
+        <div class="placeholder c1-ph"><div><b>Looker Studio dashboard: in build</b>Six modules: KPI row · two-phase funnel · daily sessions vs. baseline · budget vs. demand · cancellations · break-even simulator.</div></div>
+        <div class="fn-two">
+          <div class="prose">
+            <h3>How to read it</h3>
+            <ul>
+              <li>Use the phase filter to flip every chart between S1 and S2.</li>
+              <li>The timeline shows product-page sessions against the pre-ad baseline, with the restructure date marked.</li>
+              <li>The simulator lets you move budget and the two conversion rates. Budget scales the expected orders and the orders needed by the same factor, so only conversion moves the verdict.</li>
+            </ul>
+          </div>
+          <div class="prose">
+            <h3>What it is built with</h3>
+            <ul>
+              <li>Nine Google Sheets data sources with typed and formatted fields</li>
+              <li>Calculated fields: conversion rates, ROAS, break-even attainment, a CASE verdict</li>
+              <li>Parameters and slider controls for the what-if model</li>
+              <li>Date-range and phase filters, conditional formatting, reference line, moving average</li>
+              <li>Money shown as an index (1 unit = average daily revenue before ads), so no prices or dollar values leave the company</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>3 · The decision rule</h2><span class="muted-note">Applied every two weeks</span></div>
+        <div class="fn-lenses fn-3 c1-rules">
+          <div class="fn-lens c1-go"><span class="fn-k">Go</span><b>≥ 100%</b><small>of break-even in two consecutive two-week windows. Only then raise budget, in steps of no more than 20%.</small></div>
+          <div class="fn-lens c1-hold"><span class="fn-k">Hold</span><b>80–99%</b><small>Keep budget flat; change one thing (landing page, keyword set or bid) and read the next window.</small></div>
+          <div class="fn-lens c1-nogo"><span class="fn-k">No-go</span><b>&lt; 80%</b><small>Cut to the vehicle-specific ad groups and fix conversion first: in-stock top sellers, and landing pages that show fewer, proven part numbers.</small></div>
+        </div>
+        <p class="fn-caption">The account sits at 65% today, so the rule says no-go on scaling: fix conversion and stock before adding budget.</p>
+      </section>
+
+      <section class="section">
+        <div class="fn-two">
+          <div class="prose">
+            <h3>What I'd do next</h3>
+            <ul>
+              <li>Move budget toward on-Amazon ads for part-number searches, where buyers already know what they need.</li>
+              <li>Send Google traffic only to pages with in-stock, proven sellers, and tag every ad group with Amazon Attribution.</li>
+              <li>Keep this dashboard as the two-week check before any budget change.</li>
+            </ul>
+          </div>
+          <div class="prose">
+            <h3>The SQL behind it</h3>
+            <p>The attribution lenses, the budget-vs-demand split and the cancellation analysis are modeled in DuckDB SQL in a separate project.</p>
+            <p><a class="btn btn-light" href="funnel-analysis.html">Funnel &amp; Attribution project <span>→</span></a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <nav><a href="mailto:werr2010@gmail.com">werr2010@gmail.com</a><a href="https://www.linkedin.com/in/zi-yin-ho-4795a02a6/">LinkedIn</a><a href="resume.html">Resume</a><a href="resume.pdf" download>Resume PDF ↓</a></nav>
+      <p>© 2026 Sylvia Ho. Numbers on this site use percentages or indexed values where the underlying data is confidential.</p>
+    </footer>
+  </div>
+</body>
+</html>
