@@ -1873,3 +1873,29 @@ a.ai-card:hover .ai-go span { transform: translateX(5px); }
 .lc-svg .lc-num { font-size: 11px; font-weight: 700; fill: #fff; }
 .lc-svg .lc-q { paint-order: stroke; stroke: rgba(255,255,255,.7); stroke-width: 3px; }
 .lc-tag { font-size: 13px; font-weight: 500; color: #6b6b6b; margin-left: 6px; white-space: nowrap; }
+
+/* Case 05 · O2O pop-up */
+.o2-loop { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4.5px; counter-reset: o2; }
+.o2-loop li { background: var(--card); border-radius: var(--radius); padding: 20px 22px; display: flex; flex-direction: column; gap: 6px; position: relative; }
+.o2-loop li b { font-size: 24px; font-weight: 600; }
+.o2-loop li small { font-size: 15.75px; line-height: 1.5; color: #333; }
+.o2-loop li:nth-child(1) { border-top: 6px solid var(--blue); }
+.o2-loop li:nth-child(2) { border-top: 6px solid var(--lilac); }
+.o2-loop li:nth-child(3) { border-top: 6px solid var(--lime); }
+.o2-k { font-size: 13px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: #6b6b6b; }
+.o2-branch { margin-top: 4.5px; background: var(--card); border-radius: var(--radius); padding: 18px 22px; border-left: 6px solid var(--orange); }
+.o2-branch p { font-size: 16.5px; line-height: 1.55; color: #333; margin-top: 6px; }
+.o2-pl td:last-child { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.o2-pl small { color: #6b6b6b; font-size: 13px; }
+.o2-pl .o2-tot td { font-weight: 600; color: var(--ink); }
+.o2-sl { display: grid; grid-template-columns: 1fr 48px; gap: 6px 12px; font-size: 15px; color: #444; align-items: center; margin-top: 8px; }
+.o2-sl input { grid-column: 1; accent-color: var(--ink); }
+.o2-sl output { grid-row: 2; grid-column: 2; font-weight: 600; text-align: right; }
+.o2-out { display: flex; align-items: baseline; gap: 8px; margin: 14px 0 8px; }
+.o2-out b { font-size: 48px; font-weight: 600; line-height: 1; font-variant-numeric: tabular-nums; }
+.o2-out span { color: #6b6b6b; }
+.o2-bar { position: relative; height: 16px; background: var(--bg); border-radius: 4px; margin: 6px 0 30px; }
+.o2-bar i { display: block; height: 100%; background: var(--lime); border-radius: 4px; transition: width .2s; }
+.o2-bar em { position: absolute; top: 20px; transform: translateX(-50%); font-style: normal; font-size: 12.5px; color: #6b6b6b; white-space: nowrap; }
+.o2-bar em::before { content: ""; position: absolute; left: 50%; top: -22px; width: 1px; height: 18px; background: var(--ink); }
+@media (max-width: 900px) { .o2-loop { grid-template-columns: minmax(0, 1fr); } }
