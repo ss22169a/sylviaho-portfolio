@@ -1600,3 +1600,21 @@ a.ai-card:hover .ai-go span { transform: translateX(5px); }
 .case-skill .sk-ico { width: 22px; height: 22px; }
 .case-skill.k-blue { color: #fff; } .case-skill.k-blue .sk-ico { fill: #fff; }
 .kc-sk .sk-ico { top: auto; right: auto; left: 15px; bottom: 18px; }
+/* About: four skills */
+.ab-skills { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 4.5px; }
+.ab-skill { border-radius: var(--radius); padding: 21px 24px 24px; display: flex; flex-direction: column; gap: 12px; min-height: 340px; transition: transform .25s ease; }
+.ab-skill:hover { transform: translateY(-3px); }
+.ab-skill:hover .sk-ico { transform: rotate(45deg) scale(1.15); }
+.ab-top { display: flex; align-items: center; justify-content: space-between; }
+.ab-top .sk-ico { width: 38px; height: 38px; }
+.ab-word { font-size: 14.25px; text-transform: uppercase; letter-spacing: .8px; font-weight: 600; }
+.ab-skill h3 { font-size: 27px; font-weight: 600; line-height: 1.15; margin-top: 18px; }
+.ab-skill p { font-size: 17.25px; line-height: 1.5; }
+.ab-proof { margin-top: auto; display: flex; flex-wrap: wrap; gap: 6px; }
+.ab-proof a { background: var(--card); color: var(--ink); border-radius: 30px; padding: 4px 12px; font-size: 14.25px; }
+.ab-proof a:hover { background: var(--ink); color: #fff; }
+.ab-skill.k-blue { color: #fff; } .ab-skill.k-blue .sk-ico { fill: #fff; }
+.ab-loop { margin-top: 15px; font-size: 17.25px; color: #444; line-height: 1.5; }
+.ab-steps .step { background: var(--card); }
+@media (max-width: 1100px) { .ab-skills { grid-template-columns: repeat(2, minmax(0,1fr)); } }
+@media (max-width: 600px) { .ab-skills { grid-template-columns: 1fr; } .ab-skill { min-height: 0; } }

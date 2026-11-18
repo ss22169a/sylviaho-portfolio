@@ -65,7 +65,7 @@
     ".swatches > .swatch", ".chips > .chip", ".empty", ".pipeline", ".notice", ".legal > *",
     ".ai-grid > .ai-card", ".main > .case", ".steps > .step", ".timeline", ".two-col > .prose",
     ".main > .prose", ".jobs > .job", ".cert-grid > .cert",
-    ".fn-funnel > .fn-step", ".fn-lenses > .fn-lens", ".fn-goals > .fn-goal", ".fn-two > .prose", ".section > .prose", ".cx-fixes > .cx-fix", ".px-steps > .px-step"
+    ".fn-funnel > .fn-step", ".fn-lenses > .fn-lens", ".fn-goals > .fn-goal", ".fn-two > .prose", ".section > .prose", ".cx-fixes > .cx-fix", ".px-steps > .px-step", ".ab-skills > .ab-skill"
   ];
   var io = null;
   function reveal(el, delay) {
