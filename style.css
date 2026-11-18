@@ -1505,3 +1505,4 @@ a.ai-card:hover .ai-go span { transform: translateX(5px); }
 .cx-fix dl { border-top-color: var(--line); }
 .al-spend { background: var(--orange); }
 .al-demand { background: var(--blue); }
+.stat-num.skill { align-self: flex-start; font-size: clamp(30px, 2.5vw, 42px); line-height: 1.08; font-weight: 600; letter-spacing: -.01em; }
