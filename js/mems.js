@@ -40,3 +40,33 @@
     row.scrollBy({ left: +b.dataset.ms * w, behavior: reduce ? "auto" : "smooth" });
   });
 })();
+
+/* DM anatomy viewer: highlight a section of the page from the list. */
+(function () {
+  var v = document.querySelector("[data-dm]");
+  if (!v) return;
+  var steps = [].slice.call(v.querySelectorAll(".dm-step")), pinned = null;
+  function show(z) {
+    if (z) v.dataset.on = z; else delete v.dataset.on;
+    steps.forEach(function (s) { s.classList.toggle("on", s.dataset.z === z); });
+  }
+  steps.forEach(function (s) {
+    s.addEventListener("mouseenter", function () { show(s.dataset.z); });
+    s.addEventListener("mouseleave", function () { show(pinned); });
+    s.addEventListener("click", function () { pinned = pinned === s.dataset.z ? null : s.dataset.z; show(pinned); });
+  });
+  if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    var i = 0, timer = null;
+    new IntersectionObserver(function (en) {
+      en.forEach(function (e) {
+        if (e.isIntersecting && !timer && !pinned) {
+          timer = setInterval(function () {
+            if (pinned || v.matches(":hover")) return;
+            show(steps[i % steps.length].dataset.z); i++;
+            if (i > steps.length) { clearInterval(timer); show(null); }
+          }, 1400);
+        }
+      });
+    }, { threshold: 0.5 }).observe(v);
+  }
+})();
