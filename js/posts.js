@@ -60,7 +60,7 @@
      1) Scroll reveal
      ========================================================= */
   var GROUPS = [
-    ".list > .row", ".kcards > .kcard", ".metrics > .metric", ".charts > .panel", ".roi > .roi-card",
+    ".list > .row", ".list > li > .row", ".kcards > .kcard", ".metrics > .metric", ".charts > .panel", ".roi > .roi-card",
     ".approvals-time", ".kanban > .kcol", ".cal > .cal-cell", ".main > .guide", ".logos > .logo-tile",
     ".swatches > .swatch", ".chips > .chip", ".empty", ".pipeline", ".notice", ".legal > *",
     ".ai-grid > .ai-card", ".main > .case", ".steps > .step", ".timeline", ".two-col > .prose",
