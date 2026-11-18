@@ -1506,3 +1506,6 @@ a.ai-card:hover .ai-go span { transform: translateX(5px); }
 .al-spend { background: var(--orange); }
 .al-demand { background: var(--blue); }
 .stat-num.skill { align-self: flex-start; font-size: clamp(30px, 2.5vw, 42px); line-height: 1.08; font-weight: 600; letter-spacing: -.01em; }
+/* hero cards: two rows only (trait cards removed) */
+.stats { grid-template-rows: minmax(339px, 1fr) minmax(339px, 1fr); }
+@media (max-width: 1100px) { .stats { grid-template-rows: 240px 240px; } }
