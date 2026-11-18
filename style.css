@@ -1643,3 +1643,7 @@ a.ai-card:hover .ai-go span { transform: translateX(5px); }
 /* Overview skill cards: white text and symbols on every card */
 .stats .sk, .stats .sk .stat-num { color: #fff; }
 .stats .sk .sk-ico { fill: #fff; }
+/* DM viewer: spotlight only, no outline */
+.dm-zone { box-shadow: none; }
+.dm-view[data-on="hero"] .dm-zone[data-z="hero"], .dm-view[data-on="perf"] .dm-zone[data-z="perf"],
+.dm-view[data-on="spec"] .dm-zone[data-z="spec"], .dm-view[data-on="apps"] .dm-zone[data-z="apps"] { box-shadow: 0 0 0 9999px rgba(38,38,38,.45); }
