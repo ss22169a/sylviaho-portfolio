@@ -8,10 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&family=Stack+Sans+Headline:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=7c75143a" />
+  <link rel="stylesheet" href="style.css?v=a85cdca0" />
   <script>document.documentElement.classList.add("js");</script>
   <script src="js/matter.min.js" defer></script>
-  <script src="js/posts.js?v=7c75143a" defer></script>
+  <script src="js/posts.js?v=a85cdca0" defer></script>
 </head>
 <body>
 
@@ -64,8 +64,68 @@
         </div>
       </section>
 
+
       <section class="section">
-        <div class="section-head"><h2>1 · The three markets</h2><span class="muted-note">Amazon US, last 360 days unless noted</span></div>
+        <div class="section-head"><h2>1 · How the analysis moved</h2><span class="muted-note">Nov 3 – 11, 2026 · each step's actual output</span></div>
+        <ol class="px-steps">
+          <li class="px-step">
+            <div class="px-text"><span class="px-date">Nov 3</span><h3>Baseline the catalog and the sales</h3><p>Before looking at the market, I pulled the seller's full listing report and 22 months of orders (Windsor.ai, with Claude doing the pulls), so every later finding could be checked against what actually sells.</p></div>
+            <figure class="px-win" aria-label="All Listings Report · Order history"><figcaption><i></i><i></i><i></i><span>All Listings Report · Order history</span></figcaption><div class="px-body">
+  <table class="px-t"><thead><tr><th>Category</th><th>Listings</th></tr></thead>
+  <tbody><tr><td>Alternators</td><td>497</td></tr><tr><td>Starters</td><td>71</td></tr><tr><td>NOx sensors</td><td>10</td></tr><tr class="px-sum"><td>All listings</td><td>581</td></tr></tbody></table>
+  <p class="px-note">+ 138 order lines, Jan 2025 – Nov 2026, each tagged with category and vehicle class</p></div></figure>
+          </li>
+          <li class="px-step">
+            <div class="px-text"><span class="px-date">Nov 4</span><h3>Pull demand, a different way per category</h3><p>No single Amazon tool covered all three categories. Alternators had no unmet-demand entry, so I used matched products from seed ASINs. Starters had a clear unmet-demand list. NOx returned nothing, so I switched methods.</p></div>
+            <figure class="px-win" aria-label="Product Opportunity Explorer · three ways in"><figcaption><i></i><i></i><i></i><span>Product Opportunity Explorer · three ways in</span></figcaption><div class="px-body">
+  <div class="px-paths">
+    <div><b>Alternators</b><span>3 seed ASINs → matched products</span><em>303 competitors</em></div>
+    <div><b>Starters</b><span>Unmet demand for "starter"</span><em>251 intents → 33 vehicles + 6 accessories</em></div>
+    <div><b>NOx sensors</b><span>Unmet demand: no results → switched to matched products</span><em>101 ASINs → only 2 NOx</em></div>
+  </div></div></figure>
+          </li>
+          <li class="px-step">
+            <div class="px-text"><span class="px-date">Nov 4</span><h3>Match competitors to the catalog by part number</h3><p>I grouped the 303 alternator competitors by LESTER interchange number and joined them to 497 listings. Each match got a status, a price gap and a specific listing fix, not just a score.</p></div>
+            <figure class="px-win" aria-label="Part-number match · alternators"><figcaption><i></i><i></i><i></i><span>Part-number match · alternators</span></figcaption><div class="px-body">
+  <table class="px-t px-wide"><thead><tr><th>LESTER</th><th>Vehicles</th><th>Clicks/mo</th><th>Gap</th><th>Status</th></tr></thead>
+  <tbody>
+   <tr><td>8301</td><td>Silverado / Tahoe / Yukon 2007–14</td><td>2,636</td><td>+2%</td><td><span class="px-tag t-orange">Exact · delisted</span></td></tr>
+   <tr><td>13980</td><td>Accord / CR-V / Civic 2003–11</td><td>2,242</td><td>—</td><td><span class="px-tag t-lilac">Same vehicle</span></td></tr>
+   <tr><td>7791</td><td>F-150 / Expedition 1997–2002</td><td>621</td><td>+1%</td><td><span class="px-tag t-blue">Exact · in stock</span></td></tr>
+  </tbody></table>
+  <p class="px-note">Row 7791: the title names only the E-450 → "add F-150 / Expedition / E-150–E-350, 1997–2002"</p></div></figure>
+          </li>
+          <li class="px-step">
+            <div class="px-text"><span class="px-date">Nov 6</span><h3>Go deeper where the first pass was thin</h3><p>The first NOx pull found only two competitors. Ten more seed exports later, every listed NOx part had a same-part rival. That turned a hunch about price into evidence.</p></div>
+            <figure class="px-win" aria-label="NOx deep dive · 10 more seed exports"><figcaption><i></i><i></i><i></i><span>NOx deep dive · 10 more seed exports</span></figcaption><div class="px-body">
+  <div class="px-progress">
+    <div><span>Nov 4</span><b>2</b><em>NOx competitors in the first matched list</em></div>
+    <div class="px-arrow" aria-hidden="true">→</div>
+    <div><span>Nov 6</span><b>10 / 10</b><em>listed NOx parts with a same-part competitor found</em></div>
+  </div>
+  <p class="px-note">Also caught: the price-gap formula was off by one row. Fixed before any gap was reported.</p></div></figure>
+          </li>
+          <li class="px-step">
+            <div class="px-text"><span class="px-date">Nov 10</span><h3>Reconcile with what actually sells</h3><p>Demand data and the order log have to agree. Making the unit totals tie exposed the analysis's blind spot: most real sales come from parts the market tools never surfaced.</p></div>
+            <figure class="px-win" aria-label="Reconciliation check"><figcaption><i></i><i></i><i></i><span>Reconciliation check</span></figcaption><div class="px-body">
+  <table class="px-t"><thead><tr><th></th><th>Demand sheet</th><th>Order log</th><th></th></tr></thead>
+  <tbody><tr><td>Alternator units</td><td>79</td><td>79</td><td class="px-ok">✓</td></tr><tr><td>Starter units</td><td>7</td><td>7</td><td class="px-ok">✓</td></tr></tbody></table>
+  <p class="px-note">To make the totals tie, 37 alternator and 4 starter rows had to be added. These parts sell, but appear in no demand list.</p></div></figure>
+          </li>
+          <li class="px-step">
+            <div class="px-text"><span class="px-date">Nov 10–11</span><h3>Stress-test, then turn findings into actions</h3><p>I reviewed the results from three angles (marketplace, aftermarket parts and paid search), then built a ranked action tab. Nothing changes in the account without approval.</p></div>
+            <figure class="px-win" aria-label="Three-lens review → action tab"><figcaption><i></i><i></i><i></i><span>Three-lens review → action tab</span></figcaption><div class="px-body">
+  <div class="px-lenses">
+    <div><b>Amazon marketplace</b><span>At least 8 of 12 exact-match titles name one vehicle or no year</span></div>
+    <div><b>Aftermarket parts</b><span>Tier 3 rivals price at US$90–140; OE runs US$190–310</span></div>
+    <div><b>Google Ads</b><span>Part-number searchers convert best; the ads were buying category terms</span></div>
+  </div>
+  <p class="px-note">Output: a ranked action tab for 46 products that have sold. Every change needs approval. The NOx ad group was paused on Nov 11.</p></div></figure>
+          </li>
+        </ol>
+      </section>
+      <section class="section">
+        <div class="section-head"><h2>2 · The three markets</h2><span class="muted-note">Amazon US, last 360 days unless noted</span></div>
         <div class="fn-lenses fn-3"><div class="fn-lens"><span class="fn-k">Alternators</span><b>299,980</b>
       <small>searches a month on Amazon US. About 90,000 units sold a year at an average US$112; 7.5% returned. Seller's unit share: <strong>0.046%</strong>.</small></div><div class="fn-lens"><span class="fn-k">Starters</span><b>170,134</b>
       <small>searches a month on Amazon US. About 70,000 units sold a year at an average US$74; 4.6% returned. Seller's unit share: <strong>0.003%</strong>.</small></div><div class="fn-lens"><span class="fn-k">NOx sensors</span><b>≈ 73</b>
@@ -73,7 +133,7 @@
       </section>
 
       <section class="section">
-        <div class="section-head"><h2>2 · Alternators: whose demand is it?</h2></div>
+        <div class="section-head"><h2>3 · Alternators: whose demand is it?</h2></div>
         <div class="prose fn-chart">
           <p>58 high-demand LESTER part numbers from Amazon's matched-product lists, each mapped to the seller's catalog. Width = competitor search clicks a month (32,496 in total).</p>
           <div class="cx-stack" role="img" aria-label="Share of alternator demand by catalog status"><i style="width:12.29%;background:var(--blue)" title="Exact part, in stock: 3,994 clicks/month (12%)"></i><i style="width:12.15%;background:var(--orange)" title="Exact part, delisted: 3,948 clicks/month (12%)"></i><i style="width:67.49%;background:var(--lilac)" title="Same vehicle, different part no.: 21,933 clicks/month (67%)"></i><i style="width:8.07%;background:var(--gray)" title="Not carried: 2,621 clicks/month (8%)"></i></div>
@@ -87,13 +147,13 @@
 
       <section class="section fn-two">
         <div class="prose">
-          <h3>3 · Starters: in stock, invisible</h3>
+          <h3>4 · Starters: in stock, invisible</h3>
           <p>Starter buyers search "year + model + starter". Amazon's unmet-demand list shows four of those searches where the seller has the part in stock — but no model year in the title.</p>
           <div class="al-chart st-chart"><div class="al-row" tabindex="0"><span class="al-name">In stock — title has no model year</span><div class="al-bars"><div class="al-bar"><i class="cx-bar" style="width:19.4%"></i><em>10,152 searches · ≈535 buys/mo</em></div></div><span class="al-tip">4 search intents · seller units sold: 0</span></div><div class="al-row" tabindex="0"><span class="al-name">Same vehicle — wrong years</span><div class="al-bars"><div class="al-bar"><i class="cx-bar" style="width:14.5%"></i><em>7,582 searches · ≈319 buys/mo</em></div></div><span class="al-tip">4 search intents · seller units sold: 0</span></div><div class="al-row" tabindex="0"><span class="al-name">Same vehicle — delisted</span><div class="al-bars"><div class="al-bar"><i class="cx-bar" style="width:5.9%"></i><em>3,106 searches · ≈111 buys/mo</em></div></div><span class="al-tip">2 search intents · seller units sold: 0</span></div><div class="al-row" tabindex="0"><span class="al-name">Not carried</span><div class="al-bars"><div class="al-bar"><i class="cx-bar" style="width:100.0%"></i><em>52,421 searches · ≈2,204 buys/mo</em></div></div><span class="al-tip">23 search intents · seller units sold: 0</span></div></div>
           <p class="fn-caption">Seller starter prices sit 20–35% above the category average of US$74. GM trucks/SUVs and Honda make up most of the uncovered demand.</p>
         </div>
         <div class="prose">
-          <h3>4 · NOx sensors: a price problem in a niche</h3>
+          <h3>5 · NOx sensors: a price problem in a niche</h3>
           <p>All 10 listed NOx part numbers have a same-part aftermarket competitor. Price premium per part:</p>
           <div class="nx-list"><div class="nx-row" tabindex="0"><span class="nx-p">A0009053503</span><span class="nx-bar"><i style="width:91.0%"></i><em>+273%</em></span><span class="al-tip">13 clicks/mo</span></div><div class="nx-row" tabindex="0"><span class="nx-p">68067521AA</span><span class="nx-bar"><i style="width:82.3%"></i><em>+247%</em></span><span class="al-tip">6 clicks/mo</span></div><div class="nx-row" tabindex="0"><span class="nx-p">05149216AB</span><span class="nx-bar"><i style="width:77.0%"></i><em>+231%</em></span><span class="al-tip">3 clicks/mo</span></div><div class="nx-row" tabindex="0"><span class="nx-p">68085740AA</span><span class="nx-bar"><i style="width:60.3%"></i><em>+181%</em></span><span class="al-tip">72 clicks/mo</span></div><div class="nx-row" tabindex="0"><span class="nx-p">ME230283</span><span class="nx-bar"><i style="width:44.0%"></i><em>+132%</em></span><span class="al-tip">no click data yet</span></div><div class="nx-row" tabindex="0"><span class="nx-p">2236409</span><span class="nx-bar"><i style="width:42.3%"></i><em>+127%</em></span><span class="al-tip">16 clicks/mo</span></div><div class="nx-row" tabindex="0"><span class="nx-p">4326870</span><span class="nx-bar"><i style="width:41.3%"></i><em>+124%</em></span><span class="al-tip">80 clicks/mo</span></div><div class="nx-row" tabindex="0"><span class="nx-p">68227486AA</span><span class="nx-bar"><i style="width:39.0%"></i><em>+117%</em></span><span class="al-tip">58 clicks/mo</span></div><div class="nx-row" tabindex="0"><span class="nx-p">A0101532228</span><span class="nx-bar"><i style="width:25.7%"></i><em>+77%</em></span><span class="al-tip">72 clicks/mo</span></div><div class="nx-row" tabindex="0"><span class="nx-p">2872942</span><span class="nx-bar"><i style="width:24.0%"></i><em>+72%</em></span><span class="al-tip">24 clicks/mo</span></div></div>
           <p class="fn-caption">Premiums run from +72% to +273%, roughly Tier 2 brand pricing without Tier 2 brand recognition. All ten parts together draw about 344 competitor clicks a month. Better listings won't fix this; it needs a pricing or channel decision.</p>
@@ -101,7 +161,7 @@
       </section>
 
       <section class="section">
-        <div class="section-head"><h2>5 · What to do, in order</h2><span class="muted-note">Ranked by demand reached per hour of work</span></div>
+        <div class="section-head"><h2>6 · What to do, in order</h2><span class="muted-note">Ranked by demand reached per hour of work</span></div>
         <div class="cx-fixes">
           <article class="cx-fix"><span class="fn-no">01</span><div>
             <h3>Rewrite the 12 exact-match alternator listings</h3>
