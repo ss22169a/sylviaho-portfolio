@@ -1640,3 +1640,6 @@ a.ai-card:hover .ai-go span { transform: translateX(5px); }
 .dm-specs { display: grid; grid-template-columns: 80px 1fr; gap: 6px 12px; font-size: 14.25px; margin: 6px 0 0; }
 .dm-specs dt { color: var(--muted); text-transform: uppercase; letter-spacing: .5px; font-size: 12.75px; padding-top: 2px; }
 @media (max-width: 1100px) { .dm-view { grid-template-columns: 1fr; } .dm-side { position: static; } }
+/* Overview skill cards: white text and symbols on every card */
+.stats .sk, .stats .sk .stat-num { color: #fff; }
+.stats .sk .sk-ico { fill: #fff; }
