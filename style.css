@@ -1770,7 +1770,7 @@ a.ai-card:hover .ai-go span { transform: translateX(5px); }
 .af-gate .af-box { background: var(--card); border: 2px dashed var(--orange); }
 .af-done .af-box { background: var(--lime); }
 .af-node p { font-size: 13.5px; line-height: 1.45; color: #444; }
-.af-arrow { position: absolute; right: -19px; top: 30px; font-size: 18px; color: var(--muted); }
+.af-arrow { position: absolute; right: -19px; top: 32px; font-size: 18px; color: var(--muted); }
 .af-loop { margin-top: 12px; font-size: 14.25px; color: #444; background: var(--bg); border-radius: var(--radius); padding: 10px 14px; }
 @media (max-width: 1100px) { .af-flow { grid-template-columns: repeat(3, minmax(0, 1fr)); } .af-node:nth-child(3) .af-arrow { display: none; } }
 @media (max-width: 600px) {
