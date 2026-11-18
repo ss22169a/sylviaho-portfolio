@@ -1826,3 +1826,50 @@ a.ai-card:hover .ai-go span { transform: translateX(5px); }
   .ab-story li { padding: 20px 21px; }
   .ab-story p { font-size: 16.5px; line-height: 1.55; }
 }
+
+/* Lifecycle matrix project */
+.lc-svg { width: 100%; height: auto; display: block; margin: 12px 0 6px; }
+.lc-svg .lc-ax { font-size: 12.5px; fill: #6b6b6b; }
+.lc-svg .lc-band { font-size: 12.5px; font-weight: 600; fill: var(--ink); }
+.lc-svg .lc-q { font-size: 13px; font-weight: 700; letter-spacing: .08em; fill: var(--ink); }
+.lc-svg .lc-lab { font-size: 12.5px; font-weight: 600; fill: var(--ink); paint-order: stroke; stroke: #fff; stroke-width: 3px; }
+.lc-pt { cursor: pointer; outline: none; }
+.lc-pt:hover > :first-child, .lc-pt:focus > :first-child { stroke: var(--ink); }
+.lc-wrap { position: relative; }
+.lc-tip { position: absolute; transform: translate(-50%, calc(-100% - 12px)); width: 260px; background: var(--ink); color: #fff; border-radius: 8px; padding: 10px 12px; font-size: 13px; line-height: 1.45; pointer-events: none; opacity: 0; transition: opacity .15s; z-index: 5; }
+.lc-tip.on { opacity: 1; }
+.lc-tip b { display: block; font-weight: 600; margin-bottom: 3px; }
+.lc-tip span { display: block; color: #ddd; }
+.lc-legend { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 14px; color: #444; margin: 6px 0 4px; }
+.lc-legend li { display: flex; align-items: center; gap: 7px; }
+.lc-legend i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+.lc-legend .lc-sh { color: #6b6b6b; }
+.lc-src { display: block; font-style: normal; font-size: 13px; color: #6b6b6b; margin-top: 6px; }
+.lc-cards { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 4.5px; }
+.lc-card { background: var(--card); border-radius: var(--radius); padding: 18px; border-top: 6px solid var(--c); display: flex; flex-direction: column; gap: 8px; }
+.lc-card header b { display: block; font-size: 19px; font-weight: 600; }
+.lc-card header span { font-size: 13px; color: #6b6b6b; }
+.lc-nums { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
+.lc-nums div { background: var(--bg); border-radius: 6px; padding: 7px 8px; }
+.lc-nums em { display: block; font-style: normal; font-size: 21px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.lc-nums small { font-size: 12px; color: #6b6b6b; }
+.lc-card p { font-size: 14.25px; line-height: 1.5; color: #333; }
+.lc-card .lc-rule { font-size: 13px; color: #6b6b6b; }
+.lc-trend { margin: 12px 0; display: grid; gap: 8px; }
+.lc-tr { display: grid; grid-template-columns: 96px minmax(0, 1fr) 52px; gap: 10px; align-items: center; font-size: 15px; }
+.lc-tr span small { display: block; font-size: 12px; color: #6b6b6b; }
+.lc-tr-bar { position: relative; height: 16px; background: var(--bg); border-radius: 4px; }
+.lc-tr-bar i { position: absolute; top: 0; height: 100%; border-radius: 4px; }
+.lc-tr-bar b { position: absolute; top: -3px; bottom: -3px; width: 1px; background: var(--ink); }
+.lc-tr em { font-style: normal; font-weight: 600; text-align: right; font-variant-numeric: tabular-nums; }
+.fn-scroll { overflow-x: auto; }
+@media (max-width: 1100px) { .lc-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) {
+  .lc-cards { grid-template-columns: minmax(0, 1fr); }
+  .lc-wrap { overflow-x: auto; }
+  .lc-matrix { min-width: 620px; }
+  .lc-tip { width: 220px; }
+}
+.lc-svg .lc-num { font-size: 11px; font-weight: 700; fill: #fff; }
+.lc-svg .lc-q { paint-order: stroke; stroke: rgba(255,255,255,.7); stroke-width: 3px; }
+.lc-tag { font-size: 13px; font-weight: 500; color: #6b6b6b; margin-left: 6px; white-space: nowrap; }
