@@ -1505,3 +1505,10 @@ a.ai-card:hover .ai-go span { transform: translateX(5px); }
 .cx-fix dl { border-top-color: var(--line); }
 .al-spend { background: var(--orange); }
 .al-demand { background: var(--blue); }
+/* Featured case cards: same card motion as How I use AI */
+.fc-card .fc-stat { font-family: "Fustat", sans-serif; font-size: 42px; font-weight: 600; line-height: 1.05; letter-spacing: -.5px; }
+.fc-card p { font-size: 16.5px; opacity: .85; }
+.fc-card .tags { margin-top: auto; }
+.fc-card .tag { background: rgba(255,255,255,.55); color: inherit; }
+.fc-card[style*="color:#fff"] .tag { background: rgba(255,255,255,.18); }
+.fc-card .tag, .fc-card[style*="color:#fff"] .tag { background: var(--card); color: var(--ink); }
