@@ -1814,3 +1814,15 @@ a.ai-card:hover .ai-go span { transform: translateX(5px); }
   .c2-fin-split { grid-template-columns: minmax(0, 1fr); }
   .c2-bar.c2-bar-w { grid-template-columns: 130px minmax(0, 1fr) 56px; }
 }
+
+/* About · intro split into three stages */
+.ab-story { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4.5px; }
+.ab-story li { background: var(--card); border-radius: var(--radius); padding: 24px 27px; }
+.ab-story .ab-k { display: inline-block; font-size: 13.5px; font-weight: 600; letter-spacing: .02em; color: var(--ink); background: var(--bg); border-radius: 999px; padding: 4px 12px; margin-bottom: 12px; }
+.ab-story li:last-child .ab-k { background: var(--lime); }
+.ab-story p { font-size: 17.25px; line-height: 1.6; color: #333; }
+@media (max-width: 900px) {
+  .ab-story { grid-template-columns: minmax(0, 1fr); }
+  .ab-story li { padding: 20px 21px; }
+  .ab-story p { font-size: 16.5px; line-height: 1.55; }
+}
