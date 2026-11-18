@@ -103,7 +103,6 @@
   var SET = [
     ["flower", "var(--lilac)", 0.20, 2],
     ["blob", "var(--lime)", 0.15, 3],
-    ["clover", "var(--ink)", 0.10, 3],
     ["square", "var(--blue)", 0.07, 3],
     ["dot", "var(--orange)", 0.048, 3]
   ];
@@ -150,7 +149,7 @@
           : Bodies.circle(x, y, size * { flower: 0.46, blob: 0.45, clover: 0.44, dot: 0.49 }[type], common);
         Body.setAngle(body, rand(0, Math.PI * 2));
         Body.setAngularVelocity(body, rand(-0.05, 0.05));
-        var el = h('<div class="pshape" style="width:' + size + "px;height:" + size + 'px"><svg viewBox="-50 -50 100 100" style="fill:' + s[1] + '">' + ART[type] + "</svg></div>");
+        var el = h('<div class="pshape" data-k="' + type + '" style="width:' + size + "px;height:" + size + 'px"><svg viewBox="-50 -50 100 100" style="fill:' + s[1] + '">' + ART[type] + "</svg></div>");
         field.appendChild(el);
         bodies.push({ body: body, el: el, size: size });
       });
@@ -158,6 +157,10 @@
     }
 
     function measure() { W = hero.clientWidth; H = hero.clientHeight; }
+    $$(".stat.sk").forEach(function (c) {
+      c.addEventListener("pointerenter", function () { hero.dataset.hl = c.dataset.k; });
+      c.addEventListener("pointerleave", function () { delete hero.dataset.hl; });
+    });
 
     M.Events.on(engine, "afterUpdate", function () {
       for (var i = 0; i < bodies.length; i++) {

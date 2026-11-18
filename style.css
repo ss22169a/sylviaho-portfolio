@@ -1575,3 +1575,19 @@ a.ai-card:hover .ai-go span { transform: translateX(5px); }
 .sx-fixes .cx-fix:nth-child(1), .sx-fixes .cx-fix:nth-child(2) { background: var(--card); }
 .stat-num.skill { transform-origin: 0 100%; }
 .stat:hover .stat-num.skill, .stat:focus-visible .stat-num.skill { transform: scale(1.06); }
+
+/* Overview skill cards: symbols tied to the hero shapes */
+.sk { position: relative; }
+.sk-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; }
+.sk-ico { width: 34px; height: 34px; fill: var(--ink); }
+.stat-changes .sk-ico { fill: #fff; }
+.sk-word { font-size: 14.25px; text-transform: uppercase; letter-spacing: .8px; font-weight: 600; }
+.stat-changes, .stat-changes .stat-num { color: #fff; }
+.sk .stat-label { margin-top: 0; }
+.hero[data-hl] .pshape { opacity: .18; transition: opacity .3s; }
+.hero .pshape { transition: opacity .3s; }
+.hero[data-hl="blob"] .pshape[data-k="blob"], .hero[data-hl="square"] .pshape[data-k="square"],
+.hero[data-hl="flower"] .pshape[data-k="flower"], .hero[data-hl="dot"] .pshape[data-k="dot"] { opacity: 1; }
+.sk-ico { transition: transform .4s var(--spring); }
+.sk:hover .sk-ico { transform: rotate(45deg) scale(1.15); }
+.sk { justify-content: space-between; } .sk-ico { width: 40px; height: 40px; }
