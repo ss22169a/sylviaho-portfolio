@@ -1792,3 +1792,25 @@ a.ai-card:hover .ai-go span { transform: translateX(5px); }
 .al-demo small { font-size: 13px; color: var(--muted); }
 @keyframes alPulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(255,146,90,.55); } 50% { box-shadow: 0 0 0 7px rgba(255,146,90,0); } }
 @media (prefers-reduced-motion: reduce) { .al-pop { transition: none; } .al-ico { animation: none; } }
+
+/* Case 02 · financial-report module */
+.c2-fin { width: 100%; border-collapse: collapse; font-size: 14.25px; }
+.c2-fin th, .c2-fin td { text-align: left; padding: 10px 9px; border-bottom: 1px solid var(--bg); vertical-align: top; }
+.c2-fin thead th { font-size: 12px; font-weight: 600; color: #6b6b6b; text-transform: uppercase; letter-spacing: .04em; }
+.c2-fin small { display: block; color: #6b6b6b; font-size: 12.5px; margin-top: 3px; line-height: 1.4; }
+.c2-fin th b { font-weight: 600; }
+.c2-fin .c2-num { font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.c2-gbar { display: grid; grid-template-columns: minmax(0, 1fr) 58px; gap: 9px; align-items: center; }
+.c2-gbar i { display: block; height: 14px; border-radius: 4px; background: var(--blue); }
+.c2-gbar b { font-weight: 600; text-align: right; font-variant-numeric: tabular-nums; }
+.c2-fin-split { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 24px; margin-top: 18px; align-items: start; }
+.c2-bar.c2-bar-w { grid-template-columns: 170px minmax(0, 1fr) 62px; }
+.c2-kpis { display: grid; grid-template-columns: 1fr 1fr; gap: 4.5px; margin: 6px 0 10px; }
+.c2-kpis div { background: var(--bg); border-radius: 6px; padding: 10px 12px; }
+.c2-kpis b { display: block; font-size: 22px; font-weight: 600; }
+.c2-kpis small { color: #6b6b6b; font-size: 12.5px; }
+@media (max-width: 640px) {
+  .c2-scroll .c2-fin { min-width: 620px; }
+  .c2-fin-split { grid-template-columns: minmax(0, 1fr); }
+  .c2-bar.c2-bar-w { grid-template-columns: 130px minmax(0, 1fr) 56px; }
+}
