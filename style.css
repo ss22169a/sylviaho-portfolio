@@ -1778,3 +1778,17 @@ a.ai-card:hover .ai-go span { transform: translateX(5px); }
   .af-node:nth-child(3) .af-arrow { display: block; }
   .af-arrow { right: auto; left: 18px; top: auto; bottom: -24px; transform: rotate(90deg); }
 }
+
+/* Ad-ops alert demo */
+.al-demo { margin-top: 18px; display: grid; justify-items: start; gap: 6px; }
+.al-pop { display: flex; align-items: flex-start; gap: 12px; max-width: 460px; background: var(--ink); color: #fff; border-radius: var(--radius); padding: 14px 44px 14px 14px; position: relative; box-shadow: 0 10px 28px rgba(38,38,38,.18); opacity: 0; transform: translateY(14px) scale(.98); transition: opacity .45s ease, transform .45s ease; }
+.al-demo.show .al-pop { opacity: 1; transform: none; }
+.al-demo.gone .al-pop { opacity: 0; transform: translateY(-6px); pointer-events: none; }
+.al-ico { flex: none; width: 26px; height: 26px; border-radius: 50%; background: var(--orange); color: var(--ink); display: grid; place-items: center; font-weight: 700; animation: alPulse 1.6s ease-in-out infinite; }
+.al-pop b { display: block; font-size: 15.75px; font-weight: 600; margin-bottom: 2px; }
+.al-pop p { font-size: 14.25px; color: #d9d9d9; line-height: 1.45; }
+.al-x { position: absolute; top: 8px; right: 10px; background: none; border: 0; color: #bdbdbd; font-size: 20px; line-height: 1; cursor: pointer; padding: 4px; }
+.al-x:hover { color: #fff; }
+.al-demo small { font-size: 13px; color: var(--muted); }
+@keyframes alPulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(255,146,90,.55); } 50% { box-shadow: 0 0 0 7px rgba(255,146,90,0); } }
+@media (prefers-reduced-motion: reduce) { .al-pop { transition: none; } .al-ico { animation: none; } }

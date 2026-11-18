@@ -70,3 +70,14 @@
     }, { threshold: 0.5 }).observe(v);
   }
 })();
+
+/* Ad-ops alert demo: slide in when visible, dismiss, re-appear after a pause */
+(function () {
+  var d = document.querySelector('.al-demo'); if (!d) return;
+  var x = d.querySelector('.al-x'), t;
+  function show() { d.classList.remove('gone'); d.classList.add('show'); }
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (es, o) { es.forEach(function (e) { if (e.isIntersecting) { setTimeout(show, 400); o.disconnect(); } }); }, { threshold: 0.6 }).observe(d);
+  } else { show(); }
+  x.addEventListener('click', function () { d.classList.add('gone'); clearTimeout(t); t = setTimeout(show, 4000); });
+})();

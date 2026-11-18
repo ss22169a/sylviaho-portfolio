@@ -8,11 +8,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&family=Stack+Sans+Headline:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=39410d26" />
+  <link rel="stylesheet" href="style.css?v=f61104e0" />
   <script>document.documentElement.classList.add("js");</script>
   <script src="js/matter.min.js" defer></script>
-  <script src="js/posts.js?v=39410d26" defer></script>
-  <script src="js/mems.js?v=39410d26" defer></script>
+  <script src="js/posts.js?v=f61104e0" defer></script>
+  <script src="js/mems.js?v=f61104e0" defer></script>
 </head>
 <body>
 
@@ -87,7 +87,7 @@
       <article class="case ai-case" id="ad-ops" style="--c:var(--orange)">
         <div class="case-head"><div><span class="case-kicker">Google Ads automation · Manager account</span><h2>Guardrailed ad operations</h2><div class="tags"><span class="tag">Google Ads Scripts</span><span class="tag">Windsor.ai</span><span class="tag">Google Sheets</span></div></div></div>
         <dl class="case-body"><dt>Problem</dt><dd>Daily monitoring meant logging in and judging by eye whether numbers looked off, and every keyword or bid change was made by hand without a record.</dd><dt>How it works</dt><dd>Scripts run at manager-account level with a Google Sheet as the control panel. Module 1 compares yesterday with 7- and 14-day averages and emails alerts when spend, clicks or CTR cross a threshold. Module 2 classifies search terms by intent and uses n-gram analysis to find wasted root words. Both are read-only. Budget suggestions and AI-drafted ad copy are next.</dd><dt>Guardrails</dt><dd>Changes are capped at ±20% per step; suggestions expire after 7 days; every change logs the original value and who approved it; data is never mixed across accounts; new ads are created paused. Each suggestion must state the observation, cause, action, expected range, and the evidence against it.</dd><dt>Executed with approval</dt><dd>Negative keywords, 9 vehicle-specific ad groups, responsive search ads, CPC caps, pausing an underperforming product line, and location settings.</dd></dl>
-        
+        <div class="al-demo" role="status" aria-live="polite"><div class="al-pop"><span class="al-ico" aria-hidden="true">!</span><div><b>Account alert: manual check needed</b><p>Spend is above the 7-day average threshold. Please review and correct by hand.</p></div><button type="button" class="al-x" aria-label="Dismiss alert">×</button></div><small>Example of the alert that brings a person in</small></div>
       </article>
       <article class="case ai-case" id="agent-spec" style="--c:var(--lime)">
         <div class="case-head"><div><span class="case-kicker">Agent design · The brief every agent gets</span><h2>Multi-agent workflow setup</h2><div class="tags"><span class="tag">LLM Agent</span><span class="tag">MCP connectors</span><span class="tag">Google Sheets</span></div></div></div>
