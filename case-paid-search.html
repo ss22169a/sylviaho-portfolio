@@ -8,10 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&family=Stack+Sans+Headline:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=51bb35ae" />
+  <link rel="stylesheet" href="style.css?v=bdc37ccb" />
   <script>document.documentElement.classList.add("js");</script>
   <script src="js/matter.min.js" defer></script>
-  <script src="js/posts.js?v=51bb35ae" defer></script>
+  <script src="js/posts.js?v=bdc37ccb" defer></script>
 </head>
 <body>
 
@@ -86,23 +86,27 @@
       <section class="section">
         <div class="section-head"><h2>2 · The dashboard</h2><span class="muted-note">Looker Studio · anonymized source</span></div>
         
-        <div class="placeholder c1-ph"><div><b>Looker Studio dashboard: in build</b>Six modules: KPI row · two-phase funnel · daily sessions vs. baseline · budget vs. demand · cancellations · break-even simulator.</div></div>
+        <div class="c1-embed">
+          <iframe src="https://lookerstudio.google.com/embed/reporting/3519cf76-eaa2-4695-9b73-3ce2ed366881/page/TlJ0C" title="Case 01 go/no-go dashboard (Looker Studio)" loading="lazy" allowfullscreen
+                  sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+        </div>
+        <div class="c1-mobile"><p>The dashboard is built for a wide screen.</p><a class="btn btn-dark" href="https://lookerstudio.google.com/reporting/3519cf76-eaa2-4695-9b73-3ce2ed366881/page/TlJ0C" target="_blank" rel="noopener">Open in Looker Studio <span>→</span></a></div>
         <div class="fn-two">
           <div class="prose">
             <h3>How to read it</h3>
             <ul>
               <li>Use the phase filter to flip every chart between S1 and S2.</li>
-              <li>The timeline shows product-page sessions against the pre-ad baseline, with the restructure date marked.</li>
+              <li>The timeline shows daily product-page sessions against the pre-ad baseline; S2 starts on Oct 21.</li>
               <li>The simulator lets you move budget and the two conversion rates. Budget scales the expected orders and the orders needed by the same factor, so only conversion moves the verdict.</li>
             </ul>
           </div>
           <div class="prose">
             <h3>What it is built with</h3>
             <ul>
-              <li>Nine Google Sheets data sources with typed and formatted fields</li>
-              <li>Calculated fields: conversion rates, ROAS, break-even attainment, a CASE verdict</li>
+              <li>Five Google Sheets data sources with typed and formatted fields</li>
+              <li>Calculated fields: conversion rates, ROAS, break-even attainment, simulated attainment</li>
               <li>Parameters and slider controls for the what-if model</li>
-              <li>Date-range and phase filters, conditional formatting, reference line, moving average</li>
+              <li>A phase filter, log-scale funnel, baseline line and a brand-matched theme</li>
               <li>Money shown as an index (1 unit = average daily revenue before ads), so no prices or dollar values leave the company</li>
             </ul>
           </div>
