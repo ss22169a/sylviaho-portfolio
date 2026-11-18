@@ -1573,3 +1573,5 @@ a.ai-card:hover .ai-go span { transform: translateX(5px); }
 @media (max-width: 1100px) { .sx-out { grid-template-columns: 1fr; } }
 .sx-slide input[type=range] { color: var(--ink); accent-color: var(--ink); border: 0; }
 .sx-fixes .cx-fix:nth-child(1), .sx-fixes .cx-fix:nth-child(2) { background: var(--card); }
+.stat-num.skill { transform-origin: 0 100%; }
+.stat:hover .stat-num.skill, .stat:focus-visible .stat-num.skill { transform: scale(1.06); }
