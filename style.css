@@ -1591,3 +1591,12 @@ a.ai-card:hover .ai-go span { transform: translateX(5px); }
 .sk-ico { transition: transform .4s var(--spring); }
 .sk:hover .sk-ico { transform: rotate(45deg) scale(1.15); }
 .sk { justify-content: space-between; } .sk-ico { width: 40px; height: 40px; }
+/* Case Studies: skill color + symbol */
+.kc-sk { position: relative; }
+.kc-sk .sk-ico { position: absolute; top: 15px; right: 15px; width: 30px; height: 30px; }
+.kc-sk.k-blue, .kc-sk.k-blue .kcard-num { color: #fff; }
+.kc-sk.k-blue .sk-ico { fill: #fff; }
+.case-skill { display: inline-flex; align-items: center; gap: 9px; flex-shrink: 0; border-radius: 30px; padding: 6px 15px 6px 9px; font-size: 15.75px; font-weight: 500; white-space: nowrap; }
+.case-skill .sk-ico { width: 22px; height: 22px; }
+.case-skill.k-blue { color: #fff; } .case-skill.k-blue .sk-ico { fill: #fff; }
+.kc-sk .sk-ico { top: auto; right: auto; left: 15px; bottom: 18px; }
