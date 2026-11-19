@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Can AI Data Centers Pull Hydrogen Forward? | Sylvia Ho</title>
+  <meta name="description" content="From grid bottleneck to an opportunity matrix: a scenario model of fuel-cell and hydrogen demand from AI data centers, built on IEA and Berkeley Lab data." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&family=Stack+Sans+Headline:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=aa725f4c" />
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="js/matter.min.js" defer></script>
+  <script src="js/posts.js?v=aa725f4c" defer></script>
+  <script src="js/lifecycle.js?v=aa725f4c" defer></script>
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="side-top">
+      <a href="index.html" class="logo"><span class="logo-mark" aria-hidden="true"><i class="lm lm-1"></i><i class="lm lm-2"></i><i class="lm lm-3"></i><i class="lm lm-4"></i></span>Sylvia Ho</a>
+      <button type="button" class="menu-btn" data-menu aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 16 16" width="18" height="18"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5"/></svg></button>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html" class="nav-item">Overview</a>
+      <a href="work.html" class="nav-item">Case Studies</a>
+      <a href="projects.html" class="nav-item active" aria-current="page"><span class="nav-ind" aria-hidden="true"></span><span class="arrow">→</span>Analytics Projects</a>
+      <a href="ai.html" class="nav-item">How I Use AI</a>
+      <a href="about.html" class="nav-item">About</a>
+      <a href="certifications.html" class="nav-item">Certifications</a>
+      <a href="resume.html" class="nav-item">Resume</a>
+    </nav>
+    <div class="sidebar-bottom">
+      <a href="mailto:werr2010@gmail.com" class="nav-item">Email</a>
+      <a href="https://www.linkedin.com/in/zi-yin-ho-4795a02a6/" class="nav-item">LinkedIn</a>
+      <div class="user">
+        <span class="avatar">S</span>
+        <div class="user-info"><strong>Sylvia Ho</strong><small>Hsinchu, Taiwan</small></div>
+      </div>
+    </div>
+  </aside>
+
+  <div class="page">
+    <main class="main">
+
+      <div class="page-head">
+        <div>
+          <a href="projects.html" class="back-link"><span aria-hidden="true">←</span> Analytics Projects</a>
+          <h1 class="page-title">Can AI Data Centers Pull Hydrogen Forward? From Grid Bottleneck to an Opportunity Matrix</h1>
+          <p class="page-sub">AI data centers need power faster than grids can connect it. Does that create real demand for fuel cells, electrolyzers and hydrogen, and if so, where and when should a supplier enter?</p>
+        </div>
+      </div>
+
+      <div class="tldr fn-tldr">
+        <div>Scope<b>Global, with the U.S. as the largest market</b></div>
+        <div>Sources<b>IEA first; LBNL; company filings · grade A/B</b></div>
+        <div>Method<b>Top-down demand · bottom-up supply · scenarios</b></div>
+        <div>Output<b>Opportunity matrix and four moves</b></div>
+      </div>
+
+      <section class="section">
+        <div class="prose fn-answer">
+          <h3>The short answer</h3>
+          <p>Yes for fuel cells, not yet for hydrogen. Grid connections now take over five years, so data centers are buying on-site power, and fuel cells are winning real contracts. But those fuel cells mostly burn natural gas. In the base case, data centers pull about <b>3 GW of fuel cells</b> by 2030 but only <b>~65 kt of hydrogen</b> a year, needing about <b>0.8 GW of electrolyzers</b>, small next to the market. The hydrogen pull arrives when fuel switching gets cheaper, so the near-term opportunity is fuel cells and the components that must be in place before the switch, such as hydrogen safety sensing.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>1 · The problem: power demand outruns the grid</h2><span class="muted-note">IEA · LBNL · grade A</span></div>
+        <div class="fn-lenses fn-3">
+          <div class="fn-lens"><span class="fn-k">Data center electricity</span><b>415 → 945 TWh</b><small>2024 to 2030, about 15% a year. The U.S. uses 45% of it, and data centers drive nearly half of U.S. demand growth to 2030. <em class="lc-src">IEA, Energy and AI (2025) · A</em></small></div>
+          <div class="fn-lens"><span class="fn-k">Wait for a grid connection</span><b>61 months</b><small>Median from request to operation for U.S. projects built in 2025, up from 36 months in 2015. <em class="lc-src">LBNL, Queued Up 2026 · A</em></small></div>
+          <div class="fn-lens"><span class="fn-k">What fills the gap</span><b>Gas first</b><small>Natural gas adds about 175 TWh for data centers by 2030 in the IEA Base Case, and gas capacity in U.S. queues rose 86% in 2025. <em class="lc-src">IEA · LBNL · A</em></small></div>
+        </div>
+        <p class="fn-caption">Added data center demand of 530 TWh by 2030 equals about <b>61 GW</b> of average round-the-clock load. That is the pool every on-site power option competes for.</p>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>2 · Why fuel cells win orders, and why that isn't hydrogen yet</h2></div>
+        <div class="fn-two">
+          <div class="prose">
+            <h3>Speed beats cost per MWh</h3>
+            <ul>
+              <li><b>Time to power:</b> Bloom Energy reports deploying 50 MW in about 90 days, against a five-year grid wait. <em class="lc-src">Company disclosures · B</em></li>
+              <li><b>Contracts at scale:</b> an agreement for up to 1 GW with AEP (2024), an Oracle collaboration (2025) and a $5B Brookfield partnership for AI data centers (2025).</li>
+              <li><b>Revenue:</b> $2.02B in 2025 (+37%), with 2026 guidance of $3.1–3.3B and factory capacity moving from 1 to 2 GW a year. <em class="lc-src">Bloom Energy Q4 2025 results · A</em></li>
+            </ul>
+          </div>
+          <div class="prose">
+            <h3>The fuel path decides electrolyzer timing</h3>
+            <ul>
+              <li>These solid-oxide fuel cells run on natural gas today and can switch to hydrogen. The company does not disclose how many will.</li>
+              <li>The cost gap between fossil and low-emission hydrogen has widened since 2022, so switching is not yet economic. <em class="lc-src">IEA, Global Hydrogen Review 2025 · A</em></li>
+              <li>So data center fuel-cell orders are a leading indicator for hydrogen, not hydrogen demand themselves.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>3 · Supply: electrolyzers have capacity, not orders</h2><span class="muted-note">IEA Global Hydrogen Review 2025–2026 · A</span></div>
+        <div class="fn-lenses fn-3">
+          <div class="fn-lens"><span class="fn-k">Installed electrolysis</span><b>2 → 4+ GW</b><small>Global installed water electrolysis doubled from 2024 to 2025. China holds about 65% of installed and FID capacity.</small></div>
+          <div class="fn-lens"><span class="fn-k">Factory utilisation</span><b>~9%</b><small>About 58 GW a year of manufacturing capacity at end-2025, but under 5 GW actually produced.</small></div>
+          <div class="fn-lens"><span class="fn-k">Projects past FID</span><b>6%</b><small>Only 6% of announced low-emission production had reached a final investment decision, and new FIDs fell in 2025 for the first time.</small></div>
+        </div>
+        <p class="fn-caption">Filtering announcements by FID is the same rule as grading sources: only commitments with money behind them count.</p>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>4 · Scenario model: how much hydrogen could data centers pull by 2030?</h2></div>
+        <div class="prose fn-chart">
+          <div class="fn-scroll"><table class="fn-table h2-sc"><thead><tr><th>Scenario</th><th>Share of added load on fuel cells</th><th>Fuel-cell capacity</th><th>Share running on H₂</th><th>H₂ demand / yr</th><th>Electrolyzers needed</th></tr></thead><tbody><tr><td>Low</td><td>2%</td><td>1.2 GW</td><td>0%</td><td>0 kt</td><td>0.0 GW</td></tr><tr class="o2-tot"><td>Base</td><td>5%</td><td>3.0 GW</td><td>5%</td><td>65 kt</td><td>0.8 GW</td></tr><tr><td>High</td><td>10%</td><td>6.1 GW</td><td>20%</td><td>520 kt</td><td>6.2 GW</td></tr></tbody></table></div>
+          <p class="fn-caption">Assumptions: 61 GW added load (IEA); fuel cells at 55% efficiency and 90% uptime; electrolysis at 52 kWh/kg and 50% utilisation. Scenario shares are my judgment, set against Bloom's planned 2 GW a year of factory capacity, so even the high case stays within what suppliers can build.</p>
+          <p><b>Reading it:</b> even the high case (6 GW of electrolyzers) is below one year of the ~9 GW a year the IEA expects from FID projects. Data centers will not rescue electrolyzer makers by 2030. They will build the installed base of fuel cells that hydrogen can later run through.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>5 · Opportunity matrix</h2><span class="muted-note">Hover or tab to a point</span></div>
+        <div class="prose fn-chart">
+          <div class="lc-wrap"><svg class="lc-svg" viewBox="0 0 720 440" role="img" aria-label="Opportunity matrix: six options placed by when revenue starts and how strong the evidence is"><rect x="86.0" y="16" width="206.0" height="372" fill="var(--bg)"/><rect x="292.0" y="16" width="206.0" height="372" fill="#fff"/><rect x="498.0" y="16" width="206.0" height="372" fill="var(--bg)"/><line x1="86" x2="704" y1="202.0" y2="202.0" stroke="var(--gray)" stroke-dasharray="4 4"/><text x="189.0" y="408" text-anchor="middle" class="lc-ax">Now</text><text x="395.0" y="408" text-anchor="middle" class="lc-ax">2027–2029</text><text x="601.0" y="408" text-anchor="middle" class="lc-ax">2030+</text><text x="395.0" y="432" text-anchor="middle" class="lc-ax">When revenue starts →</text><text x="78" y="62.5" text-anchor="end" class="lc-ax">Contracts</text><text x="78" y="202.0" text-anchor="end" class="lc-ax">Pilots</text><text x="78" y="341.5" text-anchor="end" class="lc-ax">Promises</text><text transform="translate(12,202.0) rotate(-90)" text-anchor="middle" class="lc-ax">Evidence strength</text><g class="lc-pt" tabindex="0" data-tip="Gas-fed fuel cells as prime power | Signed GW-scale contracts and reported revenue"><circle cx="163.2" cy="62.5" r="12" fill="var(--lime)" stroke="#fff" stroke-width="2"/><text x="163.2" y="66.5" text-anchor="middle" class="lc-num" style="fill:#262626">1</text></g><text x="179.2" y="66.5" text-anchor="start" class="lc-lab">Gas-fed fuel cells as prime power</text><g class="lc-pt" tabindex="0" data-tip="Gas turbines (competing option) | Gas capacity in U.S. queues up 86% in 2025"><circle cx="256.0" cy="118.3" r="12" fill="var(--gray)" stroke="#fff" stroke-width="2"/><text x="256.0" y="122.3" text-anchor="middle" class="lc-num" style="fill:#262626">2</text></g><text x="272.0" y="122.3" text-anchor="start" class="lc-lab">Gas turbines (competing option)</text><g class="lc-pt" tabindex="0" data-tip="Fuel cells replacing diesel backup | Pilots, no volume yet"><circle cx="456.8" cy="211.3" r="12" fill="var(--blue)" stroke="#fff" stroke-width="2"/><text x="456.8" y="215.3" text-anchor="middle" class="lc-num" style="fill:#262626">3</text></g><text x="472.8" y="215.3" text-anchor="start" class="lc-lab">Fuel cells replacing diesel backup</text><g class="lc-pt" tabindex="0" data-tip="H2 safety sensing &amp; leak detection | Required by code wherever hydrogen is stored or used"><circle cx="379.6" cy="146.2" r="12" fill="var(--orange)" stroke="#fff" stroke-width="2"/><text x="379.6" y="150.2" text-anchor="middle" class="lc-num" style="fill:#262626">4</text></g><text x="395.6" y="150.2" text-anchor="start" class="lc-lab">H2 safety sensing &amp; leak detection</text><g class="lc-pt" tabindex="0" data-tip="Hydrogen-ready fuel switching | Equipment can switch; fuel cost decides when"><circle cx="580.4" cy="276.4" r="12" fill="var(--lilac)" stroke="#fff" stroke-width="2"/><text x="580.4" y="280.4" text-anchor="middle" class="lc-num" style="fill:#262626">5</text></g><text x="564.4" y="280.4" text-anchor="end" class="lc-lab">Hydrogen-ready fuel switching</text><g class="lc-pt" tabindex="0" data-tip="On-site electrolysis for data centers | Few FIDs; new FIDs fell in 2025"><circle cx="657.6" cy="332.2" r="12" fill="var(--lilac)" stroke="#fff" stroke-width="2"/><text x="657.6" y="336.2" text-anchor="middle" class="lc-num" style="fill:#262626">6</text></g><text x="641.6" y="336.2" text-anchor="end" class="lc-lab">On-site electrolysis for data centers</text></svg><div class="lc-tip" role="status" aria-live="polite"></div></div>
+          <p class="fn-caption">Top-left is where money is moving now; bottom-right is where announcements outnumber contracts. Hydrogen safety sensing sits in the middle: required by fire and building codes (such as NFPA 2) wherever hydrogen is stored or used, so its volume follows every hydrogen deployment, including indoor and containerised units. See <a href="case-hydrogen-evidence.html">Case 02</a> for the sensor-side evidence base.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>6 · Four moves</h2></div>
+        <div class="cx-fixes">
+          <article class="cx-fix"><span class="fn-no">01</span><div><h3>Sell into the gas-fed fuel-cell wave now</h3><p>Fuel cells are the only hydrogen-adjacent technology with GW contracts and reported revenue. Pitch speed to power; treat "hydrogen-ready" as option value, not the headline.</p></div></article>
+          <article class="cx-fix"><span class="fn-no">02</span><div><h3>Design components in before the fuel switch</h3><p>Sensors, valves and thermal parts take years to qualify with fuel-cell makers. Qualifying now means being specified when hydrogen arrives, and codes make leak detection non-optional.</p></div></article>
+          <article class="cx-fix"><span class="fn-no">03</span><div><h3>Treat data-center electrolysis as a 2030+ option</h3><p>Low FID conversion and ~9% factory utilisation say supply is not the constraint; demand is. Don't build capacity on data-center narratives.</p></div></article>
+          <article class="cx-fix"><span class="fn-no">04</span><div><h3>Watch four triggers each quarter</h3><p>Data-center fuel-cell MW signed; share fuelled by hydrogen; new electrolyzer FIDs; and the LBNL grid wait. If the grid wait shortens, the fuel-cell case weakens too.</p></div></article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>Limits, stated plainly</h2></div>
+        <div class="prose">
+          <ul>
+            <li>Fuel-cell and hydrogen shares in the scenarios are assumptions, not forecasts; the table shows how the answer moves when they change.</li>
+            <li>Company figures come from earnings releases and disclosures; contract sizes are "up to" amounts, not delivered capacity.</li>
+            <li>Industry-group numbers (such as the Hydrogen Council) are not used for sizing because they tend to run optimistic; the IEA is the base.</li>
+            <li>Cost per MWh by technology is not compared in numbers here: public figures for fuel cells serving data centers are too sparse to grade A or B.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <nav><a href="mailto:werr2010@gmail.com">werr2010@gmail.com</a><a href="https://www.linkedin.com/in/zi-yin-ho-4795a02a6/">LinkedIn</a><a href="resume.html">Resume</a><a href="resume.pdf" download>Resume PDF ↓</a></nav>
+      <p>© 2026 Sylvia Ho. Numbers on this site use percentages or indexed values where the underlying data is confidential.</p>
+    </footer>
+  </div>
+</body>
+</html>
