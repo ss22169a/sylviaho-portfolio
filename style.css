@@ -2062,7 +2062,7 @@ a.em-link { color:var(--ink); }
   .ds-table.st-plan.ai-sig td:nth-child(3)::before { content: "Off track: "; }
   .ds-table.st-plan.ai-sig td:nth-child(4)::before { content: "Then: "; }
 }
-.section > .prose + .prose, .section > .prose + .fn-scroll, .section > .fn-scroll + .prose { margin-top: 4.5px; }
+.section:not(.two-col):not(.fn-two) > .prose + .prose, .section:not(.two-col):not(.fn-two) > .prose + .fn-scroll, .section:not(.two-col):not(.fn-two) > .fn-scroll + .prose { margin-top: 4.5px; }
 .kc-proj { grid-template-columns: 1.4fr repeat(3, 1fr); margin-bottom: 18px; }
 @media (max-width: 760px) { .kc-proj { grid-template-columns: repeat(2, 1fr); } }
 /* Filter tiles: no outline; the chosen tile stays in color, the rest fade (same motion as Career path) */
