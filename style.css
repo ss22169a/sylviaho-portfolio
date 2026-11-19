@@ -1899,3 +1899,10 @@ a.ai-card:hover .ai-go span { transform: translateX(5px); }
 .o2-bar em { position: absolute; top: 20px; transform: translateX(-50%); font-style: normal; font-size: 12.5px; color: #6b6b6b; white-space: nowrap; }
 .o2-bar em::before { content: ""; position: absolute; left: 50%; top: -22px; width: 1px; height: 18px; background: var(--ink); }
 @media (max-width: 900px) { .o2-loop { grid-template-columns: minmax(0, 1fr); } }
+.af-svg { width: 100%; max-width: 760px; height: auto; display: block; }
+.af-svg .af-t { font-size: 14px; fill: #262626; }
+.af-svg .af-b { font-weight: 600; font-size: 15.5px; }
+.af-svg .af-w { fill: #fff; }
+.af-svg .af-o { fill: #c25a1c; font-size: 13px; }
+@media (max-width: 640px) { .af-scroll { overflow-x: auto; } .af-svg { min-width: 560px; } }
+.af-svg .af-halo { paint-order: stroke; stroke: #fff; stroke-width: 5px; }
