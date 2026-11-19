@@ -1,0 +1,18 @@
+signal_id,metric,period,value,unit,evidence_grade,source,url
+M1,retail_sales_total_yoy,2025,-0.002,share,A,"MOEA via Commercial Times",https://www.ctee.com.tw/news/20260127700708-431202
+M2,online_sales_from_physical_retailers_share,2024,0.31,share,A,"MOEA via UDN",https://money.udn.com/money/story/8888/8565228
+M3,momo_revenue,2025,1086.7,NTD 100m,A,"Fubon Media FY2025 results via TechNews",https://finance.technews.tw/2026/03/09/momo-20260309/
+M3,momo_revenue_yoy,2025,-0.035,share,A,"Fubon Media FY2025 results via TechNews",https://finance.technews.tw/2026/03/09/momo-20260309/
+M3,momo_operating_profit_yoy,2025,-0.221,share,A,"Fubon Media FY2025 results via TechNews",https://finance.technews.tw/2026/03/09/momo-20260309/
+M4,momo_revenue_yoy,2024,0.03,share,A,"Fubon Media via Business Next",https://www.bnext.com.tw/article/82733/momo-2025-pressanualmeet
+M5,pchome_revenue_yoy_h1,2025,-0.042,share,A,"PChome monthly revenue via Economic Daily",https://money.udn.com/money/story/5607/8864500
+M6,coupang_developing_offerings_revenue,2025,4.942,USD bn,A,"Coupang Q4 2025 earnings release",https://ir.aboutcoupang.com/news-events/news/news-details/2026/Coupang-Announces-Results-for-Fourth-Quarter-2025/default.aspx
+M6,coupang_developing_offerings_yoy,2025,0.38,share,A,"Coupang Q4 2025 earnings release",https://ir.aboutcoupang.com/news-events/news/news-details/2026/Coupang-Announces-Results-for-Fourth-Quarter-2025/default.aspx
+M7,coupang_taiwan_growth,2025Q4,triple-digit,text,A,"Coupang Q4 2025 earnings call",https://allmind.ai/earnings/event/bt_CPNG_2025_Q4
+M8,crossborder_import_parcels,2025,65,million,B,"Future Commerce Institute analysis of customs data",https://www.managertoday.com.tw/articles/view/71914
+M8,crossborder_import_value_yoy,2025,0.147,share,B,"Future Commerce Institute analysis of customs data",https://www.managertoday.com.tw/articles/view/71914
+M8,crossborder_vs_domestic_ecom,2025,0.112,share,B,"Future Commerce Institute analysis of customs data",https://www.managertoday.com.tw/articles/view/71914
+M9,china_share_low_value_declarations,3yr,0.644,share,B,"Customs data cited by legislators (via TechNews)",https://technews.tw/?p=1373215
+M10,digital_ad_market_yoy,2025,0.0392,share,B,"DMA Taiwan Digital Ad Report 2025 (via Business Next)",https://www.bnext.com.tw/podcast/2168/fs-cmtcsw21g0wdf01vrbdcvfozf
+M11,search_ad_yoy,2025,0.039,share,B,"DMA 2025 (via iThome)",https://www.ithome.com.tw/news/178047
+M12,momo_ads_brand_count_yoy,2025,0.5,share,A,"Fubon Media via Commercial Times",https://www.ctee.com.tw/news/20260112701389-430201
