@@ -11,3 +11,4 @@ S3,announced_production_fid_share,2025,0.06,share,A,"IEA, Global Hydrogen Review
 S5,electrolyser_capex_china,2025,800,USD/kW,A,"IEA commentary, Chinese electrolyser cost (midpoint of 500-1100)",https://www.iea.org/commentaries/what-explains-the-cost-advantage-of-chinese-electrolysers
 S5,electrolyser_capex_outside_china,2025,2200,USD/kW,A,"IEA commentary, Chinese electrolyser cost (midpoint of 1900-2500)",https://www.iea.org/commentaries/what-explains-the-cost-advantage-of-chinese-electrolysers
 S6,fuel_cell_deploy_time,2025,3,months,B,"Bloom Energy disclosures: 50 MW in about 90 days (via Utility Dive)",https://www.utilitydive.com/news/bloom-energy-says-its-on-track-for-2-gw-annual-production-capacity/804291/
+S7,new_fid_change_direction,2025,-1,sign,A,"IEA, Global Hydrogen Review 2026 (via GreenTech Lead)",https://greentechlead.com/?p=53819
