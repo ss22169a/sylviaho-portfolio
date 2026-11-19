@@ -1,0 +1,61 @@
+idx,product,stars,primary,secondary,summary
+0,YubiKey 5C NFC,1,service,defect,Two keys did not work; refund refused
+1,YubiKey 5C NFC,1,defect,service,Second faulty key in 2 months; warranty not honored
+2,YubiKey 5C NFC,3,other,,Delivery via forwarding service
+3,YubiKey 5C NFC,3,compat,,Shipped on older firmware
+4,YubiKey 5C NFC,3,other,,Works as intended
+5,YubiKey 5C NFC,3,compat,,Works with phones but not iPads
+6,YubiKey 5C NFC,3,expect,,Unsure whether it avoids subscription fees
+7,YubiKey 5C NFC,1,setup,,Four hours and still not working
+8,YubiKey 5C NFC,1,fit,,Far too tight in the port
+9,YubiKey 5C NFC,1,expect,setup,Not worth the bother after setup
+10,YubiKey 5 NFC,1,defect,,Failed when needed
+11,YubiKey 5 NFC,1,compat,,Sites restrict use
+12,YubiKey 5 NFC,1,compat,nfc,iPhone NFC fails with Google accounts
+13,YubiKey 5 NFC,1,defect,nfc,NFC defective on one of two keys
+14,YubiKey 5 NFC,1,setup,,Not for non-technical users; no documentation
+15,YubiKey 5 NFC,2,fit,,No cap to protect contacts
+16,YubiKey 5 NFC,3,compat,,Firmware cannot be updated
+17,YubiKey 5 NFC,1,setup,,Difficult to use
+18,YubiKey 5 NFC,3,compat,,Check with institution IT first
+19,YubiKey 5 NFC,1,expect,,Not for everyone
+20,Yubico Security Key C NFC,2,expect,,Limited value for personal use
+21,Yubico Security Key C NFC,1,service,defect,Did not work; refund denied
+22,Yubico Security Key C NFC,1,setup,defect,Horrible instructions
+23,Yubico Security Key C NFC,1,setup,,Vague instructions
+24,Yubico Security Key C NFC,3,other,,Worried about NFC misuse
+25,Yubico Security Key C NFC,1,expect,,Nearly useless for private use
+26,Yubico Security Key C NFC,3,setup,,Senior could not figure out how to use it
+27,Yubico Security Key C NFC,1,compat,nfc,Older version; NFC did not work
+28,Yubico Security Key C NFC,3,expect,,Cannot force key-only login
+29,Yubico Security Key C NFC,1,compat,,Older firmware shipped
+30,Thetis Pro,2,setup,,Unclear installation instructions
+31,Thetis Pro,2,expect,,Bank changed its requirement
+32,Thetis Pro,1,defect,,Unreliable; computer problems
+33,Thetis Pro,3,nfc,,NFC never succeeds
+34,Thetis Pro,3,nfc,,Inconsistent NFC
+35,Thetis Pro,1,setup,,Too complicated
+36,Thetis Pro,3,expect,,Still have to use passwords
+37,Thetis Pro,1,setup,,Not enough information on use
+38,Thetis Pro,3,defect,,Worked once then stopped
+39,Thetis Pro,3,defect,,USB-C end came out after months
+40,TrustKey T110,1,defect,,Did not work
+41,TrustKey T110,1,setup,,Did not understand how it worked
+42,TrustKey T110,1,setup,,No instructions; hard to install
+43,TrustKey T110,1,defect,,Does not work on two computers
+44,TrustKey T110,1,expect,,Does not replace passwords
+45,TrustKey T110,1,fit,,Too big for the port
+46,TrustKey T110,1,defect,,Neither of two units worked
+47,TrustKey T110,2,setup,,Setup confusing for an older user
+48,TrustKey T110,1,other,,Technical encryption criticism
+49,TrustKey T110,1,defect,,Cannot add an account
+50,SecuX PUFido,3,other,,Works
+51,SecuX PUFido,2,setup,,No instructions included
+52,SecuX PUFido,1,other,,Would not recommend (no detail)
+53,SecuX PUFido,3,defect,,Did not survive five months on a keychain
+54,SecuX PUFido,3,compat,,Needs Windows Hello; not all sites
+55,SecuX PUFido,3,nfc,,Fails with phone case on
+56,SecuX PUFido,2,setup,defect,No documentation; did not work
+57,SecuX PUFido,1,setup,,App no longer available
+58,SecuX PUFido,1,setup,,Lousy instructions
+59,SecuX PUFido,1,setup,,Nothing happens; no instructions

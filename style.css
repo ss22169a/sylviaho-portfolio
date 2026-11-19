@@ -2040,3 +2040,19 @@ a.em-link { color:var(--ink); }
   .st-val td:nth-child(4)::before { content: ""; }
   .st-val td:nth-child(4) { display:block; }
 }
+/* PUFido public-data check */
+.pf-pt-y { fill: var(--blue); background: var(--blue); }
+.pf-pt-o { fill: #fff; background: #fff; }
+.ep-legend i.pf-pt-o { border:1px solid var(--ink); }
+.pf-pt-p { fill: var(--lime); background: var(--lime); }
+.pf-chart { display:grid; gap:12px; margin:8px 0; }
+.pf-row { display:grid; grid-template-columns: 220px 1fr; gap:12px; align-items:center; }
+.pf-lab { font-size:13.5px; }
+.pf-bars { display:grid; gap:3px; }
+.pf-bar { height:16px; border-radius:3px; min-width:2px; position:relative; }
+.pf-bar em { position:absolute; left:calc(100% + 6px); top:-1px; font-style:normal; font-size:12px; color:var(--muted); white-space:nowrap; }
+.pf-c { background: var(--ink); }
+.pf-p { background: var(--lilac); }
+@media (max-width: 720px) { .pf-row { grid-template-columns: 1fr; gap:4px; } }
+.st-plan td:first-child { white-space: normal; }
+.ds-table.st-plan.pf-tbl td::before { content: none; }
