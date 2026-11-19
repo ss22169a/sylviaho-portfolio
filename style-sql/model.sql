@@ -22,19 +22,19 @@ FROM (UNPIVOT gl_raw ON COLUMNS(* EXCLUDE week) INTO NAME term VALUE v)
 GROUP BY ALL;
 
 -- drop the partial first/last months
-CREATE OR REPLACE TABLE tw_mc AS SELECT * FROM tw_m WHERE month BETWEEN DATE '2021-12-01' AND DATE '2026-10-01';
-CREATE OR REPLACE TABLE gl_mc AS SELECT * FROM gl_m WHERE month BETWEEN DATE '2021-12-01' AND DATE '2026-10-01';
+CREATE OR REPLACE TABLE tw_mc AS SELECT * FROM tw_m WHERE month BETWEEN DATE '2021-12-01' AND DATE '2025-10-01';
+CREATE OR REPLACE TABLE gl_mc AS SELECT * FROM gl_m WHERE month BETWEEN DATE '2021-12-01' AND DATE '2025-10-01';
 
--- Taiwan scorecard: level = last 6 months (May–Oct 2026) on the 托特包 scale;
+-- Taiwan scorecard: level = last 6 months (May–Oct 2025) on the 托特包 scale;
 -- momentum = last 6 months vs the same 6 months a year earlier; +1 smooths the zero floor.
 CREATE OR REPLACE TABLE tw_score AS
 WITH w AS (
   SELECT term,
-    avg(v) FILTER (WHERE month BETWEEN DATE '2026-05-01' AND DATE '2026-10-01') AS lvl_now,
-    avg(v) FILTER (WHERE month BETWEEN DATE '2025-05-01' AND DATE '2025-10-01') AS lvl_ly,
+    avg(v) FILTER (WHERE month BETWEEN DATE '2025-05-01' AND DATE '2025-10-01') AS lvl_now,
+    avg(v) FILTER (WHERE month BETWEEN DATE '2024-05-01' AND DATE '2024-10-01') AS lvl_ly,
     avg(v) FILTER (WHERE month BETWEEN DATE '2022-01-01' AND DATE '2022-12-01') AS lvl_2022,
-    avg(v) FILTER (WHERE month BETWEEN DATE '2026-08-01' AND DATE '2026-10-01') AS l3,
-    avg(v) FILTER (WHERE month BETWEEN DATE '2026-05-01' AND DATE '2026-07-01') AS p3
+    avg(v) FILTER (WHERE month BETWEEN DATE '2025-08-01' AND DATE '2025-10-01') AS l3,
+    avg(v) FILTER (WHERE month BETWEEN DATE '2025-05-01' AND DATE '2025-07-01') AS p3
   FROM tw_mc GROUP BY term)
 SELECT term, round(lvl_now,1) lvl_now, round(lvl_ly,1) lvl_ly, round(lvl_2022,1) lvl_2022,
   round(100*((lvl_now+1)/(lvl_ly+1)-1)) AS yoy_pct,
@@ -42,12 +42,12 @@ SELECT term, round(lvl_now,1) lvl_now, round(lvl_ly,1) lvl_ly, round(lvl_2022,1)
   round(100*((l3+1)/(p3+1)-1)) AS q_pct
 FROM w;
 
--- Global scorecard on its own scale (May–Oct 2026 vs a year earlier)
+-- Global scorecard on its own scale (May–Oct 2025 vs a year earlier)
 CREATE OR REPLACE TABLE gl_score AS
 WITH w AS (
   SELECT term,
-    avg(v) FILTER (WHERE month BETWEEN DATE '2026-05-01' AND DATE '2026-10-01') AS now,
-    avg(v) FILTER (WHERE month BETWEEN DATE '2025-05-01' AND DATE '2025-10-01') AS ly,
+    avg(v) FILTER (WHERE month BETWEEN DATE '2025-05-01' AND DATE '2025-10-01') AS now,
+    avg(v) FILTER (WHERE month BETWEEN DATE '2024-05-01' AND DATE '2024-10-01') AS ly,
     avg(v) FILTER (WHERE month BETWEEN DATE '2022-01-01' AND DATE '2022-12-01') AS b22
   FROM gl_mc GROUP BY term)
 SELECT term, round(now,1) now, round(100*(now/ly-1)) yoy_pct, round(now/b22,1) x_vs_2022 FROM w;
@@ -70,7 +70,7 @@ JOIN gl_mc g ON g.term = p.gl
 JOIN tw_mc t ON t.term = p.tw AND t.month = g.month + to_months(k.k)
 GROUP BY ALL ORDER BY p.gl, k.k;
 
--- Seasonality: average index by calendar month, 2022–2025 full years
+-- Seasonality: average index by calendar month, 2022–2024 full years
 CREATE OR REPLACE TABLE season AS
 SELECT term, month(month) AS m, round(avg(v),1) AS v
-FROM tw_mc WHERE year(month) BETWEEN 2022 AND 2025 GROUP BY ALL;
+FROM tw_mc WHERE year(month) BETWEEN 2022 AND 2024 GROUP BY ALL;
