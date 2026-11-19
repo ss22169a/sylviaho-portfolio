@@ -2056,3 +2056,9 @@ a.em-link { color:var(--ink); }
 @media (max-width: 720px) { .pf-row { grid-template-columns: 1fr; gap:4px; } }
 .st-plan td:first-child { white-space: normal; }
 .ds-table.st-plan.pf-tbl td::before { content: none; }
+.ai-sig td { vertical-align: top; font-size: 14px; }
+@media (max-width: 720px) {
+  .ds-table.st-plan.ai-sig td:nth-child(2)::before { content: "On track: "; }
+  .ds-table.st-plan.ai-sig td:nth-child(3)::before { content: "Off track: "; }
+  .ds-table.st-plan.ai-sig td:nth-child(4)::before { content: "Then: "; }
+}
