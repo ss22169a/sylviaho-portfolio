@@ -2062,3 +2062,4 @@ a.em-link { color:var(--ink); }
   .ds-table.st-plan.ai-sig td:nth-child(3)::before { content: "Off track: "; }
   .ds-table.st-plan.ai-sig td:nth-child(4)::before { content: "Then: "; }
 }
+.section > .prose + .prose, .section > .prose + .fn-scroll, .section > .fn-scroll + .prose { margin-top: 4.5px; }
