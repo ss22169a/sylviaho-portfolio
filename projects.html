@@ -8,10 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&family=Stack+Sans+Headline:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=d6ad9143" />
+  <link rel="stylesheet" href="style.css?v=16154c8b" />
   <script>document.documentElement.classList.add("js");</script>
   <script src="js/matter.min.js" defer></script>
-  <script src="js/posts.js?v=d6ad9143" defer></script>
+  <script src="js/posts.js?v=16154c8b" defer></script>
 </head>
 <body>
 
@@ -43,46 +43,52 @@
     <main class="main">
 
       <div class="page-head">
-        <div><h1 class="page-title">Analytics Projects</h1><p class="page-sub">Projects where the method is the point: the queries, the assumptions, and the limits are all shown. Work data is anonymized and shown as shares or indexes.</p></div>
+        <div><h1 class="page-title">Analytics Projects</h1><p class="page-sub">Research I take on because the question is interesting, added as each one is finished. The queries, assumptions and limits are all shown; work data is anonymized and shown as shares or indexes.</p></div>
+      </div>
+      <div class="kcards kc-proj" aria-label="Filter projects by market">
+        <button type="button" class="kcard k-gray on" data-filter="all" aria-pressed="true"><span class="kcard-label">All projects</span><span class="kcard-num">8</span></button>
+        <button type="button" class="kcard k-blue" data-filter="ecom" aria-pressed="false"><span class="kcard-label">E-commerce</span><span class="kcard-num">06</span></button>
+        <button type="button" class="kcard k-lilac" data-filter="auto" aria-pressed="false"><span class="kcard-label">Automotive parts</span><span class="kcard-num">03</span></button>
+        <button type="button" class="kcard k-lime" data-filter="h2" aria-pressed="false"><span class="kcard-label">Hydrogen market &amp; equipment</span><span class="kcard-num">01</span></button>
       </div>
 
-      <article class="case">
-        <div class="case-head"><div><span class="case-kicker">Built for: Google · AI search</span><h2>Search's Innovator's Dilemma: AI Answers vs. the Ad Click</h2><div class="tags"><span class="tag tag-blue">Analysis complete</span></div></div></div>
+      <article class="case" data-group="ecom">
+        <div class="case-head"><div><span class="case-kicker">Built for: Google · AI search</span><h2>Search's Innovator's Dilemma: AI Answers vs. the Ad Click</h2><div class="tags"><span class="tag tag-blue">Analysis complete</span><span class="tag">E-commerce</span></div></div></div>
         <dl class="case-body"><dt>Question</dt><dd>AI Overviews retain users within Google search results but disintermediate the ad-driven click economy. Where do those clicks migrate, and can generative answers coexist with search advertising?</dd><dt>Data</dt><dd>Public 2025–2026 research (Pew, Seer Interactive, SparkToro/Similarweb, Ahrefs) and Alphabet's Q3 2026 results.</dd><dt>Deliverables</dt><dd>A cross-study click analysis, an interactive ad-CTR model, and five experiments for Google and for brands.</dd></dl>
         <a class="btn btn-dark proj-open" href="search-dilemma.html">Read the analysis <span>→</span></a>
       </article>
-      <article class="case">
-        <div class="case-head"><div><span class="case-kicker">Built for: Google · Amazon</span><h2>E-commerce Funnel &amp; Attribution Analysis with SQL</h2><div class="tags"><span class="tag tag-lime">Analysis complete</span></div></div></div>
+      <article class="case" data-group="ecom auto">
+        <div class="case-head"><div><span class="case-kicker">Built for: Google · Amazon</span><h2>E-commerce Funnel &amp; Attribution Analysis with SQL</h2><div class="tags"><span class="tag tag-lime">Analysis complete</span><span class="tag">E-commerce</span><span class="tag">Automotive parts</span></div></div></div>
         <dl class="case-body"><dt>Question</dt><dd>Where does paid traffic leak on its way to an Amazon order, how much revenue did the ads actually cause, and where should the next dollar go?</dd><dt>Data</dt><dd>A U.S. automotive aftermarket seller's Google Ads (ad group × day) and Amazon Seller Central data (ASIN × day, order lines), modeled in DuckDB SQL. Dollar values withheld; shares and indexes shown.</dd><dt>Deliverables</dt><dd>A six-step funnel, four attribution lenses, a budget-vs-demand check, and four goals with targets.</dd></dl>
         <a class="btn btn-dark proj-open" href="funnel-analysis.html">Read the analysis <span>→</span></a>
       </article>
-      <article class="case">
-        <div class="case-head"><div><span class="case-kicker">Built for: Amazon</span><h2>Amazon Category Intelligence</h2><div class="tags"><span class="tag tag-orange">Analysis complete</span></div></div></div>
+      <article class="case" data-group="ecom auto">
+        <div class="case-head"><div><span class="case-kicker">Built for: Amazon</span><h2>Amazon Category Intelligence</h2><div class="tags"><span class="tag tag-orange">Analysis complete</span><span class="tag">E-commerce</span><span class="tag">Automotive parts</span></div></div></div>
         <dl class="case-body"><dt>Question</dt><dd>A seller lists about 580 auto parts on Amazon but sells a few a month. Is the problem demand, price, stock, or the listings themselves, and what should be fixed first?</dd><dt>Data</dt><dd>Amazon Product Opportunity Explorer (category, matched-product and unmet-demand data), the seller's All Listings report and 22 months of orders, joined by LESTER / OE part number in DuckDB SQL.</dd><dt>Deliverables</dt><dd>A demand-vs-catalog map for alternators, starters and NOx sensors, and six fixes ranked by the demand each one reaches.</dd></dl>
         <a class="btn btn-dark proj-open" href="category-intelligence.html">Read the analysis <span>→</span></a>
       </article>
-      <article class="case">
-        <div class="case-head"><div><span class="case-kicker">Built for: Amazon</span><h2>ICE Parts Lifecycle: Invest, Harvest or Exit</h2><div class="tags"><span class="tag tag-lime">Analysis complete</span></div></div></div>
+      <article class="case" data-group="auto">
+        <div class="case-head"><div><span class="case-kicker">Built for: Amazon</span><h2>ICE Parts Lifecycle: Invest, Harvest or Exit</h2><div class="tags"><span class="tag tag-lime">Analysis complete</span><span class="tag">Automotive parts</span></div></div></div>
         <dl class="case-body"><dt>Question</dt><dd>As EVs capture increasing share of new-car sales, which aftermarket SKUs retain a profitable service window, and where should replenishment cease?</dd><dt>Data</dt><dd>NHTSA vehicle survival schedules, S&amp;P Global Mobility fleet-age and IEA / Cox Automotive EV data, joined to Amazon demand for 96 part numbers and search intents in DuckDB SQL.</dd><dt>Deliverables</dt><dd>Most stock sits in aging, low-demand fitments, while 19 of the 20 strongest-growth lines are parts the seller doesn't carry.</dd></dl>
         <a class="btn btn-dark proj-open" href="lifecycle-matrix.html">Read the analysis <span>→</span></a>
       </article>
-      <article class="case">
-        <div class="case-head"><div><span class="case-kicker">Built for: Market sizing</span><h2>Can AI Data Centers Pull Hydrogen Forward?</h2><div class="tags"><span class="tag tag-lilac">Analysis complete</span></div></div></div>
+      <article class="case" data-group="h2">
+        <div class="case-head"><div><span class="case-kicker">Built for: Market sizing</span><h2>Can AI Data Centers Pull Hydrogen Forward?</h2><div class="tags"><span class="tag tag-lilac">Analysis complete</span><span class="tag">Hydrogen market &amp; equipment</span></div></div></div>
         <dl class="case-body"><dt>Question</dt><dd>AI data centers need power faster than grids can connect it. Does that create real demand for fuel cells, electrolyzers and hydrogen, and where should a supplier enter?</dd><dt>Data</dt><dd>IEA data center and hydrogen reviews, Berkeley Lab grid-queue data and fuel-cell company filings, combined in a top-down demand and bottom-up supply scenario model.</dd><dt>Deliverables</dt><dd>Data centers are buying fuel cells now, but mostly gas-fed; real hydrogen demand from them is unlikely before 2030.</dd></dl>
         <a class="btn btn-dark proj-open" href="hydrogen-data-centers.html">Read the analysis <span>→</span></a>
       </article>
-      <article class="case">
-        <div class="case-head"><div><span class="case-kicker">Built for: Market sizing</span><h2>Beyond the Plateau: Taiwan E-commerce</h2><div class="tags"><span class="tag tag-lime">Analysis complete</span></div></div></div>
+      <article class="case" data-group="ecom">
+        <div class="case-head"><div><span class="case-kicker">Built for: Market sizing</span><h2>Beyond the Plateau: Taiwan E-commerce</h2><div class="tags"><span class="tag tag-lime">Analysis complete</span><span class="tag">E-commerce</span></div></div></div>
         <dl class="case-body"><dt>Question</dt><dd>Is Taiwan's online retail really flattening? If so, where should a brand seller put channel budget as Coupang and cross-border platforms reshuffle the market?</dd><dt>Data</dt><dd>MOEA retail statistics 2019–2025, listed-platform results, Coupang filings, customs-based cross-border data and DMA ad-market figures, with a plateau test in DuckDB.</dd><dt>Deliverables</dt><dd>Online growth fell from 29% to under 3% a year and its share has held at 13–14% since 2021; new growth is going to Coupang, cross-border imports, store-based retailers and retail media.</dd></dl>
         <a class="btn btn-dark proj-open" href="taiwan-ecommerce.html">Read the analysis <span>→</span></a>
       </article>
-      <article class="case">
-        <div class="case-head"><div><span class="case-kicker">Built for: Forecast</span><h2>How AI Reshapes Consumer E-commerce, 2026–2028</h2><div class="tags"><span class="tag tag-lilac">Analysis complete</span></div></div></div>
+      <article class="case" data-group="ecom">
+        <div class="case-head"><div><span class="case-kicker">Built for: Forecast</span><h2>How AI Reshapes Consumer E-commerce, 2026–2028</h2><div class="tags"><span class="tag tag-lilac">Analysis complete</span><span class="tag">E-commerce</span></div></div></div>
         <dl class="case-body"><dt>Question</dt><dd>AI assistants now recommend, compare and check out for shoppers. Which categories change first, and where do brand trust and experience still decide the sale?</dd><dt>Data</dt><dd>Amazon and OpenAI disclosures, Adobe AI-traffic data and NRF returns data, with an eight-category scoring model in DuckDB that marks each score as evidence or judgment.</dd><dt>Deliverables</dt><dd>Spec-driven categories will be won in AI search, everyday consumables will move to auto-reorder, and apparel and home goods will stay with brands people trust.</dd></dl>
         <a class="btn btn-dark proj-open" href="ai-ecommerce-2028.html">Read the analysis <span>→</span></a>
       </article>
-      <article class="case">
-        <div class="case-head"><div><span class="case-kicker">Built for: Trend forecast</span><h2>Three Months Ahead: Reading the Next Bag Trend</h2><div class="tags"><span class="tag tag-blue">Analysis complete</span></div></div></div>
+      <article class="case" data-group="ecom">
+        <div class="case-head"><div><span class="case-kicker">Built for: Trend forecast</span><h2>Three Months Ahead: Reading the Next Bag Trend</h2><div class="tags"><span class="tag tag-blue">Analysis complete</span><span class="tag">E-commerce</span></div></div></div>
         <dl class="case-body"><dt>Question</dt><dd>Can a style-led handbag brand see the next trend before it sells? Which styles should it scale, test or drop over the next 12 months in Taiwan?</dd><dt>Data</dt><dd>Four years of weekly Google Trends data (Nov 2021 – Nov 2025) for 12 Taiwan and 5 worldwide bag attributes, with momentum, take-off and lead-lag tests in DuckDB.</dd><dt>Deliverables</dt><dd>Taiwan follows worldwide bag searches by about three months. The big lines are flat; growth sits in bag charms, bowling bags and large totes, and suede is the next signal still to arrive.</dd></dl>
         <a class="btn btn-dark proj-open" href="style-signals.html">Read the analysis <span>→</span></a>
       </article>

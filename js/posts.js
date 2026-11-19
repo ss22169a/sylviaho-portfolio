@@ -799,7 +799,7 @@
       selectIn(fb.parentElement, fb);
       var g = fb.dataset.filter;
       $$("[data-group]").forEach(function (sec) {
-        var show = g === "all" || sec.dataset.group === g;
+        var show = g === "all" || (" " + sec.dataset.group + " ").indexOf(" " + g + " ") > -1;
         sec.hidden = !show;
         if (show && !reduceMotion) { sec.classList.remove("tab-in"); void sec.offsetWidth; sec.classList.add("tab-in"); }
       });
