@@ -2075,3 +2075,14 @@ button.kcard.on .kcard-num { transform: scale(1.12); }
 button.kcard:focus:not(:focus-visible) { outline: none; }
 @media (prefers-reduced-motion: reduce) { button.kcard { transition: none; } }
 .avatar-img { object-fit: cover; padding: 0; background: #ddd; }
+/* Resume download menu (EN / ZH) */
+.dl-menu { position: relative; display: inline-block; }
+.dl-menu summary { list-style: none; cursor: pointer; }
+.dl-menu summary::-webkit-details-marker { display: none; }
+.dl-btn summary { display: inline-flex; align-items: center; height: 36px; padding: 0 15px; border-radius: var(--radius); background: var(--ink); color: #fff; font-size: 14px; font-weight: 500; }
+.dl-btn summary:hover { background: var(--ink-dark); }
+.dl-pop { position: absolute; z-index: 20; min-width: 150px; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 8px 24px rgba(0,0,0,.08); padding: 4px; display: flex; flex-direction: column; }
+.dl-btn .dl-pop { right: 0; top: calc(100% + 6px); }
+.dl-foot .dl-pop { left: 0; bottom: calc(100% + 6px); }
+.dl-pop a { padding: 8px 12px; border-radius: 4px; font-size: 14px; color: var(--ink); white-space: nowrap; }
+.dl-pop a:hover { background: var(--bg); }

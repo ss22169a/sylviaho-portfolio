@@ -925,3 +925,10 @@
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
   else init();
 })();
+
+/* Close the resume download menu on outside click or after choosing */
+document.addEventListener("click", function (e) {
+  document.querySelectorAll("details.dl-menu[open]").forEach(function (d) {
+    if (!d.contains(e.target) || e.target.closest(".dl-pop a")) d.removeAttribute("open");
+  });
+});
