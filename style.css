@@ -2074,3 +2074,4 @@ button.kcard { transition: opacity .3s, filter .3s; }
 button.kcard.on .kcard-num { transform: scale(1.12); }
 button.kcard:focus:not(:focus-visible) { outline: none; }
 @media (prefers-reduced-motion: reduce) { button.kcard { transition: none; } }
+.avatar-img { object-fit: cover; padding: 0; background: #ddd; }
