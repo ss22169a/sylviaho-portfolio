@@ -1927,3 +1927,14 @@ a.lc-src { display: block; font-style: normal; font-size: 13px; color: #6b6b6b; 
 .h2-sub { margin-top: 18px; }
 .h2-src { padding-left: 20px; font-size: 15px; line-height: 1.7; }
 .h2-src a { text-decoration: underline; text-underline-offset: 2px; }
+.pe-table th, .pe-table td { white-space: normal; vertical-align: top; }
+.pe-table td:first-child { white-space: nowrap; }
+@media (min-width: 900px) { .pe-table { min-width: 0; width: 100%; } }
+@media (max-width: 720px) {
+  .pe-table thead { display: none; }
+  .pe-table, .pe-table tbody, .pe-table tr, .pe-table td { display: block; width: 100%; min-width: 0; }
+  .pe-table tr { padding: 12px 0; border-bottom: 1px solid var(--line, #e5e5e5); }
+  .pe-table td { border: 0; padding: 2px 0; }
+  .pe-table td:nth-child(3)::before { content: "Email: "; font-weight: 400; color: var(--muted, #777); }
+  .pe-table td:nth-child(4) { color: var(--muted, #777); font-size: .9em; }
+}
