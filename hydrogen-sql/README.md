@@ -1,5 +1,18 @@
-# AI data centers → fuel cells → hydrogen (DuckDB)
+# AI Data Centers → Fuel Cells → Hydrogen (DuckDB SQL)
 
-Write-up: https://ss22169a.github.io/sylviaho-portfolio/hydrogen-data-centers.html
+Scenario model of how much fuel-cell capacity, hydrogen demand and electrolyzer capacity AI data centers could pull by 2030, under low, base and high assumptions.
 
-All inputs are public (grade A/B) and listed with source URLs in the two fact tables. Run `model.sql` in DuckDB from this folder.
+## Files
+- `fact_macro_assumptions.csv`: data-center electricity, grid-connection wait, electrolyzer capacity and cost, FID share. Each row has a source ID, URL and evidence grade.
+- `fact_vendor_orders.csv`: fuel-cell vendor revenue, guidance and factory capacity, used to calibrate the 2026–2030 path.
+- `model.sql`: scenario levers, yearly forecast (`mart_demand_forecast_matrix`), 2030 summary and calibration check.
+
+## Run
+```
+pip install duckdb
+duckdb < model.sql
+```
+
+## Limits
+- The fuel-cell share of new load and the hydrogen share of fuel cells are scenario assumptions, not forecasts.
+- Contract sizes in vendor disclosures are "up to" amounts.

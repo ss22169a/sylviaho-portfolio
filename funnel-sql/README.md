@@ -1,9 +1,8 @@
 # E-commerce Funnel & Attribution Analysis (DuckDB SQL)
 
 Google Ads traffic → Amazon product-page sessions → orders → net orders, for a U.S. automotive aftermarket seller on Amazon (Oct 7 – Nov 15, 2026).
-Write-up: https://ss22169a.github.io/sylviaho-portfolio/funnel-analysis.html
 
-**Data is not included.** The source is a real seller's account, so only the model is published. The page shows shares and indexes from these queries.
+Seller data is proprietary and not included.
 
 ## Questions
 1. Where does paid traffic leak between the ad click and a kept order?
