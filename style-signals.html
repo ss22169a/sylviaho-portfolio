@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Which Bag Trends to Back Next | Sylvia Ho</title>
+  <meta name="description" content="A search-signal model for a handbag brand in Taiwan: rising styles, how far worldwide signals lead Taiwan, and a 12-month order, test and drop plan." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&family=Stack+Sans+Headline:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=eb5818cc" />
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="js/matter.min.js" defer></script>
+  <script src="js/posts.js?v=eb5818cc" defer></script>
+  <script src="js/lifecycle.js?v=eb5818cc" defer></script>
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="side-top">
+      <a href="index.html" class="logo"><span class="logo-mark" aria-hidden="true"><i class="lm lm-1"></i><i class="lm lm-2"></i><i class="lm lm-3"></i><i class="lm lm-4"></i></span>Sylvia Ho</a>
+      <button type="button" class="menu-btn" data-menu aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 16 16" width="18" height="18"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5"/></svg></button>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html" class="nav-item">Overview</a>
+      <a href="work.html" class="nav-item">Case Studies</a>
+      <a href="projects.html" class="nav-item active" aria-current="page"><span class="nav-ind" aria-hidden="true"></span><span class="arrow">→</span>Analytics Projects</a>
+      <a href="ai.html" class="nav-item">How I Use AI</a>
+      <a href="about.html" class="nav-item">About</a>
+      <a href="certifications.html" class="nav-item">Certifications</a>
+      <a href="resume.html" class="nav-item">Resume</a>
+    </nav>
+    <div class="sidebar-bottom">
+      <a href="mailto:werr2010@gmail.com" class="nav-item">Email</a>
+      <a href="https://www.linkedin.com/in/zi-yin-ho-4795a02a6/" class="nav-item">LinkedIn</a>
+      <div class="user">
+        <span class="avatar">S</span>
+        <div class="user-info"><strong>Sylvia Ho</strong><small>Hsinchu, Taiwan</small></div>
+      </div>
+    </div>
+  </aside>
+
+  <div class="page">
+    <main class="main">
+
+      <div class="page-head">
+        <div>
+          <a href="projects.html" class="back-link"><span aria-hidden="true">←</span> Analytics Projects</a>
+          <h1 class="page-title">Which Bag Trends to Back Next</h1>
+          <p class="page-sub">A search-signal model for a mid-price handbag brand in Taiwan: which styles are rising, how far worldwide signals run ahead of Taiwan, and what to order, test or drop over the next 12 months.</p>
+        </div>
+      </div>
+
+      <div class="tldr">
+        <div>Market<b>Taiwan, worldwide as lead signal</b></div>
+        <div>Data<b>Google Trends, weekly, Nov 2021 – Nov 2026</b></div>
+        <div>Model<b>DuckDB: momentum, onset rule, lead-lag</b></div>
+        <div>Output<b>Opportunity matrix + 12-month plan</b></div>
+      </div>
+
+      <section class="section">
+        <div class="prose fn-answer">
+          <h3>The short answer</h3>
+          <p>Taiwan follows worldwide bag searches with a delay of about <b>3–5 months</b>. Bag charms took off worldwide in August 2024 and in Taiwan in November 2024; the two series line up best at a 5-month lag (r = 0.80). Right now totes are the safe bet to scale (+30% on the largest base), bag charms, bowling bags and underarm bags are worth small tests, and bucket and saddle bags are fading. Suede and burgundy are the next imported signals: up 128% and 77% worldwide, with almost no Chinese-language searches in Taiwan yet.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>1 · How a bag trend reaches Taiwan</h2><span class="muted-note">Bag charm, each line indexed to its own peak</span></div>
+        <div class="prose fn-chart">
+          <div class="ep-legend"><span><i style="background:var(--blue)"></i>Worldwide, "bag charm"</span><span><i style="background:var(--ink)"></i>Taiwan, 包包吊飾</span></div>
+          <svg class="lc-svg" viewBox="0 0 760 300" role="img" aria-label="Bag charm searches, worldwide and Taiwan, each indexed to its own peak, June 2023 to October 2026">
+  <line x1="46" x2="744" y1="260.0" y2="260.0" stroke="#e2e2e2"/><text class="lc-ax" x="38" y="264.0" text-anchor="end">0</text><line x1="46" x2="744" y1="140.0" y2="140.0" stroke="#e2e2e2"/><text class="lc-ax" x="38" y="144.0" text-anchor="end">50</text><line x1="46" x2="744" y1="20.0" y2="20.0" stroke="#e2e2e2"/><text class="lc-ax" x="38" y="24.0" text-anchor="end">100</text><text class="lc-ax" x="46.0" y="286" text-anchor="middle"></text><text class="lc-ax" x="63.5" y="286" text-anchor="middle"></text><text class="lc-ax" x="80.9" y="286" text-anchor="middle"></text><text class="lc-ax" x="98.3" y="286" text-anchor="middle"></text><text class="lc-ax" x="115.8" y="286" text-anchor="middle"></text><text class="lc-ax" x="133.2" y="286" text-anchor="middle"></text><text class="lc-ax" x="150.7" y="286" text-anchor="middle"></text><text class="lc-ax" x="168.2" y="286" text-anchor="middle">2024</text><text class="lc-ax" x="185.6" y="286" text-anchor="middle"></text><text class="lc-ax" x="203.1" y="286" text-anchor="middle"></text><text class="lc-ax" x="220.5" y="286" text-anchor="middle"></text><text class="lc-ax" x="237.9" y="286" text-anchor="middle"></text><text class="lc-ax" x="255.4" y="286" text-anchor="middle"></text><text class="lc-ax" x="272.9" y="286" text-anchor="middle"></text><text class="lc-ax" x="290.3" y="286" text-anchor="middle"></text><text class="lc-ax" x="307.8" y="286" text-anchor="middle"></text><text class="lc-ax" x="325.2" y="286" text-anchor="middle"></text><text class="lc-ax" x="342.6" y="286" text-anchor="middle"></text><text class="lc-ax" x="360.1" y="286" text-anchor="middle"></text><text class="lc-ax" x="377.6" y="286" text-anchor="middle">2025</text><text class="lc-ax" x="395.0" y="286" text-anchor="middle"></text><text class="lc-ax" x="412.4" y="286" text-anchor="middle"></text><text class="lc-ax" x="429.9" y="286" text-anchor="middle"></text><text class="lc-ax" x="447.4" y="286" text-anchor="middle"></text><text class="lc-ax" x="464.8" y="286" text-anchor="middle"></text><text class="lc-ax" x="482.2" y="286" text-anchor="middle"></text><text class="lc-ax" x="499.7" y="286" text-anchor="middle"></text><text class="lc-ax" x="517.1" y="286" text-anchor="middle"></text><text class="lc-ax" x="534.6" y="286" text-anchor="middle"></text><text class="lc-ax" x="552.0" y="286" text-anchor="middle"></text><text class="lc-ax" x="569.5" y="286" text-anchor="middle"></text><text class="lc-ax" x="587.0" y="286" text-anchor="middle">2026</text><text class="lc-ax" x="604.4" y="286" text-anchor="middle"></text><text class="lc-ax" x="621.9" y="286" text-anchor="middle"></text><text class="lc-ax" x="639.3" y="286" text-anchor="middle"></text><text class="lc-ax" x="656.8" y="286" text-anchor="middle"></text><text class="lc-ax" x="674.2" y="286" text-anchor="middle"></text><text class="lc-ax" x="691.6" y="286" text-anchor="middle"></text><text class="lc-ax" x="709.1" y="286" text-anchor="middle"></text><text class="lc-ax" x="726.5" y="286" text-anchor="middle"></text><text class="lc-ax" x="744.0" y="286" text-anchor="middle"></text>
+  <line x1="290.3" x2="290.3" y1="20" y2="260" stroke="var(--ink)" stroke-dasharray="3 4" opacity=".5"/><text class="lc-band" x="296.3" y="34">Worldwide takes off · Aug 2024</text>
+  <line x1="342.6" x2="342.6" y1="20" y2="260" stroke="var(--ink)" stroke-dasharray="3 4" opacity=".5"/><text class="lc-band" x="348.6" y="54">Taiwan follows · Nov 2024</text>
+  <path d="M46.0,250.9 L63.5,250.9 L80.9,250.9 L98.3,250.0 L115.8,249.1 L133.2,245.5 L150.7,244.5 L168.2,246.4 L185.6,246.4 L203.1,246.4 L220.5,246.4 L237.9,242.7 L255.4,240.9 L272.9,238.2 L290.3,235.0 L307.8,232.7 L325.2,156.4 L342.6,185.0 L360.1,204.5 L377.6,214.5 L395.0,216.8 L412.4,214.5 L429.9,213.6 L447.4,209.1 L464.8,200.9 L482.2,195.5 L499.7,187.3 L517.1,200.9 L534.6,205.5 L552.0,187.3 L569.5,178.2 L587.0,195.5 L604.4,140.9 L621.9,140.9 L639.3,20.0 L656.8,55.5 L674.2,165.5 L691.6,185.0 L709.1,150.0 L726.5,138.2 L744.0,183.6" fill="none" stroke="var(--blue)" stroke-width="2"/>
+  <path d="M46.0,240.8 L63.5,240.8 L80.9,198.6 L98.3,225.4 L115.8,240.8 L133.2,183.2 L150.7,202.4 L168.2,237.0 L185.6,260.0 L203.1,260.0 L220.5,202.4 L237.9,231.2 L255.4,233.1 L272.9,202.4 L290.3,202.4 L307.8,217.8 L325.2,225.4 L342.6,192.8 L360.1,117.9 L377.6,96.8 L395.0,154.4 L412.4,148.6 L429.9,102.6 L447.4,135.2 L464.8,206.2 L482.2,129.4 L499.7,137.1 L517.1,91.0 L534.6,164.0 L552.0,98.7 L569.5,144.8 L587.0,45.0 L604.4,102.6 L621.9,94.9 L639.3,96.8 L656.8,125.6 L674.2,96.8 L691.6,102.6 L709.1,64.2 L726.5,20.0 L744.0,45.0" fill="none" stroke="var(--ink)" stroke-width="2"/>
+</svg>
+          <p class="fn-caption">A term "takes off" when it holds at least twice its 2022 average for three straight months. The same test on bowling bags gives a best fit at 5 months (r = 0.62). Suede does not line up yet (r = 0.32), because Taiwan's Chinese-language searches for it are still near zero.</p>
+        </div>
+        <div class="o3-tracks">
+          <article class="o3-track-card o3-a"><span class="o2-k">Lead signals</span><h3>Watch worldwide first</h3><ul><li>Worldwide Google and Pinterest searches for a material, color or shape</li><li>Trend-forecaster outlooks: Heuritech expects bowling bags to grow 14% and barrel bags 22% over the year to February 2027</li><li>Runway and celebrity bags in Lyst's quarterly index</li></ul></article>
+          <article class="o3-track-card o3-b"><span class="o2-k">Confirming signals</span><h3>Then check Taiwan</h3><ul><li>Taiwan searches in Chinese for the same attribute</li><li>Marketplace listings and reviews for the style</li><li>The brand's own site search, wishlist and return reasons</li></ul></article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>2 · The opportunity matrix</h2><span class="muted-note">Taiwan, May–Oct 2026 vs a year earlier</span></div>
+        <div class="prose fn-chart">
+          <div class="ep-legend"><span><i class="st-scale"></i>Scale now</span><span><i class="st-test"></i>Test early</span><span><i class="st-keep"></i>Keep core</span><span><i class="st-down"></i>Wind down</span></div>
+          <div class="st-mscroll"><div class="lc-wrap"><svg class="lc-svg" viewBox="0 0 760 460" role="img" aria-label="Opportunity matrix: Taiwan search momentum against search level for eleven bag attributes">
+  <line x1="60" x2="740" y1="412.0" y2="412.0" stroke="#eee"/><text class="lc-ax" x="52" y="416.0" text-anchor="end">3</text><line x1="60" x2="740" y1="278.8" y2="278.8" stroke="#eee"/><text class="lc-ax" x="52" y="282.8" text-anchor="end">10</text><line x1="60" x2="740" y1="157.2" y2="157.2" stroke="#eee"/><text class="lc-ax" x="52" y="161.2" text-anchor="end">30</text><line x1="60" x2="740" y1="24.0" y2="24.0" stroke="#eee"/><text class="lc-ax" x="52" y="28.0" text-anchor="end">100</text><text class="lc-ax" x="86.2" y="436" text-anchor="middle">-25%</text><text class="lc-ax" x="216.9" y="436" text-anchor="middle">+0%</text><text class="lc-ax" x="347.7" y="436" text-anchor="middle">+25%</text><text class="lc-ax" x="478.5" y="436" text-anchor="middle">+50%</text><text class="lc-ax" x="609.2" y="436" text-anchor="middle">+75%</text><text class="lc-ax" x="740.0" y="436" text-anchor="middle">+100%</text><line x1="321.5" x2="321.5" y1="24" y2="412" stroke="var(--ink)" stroke-dasharray="4 4" opacity=".4"/><line x1="60" x2="740" y1="278.8" y2="278.8" stroke="var(--ink)" stroke-dasharray="4 4" opacity=".4"/><text class="lc-q" x="734" y="40" text-anchor="end">SCALE NOW</text><text class="lc-q" x="734" y="402" text-anchor="end">TEST EARLY</text><text class="lc-q" x="68" y="40">KEEP CORE</text><text class="lc-q" x="68" y="402">HOLD / WIND DOWN</text>
+  <text class="lc-ax" x="400" y="456" text-anchor="middle">Change vs. the same six months a year earlier</text>
+  <text class="lc-ax" transform="translate(14 218) rotate(-90)" text-anchor="middle">Taiwan search level (log)</text>
+  <g class="lc-pt" tabindex="0" data-tip="Tote (托特包) | Taiwan level 71.4 (tote ≈ 71) | +30% vs a year earlier · +7% vs 2022 | Scale now"><circle class="st-scale" cx="373.8" cy="61.3" r="8" stroke="var(--ink)" stroke-width="1.2"/><text class="lc-lab" x="383.8" y="65.3" text-anchor="start">Tote</text></g><g class="lc-pt" tabindex="0" data-tip="Old-money style (老錢風) | Taiwan level 11.5 (tote ≈ 71) | +86% vs a year earlier · +1153% vs 2022 | Scale now"><circle class="st-scale" cx="666.8" cy="263.3" r="8" stroke="var(--ink)" stroke-width="1.2"/><text class="lc-lab" x="658.8" y="251.3" text-anchor="end">Old-money style</text></g><g class="lc-pt" tabindex="0" data-tip="Bag charm (包包吊飾) | Taiwan level 9.6 (tote ≈ 71) | +51% vs a year earlier · +374% vs 2022 | Test early"><circle class="st-test" cx="483.7" cy="283.3" r="8" stroke="var(--ink)" stroke-width="1.2"/><text class="lc-lab" x="493.7" y="299.3" text-anchor="start">Bag charm</text></g><g class="lc-pt" tabindex="0" data-tip="Bowling bag (保齡球包) | Taiwan level 4.5 (tote ≈ 71) | +36% vs a year earlier · +295% vs 2022 | Test early"><circle class="st-test" cx="405.2" cy="367.1" r="8" stroke="var(--ink)" stroke-width="1.2"/><text class="lc-lab" x="415.2" y="371.1" text-anchor="start">Bowling bag</text></g><g class="lc-pt" tabindex="0" data-tip="Underarm bag (腋下包) | Taiwan level 6.3 (tote ≈ 71) | +36% vs a year earlier · -43% vs 2022 | Test early"><circle class="st-test" cx="405.2" cy="329.9" r="8" stroke="var(--ink)" stroke-width="1.2"/><text class="lc-lab" x="395.2" y="333.9" text-anchor="end">Underarm bag</text></g><g class="lc-pt" tabindex="0" data-tip="Mini bag (迷你包) | Taiwan level 18.0 (tote ≈ 71) | +5% vs a year earlier · -11% vs 2022 | Keep core"><circle class="st-keep" cx="243.1" cy="213.7" r="8" stroke="var(--ink)" stroke-width="1.2"/><text class="lc-lab" x="253.1" y="207.7" text-anchor="start">Mini bag</text></g><g class="lc-pt" tabindex="0" data-tip="Woven bag (編織包) | Taiwan level 24.2 (tote ≈ 71) | -2% vs a year earlier · +13% vs 2022 | Keep core"><circle class="st-keep" cx="206.5" cy="181.0" r="8" stroke="var(--ink)" stroke-width="1.2"/><text class="lc-lab" x="196.5" y="205.0" text-anchor="end">Woven bag</text></g><g class="lc-pt" tabindex="0" data-tip="Nylon bag (尼龍包) | Taiwan level 14.0 (tote ≈ 71) | +12% vs a year earlier · +16% vs 2022 | Keep core"><circle class="st-keep" cx="279.7" cy="241.6" r="8" stroke="var(--ink)" stroke-width="1.2"/><text class="lc-lab" x="289.7" y="253.6" text-anchor="start">Nylon bag</text></g><g class="lc-pt" tabindex="0" data-tip="Large-capacity bag (大容量包包) | Taiwan level 8.0 (tote ≈ 71) | +13% vs a year earlier · +61% vs 2022 | Keep core"><circle class="st-keep" cx="284.9" cy="303.5" r="8" stroke="var(--ink)" stroke-width="1.2"/><text class="lc-lab" x="274.9" y="327.5" text-anchor="end">Large-capacity bag</text></g><g class="lc-pt" tabindex="0" data-tip="Bucket bag (水桶包) | Taiwan level 28.8 (tote ≈ 71) | -14% vs a year earlier · -55% vs 2022 | Wind down"><circle class="st-down" cx="143.7" cy="161.7" r="8" stroke="var(--ink)" stroke-width="1.2"/><text class="lc-lab" x="155.7" y="151.7" text-anchor="start">Bucket bag</text></g><g class="lc-pt" tabindex="0" data-tip="Saddle bag (馬鞍包) | Taiwan level 8.7 (tote ≈ 71) | -16% vs a year earlier · -65% vs 2022 | Wind down"><circle class="st-down" cx="133.2" cy="294.2" r="8" stroke="var(--ink)" stroke-width="1.2"/><text class="lc-lab" x="145.2" y="284.2" text-anchor="start">Saddle bag</text></g>
+</svg><div class="lc-tip" role="tooltip"></div></div></div>
+          <p class="fn-caption">Level is Taiwan search interest on one scale, where tote is about 71. The split lines sit at +20% growth and a level of 10. Bucket and saddle bags are marked wind down because they are 55–65% below 2022 and still falling. Hover or tap a point for its numbers; on a phone, swipe the chart sideways.</p>
+        </div>
+        <div class="prose fn-chart">
+          <div class="fn-scroll"><table class="fn-table ds-table st-score"><thead><tr><th>Attribute</th><th>Level</th><th>vs a year earlier</th><th>vs 2022</th><th>Action</th></tr></thead><tbody><tr><td><b>Old-money style</b> <span class="st-zh">老錢風</span></td><td class="c2-num">11.5</td><td class="c2-num">+86%</td><td class="c2-num">+1153%</td><td><span class="st-tag st-scale">Scale now</span></td></tr><tr><td><b>Bag charm</b> <span class="st-zh">包包吊飾</span></td><td class="c2-num">9.6</td><td class="c2-num">+51%</td><td class="c2-num">+374%</td><td><span class="st-tag st-test">Test early</span></td></tr><tr><td><b>Bowling bag</b> <span class="st-zh">保齡球包</span></td><td class="c2-num">4.5</td><td class="c2-num">+36%</td><td class="c2-num">+295%</td><td><span class="st-tag st-test">Test early</span></td></tr><tr><td><b>Underarm bag</b> <span class="st-zh">腋下包</span></td><td class="c2-num">6.3</td><td class="c2-num">+36%</td><td class="c2-num">-43%</td><td><span class="st-tag st-test">Test early</span></td></tr><tr><td><b>Tote</b> <span class="st-zh">托特包</span></td><td class="c2-num">71.4</td><td class="c2-num">+30%</td><td class="c2-num">+7%</td><td><span class="st-tag st-scale">Scale now</span></td></tr><tr><td><b>Large-capacity bag</b> <span class="st-zh">大容量包包</span></td><td class="c2-num">8.0</td><td class="c2-num">+13%</td><td class="c2-num">+61%</td><td><span class="st-tag st-keep">Keep core</span></td></tr><tr><td><b>Nylon bag</b> <span class="st-zh">尼龍包</span></td><td class="c2-num">14.0</td><td class="c2-num">+12%</td><td class="c2-num">+16%</td><td><span class="st-tag st-keep">Keep core</span></td></tr><tr><td><b>Mini bag</b> <span class="st-zh">迷你包</span></td><td class="c2-num">18.0</td><td class="c2-num">+5%</td><td class="c2-num">-11%</td><td><span class="st-tag st-keep">Keep core</span></td></tr><tr><td><b>Woven bag</b> <span class="st-zh">編織包</span></td><td class="c2-num">24.2</td><td class="c2-num">-2%</td><td class="c2-num">+13%</td><td><span class="st-tag st-keep">Keep core</span></td></tr><tr><td><b>Bucket bag</b> <span class="st-zh">水桶包</span></td><td class="c2-num">28.8</td><td class="c2-num">-14%</td><td class="c2-num">-55%</td><td><span class="st-tag st-down">Wind down</span></td></tr><tr><td><b>Saddle bag</b> <span class="st-zh">馬鞍包</span></td><td class="c2-num">8.7</td><td class="c2-num">-16%</td><td class="c2-num">-65%</td><td><span class="st-tag st-down">Wind down</span></td></tr></tbody></table></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>3 · Imported signals not yet in Taiwan</h2><span class="muted-note">Worldwide, May–Oct 2026</span></div>
+        <div class="fn-lenses fn-3">
+          <div class="fn-lens"><span class="fn-k">Suede bag</span><b>+128%</b><small>14× its 2022 level worldwide; Taiwan searches for 麂皮包 are close to zero.</small></div>
+          <div class="fn-lens"><span class="fn-k">Burgundy bag</span><b>+77%</b><small>Worldwide demand rising each autumn since 2024; no measurable Taiwan searches for 酒紅色包包.</small></div>
+          <div class="fn-lens"><span class="fn-k">East-west bag</span><b>+195%</b><small>Fast growth from a very small worldwide base; a shape to sample, not to stock.</small></div>
+        </div>
+        <p class="fn-caption">Near-zero Taiwan searches can mean two things: the trend has not arrived, or shoppers describe it with other words. Before ordering, check which words Taiwanese shoppers use on marketplaces and social posts.</p>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>4 · What to do, and when</h2><span class="muted-note">From December 2026</span></div>
+        <div class="fn-scroll"><table class="fn-table ds-table st-plan"><thead><tr><th>Window</th><th>Order or scale</th><th>Test</th><th>Stop</th></tr></thead><tbody>
+          <tr><td><b>0–3 months</b><br><span class="st-zh">Dec 2026 – Feb 2027</span></td><td>Totes and nylon bags ahead of their February search peak; large capacity as a tote spec, not a separate line</td><td>A small bag-charm range sold as an add-on at checkout</td><td>No reorders of bucket or saddle bags; clear stock in Q1</td></tr>
+          <tr><td><b>3–6 months</b><br><span class="st-zh">Mar – May 2027</span></td><td>Woven bags ordered by April for the July peak</td><td>Pre-sale tests for bowling and underarm bags; a first suede sample in two colors</td><td>Drop any test that misses the go rule below</td></tr>
+          <tr><td><b>6–12 months</b><br><span class="st-zh">Jun – Nov 2027</span></td><td>Bag charms for the December gifting peak, ordered by September</td><td>A suede and burgundy capsule for autumn, if Taiwan searches pass the take-off rule</td><td>Mini bags back to core colors only</td></tr>
+        </tbody></table></div>
+        <p class="fn-caption">Peak months come from 2022–2025 averages: totes and nylon bags peak in February, woven bags in July, bag charms in December.</p>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>5 · Test before committing stock</h2><span class="muted-note">Two-week test per style</span></div>
+        <div class="fn-lenses fn-3 c1-rules">
+          <div class="fn-lens c1-go"><span class="fn-k">Go</span><b>Both met</b><small>Ad click-through at least 1.2× the catalog median, and pre-orders covering 60% of the first batch within 14 days. Order the full batch.</small></div>
+          <div class="fn-lens c1-hold"><span class="fn-k">Hold</span><b>One met</b><small>Change one thing (color, material or price) and run another two weeks.</small></div>
+          <div class="fn-lens c1-nogo"><span class="fn-k">Drop</span><b>Neither</b><small>Stop and move the budget to the next signal on the list.</small></div>
+        </div>
+        <p class="fn-caption">A style enters testing only when its worldwide search has passed the take-off rule and Taiwan searches are up at least 20% on a year earlier. Thresholds are set relative to the brand's own catalog, so they carry over between seasons.</p>
+      </section>
+
+      <section class="section">
+        <div class="fn-two">
+          <div class="prose">
+            <h3>Limits</h3>
+            <ul>
+              <li>Google Trends is relative and sampled; small Taiwan terms bounce between 0 and 10, so single weeks are noise and only six-month averages are used.</li>
+              <li>The lead-lag estimate rests on two attribute pairs. It is a rule of thumb, not a fixed constant.</li>
+              <li>Search shows interest, not sales. The test step exists to turn interest into purchase evidence before stock is bought.</li>
+            </ul>
+          </div>
+          <div class="prose">
+            <h3>The model</h3>
+            <p>Weekly exports are reshaped, averaged by month and scored in DuckDB SQL: momentum, take-off month, lead-lag correlation and seasonality.</p>
+            <p><a class="btn btn-light" href="https://github.com/ss22169a/sylviaho-portfolio/tree/main/style-sql" target="_blank" rel="noopener">View the SQL <span>→</span></a></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>Sources</h2></div>
+        <div class="prose"><ol class="h2-src">
+          <li>Google Trends, weekly search interest, past five years (Taiwan: 托特包, 麂皮包, 包包吊飾, 腋下包, 水桶包, 馬鞍包, 保齡球包, 編織包, 尼龍包, 老錢風, 大容量包包, 迷你包, 酒紅色包包; worldwide: suede bag, bag charm, bowling bag, burgundy bag, east west bag), retrieved Nov 19, 2026</li>
+          <li><a href="https://heuritech.com/articles/bag-shapes-trends/" target="_blank" rel="noopener">Heuritech: bag shapes trends, Trend Radar, February 2026</a></li>
+          <li><a href="https://newsroom.pinterest.com/en-sg/news/pinterest-predicts-nonconformity-self-preservation-and-escapism-drive-21-trends-for-2026/" target="_blank" rel="noopener">Pinterest Predicts 2026</a></li>
+          <li><a href="https://www.lyst.co.uk/the-lyst-index/Q3-26/" target="_blank" rel="noopener">The Lyst Index, Q3 2026</a></li>
+          <li><a href="https://trendalytics.co/insights/handbag-market-trends-2026-report" target="_blank" rel="noopener">Trendalytics: handbag trends 2026</a></li>
+        </ol></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <nav><a href="mailto:werr2010@gmail.com">werr2010@gmail.com</a><a href="https://www.linkedin.com/in/zi-yin-ho-4795a02a6/">LinkedIn</a><a href="resume.html">Resume</a><a href="resume.pdf" download>Resume PDF ↓</a></nav>
+      <p>© 2026 Sylvia Ho. Numbers on this site use percentages or indexed values where the underlying data is confidential.</p>
+    </footer>
+  </div>
+</body>
+</html>
