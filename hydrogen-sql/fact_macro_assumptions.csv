@@ -1,0 +1,13 @@
+source_id,metric,year,value,unit,evidence_grade,source,url
+S1,dc_electricity,2024,415,TWh,A,"IEA, Energy and AI (2025)",https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai
+S1,dc_electricity,2030,945,TWh,A,"IEA, Energy and AI (2025)",https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai
+S2,grid_wait_median,2025,61,months,A,"LBNL, Queued Up 2026 Edition",https://eta-publications.lbl.gov/sites/default/files/2026-06/queued_up_2026_edition.pdf
+S2,grid_wait_median,2015,36,months,A,"LBNL, Queued Up 2026 Edition",https://eta-publications.lbl.gov/sites/default/files/2026-06/queued_up_2026_edition.pdf
+S3,electrolysis_installed,2024,2,GW,A,"IEA, Global Hydrogen Review 2025",https://www.iea.org/reports/global-hydrogen-review-2025/executive-summary
+S4,electrolysis_installed,2025,4,GW,A,"IEA, Global Hydrogen Review 2026 (via Argus)",https://www.argusmedia.com/en/news-and-insights/latest-market-news/2841836-green-h2-electrolyser-sector-enters-consolidation-iea
+S4,electrolyser_factory_utilisation,2025,0.09,share,A,"IEA, Global Hydrogen Review 2026 (via Argus)",https://www.argusmedia.com/en/news-and-insights/latest-market-news/2841836-green-h2-electrolyser-sector-enters-consolidation-iea
+S4,electrolyser_deploy_fid_avg,2030,9,GW/yr,A,"IEA, Global Hydrogen Review 2026 (via Argus)",https://www.argusmedia.com/en/news-and-insights/latest-market-news/2841836-green-h2-electrolyser-sector-enters-consolidation-iea
+S3,announced_production_fid_share,2025,0.06,share,A,"IEA, Global Hydrogen Review 2025",https://www.modernpowersystems.com/?p=36386
+S5,electrolyser_capex_china,2025,800,USD/kW,A,"IEA commentary, Chinese electrolyser cost (midpoint of 500-1100)",https://www.iea.org/commentaries/what-explains-the-cost-advantage-of-chinese-electrolysers
+S5,electrolyser_capex_outside_china,2025,2200,USD/kW,A,"IEA commentary, Chinese electrolyser cost (midpoint of 1900-2500)",https://www.iea.org/commentaries/what-explains-the-cost-advantage-of-chinese-electrolysers
+S6,fuel_cell_deploy_time,2025,3,months,B,"Bloom Energy disclosures: 50 MW in about 90 days (via Utility Dive)",https://www.utilitydive.com/news/bloom-energy-says-its-on-track-for-2-gw-annual-production-capacity/804291/
