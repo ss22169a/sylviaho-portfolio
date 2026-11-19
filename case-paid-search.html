@@ -8,10 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&family=Stack+Sans+Headline:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=ea017898" />
+  <link rel="stylesheet" href="style.css?v=1935d1bd" />
   <script>document.documentElement.classList.add("js");</script>
   <script src="js/matter.min.js" defer></script>
-  <script src="js/posts.js?v=ea017898" defer></script>
+  <script src="js/posts.js?v=1935d1bd" defer></script>
 </head>
 <body>
 
@@ -138,6 +138,14 @@
             <p>The attribution lenses, the budget-vs-demand split and the cancellation analysis are modeled in DuckDB SQL in a separate project.</p>
             <p><a class="btn btn-light" href="funnel-analysis.html">Funnel &amp; Attribution project <span>→</span></a></p>
           </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>Data sources</h2><span class="muted-note">Everything checked for this analysis</span></div>
+        <div class="prose fn-chart">
+          <div class="fn-scroll"><table class="fn-table ds-table"><thead><tr><th>Source</th><th>What it gave</th><th>Window</th><th>Level</th></tr></thead><tbody><tr><td><b>Google Ads, via Windsor.ai</b></td><td>Spend, impressions and clicks by campaign and ad group</td><td>Oct 7 – Nov 16, 2026</td><td>Ad group × day</td></tr><tr><td><b>Amazon Seller Central · Business Reports (Sales &amp; Traffic)</b></td><td>Product-page sessions, page views, units and sales</td><td>Oct 18 – Nov 14, 2026</td><td>ASIN × day</td></tr><tr><td><b>Amazon Seller Central · order report</b></td><td>Orders placed, shipped and kept; the 28-day pre-ad baseline; same window in 2025</td><td>Jan 2025 – Nov 15, 2026</td><td>Order line</td></tr><tr><td><b>Amazon Seller Central · cancellations</b></td><td>Cancellation reasons, including stock-outs</td><td>Jan 2025 – Nov 15, 2026</td><td>Order line</td></tr><tr><td><b>Daily tracking sheet</b></td><td>Ad spend next to Amazon sessions and orders, split into S1 and S2</td><td>Oct 7 – Nov 15, 2026</td><td>Day</td></tr><tr><td><b>Amazon Attribution</b></td><td>Which ad groups carry Amazon tracking tags (2 of 15 at the time)</td><td>Ad window</td><td>Ad group</td></tr><tr><td><b>Amazon Product Opportunity Explorer</b></td><td>Search volume, units, price and return rate by niche; unmet-demand search lists</td><td>360-day niche data</td><td>Niche · part number</td></tr><tr><td><b>Seller Central · All Listings report</b></td><td>Which part numbers are listed, active and at what price</td><td>Snapshot, Nov 2026</td><td>SKU</td></tr><tr><td><b>Competitor listings on Amazon</b></td><td>Price of the same part number from other sellers</td><td>Spot checks, Nov 2026</td><td>Part number</td></tr></tbody></table></div>
+          <p class="fn-caption">Google Ads cannot see Amazon purchases, so its own conversion column was not used; results come from Seller Central. The tracking sheet repeated four days of rows, which inflated the day count; the lift figures above use the corrected count. Currency converted at 32 TWD per USD; money on this page is shown as an index.</p>
         </div>
       </section>
     </main>
