@@ -1,0 +1,13 @@
+signal_id,metric,period,value,unit,evidence_grade,source,url
+A1,genai_traffic_to_us_retail_yoy,2025 holiday,6.934,multiple,B,"Adobe Analytics, 2025 holiday season",https://news.adobe.com/news/2026/01/adobe-holiday-shopping-season
+A2,ai_referral_conversion_vs_other,2025 holiday,0.31,share,B,"Adobe Analytics, Quarterly AI Traffic Report",https://www.marketingdive.com/news/ai-has-changed-holiday-shopping-heres-what-the-numbers-say/810265/
+A3,ai_referral_conversion_vs_other,2024 holiday,-0.09,share,B,"Adobe Analytics, March 2025",https://blog.adobe.com/en/publish/2025/03/17/adobe-analytics-traffic-to-us-retail-websites-from-generative-ai-sources-jumps-1200-percent
+A4,amazon_rufus_customers,2025,300,million,A,"Amazon Q4 2025 results (via EcommerceBytes)",https://www.ecommercebytes.com/1sqo
+A4,amazon_rufus_incremental_sales_annualized,2025,12,USD bn,A,"Amazon Q4 2025 results (via EcommerceBytes)",https://www.ecommercebytes.com/1sqo
+A5,amazon_ads_revenue,2025,68.6,USD bn,A,"Amazon Q4 2025 results (via PPC Land)",https://ppc.land/amazons-ad-revenue-hits-21-3b-as-prime-video-reaches-315m-viewers/
+A5,amazon_ads_q4_yoy,2025Q4,0.23,share,A,"Amazon Q4 2025 results (via PPC Land)",https://ppc.land/amazons-ad-revenue-hits-21-3b-as-prime-video-reaches-315m-viewers/
+A6,chatgpt_instant_checkout_launch,2025-09,1,event,A,"OpenAI announcement (via Axios)",https://www.axios.com/2025/09/29/openai-shopping-chatgpt
+A7,acp_retailer_integrations,2026,1,event,B,"Retail Dive",https://www.retaildive.com/news/walmart-sparky-chatgpt-instant-checkout/
+A8,online_return_rate_us,2025,0.193,share,B,"NRF & Happy Returns, 2025 Retail Returns Landscape",https://www.retailtouchpoints.com/news/nrf-forecasts-nearly-850-billion-in-returns-in-2025-slight-decrease-from-2024
+A8,fraudulent_share_of_returns,2025,0.09,share,B,"NRF & Happy Returns, 2025 Retail Returns Landscape",https://nrf.com/media-center/press-releases/consumers-expected-to-return-nearly-850-billion-in-merchandise-in-2025
+A9,social_share_of_online_revenue_us,2025 holiday,0.046,share,B,"Adobe Analytics, 2025 holiday season",https://news.adobe.com/news/downloads/pdfs/2026/01/010726-holiday-shopping-season-2025.pdf

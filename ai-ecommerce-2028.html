@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How AI Reshapes Consumer E-commerce, 2026–2028 | Sylvia Ho</title>
+  <meta name="description" content="Which retail categories AI discovery and auto-reorder change first, built on company disclosures, Adobe and NRF data." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&family=Stack+Sans+Headline:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=c79ec11d" />
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="js/matter.min.js" defer></script>
+  <script src="js/posts.js?v=c79ec11d" defer></script>
+  <script src="js/lifecycle.js?v=c79ec11d" defer></script>
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="side-top">
+      <a href="index.html" class="logo"><span class="logo-mark" aria-hidden="true"><i class="lm lm-1"></i><i class="lm lm-2"></i><i class="lm lm-3"></i><i class="lm lm-4"></i></span>Sylvia Ho</a>
+      <button type="button" class="menu-btn" data-menu aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 16 16" width="18" height="18"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5"/></svg></button>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html" class="nav-item">Overview</a>
+      <a href="work.html" class="nav-item">Case Studies</a>
+      <a href="projects.html" class="nav-item active" aria-current="page"><span class="nav-ind" aria-hidden="true"></span><span class="arrow">→</span>Analytics Projects</a>
+      <a href="ai.html" class="nav-item">How I Use AI</a>
+      <a href="about.html" class="nav-item">About</a>
+      <a href="certifications.html" class="nav-item">Certifications</a>
+      <a href="resume.html" class="nav-item">Resume</a>
+    </nav>
+    <div class="sidebar-bottom">
+      <a href="mailto:werr2010@gmail.com" class="nav-item">Email</a>
+      <a href="https://www.linkedin.com/in/zi-yin-ho-4795a02a6/" class="nav-item">LinkedIn</a>
+      <div class="user">
+        <span class="avatar">S</span>
+        <div class="user-info"><strong>Sylvia Ho</strong><small>Hsinchu, Taiwan</small></div>
+      </div>
+    </div>
+  </aside>
+
+  <div class="page">
+    <main class="main">
+
+      <div class="page-head">
+        <div>
+          <a href="projects.html" class="back-link"><span aria-hidden="true">←</span> Analytics Projects</a>
+          <h1 class="page-title">How AI Reshapes Consumer E-commerce, 2026–2028</h1>
+          <p class="page-sub">AI assistants are starting to recommend, compare and even check out for shoppers. Which categories will AI discovery and auto-reorder change first, and where do brand trust and experience still decide the sale?</p>
+        </div>
+      </div>
+
+      <div class="tldr fn-tldr">
+        <div>Horizon<b>2026–2028, updated each Q4</b></div>
+        <div>Sources<b>Company results, Adobe, NRF · grade A/B</b></div>
+        <div>Method<b>Signal tracking + category scoring in DuckDB</b></div>
+        <div>Output<b>Category × AI readiness matrix and watchpoints</b></div>
+      </div>
+
+      <section class="section">
+        <div class="prose fn-answer">
+          <h3>The short answer</h3>
+          <p>AI is already moving real money. Amazon credits its Rufus assistant with about <b>$12B in incremental annualized sales</b>, and AI referrals to U.S. retail sites grew <b>~7×</b> over the 2025 holidays while converting <b>31% better</b> than other traffic, a reversal from a year earlier. The shift will not hit every category equally. Spec-driven categories (electronics, fitment-based parts) are won in AI discovery; high-frequency consumables move to auto-reorder; apparel and home goods, where returns and trust dominate, stay brand- and experience-led. By 2028, using AI tools will be table stakes, and margins will go to product data quality, first-party members and reliable fulfilment.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>1 · What has already happened</h2></div>
+        <div class="fn-lenses fn-3">
+          <div class="fn-lens"><span class="fn-k">AI referrals to retail</span><b>~7×</b><small>Generative-AI traffic to U.S. retail sites rose 693% in the 2025 holiday season. Conversion flipped from 9% below other traffic (2024) to 31% above.</small></div>
+          <div class="fn-lens"><span class="fn-k">On-platform assistants</span><b>$12B</b><small>Incremental annualized sales Amazon attributes to Rufus, used by 300M+ customers in 2025 (Amazon's own 7-day attribution).</small></div>
+          <div class="fn-lens"><span class="fn-k">Checkout inside AI</span><b>2025–26</b><small>ChatGPT Instant Checkout launched with Etsy and Shopify in Sep 2025; Walmart and other large retailers have since integrated. Agents now affect ranking, not just traffic.</small></div>
+        </div>
+        <div class="fn-lenses fn-3">
+          <div class="fn-lens"><span class="fn-k">Retail media</span><b>$68.6B</b><small>Amazon ad revenue in 2025, +23% in Q4. Ads sold where the purchase happens keep outgrowing the wider ad market.</small></div>
+          <div class="fn-lens"><span class="fn-k">Returns</span><b>19.3%</b><small>Share of U.S. online sales expected to be returned in 2025; 9% of all returns are fraudulent. Trust and fulfilment costs rise with automation.</small></div>
+          <div class="fn-lens"><span class="fn-k">Social commerce</span><b>4.6%</b><small>Social media's share of U.S. online holiday revenue in 2025, up 40% year-on-year.</small></div>
+        </div>
+        <p class="fn-caption">Most signals are U.S.-measured, the market with the clearest public data. For Taiwan's base rates, see <a href="taiwan-ecommerce.html">Beyond the Plateau</a>.</p>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>2 · Two phases to 2028</h2></div>
+        <div class="o3-tracks">
+          <article class="o3-track-card o3-a"><span class="o2-k">2026–2027 · Adoption and accounting</span><h3>AI becomes a traffic source</h3><ul><li>Shoppers ask AI to compare, then buy on a platform or brand site</li><li>AI copy, images, service and bidding become routine for sellers</li><li>The test: real incremental orders, or orders that would have happened anyway and are now credited to AI</li></ul></article>
+          <article class="o3-track-card o3-b"><span class="o2-k">2027–2028 · Rebuild and differentiate</span><h3>AI becomes table stakes</h3><ul><li>Consumables shift to low-friction, semi-automatic reorder</li><li>Accurate product data and reviews decide whether agents recommend you</li><li>Advantage moves to product difference, first-party members, fulfilment and unit economics</li></ul></article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>3 · Category × AI readiness matrix</h2><span class="muted-note">Hover or tab to a point</span></div>
+        <div class="prose fn-chart">
+          <div class="lc-wrap"><svg class="lc-svg" viewBox="0 0 720 440" role="img" aria-label="Eight product categories by AI discovery and reorder potential, sized by return risk"><rect x="86" y="16" width="618" height="372" fill="var(--bg)"/><line x1="468.0" x2="468.0" y1="16" y2="388" stroke="var(--gray)" stroke-dasharray="4 4"/><line x1="86" x2="704" y1="158.0" y2="158.0" stroke="var(--gray)" stroke-dasharray="4 4"/><text x="395.0" y="432" text-anchor="middle" class="lc-ax">How much AI discovery drives the sale →</text><text transform="translate(12,202.0) rotate(-90)" text-anchor="middle" class="lc-ax">Repeat / auto-reorder potential →</text><g class="lc-pt" tabindex="0" data-tip="Electronics &amp; appliances | Play: Win AI-led discovery | AI discovery 2/2 (Adobe: among top AI-referral categories; highest AI conversion) | Reorder 0/2 (judgment) | Return/trust risk 1/2 (judgment)"><circle cx="664.7" cy="351.4" r="12" fill="var(--blue)" stroke="#fff" stroke-width="2"/></g><text x="648.7" y="355.4" text-anchor="end" class="lc-lab">Electronics &amp; appliances</text><g class="lc-pt" tabindex="0" data-tip="Toys &amp; video games | Play: Win AI-led discovery | AI discovery 2/2 (Adobe: among top AI-referral categories (2025 holiday)) | Reorder 0/2 (judgment) | Return/trust risk 0.5/2 (judgment)"><circle cx="692.7" cy="369.4" r="10" fill="var(--blue)" stroke="#fff" stroke-width="2"/></g><text x="676.7" y="385.4" text-anchor="end" class="lc-lab">Toys &amp; video games</text><g class="lc-pt" tabindex="0" data-tip="Personal care &amp; beauty | Play: AI discovery + auto-reorder | AI discovery 1.5/2 (Adobe: personal care among top AI-referral categories) | Reorder 1.5/2 (judgment) | Return/trust risk 1/2 (judgment)"><circle cx="538.3" cy="115.8" r="12" fill="var(--lilac)" stroke="#fff" stroke-width="2"/></g><text x="522.3" y="119.8" text-anchor="end" class="lc-lab">Personal care &amp; beauty</text><g class="lc-pt" tabindex="0" data-tip="Pet &amp; health supplements | Play: Automate reorder | AI discovery 1/2 (judgment) | Reorder 2/2 (judgment) | Return/trust risk 0.5/2 (judgment)"><circle cx="397.8" cy="31.2" r="10" fill="var(--lime)" stroke="#fff" stroke-width="2"/></g><text x="413.8" y="35.2" text-anchor="start" class="lc-lab">Pet &amp; health supplements</text><g class="lc-pt" tabindex="0" data-tip="Grocery &amp; household consumables | Play: Automate reorder | AI discovery 0.5/2 (Adobe: lowest AI-referral conversion) | Reorder 2/2 (judgment) | Return/trust risk 0.5/2 (judgment)"><circle cx="257.4" cy="31.2" r="10" fill="var(--lime)" stroke="#fff" stroke-width="2"/></g><text x="249.4" y="59.2" text-anchor="start" class="lc-lab">Grocery &amp; household consumables</text><g class="lc-pt" tabindex="0" data-tip="Apparel &amp; footwear | Play: Brand- and experience-led | AI discovery 0.5/2 (Adobe: lowest AI-referral conversion) | Reorder 0.5/2 (judgment) | Return/trust risk 2/2 (NRF: online returns 19.3%; bracketing and wardrobing)"><circle cx="257.4" cy="284.9" r="15" fill="var(--orange)" stroke="#fff" stroke-width="2"/></g><text x="273.4" y="288.9" text-anchor="start" class="lc-lab">Apparel &amp; footwear</text><g class="lc-pt" tabindex="0" data-tip="Home &amp; furniture | Play: Brand- and experience-led | AI discovery 0.5/2 (Adobe: lowest AI-referral conversion) | Reorder 0/2 (judgment) | Return/trust risk 1.5/2 (judgment)"><circle cx="257.4" cy="369.4" r="14" fill="var(--orange)" stroke="#fff" stroke-width="2"/></g><text x="273.4" y="373.4" text-anchor="start" class="lc-lab">Home &amp; furniture</text><g class="lc-pt" tabindex="0" data-tip="Fitment-based replacement parts | Play: Win AI-led discovery | AI discovery 1.5/2 (judgment: spec- and fitment-driven search) | Reorder 1/2 (judgment) | Return/trust risk 1/2 (judgment: wrong-fit returns)"><circle cx="538.3" cy="200.3" r="12" fill="var(--blue)" stroke="#fff" stroke-width="2"/></g><text x="522.3" y="204.3" text-anchor="end" class="lc-lab">Fitment-based replacement parts</text></svg><div class="lc-tip" role="status" aria-live="polite"></div></div>
+          <ul class="lc-legend"><li><i style="background:var(--blue)"></i>Win AI-led discovery</li><li><i style="background:var(--lime)"></i>Automate reorder</li><li><i style="background:var(--lilac)"></i>AI discovery + auto-reorder</li><li><i style="background:var(--orange)"></i>Brand- and experience-led</li><li class="lc-sh">Larger dot = higher return / trust risk</li></ul>
+          <details class="fn-data"><summary>View scores as table</summary><div class="fn-scroll"><table class="fn-table"><thead><tr><th>Category</th><th>AI discovery</th><th>Reorder</th><th>Return/trust risk</th><th>Play</th></tr></thead><tbody><tr><td>Electronics & appliances</td><td>2</td><td>0</td><td>1</td><td>Win AI-led discovery</td></tr><tr><td>Toys & video games</td><td>2</td><td>0</td><td>0.5</td><td>Win AI-led discovery</td></tr><tr><td>Personal care & beauty</td><td>1.5</td><td>1.5</td><td>1</td><td>AI discovery + auto-reorder</td></tr><tr><td>Pet & health supplements</td><td>1</td><td>2</td><td>0.5</td><td>Automate reorder</td></tr><tr><td>Grocery & household consumables</td><td>0.5</td><td>2</td><td>0.5</td><td>Automate reorder</td></tr><tr><td>Apparel & footwear</td><td>0.5</td><td>0.5</td><td>2</td><td>Brand- and experience-led</td></tr><tr><td>Home & furniture</td><td>0.5</td><td>0</td><td>1.5</td><td>Brand- and experience-led</td></tr><tr><td>Fitment-based replacement parts</td><td>1.5</td><td>1</td><td>1</td><td>Win AI-led discovery</td></tr></tbody></table></div></details>
+          <p class="fn-caption">Scores run 0–2. AI-discovery scores for five categories rest on Adobe's category data; reorder and most risk scores are my judgment and are marked as such in the hover detail and in the input table.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>4 · What a brand should do</h2></div>
+        <div class="cx-fixes">
+          <article class="cx-fix"><span class="fn-no">01</span><div><h3>Make product data agent-readable</h3><p>Specs, fitment, sizes and stock must be structured and current. In spec-driven categories, the agent recommends the listing it can verify.</p></div></article>
+          <article class="cx-fix"><span class="fn-no">02</span><div><h3>Build reorder into consumables</h3><p>Subscriptions, reminders and bundles for high-frequency items, so the auto-reorder habit lands on your product, not a cheaper substitute.</p></div></article>
+          <article class="cx-fix"><span class="fn-no">03</span><div><h3>Keep people on trust-heavy categories</h3><p>Apparel and home goods carry the highest return risk. Use AI for fit and content, but keep sizing, imagery and service under human review.</p></div></article>
+          <article class="cx-fix"><span class="fn-no">04</span><div><h3>Measure increment, not credit</h3><p>Every platform reports AI-driven sales with its own attribution. Run holdouts before moving budget, and judge AI tools on margin and labour per order.</p></div></article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>Watchpoints and update rhythm</h2></div>
+        <div class="fn-two">
+          <div class="prose"><h3>Indicators to track</h3><ul>
+            <li>AI-referral share of traffic and its conversion gap versus other sources</li>
+            <li>Retail media CPC and ROAS against search and social</li>
+            <li>Repeat-purchase rate and online share in high-frequency categories</li>
+            <li>Return rate, dispute rate and review trust</li>
+            <li>Member retention and cross-channel repeat purchases</li></ul></div>
+          <div class="prose"><h3>Cadence</h3><ul>
+            <li><b>Every Q4 (Oct–Nov):</b> roll the forecast forward with the year's actual signals.</li>
+            <li><b>Every May–June:</b> check whether each indicator is moving as assumed; flag the ones that are not.</li></ul>
+            <p class="fn-caption">Limits: Adobe and NRF figures are U.S.; company-reported AI sales use each company's own attribution windows; category scores combine evidence and judgment.</p></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>Sources</h2></div>
+        <div class="prose"><ol class="h2-src"><li><a href="https://news.adobe.com/news/2026/01/adobe-holiday-shopping-season" target="_blank" rel="noopener">Adobe Analytics, 2025 holiday season</a> · grade B</li><li><a href="https://www.marketingdive.com/news/ai-has-changed-holiday-shopping-heres-what-the-numbers-say/810265/" target="_blank" rel="noopener">Adobe Analytics, Quarterly AI Traffic Report</a> · grade B</li><li><a href="https://blog.adobe.com/en/publish/2025/03/17/adobe-analytics-traffic-to-us-retail-websites-from-generative-ai-sources-jumps-1200-percent" target="_blank" rel="noopener">Adobe Analytics, March 2025</a> · grade B</li><li><a href="https://www.ecommercebytes.com/1sqo" target="_blank" rel="noopener">Amazon Q4 2025 results (via EcommerceBytes)</a> · grade A</li><li><a href="https://ppc.land/amazons-ad-revenue-hits-21-3b-as-prime-video-reaches-315m-viewers/" target="_blank" rel="noopener">Amazon Q4 2025 results (via PPC Land)</a> · grade A</li><li><a href="https://www.axios.com/2025/09/29/openai-shopping-chatgpt" target="_blank" rel="noopener">OpenAI announcement (via Axios)</a> · grade A</li><li><a href="https://www.retaildive.com/news/walmart-sparky-chatgpt-instant-checkout/" target="_blank" rel="noopener">Retail Dive</a> · grade B</li><li><a href="https://www.retailtouchpoints.com/news/nrf-forecasts-nearly-850-billion-in-returns-in-2025-slight-decrease-from-2024" target="_blank" rel="noopener">NRF &amp; Happy Returns, 2025 Retail Returns Landscape</a> · grade B</li><li><a href="https://nrf.com/media-center/press-releases/consumers-expected-to-return-nearly-850-billion-in-merchandise-in-2025" target="_blank" rel="noopener">NRF &amp; Happy Returns, 2025 Retail Returns Landscape</a> · grade B</li><li><a href="https://news.adobe.com/news/downloads/pdfs/2026/01/010726-holiday-shopping-season-2025.pdf" target="_blank" rel="noopener">Adobe Analytics, 2025 holiday season</a> · grade B</li></ol>
+        <p class="fn-caption"><a class="view-all" href="https://github.com/ss22169a/sylviaho-portfolio/tree/main/ai-commerce-sql">Input tables and scoring model on GitHub <span>→</span></a></p></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <nav><a href="mailto:werr2010@gmail.com">werr2010@gmail.com</a><a href="https://www.linkedin.com/in/zi-yin-ho-4795a02a6/">LinkedIn</a><a href="resume.html">Resume</a><a href="resume.pdf" download>Resume PDF ↓</a></nav>
+      <p>© 2026 Sylvia Ho. Numbers on this site use percentages or indexed values where the underlying data is confidential.</p>
+    </footer>
+  </div>
+</body>
+</html>
