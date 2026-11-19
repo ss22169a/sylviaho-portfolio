@@ -2065,3 +2065,12 @@ a.em-link { color:var(--ink); }
 .section > .prose + .prose, .section > .prose + .fn-scroll, .section > .fn-scroll + .prose { margin-top: 4.5px; }
 .kc-proj { grid-template-columns: 1.4fr repeat(3, 1fr); margin-bottom: 18px; }
 @media (max-width: 760px) { .kc-proj { grid-template-columns: repeat(2, 1fr); } }
+/* Filter tiles: no outline; the chosen tile stays in color, the rest fade (same motion as Career path) */
+button.kcard, button.kcard:hover, button.kcard.on, button.kcard.on:hover,
+button.kcard.k-dark.on, button.kcard.k-dark.on:hover { box-shadow: none; }
+button.kcard { transition: opacity .3s, filter .3s; }
+.kcards:has(> button.kcard.on:not([data-filter="all"])) > button.kcard:not(.on) { opacity: .2; filter: saturate(0); }
+.kcards:has(> button.kcard.on:not([data-filter="all"])) > button.kcard:not(.on):hover { opacity: .55; filter: saturate(.6); }
+button.kcard.on .kcard-num { transform: scale(1.12); }
+button.kcard:focus:not(:focus-visible) { outline: none; }
+@media (prefers-reduced-motion: reduce) { button.kcard { transition: none; } }
