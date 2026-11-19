@@ -74,11 +74,11 @@ strong, b { font-weight: 500; }
   padding: 0 9px 33px;
 }
 .logo-mark { display: grid; grid-template-columns: repeat(2, 10.5px); gap: 3px; }
-.lm { width: 10.5px; height: 10.5px; border-radius: 3px; display: block; }
-.lm-1 { background: var(--ink); }
-.lm-2 { background: var(--lilac); border-radius: 50%; }
-.lm-3 { background: var(--blue); }
-.lm-4 { background: var(--orange); border-radius: 50%; }
+.lm { width: 10.5px; height: 10.5px; display: block; overflow: visible; }
+.lm-1 { fill: var(--lime); }
+.lm-2 { fill: var(--lilac); }
+.lm-3 { fill: var(--blue); }
+.lm-4 { fill: var(--orange); }
 
 .nav { display: flex; flex-direction: column; gap: 3px; }
 .nav-item {
@@ -514,7 +514,6 @@ strong, b { font-weight: 500; }
 .logo.big { margin: auto; padding: 0; font-size: 39px; gap: 9px; }
 .logo.big .logo-mark { grid-template-columns: repeat(2, 13.5px); }
 .logo.big .lm { width: 13.5px; height: 13.5px; }
-.logo.on-dark .lm-1 { background: #fff; }
 
 .swatches { display: grid; gap: 4.5px; margin-top: 4.5px; }
 .swatches.s4 { grid-template-columns: repeat(4, 1fr); }
