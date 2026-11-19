@@ -2086,3 +2086,26 @@ button.kcard:focus:not(:focus-visible) { outline: none; }
 .dl-foot .dl-pop { left: 0; bottom: calc(100% + 6px); }
 .dl-pop a { padding: 8px 12px; border-radius: 4px; font-size: 14px; color: var(--ink); white-space: nowrap; }
 .dl-pop a:hover { background: var(--bg); }
+/* Case cards on phones: calmer type, one-line tags, compact summary list */
+@media (max-width: 600px) {
+  .case-kicker { font-size: 13.5px; margin-bottom: 6px; }
+  .case-head { gap: 12px; margin-bottom: 14px; }
+  .case-head h2 { font-size: 24px; line-height: 1.25; letter-spacing: -.2px; }
+  .case .tags { gap: 5px; margin-top: 8px; }
+  .case .tag { font-size: 12.5px; padding: 3px 10px; }
+  .case-skill { font-size: 13px; padding: 4px 11px 4px 6px; gap: 6px; }
+  .case-skill .sk-ico { width: 16px; height: 16px; }
+  .tldr { grid-template-columns: 1fr; gap: 0; background: var(--bg); border-radius: var(--radius); padding: 2px 12px; margin-bottom: 18px; }
+  .tldr div { display: flex; justify-content: space-between; align-items: baseline; gap: 14px; background: none; border-radius: 0; padding: 9px 0; font-size: 13px; }
+  .tldr div + div { border-top: 1px solid var(--line); }
+  .tldr b { margin-top: 0; font-size: 14px; font-weight: 600; text-align: right; }
+}
+@media (max-width: 600px) {
+  .case-body dd { font-size: 16px; line-height: 1.6; }
+  .case-body dt { font-size: 13px; }
+  .page-title { font-size: 32px; line-height: 1.15; }
+  .page-sub { font-size: 15px; }
+  .tldr { background: #fff; }
+  .case .tldr { background: var(--bg); }
+}
+@media (max-width: 600px) { .prose p, .prose li { font-size: 16px; line-height: 1.6; } }
