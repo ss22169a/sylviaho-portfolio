@@ -2,7 +2,7 @@
 [65469573] 分析專案 | Sylvia Ho
 [62e329ef] <a href="index.html" class="nav-item">總覽</a>⏎<a href="projects.html" class="nav-item active" aria-current="page"><span class="nav-ind" aria-hidden="true"></span><span class="arrow">→</span>分析專案</a>⏎<a href="work.html" class="nav-item">案例研究</a>⏎<a href="ai.html" class="nav-item">我怎麼用 AI</a>⏎<a href="about.html" class="nav-item">關於我</a>⏎<a href="certifications.html" class="nav-item">證照</a>⏎<a href="resume.html" class="nav-item">履歷</a>
 [3323f974] 分析專案
-[8481fce4] 這些是我覺得問題有意思、自己動手做的研究，做完一個就放上來一個。查詢語法、假設和限制都寫出來；來自工作的資料已去識別化，只呈現占比或指數。
+[8481fce4] 這些是我覺得問題有意思、自己動手做的研究內容。將查詢語法、假設和限制都寫出來；只呈現占比或指數。部分內容已去識別化。
 [09dc00c0] <span class="kcard-label">全部專案</span><span class="kcard-num">8</span>
 [0dffffae] <span class="kcard-label">電商</span><span class="kcard-num">06</span>
 [0ffbc7f0] <span class="kcard-label">汽車零件</span><span class="kcard-num">03</span>
