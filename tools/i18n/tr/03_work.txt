@@ -54,7 +54,7 @@
 [71512d28] 上市 30 天內進入 Amazon 類別前 5 名（依當時內部追蹤；原始紀錄已無法取得）。
 [f5a87b53] <a class="btn btn-dark case-cta" href="case-pufido-launch.html">看完整案例與 Looker Studio 儀表板 <span>→</span></a>
 [4c039c82] <span class="case-kicker">Tellus Materials · 氫能設備，B2B</span>
-[9be2b364] 職務<b>網站營運企劃</b>
+[9be2b364] 職務<b>網站營運規劃師</b>
 [f9bcc7c1] 期間<b>建置 2 個月，之後每月寄送 · 2025–26</b>
 [5b482948] 工具<b>政策追蹤表、EDM、公司財報、GA4</b>
 [8a96cb80] 結果<b>詢價轉換率 0.2% → 2.5%</b>

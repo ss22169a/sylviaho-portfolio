@@ -50,7 +50,7 @@
 [20d5afd2] 職涯經歷
 [d796e6f6] <a href="about.html" class="view-all">關於我 <span>→</span></a>
 [af13682c] <span class="bar" style="--c:var(--ink)"></span><b>e-Vehicle Semiconductor</b><small>專案經理<br />2026 年 8 月 – 至今</small>
-[8abc18cf] <span class="bar" style="--c:var(--lime)"></span><b>Tellus Materials</b><small>網站營運企劃<br />2025 年 8 月 – 2026 年 7 月</small>
+[8abc18cf] <span class="bar" style="--c:var(--lime)"></span><b>Tellus Materials</b><small>網站營運規劃師<br />2025 年 8 月 – 2026 年 7 月</small>
 [e572f81a] <span class="bar" style="--c:var(--blue)"></span><b>SecuX</b><small>行銷專案經理<br />2024 年 12 月 – 2025 年 7 月</small>
 [678ce32c] <span class="bar" style="--c:var(--orange)"></span><b>BLANK SPACE</b><small>共同創辦人<br />2020 年 12 月 – 2024 年 7 月</small>
 [e04f8511] <span class="bar" style="--c:var(--gray)"></span><b>加州椰子、連成鞋業</b><small>視覺設計與電商<br />2016 – 2020</small>
