@@ -54,7 +54,7 @@
 [e572f81a] <span class="bar" style="--c:var(--blue)"></span><b>SecuX</b><small>行銷專案經理<br />2024 年 12 月 – 2025 年 7 月</small>
 [678ce32c] <span class="bar" style="--c:var(--orange)"></span><b>BLANK SPACE</b><small>共同創辦人<br />2020 年 12 月 – 2024 年 7 月</small>
 [e04f8511] <span class="bar" style="--c:var(--gray)"></span><b>加州椰子、連成鞋業</b><small>視覺設計與電商<br />2016 – 2020</small>
-[369491ab] 正在找行銷策略、市場進入（GTM）與行銷分析相關職缺
+[369491ab] 歡迎聯繫我討論合作方式，若只是想討論電影心得也非常歡迎
 [86f0d909] 市場情報 · 市場進入規劃 · 整合行銷 · 行銷分析
 [0c714b63] <a href="mailto:werr2010@gmail.com" class="btn btn-dark">聯絡我 <span>→</span></a>
 [055a15e9] <a href="mailto:werr2010@gmail.com">werr2010@gmail.com</a><a href="https://www.linkedin.com/in/zi-yin-ho-4795a02a6/">LinkedIn</a><a href="resume.html">履歷</a>
