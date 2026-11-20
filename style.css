@@ -2150,3 +2150,5 @@ html[lang="zh-Hant"] .btn { white-space: nowrap; }
 @media (max-width: 600px) { html[lang="zh-Hant"] .page-sub br { display: none; } }
 .text-link { text-decoration: underline; text-underline-offset: 3px; }
 .text-link:hover { color: var(--ink); text-decoration-thickness: 2px; }
+#seo-audit .ai-table th { white-space: nowrap; }
+@media (max-width: 760px) { #seo-audit .ai-table { min-width: 640px; } #seo-audit .ai-table td:first-child { min-width: 96px; } }
