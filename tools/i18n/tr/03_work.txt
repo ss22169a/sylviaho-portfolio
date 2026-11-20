@@ -2,7 +2,7 @@
 [51d0ca09] 案例研究 | Sylvia Ho
 [139fe690] <a href="index.html" class="nav-item">總覽</a>⏎<a href="projects.html" class="nav-item">分析專案</a>⏎<a href="work.html" class="nav-item active" aria-current="page"><span class="nav-ind" aria-hidden="true"></span><span class="arrow">→</span>案例研究</a>⏎<a href="ai.html" class="nav-item">我怎麼用 AI</a>⏎<a href="about.html" class="nav-item">關於我</a>⏎<a href="certifications.html" class="nav-item">證照</a>⏎<a href="resume.html" class="nav-item">履歷</a>
 [43a94b1c] 案例研究
-[1cbd1efb] 商業問題 → 資料 → 洞察 → 決策 → 成果。點一張卡片，只看那個案例。
+[1cbd1efb] 商業問題 → 資料 → 洞察 → 決策 → 成果。
 [1bf2576c] <span class="kcard-label">全部案例</span><span class="kcard-num" data-count="5">5</span>
 [4165063b] <span class="kcard-label">車用零件 · Amazon 美國站</span><span class="kcard-num">01</span>
 [df5094f0] <span class="kcard-label">MEMS 感測</span><span class="kcard-num">02</span>
