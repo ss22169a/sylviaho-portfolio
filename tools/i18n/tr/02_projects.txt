@@ -25,7 +25,7 @@
 [2793cb26] 從漏斗找出流失點、計算廣告的真實貢獻、比對預算與需求，再依這些發現訂出四個附目標值的改善方向。
 [321cd033] <a class="btn btn-dark proj-open" href="funnel-analysis.html">閱讀分析 <span>→</span></a>
 [4f9f3c12] <span class="case-kicker">對應：Amazon</span>
-[06fad235] Amazon 品類情報
+[06fad235] 車子零件料號齊全，但為什麼轉換率仍低落？
 [68383c88] <span class="tag tag-orange">分析完成</span><span class="tag">電商</span><span class="tag">汽車零件</span>
 [c29ad2a5] 在 Amazon 販售品相足夠，銷售狀況不佳的情況，認為問題出在需求、價格、庫存，還是商品頁本身？優化的優先順序又是？
 [5b19902a] Amazon Product Opportunity Explorer（品類、相似商品與未滿足需求資料）、賣家的全品項上架報表與 22 個月訂單，在 DuckDB SQL 中以 LESTER / OE 料號串接。
