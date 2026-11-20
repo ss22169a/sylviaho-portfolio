@@ -158,7 +158,7 @@
 [743d93e7] 氫氣安全偵測器的單頁產品 DM：主視覺、關鍵性能數字、規格與應用
 [fe521ec2] =
 [ed95eb6b] =
-[12d55364] <span class="case-kicker">媒體公關 · 新聞稿 → 財經媒體</span>
+[12d55364] <span class="case-kicker">媒體公關 · 新聞稿</span>
 [33d4716c] 外部媒體稿
 [a89bc813] <span class="tag">新聞稿</span><span class="tag">媒體公關</span>
 [85db4af9] 我的角色
