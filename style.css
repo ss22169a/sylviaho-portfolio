@@ -2157,3 +2157,16 @@ html[lang="zh-Hant"] .btn { white-space: nowrap; }
 @media (max-width: 600px) { .tldr > div { white-space: nowrap; } .tldr > div b { white-space: normal; } }
 @media (max-width: 600px) { .case-cta { display: flex; width: 100%; max-width: 100%; height: auto; min-height: 56px; padding: 12px 18px; justify-content: space-between; white-space: normal; font-size: 16px; line-height: 1.35; } html[lang="zh-Hant"] .case-cta { white-space: normal; } }
 .ext-ico { flex-shrink: 0; }
+/* Agent spec table: plain text in column 2 (the bold/nowrap number style is for the SEO weight column) */
+#agent-spec .ai-table td:nth-child(2) { font-family: inherit; font-weight: 300; white-space: normal; }
+/* Phones: stack each row as a small card instead of a squeezed 3-column table */
+@media (max-width: 600px) {
+  #agent-spec .ai-table thead { display: none; }
+  #agent-spec .ai-table, #agent-spec .ai-table tbody, #agent-spec .ai-table tr, #agent-spec .ai-table td { display: block; width: 100%; }
+  #agent-spec .ai-table tr { border-top: 1px solid var(--line); padding: 12px 0; }
+  #agent-spec .ai-table td { border: 0; padding: 2px 0; font-size: 15.5px; line-height: 1.55; }
+  #agent-spec .ai-table td:first-child { font-weight: 500; color: var(--ink); margin-bottom: 4px; }
+  #agent-spec .ai-table td:nth-child(3) { color: var(--muted); margin-top: 6px; }
+  #agent-spec .ai-table td:nth-child(3)::before { content: "Example: "; font-weight: 500; }
+  html[lang="zh-Hant"] #agent-spec .ai-table td:nth-child(3)::before { content: "範例："; }
+}
