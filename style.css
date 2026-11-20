@@ -2145,3 +2145,5 @@ html[lang="zh-Hant"] body {
 }
 html[lang="zh-Hant"] :is(h1, h2, h3, h4) { letter-spacing: 0; }
 html[lang="zh-Hant"] .btn { white-space: nowrap; }
+@media (max-width: 600px) { html[lang="zh-Hant"] .hero h1 { font-size: min(30px, 7.6vw); } html[lang="zh-Hant"] .hero h1 br { display: inline; } }
+@media (max-width: 340px) { html[lang="zh-Hant"] .hero h1 { font-size: 6.4vw; } }
