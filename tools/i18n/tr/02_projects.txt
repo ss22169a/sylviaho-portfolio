@@ -8,7 +8,7 @@
 [0ffbc7f0] <span class="kcard-label">汽車零件</span><span class="kcard-num">03</span>
 [8083d360] <span class="kcard-label">氫能市場與設備</span><span class="kcard-num">01</span>
 [067b0e42] <span class="case-kicker">對應：Google · AI 搜尋</span>
-[40a01bfe] 搜尋的創新者兩難：AI 回答 vs. 廣告點擊
+[40a01bfe] AI 搜尋時代來臨，Google 如何兼顧 AI 答案與廣告點擊？
 [8ce0cd00] <span class="tag tag-blue">分析完成</span><span class="tag">電商</span>
 [002ff598] 問題
 [72fe3f5b] AI 摘要讓使用者留在 Google 搜尋結果頁，卻也拿掉了廣告收入賴以維生的點擊。這些點擊跑去哪裡？生成式回答和搜尋廣告能不能並存？
