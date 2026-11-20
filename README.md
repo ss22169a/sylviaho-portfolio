@@ -29,4 +29,4 @@ Static HTML + CSS, no build step. The visual system is adapted from the Posts da
 
 ## Deploy to GitHub Pages
 Settings → Pages → Source: *Deploy from a branch* → `main` / `(root)` → Save.
-To use the custom domain, add `sylviaho.co` under Pages → Custom domain.
+Live at https://ss22169a.github.io/sylviaho-portfolio/ (canonical URLs, Open Graph tags and sitemap.xml all use this address).
