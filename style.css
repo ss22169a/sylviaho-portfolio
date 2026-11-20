@@ -2170,3 +2170,6 @@ html[lang="zh-Hant"] .btn { white-space: nowrap; }
   #agent-spec .ai-table td:nth-child(3)::before { content: "Example: "; font-weight: 500; }
   html[lang="zh-Hant"] #agent-spec .ai-table td:nth-child(3)::before { content: "範例："; }
 }
+.press-shot { margin: 6px 0 24px; }
+.press-shot img { display: block; width: 100%; height: auto; border-radius: var(--radius); border: 1px solid var(--line); }
+.press-shot figcaption { font-size: 14px; color: var(--muted); margin-top: 8px; }
