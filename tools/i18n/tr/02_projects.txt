@@ -29,7 +29,7 @@
 [68383c88] <span class="tag tag-orange">分析完成</span><span class="tag">電商</span><span class="tag">汽車零件</span>
 [c29ad2a5] 在 Amazon 販售品相足夠，銷售狀況不佳的情況，認為問題出在需求、價格、庫存，還是商品頁本身？優化的優先順序又是？
 [5b19902a] Amazon Product Opportunity Explorer（品類、相似商品與未滿足需求資料）、賣家的全品項上架報表與 22 個月訂單，在 DuckDB SQL 中以 LESTER / OE 料號串接。
-[20f89e36] 發電機、啟動馬達與 NOx 感測器的「需求 vs. 目錄」對照，以及依可觸及需求排序的六項修正。
+[20f89e36] 抓出三個品類的市場需求，用料號比對自家商品並和實際銷售對帳，再依可觸及的需求大小，排出六項修正的優先順序。
 [eb6461c3] <a class="btn btn-dark proj-open" href="category-intelligence.html">閱讀分析 <span>→</span></a>
 [6c7f6179] 燃油車零件生命週期：加碼、收割還是退出
 [f12a1a83] <span class="tag tag-lime">分析完成</span><span class="tag">汽車零件</span>
