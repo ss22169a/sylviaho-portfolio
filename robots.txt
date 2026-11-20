@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ss22169a.github.io/sylviaho-portfolio/sitemap.xml
