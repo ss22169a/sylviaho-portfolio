@@ -32,13 +32,13 @@
 [58cf0622] <span class="tag tag-lilac">O2O 開店</span><span class="tag tag-lime">消費者研究</span><span class="tag ">零售</span>
 [f2eb0fed] 我怎麼用 AI
 [17d67576] <a href="ai.html" class="view-all">運作方式 <span>→</span></a>
-[35254e4e] 串起市場數據
+[35254e4e] 串聯市場數據
 [8b1b307f] 廣告花費、Amazon 工作階段、訂單、取消與退貨放在同一個畫面，資料自動抓取，不必每週匯出再拼湊。
 [a119d6b1] =
-[9966de1f] 競品與價格情報
+[9966de1f] 分析競品與價格情報
 [a2207381] 把自家產品目錄和 Amazon 需求、競品資料逐一比對，發現同料號的競品便宜 72–273%，於是先暫停這條產品線的廣告，等價格調整完再說。
 [dc40ae98] =
-[558a5a2d] 自動化 SEO 檢查
+[558a5a2d] 自動 SEO 審查
 [7ceaca5c] 31 項檢查（16 項規則判定、15 項由 AI 判斷），涵蓋四種語言的產品頁與新聞稿。試跑 2 個頁面就找出 13 個問題，其中 7 個出在網站模板。
 [1416a0c2] <small>Claude · 自建網頁工具</small><span class="ai-go" aria-hidden="true"><span>→</span></span></a>
 [ce7a1b9c] 有防護機制的廣告操作
