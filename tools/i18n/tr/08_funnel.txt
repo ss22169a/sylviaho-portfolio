@@ -1,6 +1,6 @@
 [9f0bcffd] 用 SQL 分析 Google Ads 流量到 Amazon 訂單的漏斗與歸因：四種歸因角度、預算與需求是否對齊，以及四個改善目標。
 [da8db0c2] 用 SQL 做電商漏斗與歸因分析 | Sylvia Ho
-[e388fa33] 付費流量在走到 Amazon 訂單之前，在哪裡流失？營收裡有多少真的是廣告帶來的？下一塊錢該花在哪？
+[e388fa33] 付費流量在哪段途徑遺失掉轉換？營收裡有多少是廣告帶來的？
 [429a2348] 背景<b>在 Amazon 上銷售的美國車用售後零件賣家</b>
 [eb8bc76c] 期間<b>2026 年 10 月 7 日 – 11 月 15 日（40 天）</b>
 [2cb80085] 工具<b>DuckDB SQL · Windsor.ai · Google Ads · Seller Central</b>
