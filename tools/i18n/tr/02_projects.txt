@@ -22,7 +22,7 @@
 [d766ed26] <span class="tag tag-lime">分析完成</span><span class="tag">電商</span><span class="tag">汽車零件</span>
 [e4213a3b] 付費流量在哪段途徑遺失掉轉換？營收裡有多少是廣告帶來的？
 [0b6e0991] 使用 Google 廣告每天的花費與點擊，以及 Amazon 每天的商品銷售與訂單，用 SQL 串在一起分析。不顯示實際金額，只用比例和指數呈現。
-[2793cb26] 六階段漏斗、四種歸因角度、預算與需求的對照，以及四個附目標值的改善方向。
+[2793cb26] 從漏斗找出流失點、計算廣告的真實貢獻、比對預算與需求，再依這些發現訂出四個附目標值的改善方向。
 [321cd033] <a class="btn btn-dark proj-open" href="funnel-analysis.html">閱讀分析 <span>→</span></a>
 [4f9f3c12] <span class="case-kicker">對應：Amazon</span>
 [06fad235] Amazon 品類情報
