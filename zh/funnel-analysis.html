@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>用 SQL 做電商漏斗與歸因分析 | Sylvia Ho</title>
+  <meta name="description" content="用 SQL 分析 Google Ads 流量到 Amazon 訂單的漏斗與歸因：四種歸因角度、預算與需求是否對齊，以及四個改善目標。" />
+  <link rel="canonical" href="https://ss22169a.github.io/sylviaho-portfolio/zh/funnel-analysis.html" />
+  <link rel="alternate" hreflang="en" href="https://ss22169a.github.io/sylviaho-portfolio/funnel-analysis.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://ss22169a.github.io/sylviaho-portfolio/zh/funnel-analysis.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ss22169a.github.io/sylviaho-portfolio/funnel-analysis.html" />
+  <meta name="author" content="Sylvia Ho" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#262626" />
+  <link rel="icon" href="../favicon.ico" sizes="48x48" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+  <link rel="manifest" href="../site.webmanifest" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Sylvia Ho" />
+  <meta property="og:locale" content="zh_TW" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:title" content="用 SQL 做電商漏斗與歸因分析 | Sylvia Ho" />
+  <meta property="og:description" content="用 SQL 分析 Google Ads 流量到 Amazon 訂單的漏斗與歸因：四種歸因角度、預算與需求是否對齊，以及四個改善目標。" />
+  <meta property="og:url" content="https://ss22169a.github.io/sylviaho-portfolio/zh/funnel-analysis.html" />
+  <meta property="og:image" content="https://ss22169a.github.io/sylviaho-portfolio/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Sylvia Ho，行銷與 GTM 策略專家" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="用 SQL 做電商漏斗與歸因分析 | Sylvia Ho" />
+  <meta name="twitter:description" content="用 SQL 分析 Google Ads 流量到 Amazon 訂單的漏斗與歸因：四種歸因角度、預算與需求是否對齊，以及四個改善目標。" />
+  <meta name="twitter:image" content="https://ss22169a.github.io/sylviaho-portfolio/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&family=Stack+Sans+Headline:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css?v=d810ae13" />
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="../js/matter.min.js" defer></script>
+  <script src="../js/posts.js?v=616e883b" defer></script>
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="side-top">
+      <a href="index.html" class="logo"><span class="logo-mark" aria-hidden="true"><svg class="lm lm-1" viewBox="-50 -50 100 100"><circle cx="-22" cy="-22" r="24"/><circle cx="22" cy="-22" r="24"/><circle cx="-22" cy="22" r="24"/><circle cx="22" cy="22" r="24"/><circle cx="0" cy="0" r="32"/></svg><svg class="lm lm-2" viewBox="-50 -50 100 100"><circle cx="0" cy="-20" r="27"/><circle cx="20" cy="0" r="27"/><circle cx="0" cy="20" r="27"/><circle cx="-20" cy="0" r="27"/></svg><svg class="lm lm-3" viewBox="-50 -50 100 100"><rect x="-46" y="-46" width="92" height="92" rx="14"/></svg><svg class="lm lm-4" viewBox="-50 -50 100 100"><circle cx="0" cy="0" r="49"/></svg></span>Sylvia Ho</a>
+      <button type="button" class="menu-btn" data-menu aria-label="開啟選單" aria-expanded="false"><svg viewBox="0 0 16 16" width="18" height="18"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5"/></svg></button>
+    </div>
+    <nav class="nav" aria-label="主選單">
+      <a href="index.html" class="nav-item">總覽</a>
+      <a href="projects.html" class="nav-item active" aria-current="page"><span class="nav-ind" aria-hidden="true"></span><span class="arrow">→</span>分析專案</a>
+      <a href="work.html" class="nav-item">案例研究</a>
+      <a href="ai.html" class="nav-item">我怎麼用 AI</a>
+      <a href="about.html" class="nav-item">關於我</a>
+      <a href="certifications.html" class="nav-item">證照</a>
+      <a href="resume.html" class="nav-item">履歷</a>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="lang-switch" role="group" aria-label="語言"><a href="../funnel-analysis.html" lang="en" hreflang="en">EN</a><a href="funnel-analysis.html" lang="zh-Hant" hreflang="zh-Hant" class="on" aria-current="true">中文</a></div>
+      <a href="mailto:werr2010@gmail.com" class="nav-item">Email</a>
+      <a href="https://www.linkedin.com/in/zi-yin-ho-4795a02a6/" class="nav-item">LinkedIn</a>
+      <div class="user">
+        <img class="avatar avatar-img" src="../img/avatar.jpg" alt="Sylvia Ho" width="42" height="42" />
+        <div class="user-info"><strong>Sylvia Ho</strong><small>台灣新竹</small></div>
+      </div>
+    </div>
+  </aside>
+
+  <div class="page">
+    <main class="main">
+
+      <div class="page-head">
+        <div>
+          <a href="projects.html" class="back-link"><span aria-hidden="true">←</span> 分析專案</a>
+          <h1 class="page-title">用 SQL 做電商漏斗與歸因分析</h1>
+          <p class="page-sub">付費流量在走到 Amazon 訂單之前，在哪裡流失？營收裡有多少真的是廣告帶來的？下一塊錢該花在哪？</p>
+        </div>
+      </div>
+
+      <div class="tldr fn-tldr">
+        <div>背景<b>在 Amazon 上銷售的美國車用售後零件賣家</b></div>
+        <div>期間<b>2026 年 10 月 7 日 – 11 月 15 日（40 天）</b></div>
+        <div>工具<b>DuckDB SQL · Windsor.ai · Google Ads · Seller Central</b></div>
+        <div>資料粒度<b>廣告群組 × 日 · ASIN × 日 · 訂單明細</b></div>
+      </div>
+
+      <section class="section">
+        <div class="prose fn-answer">
+          <h3>簡短結論</h3>
+          <p>廣告確實帶來了流量，但大部分預算花在還沒被證明有需求的搜尋上；拿到的訂單又有不少因為缺貨被取消，廣告真正帶來的營收只達損益兩平門檻的 <b>38%</b>。解法不是加預算，而是改四件事：錢花在哪裡，以及怎麼衡量成效。</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>1 · 漏斗</h2><span class="muted-note">Google Ads 曝光 → 沒有退貨的 Amazon 訂單</span></div>
+        <ol class="fn-funnel" data-reveal><li class="fn-step"><span class="fn-rate muted">起點</span><b>21,091</b><span>曝光</span></li><li class="fn-step"><span class="fn-rate">13.0%</span><b>2,734</b><span>付費點擊</span></li><li class="fn-step fn-hot"><span class="fn-rate">14.6%</span><b>399</b><span>商品頁工作階段</span><small class="fn-leak">85% 的點擊沒有走到商品頁</small></li><li class="fn-step"><span class="fn-rate">4.0%</span><b>16</b><span>下單</span></li><li class="fn-step fn-hot"><span class="fn-rate">68.8%</span><b>11</b><span>出貨</span><small class="fn-leak">16 筆中有 5 筆在下單後取消</small></li><li class="fn-step"><span class="fn-rate">90.9%</span><b>10</b><span>保留（未退貨）</span></li></ol>
+        <p class="fn-caption">Google Ads 看不到 Amazon 的結帳，所以「點擊 → 商品頁」這一段是綜合比率（所有商品頁工作階段 ÷ 付費點擊），不是逐筆點擊串接。曝光資料涵蓋 10 月 18 日 – 11 月 15 日，這是廣告群組 API 回傳的範圍。</p>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>2 · 歸因：四種角度，而不是一個比率</h2></div>
+        <div class="fn-lenses">
+          <div class="fn-lens"><span class="fn-k">綜合報酬</span><b>65%</b><small>的損益兩平門檻。營收 ÷ 花費，把每一筆銷售都算給廣告，包括本來就會發生的銷售。</small></div>
+          <div class="fn-lens"><span class="fn-k">增量報酬</span><b>38%</b><small>的損益兩平門檻。高於投廣告前 28 天基準的營收 ÷ 花費。每週訂單從 1.3 筆增加到 1.9 筆；損益兩平需要 3.3 筆。</small></div>
+          <div class="fn-lens"><span class="fn-k">涵蓋率</span><b>11 筆中 4 筆</b><small>出貨訂單在購買前 3 天內，有同一車種區隔的指定車款廣告群組在投放。另外 7 筆來自沒有投放指定廣告的區隔。</small></div>
+          <div class="fn-lens"><span class="fn-k">季節性檢查</span><b>5 → 11</b><small>2025 年與 2026 年同樣 40 天的出貨訂單數。有一部分成長是真的，但訂單只有個位數，一筆大量訂單就能讓結果大幅擺動。</small></div>
+        </div>
+
+        <div class="fn-two">
+          <div class="prose">
+            <h3>改版改變的是流量，不是訂單</h3>
+            <p>10 月 21 日起，帳戶從導到賣場首頁的通用廣泛關鍵字（S1），改成導到賣場分類頁的品類與車款關鍵字（S2）。11 月新增的幾個車款廣告群組會直接導到單一商品頁，但到目前為止只花了不到 2% 的預算。</p>
+            <table class="fn-table">
+              <thead><tr><th></th><th>S1 · 14 天</th><th>S2 · 26 天</th></tr></thead>
+              <tbody><tr><th>點擊 → 商品頁</th><td>5.3%</td><td class="good">22.3% <span aria-hidden="true">▲</span></td></tr><tr><th>每次商品頁工作階段成本（指數）</th><td>100</td><td class="good">27 <span aria-hidden="true">▲</span></td></tr><tr><th>每次商品頁工作階段的訂單數</th><td>7.7%</td><td class="bad">1.8% <span aria-hidden="true">▼</span></td></tr><tr><th>增量營收 vs. 損益兩平門檻</th><td>61%</td><td class="bad">21% <span aria-hidden="true">▼</span></td></tr></tbody>
+            </table>
+            <p class="fn-caption">S2 帶來四倍的商品頁流量、成本只有四分之一，但每個工作階段的轉換率也只剩四分之一。S1 有一筆是 3 件的大量訂單，所以 S1 的領先在統計上也不可靠。隔天的點擊和工作階段有相關（r = 0.51），每天的花費則沒有（r = 0.01）：每次點擊付更多錢，並沒有買到更多造訪。</p>
+          </div>
+          <div class="prose">
+            <h3>商品頁工作階段落在哪裡</h3>
+            <p><b>344</b> 個工作階段分散在 <b>111</b> 個商品上，其中 68 個商品只有一次造訪。<b>42%</b> 的工作階段落在從沒賣出過的商品上，只有 8 個商品有轉換。</p>
+            <p>造訪最多的單一商品（一款 F-150 發電機）有 30 個工作階段、零訂單。它的紀錄有 6 筆取消，還有一筆因為充電電壓偏低被退貨，等於廣告把買家送到最不可能成交的商品頁。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>3 · 預算有跟著需求走嗎？</h2></div>
+        <div class="prose fn-chart">
+          <div class="al-legend" aria-hidden="true"><span><i class="al-spend"></i>廣告花費占比 · 最近 30 天</span><span><i class="al-demand"></i>已驗證需求占比 · 出貨營收，2025 年 1 月 – 2026 年 11 月</span></div>
+          <div class="al-chart" role="img" aria-label="各車種區隔的廣告花費占比與已驗證需求占比">
+          <div class="al-row" tabindex="0" aria-label="轎車／SUV：廣告花費 0.2%，已驗證需求 32.0%">
+            <span class="al-name">轎車／SUV</span>
+            <div class="al-bars">
+              <div class="al-bar"><i class="al-spend" style="width:0.3%"></i><em>0.2%</em></div>
+              <div class="al-bar"><i class="al-demand" style="width:44.9%"></i><em>32.0%</em></div>
+            </div>
+            <span class="al-tip">花費 0.2% · 需求 32.0% · 客單價指數 98</span>
+          </div>
+          <div class="al-row" tabindex="0" aria-label="中重型卡車：廣告花費 0.2%，已驗證需求 27.4%">
+            <span class="al-name">中重型卡車</span>
+            <div class="al-bars">
+              <div class="al-bar"><i class="al-spend" style="width:0.3%"></i><em>0.2%</em></div>
+              <div class="al-bar"><i class="al-demand" style="width:38.4%"></i><em>27.4%</em></div>
+            </div>
+            <span class="al-tip">花費 0.2% · 需求 27.4% · 客單價指數 126</span>
+          </div>
+          <div class="al-row" tabindex="0" aria-label="皮卡／廂型車：廣告花費 12.3%，已驗證需求 24.7%">
+            <span class="al-name">皮卡／廂型車</span>
+            <div class="al-bars">
+              <div class="al-bar"><i class="al-spend" style="width:17.3%"></i><em>12.3%</em></div>
+              <div class="al-bar"><i class="al-demand" style="width:34.6%"></i><em>24.7%</em></div>
+            </div>
+            <span class="al-tip">花費 12.3% · 需求 24.7% · 客單價指數 93</span>
+          </div>
+          <div class="al-row" tabindex="0" aria-label="工業／越野：廣告花費 0.0%，已驗證需求 9.0%">
+            <span class="al-name">工業／越野</span>
+            <div class="al-bars">
+              <div class="al-bar"><i class="al-spend" style="width:0.0%"></i><em>0.0%</em></div>
+              <div class="al-bar"><i class="al-demand" style="width:12.6%"></i><em>9.0%</em></div>
+            </div>
+            <span class="al-tip">花費 0.0% · 需求 9.0% · 客單價指數 83</span>
+          </div>
+          <div class="al-row" tabindex="0" aria-label="啟動馬達：廣告花費 9.6%，已驗證需求 6.8%">
+            <span class="al-name">啟動馬達</span>
+            <div class="al-bars">
+              <div class="al-bar"><i class="al-spend" style="width:13.5%"></i><em>9.6%</em></div>
+              <div class="al-bar"><i class="al-demand" style="width:9.5%"></i><em>6.8%</em></div>
+            </div>
+            <span class="al-tip">花費 9.6% · 需求 6.8% · 客單價指數 81</span>
+          </div>
+          <div class="al-row" tabindex="0" aria-label="NOx 感測器：廣告花費 6.5%，已驗證需求 0.0%">
+            <span class="al-name">NOx 感測器</span>
+            <div class="al-bars">
+              <div class="al-bar"><i class="al-spend" style="width:9.1%"></i><em>6.5%</em></div>
+              <div class="al-bar"><i class="al-demand" style="width:0.0%"></i><em>0.0%</em></div>
+            </div>
+            <span class="al-tip">花費 6.5% · 需求 0.0%</span>
+          </div>
+          <div class="al-row" tabindex="0" aria-label="沒有指定車款（通用、品類、品牌）：廣告花費 71.3%，已驗證需求 0.0%">
+            <span class="al-name">沒有指定車款（通用、品類、品牌）</span>
+            <div class="al-bars">
+              <div class="al-bar"><i class="al-spend" style="width:100.0%"></i><em>71.3%</em></div>
+              <div class="al-bar"><i class="al-demand" style="width:0.0%"></i><em>0.0%</em></div>
+            </div>
+            <span class="al-tip">花費 71.3% · 需求 0.0%</span>
+          </div>
+          </div>
+          <details class="fn-data"><summary>以表格檢視</summary>
+            <table class="fn-table"><thead><tr><th>區隔</th><th>花費占比</th><th>需求占比</th><th>出貨訂單</th></tr></thead><tbody><tr><td>轎車／SUV</td><td>0.2%</td><td>32.0%</td><td>27</td></tr><tr><td>中重型卡車</td><td>0.2%</td><td>27.4%</td><td>18</td></tr><tr><td>皮卡／廂型車</td><td>12.3%</td><td>24.7%</td><td>22</td></tr><tr><td>工業／越野</td><td>0.0%</td><td>9.0%</td><td>9</td></tr><tr><td>啟動馬達</td><td>9.6%</td><td>6.8%</td><td>7</td></tr><tr><td>NOx 感測器</td><td>6.5%</td><td>0.0%</td><td>0</td></tr><tr><td>沒有指定車款（通用、品類、品牌）</td><td>71.3%</td><td>0.0%</td><td>0</td></tr></tbody></table>
+          </details>
+          <p class="fn-caption">需求是用投廣告之前和期間的出貨訂單計算，反映的是買家不管有沒有廣告都會做的選擇。轎車／SUV 和中重型卡車占已驗證需求的 59%，卻只拿到 0.4% 的花費。中重型卡車的訂單金額也最大，客單價指數 126。</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>4 · 點擊之後的流失</h2></div>
+        <div class="fn-lenses fn-3">
+          <div class="fn-lens"><span class="fn-k">訂單取消</span><b>41%</b><small>2025 年 1 月以來 141 筆訂單中有 58 筆取消。工業／越野零件最高，達 59%。</small></div>
+          <div class="fn-lens"><span class="fn-k">缺貨損失</span><b>97%</b><small>2026 年因缺貨取消的金額，相當於 40 天廣告期間全部營收的 97%。2026 年的取消有 46% 是缺貨造成。</small></div>
+          <div class="fn-lens"><span class="fn-k">廣告期間</span><b>5 筆中 3 筆</b><small>40 天廣告期間的取消有 3 筆是缺貨：廣告把買家帶來了，貨架卻讓他們走了。</small></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>5 · 值得重新規劃的四個目標</h2></div>
+        <div class="fn-goals">
+          <article class="fn-goal" style="--c:var(--lilac)">
+            <span class="fn-no">01</span>
+            <h3>把錢花在已經存在的需求上</h3>
+            <p>71% 的花費買的是沒有提到任何車款的搜尋，6.5% 花在一條從沒賣出過的感測器產品線上（價格是副廠的 2–3 倍）。而占已驗證需求 59% 的兩個區隔，幾乎什麼都沒拿到。</p>
+            <div class="fn-kpi"><span>現在<b>22%</b></span><span>目標<b>≥ 60%</b></span><em>的花費放在對應到有出貨訂單區隔的車款或料號廣告群組</em></div>
+          </article>
+          <article class="fn-goal" style="--c:var(--lime)">
+            <span class="fn-no">02</span>
+            <h3>先補漏，再開水龍頭</h3>
+            <p>每一筆取消的訂單，都是已經付過錢的需求。光是 2026 年的缺貨損失，就幾乎抵掉廣告帶來的營收。商品庫存偏低時，推廣它的廣告群組應該自動暫停；出貨慢的零件也應該停止提供快速到貨。</p>
+            <div class="fn-kpi"><span>現在<b>41%</b></span><span>目標<b>&lt; 10%</b></span><em>取消率；庫存少於 3 件的商品不投任何廣告</em></div>
+          </article>
+          <article class="fn-goal" style="--c:var(--blue);--t:#fff">
+            <span class="fn-no">03</span>
+            <h3>買意圖，不是買流量</h3>
+            <p>商品頁流量提高四倍，轉換率卻降到四分之一。每個廣告群組應該導到它提到的那幾個商品，挑有庫存、退貨紀錄乾淨的商品頁，並用每個工作階段的訂單數來評估，而不是每次點擊的工作階段數。</p>
+            <div class="fn-kpi"><span>現在<b>2.3%</b></span><span>目標<b>2×</b></span><em>每次商品頁工作階段的訂單數，依廣告群組追蹤</em></div>
+          </article>
+          <article class="fn-goal" style="--c:var(--orange)">
+            <span class="fn-no">04</span>
+            <h3>衡量增量，不看比率</h3>
+            <p>綜合比率會讓廣告看起來比較好（達損益兩平的 65%，增量只有 38%），而 11 筆訂單也不足以下定論。15 個廣告群組只有 2 個有 Amazon Attribution 標記。先替每個廣告群組加上標記，再做兩週停投的對照測試。</p>
+            <div class="fn-kpi"><span>現在<b>2 / 15</b></span><span>目標<b>15 / 15</b></span><em>個廣告群組有標記；加碼／停損規則：每週 ≥ 3.3 筆訂單</em></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>怎麼做的</h2></div>
+        <div class="fn-two">
+          <div class="prose">
+            <h3>模型</h3>
+            <ul>
+              <li><b>Staging：</b> Google Ads 依廣告群組 × 日 × 聯播網 × 裝置（新台幣依公司記帳匯率換算為美元）、Amazon Sales &amp; Traffic 依 ASIN × 日，以及含狀態與退貨的訂單明細。</li>
+              <li><b>Marts：</b> 各階段漏斗、廣告群組經濟效益、聯播網流失、ASIN 流量品質、取消原因、增量、預算與需求對齊、涵蓋率、反應延遲，以及損益兩平。</li>
+              <li><b>區隔：</b> 每個廣告群組和每筆訂單都對應到同一套車種區隔，不需要逐筆點擊串接，也能比較花費和需求。</li>
+            </ul>
+            <h3>限制，直接說清楚</h3>
+            <ul>
+              <li>訂單數很少，所以這些發現只能指出方向，不能證明效果；目標 04 的停投對照測試才是證明的方法。</li>
+              <li>投廣告前的基準只有一段 28 天，廣告平台 API 也只回傳最近 30 天。</li>
+              <li>不揭露金額；占比和指數來自同一批查詢。</li>
+            </ul>
+          </div>
+          <div class="prose">
+            <h3>其中兩段查詢</h3>
+            <pre class="fn-sql"><code>-- A1. Incrementality vs. the 28-day pre-ad baseline
+WITH base AS (SELECT revenue_usd / days AS rev_day FROM stg_baseline),
+     agg  AS (SELECT regime, COUNT(*) AS days,
+                     SUM(revenue_usd) AS rev, SUM(spend_usd) AS spend
+              FROM stg_daily GROUP BY regime)
+SELECT regime,
+       rev / spend                          AS blended_return,
+       (rev - b.rev_day * days) / spend     AS incremental_return
+FROM agg, base b;
+
+-- A3. Does the budget follow proven demand?
+SELECT segment,
+       spend_usd / SUM(spend_usd) OVER ()   AS spend_share,
+       demand_usd / SUM(demand_usd) OVER () AS demand_share
+FROM segment_spend FULL JOIN segment_demand USING (segment);</code></pre>
+            <p class="fn-caption"><a class="view-all" href="https://github.com/ss22169a/sylviaho-portfolio/tree/main/funnel-sql">GitHub 上的完整 SQL 模型 <span>→</span></a> 原始資料不公開。</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <nav><a href="mailto:werr2010@gmail.com">werr2010@gmail.com</a><a href="https://www.linkedin.com/in/zi-yin-ho-4795a02a6/">LinkedIn</a><a href="resume.html">履歷</a><details class="dl-menu dl-foot"><summary>履歷 PDF ↓</summary><div class="dl-pop"><a href="../resume.pdf" download="Sylvia_Ho_Resume_EN.pdf">English (EN)</a><a href="../resume-zh.pdf" download="Sylvia_Ho_Resume_ZH.pdf">中文 (ZH)</a></div></details></nav>
+      <p>© 2026 Sylvia Ho。涉及保密資料的數字，本站一律以百分比或指數呈現。</p>
+    </footer>
+  </div>
+</body>
+</html>

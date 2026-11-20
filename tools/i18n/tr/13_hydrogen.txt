@@ -1,0 +1,97 @@
+[65651563] 從電網瓶頸到機會矩陣：以 IEA 與柏克萊實驗室資料建立的情境模型，估算 AI 資料中心帶來的燃料電池與氫氣需求。
+[8048c0ed] AI 資料中心會讓氫能提早起飛嗎？ | Sylvia Ho
+[8e418220] AI 資料中心會讓氫能提早起飛嗎？從電網瓶頸到機會矩陣
+[f0b71341] AI 資料中心需要電力的速度，比電網能併網的速度快。這會不會帶來燃料電池、電解槽與氫氣的實際需求？如果會，供應商該在哪裡、什麼時候進場？
+[52d77cec] 範圍<b>全球，美國是最大市場</b>
+[8b5a6e50] 來源<b>以 IEA 為主；LBNL；公司財報 · A/B 級</b>
+[b29fdad0] 方法<b>由上而下的需求 · 由下而上的供給 · 情境分析</b>
+[eababf96] 產出<b>機會矩陣與四個行動</b>
+[a8fa1c8a] 燃料電池會，氫氣還不會。現在併網要等超過五年，所以資料中心開始買現場發電，燃料電池也確實拿到合約。但這些燃料電池大多燒天然氣。在基準情境下，資料中心到 2030 年會帶來約 <b>3 GW 的燃料電池</b>，但每年只需要約 <b>65 kt 的氫氣</b>，大約對應 <b>0.8 GW 的電解槽</b>，跟整個市場比很小。氫氣需求要等燃料轉換變便宜才會出現，所以近期的機會是燃料電池，以及轉換前就必須到位的零組件，例如氫氣安全感測。
+[f95073b6] 1 · 問題：用電需求跑得比電網快
+[72354a72] <span class="muted-note">IEA · LBNL · A 級</span>
+[24919b23] <span class="fn-k">資料中心用電</span><b>415 → 945 TWh</b><small>2024 到 2030 年，每年約成長 15%。美國占 45%，到 2030 年美國用電成長有將近一半來自資料中心。</small>
+[4636200c] <span class="fn-k">等待併網</span><b>61 個月</b><small>2025 年完工的美國專案，從申請到運轉的中位數時間；2015 年是 36 個月。</small>
+[24386551] <span class="fn-k">誰來補缺口</span><b>天然氣優先</b><small>在 IEA 基準情境中，到 2030 年天然氣為資料中心增加約 175 TWh 的供電；2025 年美國併網排隊中的燃氣容量增加 86%。</small>
+[0199400c] 到 2030 年新增的 530 TWh 資料中心用電，相當於約 <b>61 GW</b> 全天候的平均負載。這就是所有現場發電方案在爭的市場。
+[d13a9f7e] 2 · 為什麼燃料電池拿得到訂單，以及為什麼那還不是氫能
+[73c4c594] 速度贏過每 MWh 成本
+[3bcd528b] <b>供電速度：</b> Bloom Energy 表示約 90 天就能部署 50 MW，併網則要等五年。
+[cbca04b1] <b>大規模合約：</b> 與 AEP 簽下最高 1 GW 的協議（2024）、與 Oracle 合作（2025），以及和 Brookfield 為 AI 資料中心建立的 50 億美元合作（2025）。
+[29ea8eff] <b>營收：</b> 2025 年 20.2 億美元（+37%），2026 年財測 31–33 億美元，工廠產能從每年 1 GW 擴到 2 GW。
+[b5427212] 燃料路徑決定電解槽的時程
+[008f837a] 這些固態氧化物燃料電池目前燒天然氣，之後可以改用氫氣。公司沒有揭露會有多少台轉換。
+[b0972cb9] 化石燃料製氫和低碳氫的成本差距自 2022 年以來擴大，所以現在轉換還不划算。
+[b944d178] 因此資料中心的燃料電池訂單可以當作領先指標：它們顯示氫氣之後可能會在哪裡用上。
+[5ba76790] 3 · 供給：電解槽工廠的產能大量閒置
+[cb1bf597] =
+[bd5046ed] <span class="fn-k">電解槽裝置容量</span><b>2 → 4+ GW</b><small>2024 年底為 2 GW（2025 年報告），2025 年底超過 4 GW（2026 年報告）。中國約占已裝置與已做最終投資決定（FID）容量的 65%。</small>
+[f50f09c6] <span class="fn-k">工廠稼動率</span><b>~9%</b><small>2025 年底每年約有 58 GW 的製造產能，但當年實際生產不到 5 GW（2026 年報告）。</small>
+[2c27be74] <span class="fn-k">已做 FID 的專案</span><b>6%</b><small>2025 年報告（2025 年中的狀態）中，已宣布的低碳氫產能只有 6% 做了最終投資決定。2026 年報告補充，2025 年新增的 FID 首度下滑。</small>
+[022ff795] 用 FID 篩選宣布的專案，和替來源分級是同一個原則：只有真的有錢投入的承諾才算數。
+[d6b497a1] 4 · 情境模型：到 2030 年，資料中心能帶來多少氫氣需求？
+[569aae5b] 情境
+[c66fe6f3] 新增負載中由燃料電池供應的比例
+[d590177c] 燃料電池容量
+[ac15a753] 使用 H₂ 的比例
+[cc845ab9] 每年 H₂ 需求
+[f7b415e7] 需要的電解槽
+[0223fd7a] 電解槽支出
+[077fe9c5] 基準
+[b1a5954a] 高
+[4425821b] 假設：新增負載 61 GW（IEA）；燃料電池效率 55%、運轉率 90%；電解每公斤 52 kWh、稼動率 50%；兩個比例都從 2026 年起線性增加。情境比例是我的判斷，並以 Bloom 計畫中每年 2 GW 的工廠產能為上限，所以即使是高情境，也在供應商做得出來的範圍內。
+[a4962b9a] 基準情境，逐年
+[879e3232] 年份
+[3f8c8545] 新增燃料電池
+[ae6ade1e] 累計
+[13e34c13] H₂ 需求
+[3b12ecb9] 電解槽
+[111083b2] 校準：基準情境 2030 年新增的 1,008 MW，約為領先廠商計畫中每年 2 GW 工廠產能的 50%，所以這條路徑在供應商做得出來的範圍內。電解槽支出採用 IEA 2025 年中位數的資本支出：中國製系統約 800 美元/kW，非中國製約 2,200 美元/kW。
+[d4fb5dc8] <b>怎麼解讀：</b>即使是高情境（6 GW 電解槽），也不到 IEA 預期已做 FID 的專案一年約 9 GW 的量。2030 年前，資料中心救不了電解槽廠商。它們會建立的，是之後可以改用氫氣的燃料電池裝置基礎。
+[9ed302f2] 5 · 機會矩陣
+[e3b82040] 現在
+[ab10a903] 營收什麼時候開始 →
+[32767bc8] 合約
+[d770cc07] 試行
+[b1d472e4] 承諾
+[1f336e25] 證據強度
+[457e8ebc] 以天然氣燃料電池作為主電源
+[4f1e3a7d] 燃氣渦輪（競爭方案）
+[53d7f286] 以燃料電池取代柴油備援
+[e98db28d] 氫氣安全感測與洩漏偵測
+[8f1f3250] 可改用氫氣的燃料轉換
+[9f6ea01b] 資料中心現場電解
+[f1281f2d] 為什麼不用成長率（CAGR）當座標軸：模型只估算燃料電池和電解槽，而且是線性成長，每個情境的 CAGR 都一樣（約 50%），拿來排序沒有意義。時間軸改用模型裡有的輸入值（燃料電池 3 個月可部署 vs. 併網要等 61 個月；已宣布的氫氣產能只有 6% 做了 FID），證據強度則依支撐每個選項的來源等級。
+[e63475c0] 左上角是現在錢正在流向的地方；右下角是宣布比合約多的地方。氫氣安全感測落在中間：只要有儲存或使用氫氣的地方，消防和建築法規（例如 NFPA 2）都要求裝設，所以它的需求量會跟著每一個氫能設置成長，包括室內和貨櫃式設備。感測器端的證據基礎請見<a href="case-hydrogen-evidence.html">案例 02</a>。
+[78cd410b] 6 · 四個行動
+[d242dd30] 現在就賣進天然氣燃料電池這波需求
+[df662fd2] 燃料電池是唯一有 GW 級合約和實際營收的氫能相關技術。主打供電速度；「可改用氫氣」當作附加價值，不要放在標題。
+[9f1ae0ed] 在燃料轉換之前就把零組件設計進去
+[7b630972] 感測器、閥件和熱管理零件要通過燃料電池廠商的認證，得花好幾年。現在通過認證，氫氣來的時候就會被列進規格；而法規讓洩漏偵測成為必備。
+[ed9a31f2] 把資料中心電解視為 2030 年以後的選項
+[3f04403b] FID 轉換率低、工廠稼動率約 9%，顯示瓶頸是需求太弱。不要因為資料中心的故事就擴產。
+[99e0387e] 每季觀察四個觸發點
+[f51fed20] 資料中心簽下的燃料電池 MW 數；其中使用氫氣的比例；新的電解槽 FID；以及 LBNL 的併網等待時間。如果併網等待時間縮短，燃料電池的理由也會變弱。
+[0e4b2151] 模型怎麼建的
+[1260343f] <span class="fn-k">fact_macro_assumptions</span><b>13 個輸入值</b><small>資料中心需求、併網等待時間、電解槽產能、FID 比例和資本支出。每一列都有來源 ID、網址和等級。</small>
+[d827850c] <span class="fn-k">fact_vendor_orders</span><b>校準</b><small>取自公司財報的燃料電池營收、財測和工廠產能，用來讓 2026–2030 年的路徑合乎現實。</small>
+[3aba8cdf] <span class="fn-k">mart_demand_forecast_matrix</span><b>3 × 5 列</b><small>每個情境、每一年：新增燃料電池、氫氣需求、電解槽和支出。上面的表格就是由它產生。</small>
+[21e10823] <a class="view-all" href="https://github.com/ss22169a/sylviaho-portfolio/tree/main/hydrogen-sql">GitHub 上的 SQL 模型與輸入資料表 <span>→</span></a>
+[3d8eaeca] <a href="https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai" target="_blank" rel="noopener">IEA, Energy and AI (2025)</a> · A 級
+[c19c1060] <a href="https://eta-publications.lbl.gov/sites/default/files/2026-06/queued_up_2026_edition.pdf" target="_blank" rel="noopener">LBNL, Queued Up 2026 Edition</a> · A 級
+[3ffc59fb] <a href="https://www.modernpowersystems.com/?p=36386" target="_blank" rel="noopener">IEA, Global Hydrogen Review 2025</a> · A 級
+[f8e1588d] <a href="https://www.argusmedia.com/en/news-and-insights/latest-market-news/2841836-green-h2-electrolyser-sector-enters-consolidation-iea" target="_blank" rel="noopener">IEA, Global Hydrogen Review 2026 (via Argus)</a> · A 級
+[5b2a1d63] <a href="https://www.iea.org/commentaries/what-explains-the-cost-advantage-of-chinese-electrolysers" target="_blank" rel="noopener">IEA 評論：中國電解槽成本（取 1900–2500 的中位數）</a> · A 級
+[cb0643f4] <a href="https://www.utilitydive.com/news/bloom-energy-says-its-on-track-for-2-gw-annual-production-capacity/804291/" target="_blank" rel="noopener">Bloom Energy 揭露：約 90 天部署 50 MW（via Utility Dive）</a> · B 級
+[c3baa324] <a href="https://greentechlead.com/?p=53819" target="_blank" rel="noopener">IEA, Global Hydrogen Review 2026 (via GreenTech Lead)</a> · A 級
+[d63912b7] <a href="https://quartr.com/events/bloom-energy-corporation-be-q4-2025_3sJoGyMO" target="_blank" rel="noopener">Bloom Energy 2025 年第四季財報（via Quartr）</a> · A 級
+[963a0c56] 情境中的燃料電池與氫氣比例是假設，不是預測；表格呈現的是這些比例改變時答案怎麼變。
+[52f7ac16] 公司數字來自財報新聞稿與揭露資訊；合約規模是「最高」金額，可能高於最終實際交付。
+[51d00a1e] 產業團體的數字（例如氫能委員會）不拿來估算規模，因為往往偏樂觀；以 IEA 為基準。
+[310726b5] 這裡沒有用數字比較各技術的每 MWh 成本：供應資料中心的燃料電池，公開數據太少，達不到 A 或 B 級。
+[e9a722f8] 機會矩陣：六個選項依營收開始時間與證據強度分布
+[2840a226] 以天然氣燃料電池作為主電源 | 已簽下 GW 級合約，且有公開營收
+[b1a74057] 燃氣渦輪（競爭方案） | 2025 年美國併網排隊中的燃氣容量增加 86%
+[1ee89b25] 以燃料電池取代柴油備援 | 有試行，還沒有量
+[21a64d98] 氫氣安全感測與洩漏偵測 | 只要儲存或使用氫氣，法規就要求裝設
+[68c6dfb9] 可改用氫氣的燃料轉換 | 設備可以轉換；什麼時候轉看燃料成本
+[83c8ea91] 資料中心現場電解 | FID 很少；2025 年新增 FID 下滑

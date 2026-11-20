@@ -1,0 +1,158 @@
+[6bc711af] Sylvia Ho 怎麼用有人把關的 AI agent 處理市場數據、價格情報、SEO 檢查、廣告操作與產業新聞撰稿。
+[f28227dc] 我怎麼用 AI | Sylvia Ho
+[39617243] <a href="index.html" class="nav-item">總覽</a>⏎<a href="projects.html" class="nav-item">分析專案</a>⏎<a href="work.html" class="nav-item">案例研究</a>⏎<a href="ai.html" class="nav-item active" aria-current="page"><span class="nav-ind" aria-hidden="true"></span><span class="arrow">→</span>我怎麼用 AI</a>⏎<a href="about.html" class="nav-item">關於我</a>⏎<a href="certifications.html" class="nav-item">證照</a>⏎<a href="resume.html" class="nav-item">履歷</a>
+[00de71c3] 我怎麼用 AI
+[216d045a] AI 處理資料，人做決定。六個行銷與網站營運流程、一套設定方法，以及管理 14 個 agent 的一套規則。
+[3c567026] <a class="kcard" style="background:var(--lilac)" href="#connected-data"><span class="kcard-label">串起市場數據</span><span class="kcard-num">01</span></a><a class="kcard" style="background:var(--lime)" href="#pricing-intel"><span class="kcard-label">競品與價格情報</span><span class="kcard-num">02</span></a><a class="kcard" style="background:var(--blue);color:#fff" href="#seo-audit"><span class="kcard-label">自動化 SEO 檢查</span><span class="kcard-num">03</span></a><a class="kcard" style="background:var(--orange)" href="#ad-ops"><span class="kcard-label">有防護機制的廣告操作</span><span class="kcard-num">04</span></a><a class="kcard" style="background:var(--lime)" href="#agent-spec"><span class="kcard-label">多 agent 流程設定</span><span class="kcard-num">05</span></a><a class="kcard" style="background:var(--ink);color:#fff" href="#trend-writing"><span class="kcard-label">產業新聞撰稿</span><span class="kcard-num">06</span></a><a class="kcard" style="background:var(--lilac)" href="#digital-publication"><span class="kcard-label">數位文宣設計</span><span class="kcard-num">07</span></a>
+[3c0a0105] 運作原則
+[28fb8e0e] 每個 agent 都會被指定一個自主層級。
+[d778d683] <span>人工控制較多</span><span>自動化較多</span>
+[64b8aebe] <span class="bar"></span><b>L0</b><strong>唯讀</strong><small>抓資料、做分析，什麼都不改。</small>
+[9c204f1e] <span class="bar"></span><b>L1</b><strong>草擬</strong><small>準備報告、改寫稿和建議，等人審閱。</small>
+[6ae5ce1a] <span class="bar"></span><b>L2</b><strong>核准後執行</strong><small>必須由指定的人核准後，才能做任何變更。</small>
+[1632bcd0] <span class="bar"></span><b>L3</b><strong>自動</strong><small>只用在低風險、可以復原的工作。</small>
+[ced79542] <span class="pr-label">一定要人工核准</span>⏎<span class="tag">發布</span><span class="tag">帳號設定</span><span class="tag">花錢</span>⏎<span class="pr-note">每個 agent 也都有一份書面守則（可以做 · 要先問 · 絕對不做），以及資料分級（公開 · 內部 · 機密）。</span>
+[64ff1023] <span class="case-kicker">資料串接 · Amazon 美國站汽車零件</span>
+[defe00c8] =
+[1baa06b4] 問題
+[19020d87] Google Ads 把流量導到 Amazon，卻看不到 Amazon 上的購買。每次做週報，都得從 Google Ads 和 Seller Central 匯出好幾份報表，再手動依日期對齊。
+[1dd6a17c] 運作方式
+[1e6f269a] Windsor.ai 的連接器讀取 Google Ads、Amazon Seller Central（Sales &amp; Traffic 與 All Orders 報表）和 Amazon Ads，寫進同一份 Google Sheet：每週總覽、Google 對 Amazon 比較、KPI、商品數據、取消與退貨。下一步透過 Looker Studio 接上 GA4 和 Search Console。
+[bb11a8e3] 規則
+[013305c0] 一週固定是週一到週日。Amazon 訂單資料會延遲一到兩天，所以最近幾天標為待確認，之後再回補。Google 對 Amazon 的比較只當作時間上的相關，不當作歸因。每個數字都記下來源、查詢方式和擷取日期。
+[24b4ddcc] 人工把關
+[afa28054] Amazon Attribution 和 Brand Analytics 目前仍是手動匯出。Seller Central 的權限只用來讀取，AI 不會修改任何商品頁。
+[5faa59d4] 結果
+[a9ac3437] 第一週串起來的資料顯示，Google 點擊只有約 6% 變成 Amazon 商品頁工作階段，原因是廣告導到賣場首頁而不是商品頁。修正導流路徑後，點擊到商品頁的比例提高到 22%。
+[aed5ea18] <span class="case-kicker">市場分析 · Amazon 品類資料</span>
+[97aa3ab8] =
+[1fb23efe] 要拿自家目錄和市場比對，以前得在 Amazon 上一個商品一個商品搜尋，一筆一筆比價格。
+[d93f202e] 把 Product Opportunity Explorer 匯出的發電機、啟動馬達和 NOx 感測器資料分組，再和自家的歷史訂單比對。分析會標出賣過但已下架的零件、停產車型，以及同料號競品的價格。
+[57e8becd] 發現
+[f995bea4] 10 個 NOx 感測器 SKU 全都有同料號競品，價格低 72–273%。問題在價格，不在曝光，所以這條產品線的廣告先暫停。發電機占營收約 93%，現在預算和廣告群組都以發電機和啟動馬達優先。
+[e874520e] 原始資料由我下載，策略由我決定；分組和比對交給 agent。
+[d55b7863] <span class="case-kicker">網站品質 · 產品頁與新聞稿</span>
+[22533c63] <span class="tag">LLM Agent</span><span class="tag">自建網頁工具</span><span class="tag">Markdown 報告</span>
+[4651a34e] 範圍
+[02b48a00] 四種語言（英文、繁體中文、日文、韓文）的產品頁與新聞稿，報告以英文產出。
+[b226f4a8] 五個模組共 31 項檢查。16 條固定規則直接在瀏覽器裡跑，確保每次判定一致；15 項質性檢查判斷內容脈絡，並只用頁面上已有的事實草擬改寫。每個問題都標上處理方式（自己修、查 CMS、請廠商處理），需要廠商處理的項目會自動整理成請求信草稿。分數變化持續記錄。
+[3c769675] 試跑
+[d79bacf5] 2026 年 10 月 13 日第一次試跑，在 2 個頁面上找出 13 個問題。其中 7 個是模板層級的錯誤，例如重複的 meta description、缺少 H1、四種語言共用同一個網址，以及 cookie 聲明寫著別家公司的名字。這說明一頁一頁修是不夠的。
+[07f923a3] 頁面原始碼由我貼上，要採用哪些修正由我決定，CMS 也由我更新。
+[bc981983] 下一步
+[3d405d1a] 記錄每次檢查和人工流程各花多少時間，並接上 Search Console，追蹤修正後排名有沒有變化。
+[b8ff0289] 模組
+[69c0b815] 權重
+[046403d1] 檢查內容
+[1695538b] 頁面技術項目
+[21bf8c1a] 標題、meta description、單一 H1、標題層級順序、canonical、替代文字、內部連結
+[3ac3d79b] 結構化資料
+[3d2eee7e] =
+[fbfc006e] B2B 技術內容
+[24b0669c] 工程師會搜尋的用詞、規格是否完整、規格書下載路徑、應用情境、詢價路徑
+[3a0413c2] E-E-A-T 與可信度
+[65a8a8f6] 公司資歷、主張是否有證據、聯絡資訊是否一致、有沒有殘留的模板文字
+[56e7eac5] 多語系與 AI 搜尋
+[f0e8ce32] 每種語言一個網址、hreflang、在地化的 meta、可被引用的摘要、FAQ、AI 爬蟲是否讀得到
+[5eff6935] <span class="case-kicker">Google Ads 自動化 · 管理員帳戶</span>
+[e456a065] =
+[db6bf3cf] 以前每天監控都得登入，用肉眼判斷數字有沒有怪；每次改關鍵字或出價都是手動，也沒有留下紀錄。
+[e09cb4e7] 腳本在管理員帳戶層級執行，用一份 Google Sheet 當控制台。模組 1 把昨天的數字和 7 天、14 天平均比較，花費、點擊或點擊率超過門檻就寄信提醒。模組 2 依意圖分類搜尋字詞，用 n-gram 分析找出浪費預算的字根。兩個模組都是唯讀。下一步是預算建議和 AI 草擬的廣告文案。
+[2dd5f894] 防護機制
+[2827eae9] 每一步調整上限 ±20%；建議 7 天後失效；每次變更都記下原始數值和核准人；不同帳戶的資料絕不混用；新廣告一律以暫停狀態建立。每個建議都要寫出觀察、原因、動作、預期範圍，以及反面證據。
+[af912775] 經核准後執行過的
+[810642d3] 排除關鍵字、9 個指定車款的廣告群組、回應式搜尋廣告、CPC 上限、暫停一條表現不佳的產品線，以及地區設定。
+[819cf6ce] <b>帳戶提醒：需要人工確認</b>
+[b7eb2332] 花費超過 7 天平均的門檻，請人工檢查並修正。
+[5aacc160] <span class="case-kicker">Agent 設計 · 每個 agent 拿到的說明書</span>
+[70c19e2f] 多 agent 流程設定
+[82b11a8f] <span class="tag">LLM Agent</span><span class="tag">MCP 連接器</span><span class="tag">Google Sheets</span>
+[21e2caea] 為什麼
+[985c6b27] 多 agent 的工作如果交接全靠臨時下的提示，很容易出錯。所以每個 agent 一開始都會拿到一份格式固定、分成四部分的守則，讓輸出可以預期，也清楚寫明什麼時候要交回給人。
+[cd0eeb7e] 一件工作怎麼流動
+[5644a442] 有衝突或要發布 → 交給我
+[94563ec3] 我
+[3b2be2e2] 提問
+[9d526ee3] 研究員
+[03424351] 蒐集來源
+[6c3b378e] 稽核員
+[5f6a08a5] 核對數字
+[c15771fc] 追蹤表
+[de05a31f] 只輸出 A/B 級
+[5fe7c281] 有缺漏 → 重做
+[70532a4d] 共用狀態 · 來源 · 等級 · 稽核紀錄
+[88be9d62] 部分
+[5990c6ba] 我定義的內容
+[c1aecd3a] 範例：市場追蹤表
+[3392aaf4] 角色與目標
+[0c92c924] 單一職責的範圍，以及明確的完成標準
+[a593eacd] 研究員針對一個問題蒐集來源；稽核員逐一對照來源核對每個數字
+[c415b525] 工具 / MCP
+[08e1353e] 工具與 MCP 權限給到工作需要的最小範圍
+[a4369dd8] 網路搜尋和 Google Drive / Sheets 都是唯讀；只有稽核員能寫入，而且只能寫稽核紀錄
+[9bdd8bd2] 輸出格式約定
+[5785a28c] 固定的欄位格式，讓下一步能直接解析
+[987cc3f4] 每一列：數值、單位、來源 ID、證據等級、查核日期；缺的寫成「待查證」
+[cfcd4d9e] 交接與停止
+[602120c2] 交接規則、重試上限，以及交回給人的觸發條件
+[b72fa8cf] 每一列都有來源時才交接；來源互相衝突，或任何東西要被發布或修改時就停下來
+[b40e4c60] <span class="case-kicker">內容流程 · 產業新聞 → 中英文章與 LinkedIn 貼文</span>
+[c15195a5] =
+[14b53436] 氫能和車用感測器產業的消息更新很快，每則新聞都得寫成正確、原創的中英文章。技術規格如果沒有好好整理，很難自然地變成買家看得懂的內容。
+[31a215ef] 我挑選要寫的新聞或規格書。Claude 把它改寫成原創的繁體中文長文（完全重新撰寫並重新組織），搭配一段相關的公司觀點，翻成英文，標上分類和產品標籤，再輸出兩種語言、可以直接放進 CMS 的 Word 和 HTML 檔。LinkedIn 的部分，則把技術規格書整理成六張的輪播圖文，每張只講一個經過驗證的性能數字。
+[0f01ed56] 範例
+[d9f8df59] 一組 MEMS 氫氣感測器的輪播圖文：70 ms 內完成啟動（比市場常見的 390 ms 快 5.5 倍）；0–40,000 ppm 範圍內 1.5 秒內即時偵測；在 −35 °C 到 +105 °C 的工作溫度下功耗低於 200 mW；以半導體矽微加工做到 2.0 mm 的小尺寸（約為傳統 15 mm 設計的百分之一）。
+[21658879] 每個技術數字在發布前都對照官方規格書核對過，發布這一步只由人來執行。
+[14843d08] =
+[47b44fba] =
+[354d1fcf] =
+[b02fd4fd] =
+[e3113917] =
+[26480288] =
+[f4d4939b] =
+[65eeee5e] =
+[00972c70] =
+[385e59f3] =
+[5d79ee11] =
+[bd3454bf] =
+[9c75075e] =
+[32a2bb4c] =
+[d64b38e7] =
+[4b0f1bde] =
+[b40855ab] =
+[af44b957] =
+[55a8f731] =
+[8fb0a3f8] <a class="btn btn-dark ai-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7503648848951685120" target="_blank" rel="noopener">看 LinkedIn 原文 <span>→</span></a>
+[76ecce9a] <span class="case-kicker">設計流程 · 產品型錄 → 單頁 DM</span>
+[3c041118] 數位文宣設計
+[f43ad2b4] <span class="tag">LLM Agent</span><span class="tag">Figma</span><span class="tag">產品型錄</span>
+[4c290da6] 一款新的氫氣安全偵測器需要一張展覽用的單頁 DM。手上唯一的資料是一份寫給工程師看的內部型錄，規格清單很長，沒有故事。
+[f68c03d6] Claude 把型錄整理成有結構的文案稿：標題和主張、六個關鍵數字（每個都附測試條件）、分成兩組的規格表，以及目標應用。我在 Figma 用固定網格設計 A4 版面，之後其他語言版本也能套用同一個結構。
+[0ba7efdd] 每個數字都對照型錄核對過，每項主張旁邊都保留它的測試條件。版面和最終文字在印刷前都由人確認。
+[f1f4e330] <span class="ms-cap">版面拆解 · 點選區塊</span>
+[785d3c9f] <b>01</b><span><strong>主視覺</strong>產品名稱、一句話主張和產品照，隔著展覽走道也看得清楚。</span>
+[0a53717a] <b>02</b><span><strong>關鍵性能</strong>六個數字排成 3 × 2：準確度、警報延遲、感測器壽命、功耗、防爆等級和防護等級。每個大數字旁都附上測試條件。</span>
+[1b011b61] <b>03</b><span><strong>規格</strong>完整規格表分成兩欄：偵測與顯示，以及輸出與使用環境。</span>
+[cda16fc3] <b>04</b><span><strong>應用</strong>六種目標用途，從製氫、儲氫到半導體廠。</span>
+[041a5dec] 格式
+[0f5c1c53] A4、300 dpi（2480 × 3508 px），數位版。印刷版從 Figma 以 SVG 匯入 Illustrator 做 CMYK 分色。
+[701c483f] 網格
+[84b3cf07] 邊界 160 px；關鍵數字 3 × 2；規格分成兩欄，各 1,040 px
+[9a830c71] 工具
+[13be65af] =
+[f7be5efc] 關閉提醒
+[8820d0c9] 我提出問題；研究員 agent 蒐集來源；稽核員 agent 核對，有缺漏就退回研究員、有衝突就交給我；結果寫進追蹤表。所有 agent 都讀寫同一份追蹤表。
+[8e53512a] 上一張
+[a4cf971a] 下一張
+[60e66087] MEMS 氫氣感測器輪播圖文，共 6 張
+[5d05dbe9] 第 1 張，共 6 張
+[1796a3c1] 電路板上 MEMS 感測器晶粒的等角插圖
+[25cad49c] 第 2 張，共 6 張
+[0c6438f5] 放在藍色方塊上的 2.0 mm MEMS 感測器晶粒
+[0f838229] 第 3 張，共 6 張
+[b404877b] 第 4 張，共 6 張
+[6ec304bd] 第 5 張，共 6 張
+[d27a4627] 機器手拿著發光的電池
+[189fb107] 第 6 張，共 6 張
+[475f2e04] 透視車體、露出內部零件的汽車渲染圖
+[743d93e7] 氫氣安全偵測器的單頁產品 DM：主視覺、關鍵性能數字、規格與應用

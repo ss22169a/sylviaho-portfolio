@@ -1,0 +1,164 @@
+[0faad845] 依料號分析 Amazon 發電機、啟動馬達與 NOx 感測器的需求與產品目錄落差，並依可觸及需求排出六項修正的優先順序。
+[0c08c9bb] Amazon 品類情報 | Sylvia Ho
+[7dd407cd] Amazon 品類情報：需求和產品目錄在哪裡對上
+[f51bd526] 一家美國車用售後零件賣家在 Amazon 上架約 580 個發電機、啟動馬達和 NOx 感測器，每月卻只賣出幾件。問題出在需求、價格、庫存，還是商品頁的寫法？該先修哪一個？
+[e5bd49c0] 品類<b>發電機 · 啟動馬達 · NOx 感測器</b>
+[8b248259] 資料<b>Product Opportunity Explorer · 全品項上架報表 · 歷史訂單</b>
+[079d705f] 方法<b>在 DuckDB SQL 中做料號比對（LESTER / OE）</b>
+[febf3dd5] 產出<b>六項修正，依可觸及需求排序</b>
+[fa68f930] 瓶頸不在需求，多數情況下也不在價格。賣家已經有料號完全相符的零件，對應每月 <b>3,994</b> 次競品點擊，12 個料號的價格都在市場價 15% 以內，但 22 個月只賣出 <b>1</b> 件。買家是用料號和年份搜尋，而這些商品頁兩者都沒寫。最先要做的是改寫商品頁、補貨和確認適用車型，買更多流量放在最後。
+[14d68b2f] 1 · 分析是怎麼一步步推進的
+[52851e0e] <span class="muted-note">2026 年 11 月 3 – 11 日 · 每一步的實際產出</span>
+[703fbbe6] <span class="px-date">11 月 3 日</span>
+[5aa03703] 先建立目錄與銷售的基準
+[5ae000eb] 看市場之前，我先拉出賣家的全品項上架報表和 22 個月的訂單（用 Windsor.ai，由 Claude 執行），之後的每個發現都能拿實際銷售來核對。
+[ed40120c] <i></i><i></i><i></i><span>全品項上架報表 · 歷史訂單</span>
+[a3c686e7] 品類
+[e539f597] 上架數
+[4bf4e119] 發電機
+[7bfec88c] 啟動馬達
+[744d341d] NOx 感測器
+[94a7ed61] 全部上架
+[8f10c3cd] + 138 筆訂單明細，2025 年 1 月 – 2026 年 11 月，每筆都標上品類和車種
+[14c64926] <span class="px-date">11 月 4 日</span>
+[d68e8661] 抓需求，每個品類用不同方法
+[a8c5c0f8] 沒有一個 Amazon 工具能涵蓋三個品類。發電機沒有未滿足需求的資料，所以改用種子 ASIN 找相似商品；啟動馬達有清楚的未滿足需求清單；NOx 什麼都沒找到，於是換了方法。
+[d4946586] <i></i><i></i><i></i><span>Product Opportunity Explorer · 三種切入方式</span>
+[b5639b52] <b>發電機</b><span>3 個種子 ASIN → 相似商品</span><em>303 個競品</em>
+[a1c61433] <b>啟動馬達</b><span>「starter」的未滿足需求</span><em>251 個搜尋意圖 → 33 個車款 + 6 個配件</em>
+[985f5c2a] <b>NOx 感測器</b><span>未滿足需求：沒有結果 → 改用相似商品</span><em>101 個 ASIN → 只有 2 個是 NOx</em>
+[a0d08d33] 用料號把競品對到自家目錄
+[985f76ae] 我把 303 個發電機競品依 LESTER 互換料號分組，再和 497 個上架商品串接。每一組比對結果都標上狀態、價差，以及具體要怎麼改商品頁，而不只是一個分數。
+[c2c24e6d] <i></i><i></i><i></i><span>料號比對 · 發電機</span>
+[4a53b512] =
+[60261ed2] 車款
+[78072261] 每月點擊
+[b2464742] 價差
+[cab6a434] =
+[18aa65c2] <span class="px-tag t-orange">料號相符 · 已下架</span>
+[77272c95] =
+[697049ce] <span class="px-tag t-lilac">同車款</span>
+[61add6da] =
+[620d05fe] <span class="px-tag t-blue">料號相符 · 有庫存</span>
+[fdc45ffc] 第 7791 列：標題只寫了 E-450 → 「補上 F-150 / Expedition / E-150–E-350，1997–2002」
+[5c023a5f] <span class="px-date">11 月 6 日</span>
+[f782f158] 第一輪資料不夠的地方，再挖深一點
+[dbb8b625] 第一次抓 NOx 只找到兩個競品。再多匯出十組種子資料之後，每一個上架的 NOx 料號都找到同料號的對手。對價格的猜測，這下有了證據。
+[a619f7a4] <i></i><i></i><i></i><span>NOx 深入分析 · 多匯出 10 組種子資料</span>
+[64d82585] <span>11 月 4 日</span><b>2</b><em>第一份相似商品清單裡的 NOx 競品數</em>
+[383ee4f7] <span>11 月 6 日</span><b>10 / 10</b><em>上架的 NOx 料號找到同料號競品</em>
+[2eb556df] 另外也抓到：價差公式錯了一列。在回報任何價差之前已經修正。
+[a813714d] <span class="px-date">11 月 10 日</span>
+[3bd0b708] 和實際銷售對帳
+[40601bd1] 需求資料和訂單紀錄必須對得上。為了讓件數總和一致，反而暴露了這份分析的盲點：大部分實際銷售來自市場工具從沒列出的零件。
+[625e5bab] <i></i><i></i><i></i><span>對帳檢查</span>
+[e1dc0fe0] 需求表
+[22d72cd9] 訂單紀錄
+[43812e1d] 發電機件數
+[5efff9c4] 啟動馬達件數
+[e5f69ee3] 為了讓總數對上，必須補上 37 列發電機和 4 列啟動馬達。這些零件有在賣，卻不在任何需求清單裡。
+[d6f08e38] <span class="px-date">11 月 10–11 日</span>
+[a6699c9c] 壓力測試，再把發現變成行動
+[18ad9bbd] 我從三個角度檢視結果（電商平台、售後零件和付費搜尋），再做出一份排好順序的行動清單。沒有核准，帳戶裡什麼都不會變動。
+[3e118630] <i></i><i></i><i></i><span>三個角度檢視 → 行動清單</span>
+[20a1fa27] <b>Amazon 平台</b><span>12 個料號相符的商品中，至少 8 個標題只寫一個車款或沒寫年份</span>
+[71ee6476] <b>售後零件</b><span>三線品牌的價格在 US$90–140；原廠件在 US$190–310</span>
+[75fdc228] <b>Google Ads</b><span>用料號搜尋的人轉換最好；廣告卻在買品類關鍵字</span>
+[2d5c30c3] 產出：針對 46 個賣出過的商品排好順序的行動清單。每個變更都要核准。NOx 的廣告群組在 11 月 11 日暫停。
+[a128c886] 2 · 三個市場
+[dd43be38] <span class="muted-note">Amazon 美國站，除特別註明外為最近 360 天</span>
+[f50fc902] <span class="fn-k">發電機</span><b>299,980</b>⏎<small>Amazon 美國站每月搜尋次數。每年約賣出 90,000 件，平均 US$112；退貨率 7.5%。賣家的件數市占：<strong>0.046%</strong>。</small>
+[f1a1d7f4] <span class="fn-k">啟動馬達</span><b>170,134</b>⏎<small>Amazon 美國站每月搜尋次數。每年約賣出 70,000 件，平均 US$74；退貨率 4.6%。賣家的件數市占：<strong>0.003%</strong>。</small>
+[ab017d61] <span class="fn-k">NOx 感測器</span><b>≈ 73</b>⏎<small>整個「nox sensor」搜尋每月的購買次數（4,305 次搜尋 × 1.7% 轉換率）。歸在含氧感測器底下的小眾市場。賣家目前銷量：<strong>0</strong>。</small>
+[50096376] 3 · 發電機：這是誰的需求？
+[f3eefc1e] 從 Amazon 相似商品清單找出 58 個高需求 LESTER 料號，逐一對應到賣家目錄。寬度 = 每月競品搜尋點擊（合計 32,496 次）。
+[2d6a9a7a] <span class="sw" style="background:var(--blue)"></span><b>12%</b><span class="lg-l">料號相符，有庫存</span><em>12 個料號 · 每月 3,994 次點擊 · 賣出 1 件</em>
+[d642b036] <span class="sw" style="background:var(--orange)"></span><b>12%</b><span class="lg-l">料號相符，已下架</span><em>6 個料號 · 每月 3,948 次點擊 · 賣出 0 件</em>
+[2ed92d91] <span class="sw" style="background:var(--lilac)"></span><b>67%</b><span class="lg-l">同車款，料號不同</span><em>34 個料號 · 每月 21,933 次點擊 · 賣出 11 件</em>
+[ad889f69] <span class="sw" style="background:var(--gray)"></span><b>8%</b><span class="lg-l">沒有賣</span><em>6 個料號 · 每月 2,621 次點擊 · 賣出 0 件</em>
+[e0d100be] 目錄狀態
+[eb82c956] 料號數
+[ab684f35] 每月點擊
+[f9d629de] 賣出件數（22 個月）
+[dd26513a] 料號相符，有庫存
+[25ec925d] 料號相符，已下架
+[cfee84a8] 同車款，料號不同
+[bd727b47] 沒有賣
+[d4a89fdb] 已下架零件中需求最大的 LESTER 8301（GM 全尺寸皮卡與 SUV，2007–2014），單一料號每月就有 2,636 次點擊，占所有已下架需求的 67%。而賣家實際賣出的 72 件，來自另外 38 個從沒出現在主流清單裡的料號：中重型卡車、工業引擎和歐洲車款。
+[b74ce91a] 4 · 啟動馬達：有庫存，卻沒人看見
+[01a746d7] 買啟動馬達的人會搜尋「年份 + 車款 + starter」。Amazon 的未滿足需求清單裡，有四個這類搜尋是賣家有現貨的零件，但標題裡沒有年份。
+[5636ab99] <span class="al-name">有庫存，標題沒寫年份</span>
+[0e824dd7] <i class="cx-bar" style="width:19.4%"></i><em>10,152 次搜尋 · 每月約 535 次購買</em>
+[81c2aa72] <span class="al-tip">4 個搜尋意圖 · 賣家賣出 0 件</span>
+[f21d6b85] <span class="al-name">同車款，年份不對</span>
+[f2786592] <i class="cx-bar" style="width:14.5%"></i><em>7,582 次搜尋 · 每月約 319 次購買</em>
+[f4ae6f5f] <span class="al-name">同車款，已下架</span>
+[788c2566] <i class="cx-bar" style="width:5.9%"></i><em>3,106 次搜尋 · 每月約 111 次購買</em>
+[34188bc6] <span class="al-tip">2 個搜尋意圖 · 賣家賣出 0 件</span>
+[f52e1349] <span class="al-name">沒有賣</span>
+[cf9751e2] <i class="cx-bar" style="width:100.0%"></i><em>52,421 次搜尋 · 每月約 2,204 次購買</em>
+[dc82cbf0] <span class="al-tip">23 個搜尋意圖 · 賣家賣出 0 件</span>
+[d0a9d031] 賣家的啟動馬達價格比品類平均的 US$74 高 20–35%。沒有覆蓋到的需求，大多是 GM 皮卡／SUV 和 Honda。
+[365ffe54] 5 · NOx 感測器：小眾市場裡的價格問題
+[d49928af] 10 個上架的 NOx 料號全都有同料號的副廠競品。各料號的價格溢價：
+[e737cdf3] <span class="nx-p">A0009053503</span><span class="nx-bar"><i style="width:91.0%"></i><em>+273%</em></span><span class="al-tip">每月 13 次點擊</span>
+[e3560d17] <span class="nx-p">68067521AA</span><span class="nx-bar"><i style="width:82.3%"></i><em>+247%</em></span><span class="al-tip">每月 6 次點擊</span>
+[d2508bf6] <span class="nx-p">05149216AB</span><span class="nx-bar"><i style="width:77.0%"></i><em>+231%</em></span><span class="al-tip">每月 3 次點擊</span>
+[df1334f8] <span class="nx-p">68085740AA</span><span class="nx-bar"><i style="width:60.3%"></i><em>+181%</em></span><span class="al-tip">每月 72 次點擊</span>
+[c0a7a19c] <span class="nx-p">ME230283</span><span class="nx-bar"><i style="width:44.0%"></i><em>+132%</em></span><span class="al-tip">還沒有點擊資料</span>
+[2ea9bd09] <span class="nx-p">2236409</span><span class="nx-bar"><i style="width:42.3%"></i><em>+127%</em></span><span class="al-tip">每月 16 次點擊</span>
+[191f3220] <span class="nx-p">4326870</span><span class="nx-bar"><i style="width:41.3%"></i><em>+124%</em></span><span class="al-tip">每月 80 次點擊</span>
+[023dac69] <span class="nx-p">68227486AA</span><span class="nx-bar"><i style="width:39.0%"></i><em>+117%</em></span><span class="al-tip">每月 58 次點擊</span>
+[1df63a58] <span class="nx-p">A0101532228</span><span class="nx-bar"><i style="width:25.7%"></i><em>+77%</em></span><span class="al-tip">每月 72 次點擊</span>
+[256e9ba0] <span class="nx-p">2872942</span><span class="nx-bar"><i style="width:24.0%"></i><em>+72%</em></span><span class="al-tip">每月 24 次點擊</span>
+[ec78f061] 溢價從 +72% 到 +273%，大約是二線品牌的價格，卻沒有二線品牌的知名度。十個零件加起來每月約 344 次競品點擊。改商品頁解決不了這個問題，需要做價格或通路的決定。
+[3742eea2] 6 · 該做什麼，依序排列
+[e9f21ead] <span class="muted-note">依每小時工作能觸及的需求排序</span>
+[19829ff1] 改寫 12 個料號相符的發電機商品頁
+[bb823de6] 在每個標題和適用車型資料裡寫上 LESTER 與 OE 料號、所有相容車款和年份範圍。不用進新貨，也不用改價格。
+[fa70c7de] 可觸及需求
+[40f5b4be] 每月 3,994 次點擊
+[d4fd0a23] 衡量方式
+[4ec975c7] 每個商品頁的工作階段和訂單，比較改寫前後各 30 天
+[1672520a] 替 4 個有庫存的啟動馬達商品頁補上年份
+[19f68ca2] 確認 Corolla、Camry、Forte 和 Maxima 這幾款的年份範圍，寫進標題。有流量之後再檢視價格溢價。
+[b6d7c7df] 10,152 次搜尋 · 每月約 535 次市場購買
+[7cfb375b] 這四個商品頁的第一筆訂單
+[b7e04277] 優先補貨 LESTER 8301
+[d43e872f] 資料裡需求最高的發電機，是賣家原本就有商品頁、卻讓它缺貨的零件。先重新上架，再依需求處理另外 5 個已下架的零件。
+[c57f5c51] 每月 2,636 次點擊（6 個合計：3,948）
+[24cbd6d3] 有庫存的天數；重新上架後 60 天內的訂單
+[db9c4cc9] 確認 34 個同車款商品頁的適用性
+[1d7d2917] 這些商品涵蓋對的車款，但料號不同。由工程端確認每一個能不能互換；能互換的補上競品料號，不能的列為採購候選。
+[4478e808] 每月 21,933 次點擊 · 占已對應需求的 68%
+[f6a9e8b7] 每週確認的料號數；先處理需求前 10 名
+[68f19c5c] NOx 感測器停投付費廣告，決定價格或通路
+[dce25526] 要嘛把重疊的零件降到三線品牌的價格帶，要嘛直接賣給柴油車隊和維修廠，這些客戶更看重保固和測試，而不是價格。
+[1ff9fbaf] 涉及的需求
+[fc9138a2] 每月約 344 次點擊，量很小，所以價格決定之前不投廣告
+[1e58fc5f] 以三線品牌價格計算的毛利；B2B 名單
+[3299b305] 研究賣家已經賣得好的利基市場
+[9abbb2ea] 中重型卡車發電機占出貨營收 27%，工業引擎占 9%，但市場資料的種子卻來自主流的 GM 和亞洲車款。決定要開發什麼之前，先用這些區隔的零件當種子重新抓一次需求。
+[495bee30] 資料的盲點，正是生意已經做得起來的地方
+[24a840b7] 已經有銷售的 38 個料號完成需求對應
+[053b65f1] 付費流量應該跟著這些修正走，而不是反過來。在<a href="funnel-analysis.html">漏斗與歸因分析</a>裡，廣告把買家送到成交不了的商品頁。下一步：<a href="lifecycle-matrix.html">生命週期矩陣</a>決定這些零件中，哪些值得在未來三到五年備貨。
+[88306943] 方法
+[6c83e39e] <b>需求：</b> 用 Product Opportunity Explorer 的利基頁面估算品類規模，用種子 ASIN 的「相似商品」取得料號層級的競品點擊，用未滿足需求清單取得啟動馬達的搜尋意圖。
+[bea60502] <b>比對：</b> 每個競品的 LESTER 或 OE 料號與賣家的全品項上架報表串接，每筆結果標為料號相符（有庫存或已下架）、同車款不同料號，或沒有賣。
+[dd3e3109] <b>結果：</b> 22 個月的訂單明細依 ASIN 串回來，讓需求、價差和實際銷售放在同一列。
+[bfed887b] 競品點擊顯示的是需求在哪裡，不是賣家能拿到多少。
+[9c0fd3c2] 相似商品清單是 Amazon 依相似度挑出來的，不是整個市場；種子也偏向 GM 和亞洲車款。
+[40084038] 標為「同車款」的比對結果，仍需工程端確認。
+[0666ff47] 賣家自己的價格只以價差呈現；不公布任何營收數字。
+[07c759e3] <a class="view-all" href="https://github.com/ss22169a/sylviaho-portfolio/tree/main/category-sql">GitHub 上的 SQL 模型 <span>→</span></a>
+[31184488] 全品項上架報表 · 歷史訂單
+[3efa6f02] Product Opportunity Explorer · 三種切入方式
+[05d52e33] 料號比對 · 發電機
+[b5bb20a8] NOx 深入分析 · 多匯出 10 組種子資料
+[9b8f1dfc] 對帳檢查
+[1b80992a] 三個角度檢視 → 行動清單
+[8b9b301d] 依目錄狀態區分的發電機需求占比
+[74f56a3a] 料號相符，有庫存：每月 3,994 次點擊（12%）
+[818ebe3e] 料號相符，已下架：每月 3,948 次點擊（12%）
+[fd11cac3] 同車款，料號不同：每月 21,933 次點擊（67%）
+[07cf9073] 沒有賣：每月 2,621 次點擊（8%）

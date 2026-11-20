@@ -1,0 +1,140 @@
+[27ed33a7] 為台灣包款品牌建立的搜尋訊號模型：哪些款式在上升、全球訊號比台灣早多久，以及未來 12 個月的下單、測試與停售計畫。
+[489d63b9] 在下一波包款流行傳到台灣之前先看見它 | Sylvia Ho
+[3e0db5aa] 以四年的搜尋資料（2021 年 11 月 – 2025 年 11 月）分析台灣一個中價位包款品牌：哪些款式在上升、全球趨勢要幾個月才傳到台灣，以及接下來 12 個月該下單、測試還是停掉哪些款式。
+[ceca96f4] 市場<b>台灣，以全球為領先訊號</b>
+[7360ab64] 資料<b>Google Trends，每週，2021 年 11 月 – 2025 年 11 月</b>
+[38cfe4e3] 模型<b>DuckDB：動能、起飛判定規則、領先落後</b>
+[54de4211] 產出<b>機會矩陣 + 12 個月計畫</b>
+[2ec3b70f] 台灣的包款搜尋大約落後全球 <b>三個月</b>。包包吊飾在全球是 2024 年 8 月起飛，在台灣是 2024 年 11 月；兩條數列在落後 2 個月時最吻合（r = 0.83），保齡球包則是 3 個月。到 2025 年 11 月為止，品牌的主力款式沒有一個在成長：托特包持平（-4%）。成長在值得測試的小特徵上：包包吊飾（+124%）、老錢風、保齡球包和大容量包包。水桶包、馬鞍包和腋下包正在退燒。麂皮是下一個從國外傳進來的訊號：全球成長 58%，台灣的中文搜尋幾乎還是零。
+[4b5f5de3] 1 · 包款趨勢怎麼傳到台灣
+[4545329a] <span class="muted-note">包包吊飾，每條線各自以最高點為 100</span>
+[2935a520] <span><i style="background:var(--blue)"></i>全球，「bag charm」</span><span><i style="background:var(--ink)"></i>台灣，包包吊飾</span>
+[f3311ef3] 全球起飛 · 2024 年 8 月
+[a34eee95] 台灣跟上 · 2024 年 11 月
+[73632f37] 一個詞連續三個月維持在 2022 年平均的兩倍以上，就算「起飛」。同樣的檢定用在保齡球包上，落後 3 個月時最吻合（r = 0.62）。麂皮目前還對不上（r = 0.31），因為台灣的中文搜尋仍然接近零。
+[a36fdeb0] <span class="o2-k">領先訊號</span>
+[efd4355f] 先看全球
+[c756d988] 全球 Google 和 Pinterest 上，某種材質、顏色或形狀的搜尋
+[38ce18f3] 趨勢預測機構的展望，以及 Pinterest 年度趨勢報告
+[cdd2c8e5] 時尚搜尋排行裡的伸展台與名人包款
+[f18126e5] <span class="o2-k">確認訊號</span>
+[9081bbea] 再看台灣
+[cd95acef] 台灣同一個特徵的中文搜尋
+[fda6bb4d] 電商平台上這種款式的商品數和評論
+[c234cba2] 品牌官網的站內搜尋、願望清單和退貨原因
+[b19db08e] 2 · 機會矩陣
+[c4226fb9] <span class="muted-note">台灣，2025 年 5–10 月 vs. 前一年同期</span>
+[0eab8d66] <span><i class="st-scale"></i>現在放大</span><span><i class="st-test"></i>提早測試</span><span><i class="st-keep"></i>維持主力</span><span><i class="st-down"></i>逐步收掉</span>
+[1a50486c] 現在放大
+[b3c1681e] 提早測試
+[d5021717] 維持主力
+[cb098c5d] 維持／逐步收掉
+[1b5b39b5] 與前一年同樣六個月相比的變化
+[15b3bff2] 台灣搜尋量（對數）
+[0a7bed49] 托特包
+[cbb3ae8b] 老錢風
+[a2c9ae03] 包包吊飾
+[d53fbd77] 保齡球包
+[31e1caa7] 大容量包包
+[062dfb3d] 迷你包
+[40259ca9] 編織包
+[eef53677] 尼龍包
+[ea5b7e9c] 腋下包
+[0e6a918e] 水桶包
+[944649c7] 馬鞍包
+[40b10d33] 搜尋量是同一個尺度下的台灣搜尋熱度，托特包約為 54。分隔線在成長 +20% 和搜尋量 10。水桶包、馬鞍包和腋下包標為逐步收掉，因為它們大約只剩 2022 年的一半，而且還在下滑。目前沒有任何特徵進到「現在放大」那一格。滑過或點選資料點可以看數字；用手機的話，請左右滑動圖表。
+[a086d942] 特徵
+[7c7f5d04] 搜尋量
+[a8803389] vs. 前一年
+[7741fc7e] vs. 2022
+[97c89a4d] 行動
+[60ae79e8] <b>老錢風</b> <span class="st-zh">Old-money style</span>
+[efba1307] <span class="st-tag st-test">提早測試</span>
+[5d6a68ef] <b>包包吊飾</b> <span class="st-zh">Bag charm</span>
+[9a56a2aa] <b>大容量包包</b> <span class="st-zh">Large-capacity bag</span>
+[3ad8a80c] <b>保齡球包</b> <span class="st-zh">Bowling bag</span>
+[984ce989] <b>迷你包</b> <span class="st-zh">Mini bag</span>
+[3504e877] <span class="st-tag st-keep">維持主力</span>
+[4b825f32] <b>尼龍包</b> <span class="st-zh">Nylon bag</span>
+[2d06354b] <b>托特包</b> <span class="st-zh">Tote</span>
+[cc96b0af] <b>編織包</b> <span class="st-zh">Woven bag</span>
+[e0135459] <b>水桶包</b> <span class="st-zh">Bucket bag</span>
+[7dad610c] <span class="st-tag st-down">逐步收掉</span>
+[2d9ae13b] <b>馬鞍包</b> <span class="st-zh">Saddle bag</span>
+[29b8338e] <b>腋下包</b> <span class="st-zh">Underarm bag</span>
+[2ddb5864] 3 · 還沒傳到台灣的國外訊號
+[813e29fc] <span class="muted-note">全球，2025 年 5–10 月</span>
+[99ca19f0] <span class="fn-k">麂皮包</span><b>+58%</b><small>全球搜尋是 2022 年的 6 倍；台灣「麂皮包」的搜尋接近零。</small>
+[62e32e9c] <span class="fn-k">酒紅色包包</span><b>+29%</b><small>2024 年起全球需求每年秋天都上升；台灣「酒紅色包包」幾乎沒有可量測的搜尋。</small>
+[f1d8ef7c] <span class="fn-k">橫長型包</span><b>+42%</b><small>全球基數很小但成長很快；適合打樣，不適合備貨。</small>
+[02dce896] 台灣搜尋接近零可能代表兩件事：趨勢還沒到，或是消費者用別的字形容它。下單之前，先查清楚台灣消費者在電商平台和社群貼文上用哪些字。
+[a0d0d2bd] 4 · 該做什麼、什麼時候做
+[848dbcb6] <span class="muted-note">從 2025 年 12 月起</span>
+[41dfc0a6] 時間
+[d1d65fde] 下單或放大
+[640ab2ba] 測試
+[9e253470] 停止
+[78c91633] <b>0–3 個月</b><br><span class="st-zh">2025 年 12 月 – 2026 年 2 月</span>
+[de92542e] 托特包和尼龍包維持目前的備貨深度，迎接 2 月的高峰；托特包持平期間不加碼
+[f88b94d4] 推出一小系列包包吊飾，在結帳時加購
+[e35dea86] 水桶包、馬鞍包和腋下包不再補貨；第一季出清庫存
+[c650a35f] <b>3–6 個月</b><br><span class="st-zh">2026 年 3 – 5 月</span>
+[6f8868c2] 編織包在 5 月前下單，迎接 8 月的高峰
+[57d9bef8] 保齡球包和大容量托特包做預購測試；麂皮先打兩個顏色的樣
+[2ab58e0b] 沒達到下方加碼規則的測試一律停掉
+[87dac17a] <b>6–12 個月</b><br><span class="st-zh">2026 年 6 – 11 月</span>
+[e34e2de0] 如果第一批通過測試，9 月前下單包包吊飾，迎接 12 月的送禮高峰
+[3f772a65] 如果台灣搜尋通過起飛規則，秋季推出麂皮小系列
+[e315ff63] 迷你包回到只做主力顏色
+[fec59367] 高峰月份取自 2022–2024 年的平均：托特包和尼龍包在 2 月、編織包在 8 月、包包吊飾在 12 月。
+[a6b630c0] 5 · 先測試，再備貨
+[4f0dbd7e] <span class="muted-note">每個款式測試兩週</span>
+[fe1ba7a7] <span class="fn-k">加碼</span><b>兩項都達成</b><small>廣告點擊率至少是目錄中位數的 1.2 倍，且 14 天內預購量達第一批的 60%。整批下單。</small>
+[c8e79073] <span class="fn-k">維持</span><b>達成一項</b><small>只改一個變數（顏色、材質或價格），再測兩週。</small>
+[1daf0ea2] <span class="fn-k">停掉</span><b>都沒達成</b><small>停止，把預算移到清單上的下一個訊號。</small>
+[08567862] 只有在全球搜尋通過起飛規則、且台灣搜尋比前一年至少成長 20% 時，款式才進入測試。門檻是相對於品牌自己的目錄設定，所以每一季都能沿用。
+[b0b78b92] 6 · 一年後回頭檢查
+[243ae82b] <span class="muted-note">2026 年 11 月新增</span>
+[2bb8a161] 這一節是原始分析之後加上的。拿 2025 年 11 月的每個判斷，和台灣 2026 年 5–10 月的實際搜尋對照。
+[a482fade] <span class="fn-k">判斷正確</span><b>11 個中 8 個</b><small>逐步收掉的判斷只錯一個，測試的四個判斷對了三個，都照模型說的方向走。</small>
+[f6df8dac] <span class="fn-k">最大的失誤</span><b>托特包 +30%</b><small>判斷為持平，結果成長。這波成長來自一次爆紅事件，不是模型追蹤的訊號。</small>
+[ede7ee08] <span class="fn-k">麂皮在台灣</span><b>仍約為 0</b><small>全球麂皮搜尋又翻了一倍多（14 → 32）；「麂皮包」的中文搜尋沒有變化。</small>
+[202b032a] 2025 年 11 月的判斷
+[c73d0e45] 2026 年 5–10 月 vs. 2025
+[1d651a3a] 逐步收掉
+[71195ed5] <span class='st-ok'>✓ 正確</span>
+[8ee23833] 維持主力
+[472da652] 提早測試
+[f3bad156] <span class='st-miss'>✗ 失誤</span>
+[7d775bb4] 判斷正確的定義：測試款成長至少 20%、主力款維持在 −10% 到 +20% 之間，或逐步收掉的款式確實下滑。
+[762c9f32] 檢查後我改了什麼
+[becba530] <b>注意主力款的爆紅事件。</b> 2026 年初 Trader Joe's 一款便宜的托特包登上 Lyst 最熱門商品，同期托特包搜尋成長 30%。光看搜尋動能抓不到這件事；每週看一次時尚搜尋排行就會發現。
+[6dc8661f] <b>小特徵先設最低搜尋量再下判斷。</b> 腋下包（+37%）和大容量包包（+12%）的搜尋量低於 8，在這個水準，幾週的雜訊就能讓結果翻轉。
+[be60c016] <b>預留更長的落後時間。</b> 加入 2026 年資料後，包包吊飾的最佳落後時間變成 5 個月（r = 0.61）。三個月仍是最早的預警；現在下單計畫最多預留五個月。
+[b0335227] <b>查用字，不只看趨勢。</b> 麂皮在中文搜尋裡還是沒有出現。下一步是在下單前，先看台灣消費者在電商平台上實際用哪些字。
+[61a0ae3b] 限制
+[db3e51e9] Google Trends 是相對值而且經過抽樣；台灣的小詞會在 0 到 10 之間跳動，所以單週數字是雜訊，只用六個月平均。
+[0017457d] 領先落後的估計只根據兩組特徵（2 個月和 3 個月）。這是經驗法則，不是固定常數。
+[d1b27be1] 搜尋反映的是興趣，不是銷售。測試這一步，就是為了在備貨之前把興趣轉成購買證據。
+[0673efa8] 模型
+[9ed62598] 每週匯出的資料經過整理、按月平均，再在 DuckDB SQL 中計算：動能、起飛月份、領先落後相關性和季節性。
+[5467c042] <a class="btn btn-light" href="https://github.com/ss22169a/sylviaho-portfolio/tree/main/style-sql" target="_blank" rel="noopener">看 SQL <span>→</span></a>
+[c332c222] <a href="https://trends.google.com/trends/explore?date=2021-11-14%202026-11-15&amp;geo=TW&amp;q=%E6%89%98%E7%89%B9%E5%8C%85,%E9%BA%82%E7%9A%AE%E5%8C%85,%E5%8C%85%E5%8C%85%E5%90%8A%E9%A3%BE,%E8%85%8B%E4%B8%8B%E5%8C%85,%E6%B0%B4%E6%A1%B6%E5%8C%85" target="_blank" rel="noopener">Google Trends，台灣：托特包、麂皮包、包包吊飾、腋下包、水桶包</a> · 每週，2021 年 11 月 – 2025 年 11 月（後續檢查至 2026 年 10 月）
+[b06f01a4] <a href="https://trends.google.com/trends/explore?date=2021-11-14%202026-11-15&amp;geo=TW&amp;q=%E6%89%98%E7%89%B9%E5%8C%85,%E9%A6%AC%E9%9E%8D%E5%8C%85,%E4%BF%9D%E9%BD%A1%E7%90%83%E5%8C%85,%E7%B7%A8%E7%B9%94%E5%8C%85,%E5%B0%BC%E9%BE%8D%E5%8C%85" target="_blank" rel="noopener">Google Trends，台灣：托特包、馬鞍包、保齡球包、編織包、尼龍包</a> · 每週，2021 年 11 月 – 2025 年 11 月（後續檢查至 2026 年 10 月）
+[e5abf77e] <a href="https://trends.google.com/trends/explore?date=2021-11-14%202026-11-15&amp;geo=TW&amp;q=%E6%89%98%E7%89%B9%E5%8C%85,%E9%85%92%E7%B4%85%E8%89%B2%E5%8C%85%E5%8C%85,%E8%80%81%E9%8C%A2%E9%A2%A8,%E5%A4%A7%E5%AE%B9%E9%87%8F%E5%8C%85%E5%8C%85,%E8%BF%B7%E4%BD%A0%E5%8C%85" target="_blank" rel="noopener">Google Trends，台灣：托特包、酒紅色包包、老錢風、大容量包包、迷你包</a> · 每週，2021 年 11 月 – 2025 年 11 月（後續檢查至 2026 年 10 月）
+[b53201ab] <a href="https://trends.google.com/trends/explore?date=2021-11-14%202026-11-15&amp;q=suede%20bag,bag%20charm,bowling%20bag,burgundy%20bag,east%20west%20bag" target="_blank" rel="noopener">Google Trends，全球：suede bag、bag charm、bowling bag、burgundy bag、east west bag</a> · 每週，2021 年 11 月 – 2025 年 11 月（後續檢查至 2026 年 10 月）
+[5beab450] <a href="http://lyst.com/the-lyst-index/q1-26" target="_blank" rel="noopener">The Lyst Index, Q1 2026</a>（後續檢查）
+[bfe3ba88] <a href="https://www.marieclaire.co.uk/fashion/90s-style-lyst-index" target="_blank" rel="noopener">Marie Claire：Lyst Index 2026 年第一季熱門商品分析，含 Trader Joe's 托特包</a>（後續檢查）
+[01095065] 包包吊飾的全球與台灣搜尋，各自以最高點為 100，2023 年 6 月至 2025 年 10 月
+[7a1360d0] 機會矩陣：十一個包款特徵的台灣搜尋動能與搜尋量
+[60107a7d] 托特包 | 台灣搜尋量 54.5（托特包 ≈ 54） | vs. 前一年 -4% · vs. 2022 -18% | 維持主力
+[55227fbf] 老錢風 | 台灣搜尋量 5.7（托特包 ≈ 54） | vs. 前一年 +213% · vs. 2022 +573% | 提早測試
+[4e341f16] 包包吊飾 | 台灣搜尋量 6.0（托特包 ≈ 54） | vs. 前一年 +124% · vs. 2022 +214% | 提早測試
+[f8d32ab2] 保齡球包 | 台灣搜尋量 3.0（托特包 ≈ 54） | vs. 前一年 +56% · vs. 2022 +191% | 提早測試
+[21522ff7] 大容量包包 | 台灣搜尋量 6.9（托特包 ≈ 54） | vs. 前一年 +58% · vs. 2022 +42% | 提早測試
+[45400a2a] 迷你包 | 台灣搜尋量 17.1（托特包 ≈ 54） | vs. 前一年 +7% · vs. 2022 -15% | 維持主力
+[e54b70df] 編織包 | 台灣搜尋量 24.7（托特包 ≈ 54） | vs. 前一年 -6% · vs. 2022 +15% | 維持主力
+[29deb84d] 尼龍包 | 台灣搜尋量 12.5（托特包 ≈ 54） | vs. 前一年 +2% · vs. 2022 +4% | 維持主力
+[04e99240] 腋下包 | 台灣搜尋量 4.4（托特包 ≈ 54） | vs. 前一年 -32% · vs. 2022 -58% | 逐步收掉
+[7be9dd01] 水桶包 | 台灣搜尋量 33.7（托特包 ≈ 54） | vs. 前一年 -10% · vs. 2022 -48% | 逐步收掉
+[7913a190] 馬鞍包 | 台灣搜尋量 10.6（托特包 ≈ 54） | vs. 前一年 -17% · vs. 2022 -59% | 逐步收掉

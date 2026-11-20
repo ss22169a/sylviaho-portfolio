@@ -1,0 +1,98 @@
+[c0acbe7a] 關於 Sylvia Ho：住在台灣新竹的行銷與市場進入（GTM）策略專家。
+[58bb5202] 關於我 | Sylvia Ho
+[60d90568] <a href="index.html" class="nav-item">總覽</a>⏎<a href="projects.html" class="nav-item">分析專案</a>⏎<a href="work.html" class="nav-item">案例研究</a>⏎<a href="ai.html" class="nav-item">我怎麼用 AI</a>⏎<a href="about.html" class="nav-item active" aria-current="page"><span class="nav-ind" aria-hidden="true"></span><span class="arrow">→</span>關於我</a>⏎<a href="certifications.html" class="nav-item">證照</a>⏎<a href="resume.html" class="nav-item">履歷</a>
+[6b21fb79] 關於我
+[71eb364c] 用分析師的嚴謹看市場，用企劃的責任感推進計畫，用設計師的眼光把數據講清楚。
+[252d7c07] <span class="ab-k">從設計到零售</span>
+[32bac861] 我從視覺設計起步，在分析各平台後台數據的過程中，看懂了每一張視覺素材背後的數據邏輯。之後在競爭激烈的市場裡共同創辦了一個零售電商品牌，做出聲量，三年內開到五家實體門市。
+[b2b9c88f] <span class="ab-k">國際 B2B 科技業</span>
+[5c1224e8] 這幾年我轉進國際 B2B 科技業，把 FIDO2 安全金鑰、車用 MEMS 感測器這類產品帶進市場，從前端的品牌定位、產品分析，一路負責到上市執行。
+[c0c307f5] <span class="ab-k">現在 · e-Vehicle Semiconductor</span>
+[fa5f5a25] 現在我在新竹的 e-Vehicle Semiconductor，最擅長的是把數據變成行動：分析美國 Amazon 需求和網站流量，建立追蹤用的儀表板和 AI 工作流程，再把這些即時數字轉成具體的 GTM 策略，自己動手執行。
+[63ec1622] 四種能力，一個循環
+[7c923dd4] <span class="muted-note">網站上的每個符號各代表其中一項</span>
+[386defbc] <span class="ab-word">前瞻</span>
+[4535339c] 市場情報
+[2e238673] 在需求出現在銷售數字之前就看見它，從 MEMS 氫氣感測的早期訊號，到綠氫需求背後的政策與標案時程。
+[929f096d] <a href="work.html#hydrogen-sensing">案例 02</a><a href="work.html#demand-shift">案例 04</a>
+[1b597ac7] <span class="ab-word">機會</span>
+[3a614fb5] 漏斗分析
+[37ad9d56] 用結構找到切入點：用 SQL、GA4 和損益兩平模型，看出價值在哪裡、要拿下它需要什麼。
+[a3d49c5c] <a href="work.html#amazon-paid-search">案例 01</a><a href="funnel-analysis.html">漏斗分析專案</a>
+[b7c84e7d] <span class="ab-word">方向</span>
+[e201889a] 市場進入策略
+[f3112b5d] 從定位到上市都由我負責：預算、通路、時程，以及執行的團隊；做過五個專櫃的零售展店、分兩條線的 Amazon 上市，以及配合政策時程的 12 個月電子報計畫。
+[bd7aea66] <a href="work.html#pufido-launch">案例 03</a><a href="work.html#o2o-retail">案例 05</a>
+[f235d57c] <span class="ab-word">洞察 · 循環</span>
+[85991718] AI 工作流程
+[35b05069] 看見全貌，把迴圈接起來：用 AI agent 串起分散的資料、標出異常，讓每一次市場反應都能回饋到下一個決策。
+[d830756e] <a href="ai.html">我怎麼用 AI</a>
+[5c7ef908] 我的工作方式
+[f2135de1] <b>定義</b>從商業問題開始，而不是從資料開始。
+[b4918bd6] <b>衡量</b>把市場、搜尋、流量和銷售資料放進同一個畫面。
+[5fff5287] <b>解讀</b>分出訊號和雜訊，估算機會有多大。
+[63163e97] <b>建議</b>把洞察變成決策，取捨講清楚。
+[8dc50da4] 工具
+[ba634a46] <b>分析：</b> GA4、Google Tag Manager、Power BI、Windsor.ai、Google Sheets、SEMrush、Hotjar
+[80d21784] <b>電商平台：</b> Amazon Seller Central、Brand Analytics、Product Opportunity Explorer、Amazon Ads
+[d3050195] <b>行銷：</b> Google Ads 與 Scripts、Meta Ads、SEO、Mailchimp
+[8e5f7d3a] <b>AI 與自動化：</b> Claude API、n8n、Google Apps Script
+[383e65e5] <b>開發：</b> HTML/CSS、JavaScript、Shopify Liquid
+[44edd445] <b>語言：</b> 中文（母語）、英文（工作流利）、日文（基礎）
+[b65e36f7] 證照
+[2c9f548a] 12 張證照，涵蓋數據與 AI、市場研究、行銷分析和設計，最近一張是 Google 的 AI for Data Analysis（2026）。
+[ac50a2d1] <a href="certifications.html" class="view-all">看全部證照 <span>→</span></a>
+[64dd60fe] 學歷
+[2cb3824a] 工商業設計學士。早期的視覺設計與藝術指導作品，可來信索取。
+[cdd4b82e] Sylvia Ho 持有的證照，涵蓋數據與 AI、市場研究、行銷分析與設計。
+[eb63be1f] 證照 | Sylvia Ho
+[3232301f] <a href="index.html" class="nav-item">總覽</a>⏎<a href="projects.html" class="nav-item">分析專案</a>⏎<a href="work.html" class="nav-item">案例研究</a>⏎<a href="ai.html" class="nav-item">我怎麼用 AI</a>⏎<a href="about.html" class="nav-item">關於我</a>⏎<a href="certifications.html" class="nav-item active" aria-current="page"><span class="nav-ind" aria-hidden="true"></span><span class="arrow">→</span>證照</a>⏎<a href="resume.html" class="nav-item">履歷</a>
+[060c26a8] 點類別可以篩選。已驗證的證照會連到發證單位的驗證頁面。
+[426db487] <span class="kcard-label">全部證照</span><span class="kcard-num" data-count="12">12</span>
+[03a02012] <span class="kcard-label">數據與 AI</span><span class="kcard-num" data-count="3">3</span>
+[7fe31138] <span class="kcard-label">市場研究與產品</span><span class="kcard-num" data-count="4">4</span>
+[4f090ee1] <span class="kcard-label">行銷分析</span><span class="kcard-num" data-count="3">3</span>
+[b1a2cea5] <span class="kcard-label">設計</span><span class="kcard-num" data-count="2">2</span>
+[0d2f79a4] 數據與 AI
+[91343b1e] <span class="cert-date">2026 年 4 月</span>
+[1139e828] =
+[7d08f62c] =
+[cb7ce377] <span class="tag">AI 輔助分析</span><span class="tag">資料清理</span><span class="tag">視覺化</span>
+[8bc3f40f] <a class="btn-sm btn-sm-dark" href="https://coursera.org/verify/F5NETIH8NQ6Q" target="_blank" rel="noopener">驗證 <span>↗</span></a>
+[2e706549] <span class="cert-date">2026 年 5 月</span>
+[d60caf29] =
+[d4b349fc] =
+[ac0ebc64] <span class="tag">生成式 AI</span><span class="tag">應用案例</span>
+[ffea6e5e] <a class="btn-sm btn-sm-dark" href="https://coursera.org/verify/LV7IP579XT6F" target="_blank" rel="noopener">驗證 <span>↗</span></a>
+[dd01c08d] <span class="cert-date">2026 年 6 月</span>
+[79e23436] =
+[3b9e43ad] <span class="tag">提示工程</span><span class="tag">LLM 工作流程</span>
+[0c50c10a] <a class="btn-sm btn-sm-dark" href="https://coursera.org/verify/YSUJ6NRB5Y09" target="_blank" rel="noopener">驗證 <span>↗</span></a>
+[0581a2af] 市場研究與產品
+[532bbf78] =
+[74cea2d6] =
+[843dba45] <span class="tag">市場研究</span><span class="tag">消費者行為</span>
+[2c027cc5] <a class="btn-sm btn-sm-dark" href="https://coursera.org/verify/WBD20PPLVNYN" target="_blank" rel="noopener">驗證 <span>↗</span></a>
+[b8b63fed] =
+[2a149e55] =
+[353d138b] <span class="tag">產品管理</span><span class="tag">AI 產品</span>
+[89a3310e] <a class="btn-sm btn-sm-dark" href="https://coursera.org/verify/U3BUD4DIFN12" target="_blank" rel="noopener">驗證 <span>↗</span></a>
+[93cc4c73] =
+[a4ec4053] <span class="tag">專案規劃</span><span class="tag">敏捷開發</span>
+[216e84fa] =
+[70f813e0] <span class="tag">使用者研究</span><span class="tag">原型設計</span>
+[d391e5f5] 行銷分析
+[c291a48c] =
+[766eefaa] =
+[5ee17253] <span class="tag">網站分析</span><span class="tag">成效衡量</span>
+[7de2c15e] =
+[a746ddeb] <span class="tag">付費搜尋</span><span class="tag">出價</span>
+[8a23afc9] =
+[92330ea1] <span class="tag">多媒體廣告</span><span class="tag">目標對象</span>
+[59b03536] 設計
+[161e1e65] 廣告設計丙級技術士
+[2f050d22] 勞動部勞動力發展署
+[95c77374] <span class="tag">廣告設計</span>
+[e0121ac3] =
+[7bc25d25] =
+[9ac52793] <span class="tag">影像編修</span>

@@ -2122,3 +2122,26 @@ button.kcard:focus:not(:focus-visible) { outline: none; }
   .logo:hover .lm-3 { animation-delay: .12s; }
   .logo:hover .lm-4 { animation-delay: .18s; }
 }
+
+/* =========================================================
+   Language switch (EN / 中文)
+   ========================================================= */
+.lang-switch {
+  display: inline-flex; align-self: flex-start; gap: 3px;
+  margin: 0 9px 9px; padding: 3px;
+  background: #e2e2e2; border-radius: var(--radius);
+}
+.lang-switch a {
+  padding: 4.5px 12px; font-size: 15px; line-height: 1.2; color: #555;
+  border-radius: calc(var(--radius) - 2px);
+  transition: background .2s, color .2s;
+}
+.lang-switch a:hover { color: var(--ink); }
+.lang-switch a.on { background: var(--ink); color: #fff; }
+
+/* Traditional Chinese pages: CJK falls back to the system TC font */
+html[lang="zh-Hant"] body {
+  font-family: "Stack Sans Headline", "Inter", "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+}
+html[lang="zh-Hant"] :is(h1, h2, h3, h4) { letter-spacing: 0; }
+html[lang="zh-Hant"] .btn { white-space: nowrap; }

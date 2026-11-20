@@ -1,0 +1,102 @@
+[39e02503] 一支採用 PUF 技術的 FIDO2 安全金鑰的上市研究與雙軌定位，搭配 FIDO Alliance 的市場資料。
+[f766f2af] 在 Amazon 美國站推出市場上第一款同類型安全金鑰 | Sylvia Ho
+[dab4f8a1] <a href="work.html#pufido-launch" class="back-link"><span aria-hidden="true">←</span> 案例研究</a>
+[9f73580c] PUFido，SecuX 稱它是全球第一支採用 PUF（物理不可複製功能）技術的 FIDO2 安全金鑰，要打進一個由知名品牌主導的類別。真正的障礙在哪裡？該怎麼定位？
+[c24ea2a1] 工具<b>Google Trends · SEMrush · 問卷 · GA4 · Hotjar</b>
+[e4236706] 結果<b>30 天內進入 Amazon 類別前 5 名*</b>
+[6844c422] 障礙不在需求。大家怕忘記密碼、怕帳號被盜，也對無密碼登入有興趣，但多數人不懂安全金鑰怎麼運作。所以上市以教育為主軸，分成兩條線：對一般使用者講白話的「插上、輕觸、完成」，對專業人士講標準和硬體安全。這支金鑰 <b>30 天內進入 Amazon 類別前 5 名</b>。*
+[c6c4d30b] 1 · 市場：認知度快速上升
+[6548a52e] <span class="muted-note">FIDO Alliance 消費者調查 · A 級</span>
+[1f6d944a] 知道 passkey 的消費者比例
+[ef1088b7] <b>39%</b><small>FIDO Alliance 消費者研究</small>
+[61552328] <b>57%</b><small>FIDO Alliance 消費者研究</small>
+[44d9fdb3] <b>75%</b><small>World Passkey Day 報告 · 5 個國家 1,389 人</small>
+[2c32fb74] <b>90%</b><small>State of Passkeys · 10 個國家 11,000 人</small>
+[e5c18859] PUFido 在 2025 年 5 月上市（標色處）。各年的調查樣本不同，請當作方向來看，而不是精確的趨勢線。
+[fd4cb262] 這對上市代表什麼
+[07160881] <b>標準已經就緒。</b> 2025 年全球前 100 大網站已有 48% 支援 passkey，所以金鑰在大家常用的帳號上都能用。
+[0743ca9a] <b>痛點是真的。</b> 48% 的受訪消費者曾經因為忘記密碼而放棄網購。
+[5d68aeda] <b>知道 ≠ 了解。</b> 聽過「passkey」這個詞，不等於信任一支 USB 金鑰。上市要補的就是這個落差。
+[8ccf0c74] 來源：FIDO Alliance，Consumer Password &amp; Passkey Trends（World Passkey Day 2025）與 The State of Passkeys 2026。
+[1cc7de20] 2 · 三條研究線，一個洞察
+[bfa912e5] <span class="fn-k">競品拆解</span><b>規格 vs. 故事</b><small>知名品牌的金鑰靠標準和認證在賣。很少有人用白話說明，金鑰對一般帳號到底有什麼用。</small>
+[dbb48d3b] <span class="fn-k">關鍵字預估</span><b>用哪些字</b><small>用 Google Trends 和 SEMrush 估算無密碼登入和帳號安全相關的搜尋熱度，並挑選商品頁和廣告要用的字。</small>
+[2dde086e] <span class="fn-k">痛點問卷</span><b>擔心 + 好奇</b><small>怕忘記密碼、怕帳號被盜，對無密碼登入好奇，但不太懂它怎麼運作。</small>
+[ca343767] 洞察：障礙是教育，不是需求。每則訊息都要先回答「這對我有什麼用？」，再談「它有多安全？」。
+[43461ecc] 3 · 雙軌定位
+[b3b1c38c] <span class="o2-k">一般使用者</span>
+[5cdd8503] 「不用裝 App。插上、輕觸、完成。」
+[68f09610] Google、Facebook、Microsoft 都能用
+[74834512] 不用輸入驗證碼，沒有 SIM 卡被盜換的風險
+[a1eb3429] 訊息：替你已經在用的帳號加上簡單的保護
+[75666d12] <span class="o2-k">資安專業人士與加密貨幣使用者</span>
+[48e529de] 「FIDO2 / U2F、硬體信任根、跨平台。」
+[7e707fb1] 通過標準認證，可抵禦網路釣魚
+[2ea674ee] PUF：私鑰在需要時才產生，不會被儲存
+[a9bd0afe] 訊息：一種保護金鑰本身的不同做法
+[a22ca1d0] 預算依市場（美國和歐洲）和兩條線分配。品牌提及依四級優先順序分類，任何涉及安全或信任的內容都最先回應。
+[a7ed7dd9] 4 · 結果，以及我會把哪些紀錄留得更完整
+[3fdedd7e] 上市結果
+[02c62981] 這支金鑰<b>上市 30 天內進入 Amazon 類別前 5 名</b>。上市後，Zendesk 工單、Hotjar 錄影和 GA4 資料放在一起檢視，回饋到下一代產品規格。
+[f30e1f6f] * 依當時的內部追蹤。我在 2025 年 7 月離開 SecuX，已經無法取得原始紀錄，所以這裡不列出廣告層級的數字。
+[da32a886] 如果重來，我會怎麼做
+[056ea062] 在每個里程碑匯出一份標有日期的排名、廣告和評論快照，離職後成果仍然可以證明。
+[9526e1ba] 上市前先訂好基準期間，讓每一個「+X%」都清楚是「跟什麼比」。
+[f51bbaf8] 直接追蹤教育落差：有多少訪客在購買前看了運作原理的說明。
+[f13e403d] 5 · 用 Amazon 公開資料檢驗
+[66f5f91d] 上市期間的廣告和銷售紀錄沒有保留，所以這一節拿今天任何人都看得到的 Amazon 美國站資料來檢驗當時的上市決策：「fido2 security key」搜尋的前 20 個商品，以及五支主要金鑰和 PUFido 各自最近 10 則負評（1–3 星）。
+[98888d03] <span class="fn-k">Yubico 的需求占比</span><b>93%</b><small>前 20 個商品「上個月售出」量中的占比，來自 20 個商品中的 8 個。</small>
+[f78ae564] <span class="fn-k">賣最多的價位</span><b>$29</b><small>Yubico 兩支 $29 的金鑰每月賣出 11K 以上。PUFido 上市定價也是這個價格。</small>
+[17ee9125] <span class="fn-k">最常見的抱怨</span><b>設定</b><small>占競品負評的 24%，占 PUFido 負評的 50%。</small>
+[efa90352] 價格 vs. 需求
+[f6c8065b] <span><i class="pf-pt-y"></i>Yubico</span><span><i class="pf-pt-o"></i>其他品牌</span><span><i class="pf-pt-p"></i>SecuX PUFido</span>
+[0c409274] $26–33 價格帶
+[8e9b3988] 價格（對數刻度）
+[13ae3596] 上個月售出（對數）
+[a985784c] Amazon 顯示的「上個月售出」是下限（例如 6K+），所以數值都是最低估計。沒有這個標示的商品不列入。PUFido 在「fido2 security key」的自然排名第 4，價格落在和 Yubico 基本款相同的 $26–33 價格帶，而那些基本款也有 NFC。
+[4763a5ac] 負評在抱怨什麼
+[4b964724] <span><i style="background:var(--ink)"></i>五個競品（50 則評論）</span><span><i style="background:var(--lilac)"></i>PUFido（10 則評論）</span>
+[b0ffec09] <span class="pf-lab">設定與說明</span>
+[a5797203] <span class="pf-lab">不能用或壞掉</span>
+[9a8e2ba4] <span class="pf-lab">和預期不同</span>
+[c5238bf7] <span class="pf-lab">網站、裝置或韌體支援</span>
+[80c09ff0] <span class="pf-lab">尺寸與外觀</span>
+[ea5f1c7f] <span class="pf-lab">NFC 不穩定</span>
+[4ff6665b] <span class="pf-lab">退貨與保固</span>
+[ece0f182] <span class="pf-lab">其他</span>
+[a5f742c0] 每則評論依主要抱怨分類，人工逐則閱讀。每個產品十則評論是很小的樣本：占比請當作方向，不是精確數字。
+[e45ceadc] 每個上市決策和證據對照
+[0e28bf1b] 資料顯示什麼
+[7f6e5a6e] 判定
+[a4d90366] <b>定價 $29</b>
+[1655f76c] $29 是價格階梯上賣最多的價位，由 Yubico 基本款領頭。那些金鑰有 NFC，PUFido 沒有。
+[c572572d] 價格對了，但在這個價位少了一項功能
+[18af4606] <b>專業線主打 PUF 安全性</b>
+[f5e48ba4] 幾乎沒有負評在講金鑰安不安全。消費者卡在不會用，而不是不信任。
+[5de27a3d] 對專家有效，拿來吸引大眾則偏弱
+[35ee8d5c] <b>一般使用者線：「插上、輕觸、完成」</b>
+[3b7f4e64] 設定是這個類別最大的抱怨，PUFido 有一半的負評說說明書缺漏或寫不清楚。
+[54768da5] 問題抓對了；但商品頁和包裝沒有兌現這個承諾
+[a92b2374] <b>在 Amazon 美國站上市</b>
+[3bdcc856] PUFido 在核心查詢的自然排名仍是第 4，評分 4.2★，每月售出 200 支以上。
+[2ccfa10c] 站得住
+[d13a1a1b] 下一次上市我會怎麼衡量
+[18b5b469] 漏斗階段
+[b2bb7604] 指標
+[b9f8684c] <b>搜尋</b>
+[d284eff7] 在「fido2 security key」、「passkey」、「yubikey」上的曝光占比和點擊占比
+[00810676] =
+[379ab963] <b>商品頁</b>
+[455ad84c] 點擊率，以及每個工作階段的加入購物車率
+[3d7d5cbc] =
+[2ed6aa5f] <b>購買</b>
+[abb2b3cc] 轉換率，以及在該查詢總購買中的占比
+[1bda73c3] =
+[a6621cbf] <b>站外流量</b>
+[fbbdddd7] 來自 Google、社群和公關的訂單，依活動標記
+[7e73a423] =
+[27cecb3a] <b>購買之後</b>
+[f51668d3] 新負評中提到設定的比例；目標低於 20%
+[68325e06] 匯出評論，每月分類
+[b73b9da3] 來源：<a href="https://www.amazon.com/s?k=fido2+security+key" target="_blank" rel="noopener">Amazon 美國站「fido2 security key」搜尋結果</a>，以及各產品的<a href="https://www.amazon.com/product-reviews/B0F32FWR2N/?filterByStar=critical" target="_blank" rel="noopener">負評頁面</a>，查看日期 2026 年 11 月 19 日。
+[2167354b] Amazon 美國站 FIDO2 安全金鑰的價格與上個月售出量

@@ -1,0 +1,125 @@
+[44361c59] 台灣的氫能政策、補助和標案時程，如何決定一家氫能設備公司的分眾 B2B 電子報。
+[99f64ae8] 把台灣氫能政策變成 B2B 電子報名單 | Sylvia Ho
+[5614df94] <a href="work.html#demand-shift" class="back-link"><span aria-hidden="true">←</span> 案例研究</a>
+[b552bb5a] 一家氫能設備公司（現場製氫、儲氫，以及混合儲能櫃），大部分營收來自年度標案和一起投標的合作夥伴。政策和補助的時程，透露了這些買家什麼時候會開始找廠商。電子報計畫就是圍繞這份時程表設計的。
+[818a2d06] 工具<b>政策追蹤表 · EDM · 公司財報 · GA4</b>
+[da6599de] 結果<b>詢價轉換率 0.2% → 2.5%</b>
+[1d28c953] 在這麼早期的市場，需求跟著政府走：預算、示範計畫和標案決定誰買、什麼時候買。所以電子報配合政策和標案的時間點寄送，內容寫給可能投標的特定合作夥伴。在能源展覽認識的潛在客戶，則依對方的財報和近期新聞客製內容。分眾電子報開信率達 <b>50–60%</b>，詢價轉換率從 <b>0.2% 提高到 2.5%</b>。
+[9636bdbb] 1 · 政策時程 → 電子報時程
+[191e1579] <span class="muted-note">公開的政策與標案里程碑</span>
+[769bb19e] 時間
+[072817f6] 政策或標案訊號
+[f7a3d8b2] 電子報主題
+[51d99345] 對象
+[12857d3f] 2022 年 3 月
+[53812728] 國家 2050 淨零排放路徑：2050 年氫能占發電 9–12%
+[722990ed] <b>淨零對氫能專案代表什麼</b>
+[bb2969fa] 能源與工業潛在客戶
+[5ab2d3b3] 2022 年 12 月
+[019fe5d5] 12 項關鍵戰略；到 2030 年編列約新台幣 9,000 億元，其中再生能源與氫能約 2,100 億元
+[3de08944] <b>預算花在哪裡、誰會來投標</b>
+[716f40f8] 系統整合商、統包工程夥伴
+[ad448bf1] 台電興達電廠氫氣混燒比例達 15%
+[452bb5f2] <b>混燒規模擴大需要什麼</b>
+[29333045] 電力產業供應商
+[84c7c65d] 2025 年 2 月
+[4d115029] 中油發包第一個國營 SOFC 燃料電池示範場域（決標金額新台幣 6,360 萬元）
+[efd2f215] <b>燃料電池示範標案：買家會訂哪些規格</b>
+[7ec4c045] 燃料電池與零組件廠商
+[334e8729] 2025 年 12 月
+[4fdf3ace] 台灣第一批加氫站在高雄和台南啟用
+[f21660ed] <b>基礎建設來了：接下來要注意的標案</b>
+[cc370e48] 燃氣、運輸與加氫站合作夥伴
+[75dbdc95] 台電第一座 MW 級氫能儲能示範（電解）預計完工
+[443e6e36] <b>電解與儲能：準備投標</b>
+[fe70fd28] 電解與儲能系統整合商
+[2494ebb2] 氫能發電目標：裝置容量 891 MW（2025 年為 91 MW）
+[75075157] <b>一頁看懂 2030 年的案源</b>
+[2093492c] 所有區隔
+[fd150f38] 每個訊號都記在追蹤表裡，包含日期、預算和可能的投標廠商。表中的主題是每個訊號觸發的電子報類型。
+[69681e48] 2 · 兩條名單管道併成一份
+[24489118] <span class="o2-k">標案驅動</span>
+[4170100d] 跟著錢走
+[c29fe549] 追蹤國家策略、補助和國營事業標案公告
+[81ce29d8] 整理出可能投標的系統整合商和合作夥伴
+[e484fc9c] 寄一份簡短的標案解讀，說明公司設備適合放在哪裡
+[e899df07] <span class="o2-k">展覽開發</span>
+[980e8365] 先研究，再下筆
+[85d88bd8] 蒐集能源與氫能展覽上活躍的參展商和參觀者
+[3064da3b] 查每家公司的財報和近期新聞
+[e5944e87] 針對對方目前的專案寫信：產能計畫、新產線、已經得標的案子
+[1b1870a9] 3 · 計畫：依區隔排定 12 個月的寄送
+[4676930e] <span class="muted-note">2025 年 8 月 – 2026 年 7 月</span>
+[819bf0d4] <span><i class="ep-pol"></i>政策里程碑</span><span><i class="ep-ten"></i>標案公告</span><span><i class="ep-show"></i>展覽潛在客戶</span><span><i class="ep-nur"></i>持續經營</span>
+[75629af5] 8 月
+[fdd289e3] 9 月
+[51327aef] 10 月
+[bb9bfefd] 11 月
+[997f59bc] 12 月
+[efed3690] 1 月
+[dc8415cc] 2 月
+[c4ba0822] 3 月
+[befde54a] 4 月
+[c94f4798] 5 月
+[6d90df3b] 6 月
+[b7375584] 7 月
+[1b424d06] <b>訊號</b>
+[459638db] <span>第一批加氫站</span>
+[1f9f93e6] <span>新年度標案</span>
+[81f146af] <span>儲能示範準備</span>
+[14c172b0] <b>系統整合商與統包工程</b><small>標案投標廠商</small>
+[3d4e059a] <span class="ep-chip ep-pol" title="Policy milestone">淨零預算：錢花在哪裡</span>
+[6d03b3a0] <span class="ep-chip ep-ten" title="Tender notice">新年度標案觀察</span>
+[45a3619e] <span class="ep-chip ep-ten" title="Tender notice">投標準備清單</span>
+[42796973] <span class="ep-chip ep-pol" title="Policy milestone">下半年標案展望</span>
+[1ec3e504] <b>燃料電池與零組件廠商</b><small>標案投標廠商</small>
+[eeaf11a9] <span class="ep-chip ep-ten" title="Tender notice">SOFC 示範標案：買家訂的規格</span>
+[91c951dc] <span class="ep-chip ep-pol" title="Policy milestone">燃料電池示範計畫透露了什麼</span>
+[fb1106b4] <span class="ep-chip ep-nur" title="Nurture">規格書更新</span>
+[53be757a] <b>電力產業供應商</b><small>標案投標廠商</small>
+[767f0fd4] <span class="ep-chip ep-pol" title="Policy milestone">混燒 15%：下一步擴大什麼</span>
+[cacc29d5] <span class="ep-chip ep-ten" title="Tender notice">儲能示範：準備投標</span>
+[1b39ab58] <b>燃氣、運輸與加氫站</b><small>標案投標廠商</small>
+[d98e8f7b] <span class="ep-chip ep-pol" title="Policy milestone">加氫站啟用了：接下來的標案</span>
+[fe373d1d] <span class="ep-chip ep-nur" title="Nurture">加氫站建置進度觀察</span>
+[0dc75aa7] <b>展覽潛在客戶</b><small>一對一</small>
+[ce3db697] <span class="ep-chip ep-show" title="Trade-show prospect">展後信，每家公司各寫一封</span>
+[8d6664af] <span class="ep-chip ep-show" title="Trade-show prospect">依財報和新聞追蹤聯繫</span>
+[709cb38c] 依上方的政策時程重建；寄送月份為約略時間。標案區隔每個訊號寄一封，所以只有在對他們來說有變化時才會收到信。展覽潛在客戶收到的是一對一的信，而不是群發。
+[bf3bc817] 4 · 一封電子報長什麼樣子
+[a5497576] <span class="muted-note">重建的範例</span>
+[ec82ee65] 台灣氫能動態 · 2026 年 4 月
+[7972d484] <b>Tellus Materials</b><br><small>寄給我</small>
+[f27842b7] <small class="em-date">2026 年 4 月 21 日</small>
+[931c14bc] =
+[032135e8] 台灣氫能動態
+[74ea5c7a] 2026 年 4 月 · 氫能專案的政策、標案與市場消息
+[27320b83] 各位合作夥伴好：
+[fe73b6ab] 以下是本月台灣和國際的氫能消息，以及它們對接下來的專案可能代表什麼。
+[094d515b] 台灣
+[d0cbcca9] 台電第一座 MW 級氫能儲能示範進行中
+[f11711d5] 這座以電解為基礎的示範場預計 2027 年完工；同時興達電廠的氫氣混燒比例已達 15%。接下來的標案，儲能和現場製氫是要注意的部分。
+[7202ed2a] <span class="em-link">閱讀更多</span>
+[d39cb0fd] 第一批加氫站在高雄和台南啟用
+[77db11f0] 中油去年 12 月啟用的加氫站是台灣第一批，也是在地氫氣供應需求的早期訊號。
+[bc440f64] 國際
+[7e7fe14b] 南韓 20 MW 氫燃料電池發電廠商轉
+[527e5053] 這座電廠使用工業副產氫，這種模式也可能適用於台灣的工業區。
+[ed8190ed] <a class="em-link" href="https://www.tellusmaterials.com/en/blogs/international_trends/south-korea-20mw-hydrogen-fuel-cell-power-plant-commercial-operation" target="_blank" rel="noopener">到我們的網站閱讀全文</a>
+[72fbc52e] 來自 Tellus Materials
+[5f260392] 我們為資料中心、工廠和關鍵基礎設施規劃並建置現場製氫機、儲氫設備和 HESS 混合儲能櫃，從製程設計到安裝都包辦。如果您的團隊正在準備氫能專案或標案，我們可以協助評估適合您場址的配置。
+[8ee80371] <span class="em-btn">申請評估</span>
+[5e27f000] Tellus Materials · 台灣<br>您收到這份電子報，是因為您曾訂閱，或曾在產業活動中與我們見面。<u>取消訂閱</u>
+[9bba9574] 我離職後原始電子報沒有保留；這裡依當時的公開新聞重建格式，寄送日期僅為示意。電子報連結的文章放在公司網站上，網站和其中的氫能洞察、技術快報、國際趨勢等專欄都是我建置的。這是寄給整個區隔的通用電子報。寄給展覽潛在客戶的客製信不在這裡展示，以保護那些公司的隱私。
+[b09676be] 5 · 成果
+[4e3ac3dd] <span class="fn-k">開信率</span><b>50–60%</b><small>依政策時程寄給標案合作夥伴、以及事先研究過的潛在客戶的分眾電子報。</small>
+[3f90c467] <span class="fn-k">詢價轉換率</span><b>0.2% → 2.5%</b><small>收件人中送出詢價的比例，計畫前後比較。</small>
+[e0004b2b] <span class="fn-k">同時改版的網站</span><b>68% → 42%</b><small>我依買家會問的問題重建<a href="https://www.tellusmaterials.com/en" target="_blank" rel="noopener">公司網站</a>後的產品頁跳出率。</small>
+[e03dac7d] 現在我會再加上：每次寄送和寄送區隔都留下有日期的紀錄，並追蹤有多少詢價變成一起投標的合作，而不只是回信數。
+[ba2d1d58] <a href="https://ncsd.ndc.gov.tw/_ofu/FileDatabase/58f5591f-6d7e-459f-8c8a-56c69481548f/%E6%B0%AB%E8%83%BD%E9%97%9C%E9%8D%B5%E6%88%B0%E7%95%A5%E8%A1%8C%E5%8B%95%E8%A8%88%E7%95%AB(%E6%A0%B8%E5%AE%9A%E6%9C%AC).pdf" target="_blank" rel="noopener">國家發展委員會，氫能關鍵戰略行動計畫</a> · A 級
+[d82ac4ba] <a href="https://www.bnext.com.tw/article/68474/2050-net-hydrogen-energy" target="_blank" rel="noopener">中央社 via 數位時代：到 2030 年的淨零預算</a> · B 級
+[5618e457] <a href="https://ec.ltn.com.tw/article/breakingnews/5294399" target="_blank" rel="noopener">自由時報：台電氫氣混燒與儲能示範計畫（2025 年 12 月）</a> · B 級
+[b1fd0e34] <a href="https://www.reccessary.com/zh-tw/news/jv-energy-cpc-sofc" target="_blank" rel="noopener">Reccessary：中油 SOFC 示範標案</a> · B 級
+[adb9f924] <a href="https://www.digitimes.com/news/a20251212PD229.html" target="_blank" rel="noopener">DIGITIMES Asia：台灣第一批加氫站（2025 年 12 月）</a> · B 級
+[af451f12] <a href="https://www.tellusmaterials.com/en" target="_blank" rel="noopener">Tellus Materials：產品與解決方案（公司網站）</a> · A 級
+[afc38978] <a href="https://ncsd.ndc.gov.tw/_ofu/download/about0/12/02_%E6%B0%AB%E8%83%BD.pdf" target="_blank" rel="noopener">經濟部能源署：氫能策略簡報（2025 年 91 MW、2030 年 891 MW）</a> · A 級

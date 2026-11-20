@@ -1,0 +1,116 @@
+[dacaab3f] 哪些零售品類會最先被 AI 探索和自動補貨改變？依據公司揭露資訊、Adobe 與 NRF 資料。
+[12d3f269] AI 如何改變消費電商，2026–2028 | Sylvia Ho
+[0adac6f9] AI 助理開始替消費者推薦、比價，甚至直接結帳。哪些品類會最先被 AI 探索和自動補貨改變？哪些品類還是靠品牌信任和實際體驗決定成交？
+[769e9968] 時間範圍<b>2026–2028，每年第四季更新</b>
+[47108041] 來源<b>公司財報、Adobe、NRF · A/B 級</b>
+[c7fc2f2b] 方法<b>在 DuckDB 中追蹤訊號並為品類評分</b>
+[294573fa] 重點<b>AI 會先改變哪些品類</b>
+[0717d328] AI 已經在帶動真金白銀。Amazon 表示它的 Rufus 助理帶來約 <b>120 億美元的年化增量銷售</b>；2025 年購物季，AI 導到美國零售網站的流量成長約 <b>7 倍</b>，轉換率比其他流量高 <b>31%</b>，和前一年正好相反。但這個轉變不會平均落在每個品類上。看規格買的品類（電子產品、依適用車型挑選的零件）會在 AI 探索裡分出勝負；高頻消耗品會轉向自動補貨；服飾和居家用品退貨多、重信任，仍然由品牌和體驗主導。到 2028 年，用 AI 工具會是基本門檻，利潤會流向產品資料品質、自有會員和可靠的出貨。
+[fa7abbd3] 1 · 已經發生的事
+[78ec2bfa] <span class="fn-k">AI 導到零售的流量</span><b>~7×</b><small>2025 年購物季，生成式 AI 導到美國零售網站的流量成長 693%。轉換率從比其他流量低 9%（2024）翻轉為高 31%。</small>
+[656b177a] <span class="fn-k">平台內的助理</span><b>120 億美元</b><small>Amazon 歸功於 Rufus 的年化增量銷售，2025 年有 3 億以上顧客使用過（依 Amazon 自己的 7 天歸因）。</small>
+[3606d6e3] <span class="fn-k">在 AI 裡結帳</span><b>2025–26</b><small>ChatGPT Instant Checkout 於 2025 年 9 月和 Etsy、Shopify 一起推出；之後 Walmart 等大型零售商也陸續串接。agent 現在影響的是排序，不只是流量。</small>
+[f2e7a547] <span class="fn-k">零售媒體</span><b>686 億美元</b><small>Amazon 2025 年廣告營收，第四季成長 23%。在消費者下單處販售的廣告，成長持續快過整體廣告市場。</small>
+[844efd94] <span class="fn-k">退貨</span><b>19.3%</b><small>預估 2025 年美國網路銷售會被退貨的比例；所有退貨中有 9% 是詐欺。自動化程度越高，信任和出貨成本也跟著上升。</small>
+[eab67ded] <span class="fn-k">社群電商</span><b>4.6%</b><small>2025 年社群媒體占美國購物季網路營收的比重，年增 40%。</small>
+[16a44b23] 多數訊號來自美國，那是公開資料最清楚的市場。台灣的基本數據請見<a href="taiwan-ecommerce.html">成長停滯之後</a>。
+[a2248dce] 2 · 到 2028 年的兩個階段
+[657c16e4] <span class="o2-k">2026–2027 · 採用與算帳</span>
+[5addd509] AI 成為一個流量來源
+[5612ec26] 消費者請 AI 幫忙比較，再到平台或品牌官網購買
+[4463d757] AI 寫的文案、做的圖片、客服和出價，對賣家來說變成日常
+[0a23a752] 關鍵檢驗：是真正的增量訂單，還是本來就會發生、現在被算到 AI 頭上的訂單
+[de42f919] <span class="o2-k">2027–2028 · 重建與做出差異</span>
+[c586d9c1] AI 變成基本門檻
+[25e55c2e] 消耗品轉向低摩擦、半自動的補貨
+[ebd9a75d] 正確的產品資料和評論，決定 agent 會不會推薦你
+[c81dd76c] 優勢移到產品差異、自有會員、出貨和單位經濟效益
+[3d048d56] 3 · 品類 × AI 成熟度矩陣
+[7d2aa53d] AI 探索對成交的影響程度 →
+[9cd5739b] 回購／自動補貨潛力 →
+[e48029a6] 電子產品與家電
+[46fa4025] 玩具與電玩
+[9da6645b] 個人護理與美妝
+[f7f4825d] 寵物與保健食品
+[15e1c251] 食品雜貨與居家消耗品
+[860fffc7] 服飾與鞋類
+[289e3912] 居家與家具
+[1146bb9b] 依適用車型挑選的替換零件
+[4884fd15] <i style="background:var(--blue)"></i>在 AI 探索中勝出
+[2dce314e] <i style="background:var(--lime)"></i>自動補貨
+[69254c20] <i style="background:var(--lilac)"></i>AI 探索 + 自動補貨
+[fa907ce3] <i style="background:var(--orange)"></i>品牌與體驗主導
+[2e2d0fdb] 圓點越大 = 退貨／信任風險越高
+[d5022303] 以表格檢視分數
+[55bb450a] AI 探索
+[33d9978c] 補貨
+[6ad0bd2d] 退貨／信任風險
+[5d12bd53] 打法
+[ef0ef814] 電子產品與家電
+[af50f9f8] 在 AI 探索中勝出
+[0a2b6f43] 玩具與電玩
+[cb8ba961] 個人護理與美妝
+[36dc0b92] AI 探索 + 自動補貨
+[cf50098e] 寵物與保健食品
+[3c4cd1a3] 自動補貨
+[26abc5a1] 食品雜貨與居家消耗品
+[32e2f96f] 服飾與鞋類
+[aa308d1e] 品牌與體驗主導
+[4cfc0594] 居家與家具
+[4cf0edbb] 分數從 0 到 2。五個品類的 AI 探索分數依據 Adobe 的品類資料；補貨和大多數風險分數是我的判斷，在滑鼠提示和輸入資料表裡都有標明。
+[ade6de96] 4 · 品牌該做什麼
+[07a37a7f] 讓 agent 讀得懂產品資料
+[f52f3710] 規格、適用車型、尺寸和庫存都要有結構、保持最新。在看規格買的品類裡，agent 會推薦它能查證的商品。
+[5ac4ffe4] 在消耗品裡建立補貨機制
+[4b6be99d] 為高頻商品提供訂閱、提醒和組合，讓自動補貨的習慣落在你的產品上，而不是更便宜的替代品。
+[8ed31d8f] 重信任的品類留給人
+[473c4339] 服飾和居家用品的退貨風險最高。AI 可以用在尺寸建議和內容，但尺碼、圖片和客服要由人審核。
+[ceaed6be] 衡量增量，不是看誰拿到功勞
+[b4256722] 每個平台都用自己的歸因方式回報 AI 帶來的銷售。移動預算之前先做停投對照測試，評估 AI 工具時看每筆訂單的毛利和人力。
+[8d53326c] 5 · 觀察指標：每個訊號代表什麼
+[d4224a36] <span class="muted-note">每年 5–6 月檢查</span>
+[61f608db] 指標
+[c8f499c8] 預測成立，如果…
+[f271ce42] 預測不成立，如果…
+[c7dbcc44] 接著調整
+[65f82e37] <b>AI 導流</b><br><span class="st-zh">占零售造訪的比重；轉換率和其他流量相比</span>
+[306ac56c] AI 流量的轉換率持續等於或高於其他來源（2025 年購物季高 31%），占比每一季都在成長
+[667a4276] 轉換率差距又變回負的（像 2024 年），或占比停滯：AI 仍然只是研究工具，還不是購買管道
+[6e842617] 成立：在看規格買的品類，把預算移到產品資料和 AI 能見度。不成立：搜尋廣告仍是主要投放
+[5389765c] <b>零售媒體</b><br><span class="st-zh">CPC 和 ROAS 跟搜尋、社群相比</span>
+[718d8555] ROAS 持續高於搜尋和社群，營收每年仍成長約 20% 以上（Amazon 2025 年第四季 +23%）
+[f98d1b05] CPC 漲得比轉換率快，ROAS 掉到搜尋之下：貨架越來越擠
+[d0b8423f] 不成立：把花費移到平台外流量和自有通路
+[56abdd2e] <b>回購</b><br><span class="st-zh">高頻品類</span>
+[4a8d891b] 自動補貨和訂閱的占比上升，回購率提高
+[a635ad60] 回購率持平，因價格而換品牌的情況增加：助理每次都重新比價
+[a5d2437a] 成立：拿下第一筆訂單和訂閱。不成立：每筆訂單都在價格和供貨上競爭
+[f064336b] <b>退貨與信任</b><br><span class="st-zh">退貨率、爭議、評論可信度</span>
+[04e6b861] 服飾和居家的退貨率維持在 19% 的平均附近，詐欺仍多：這些品類仍由人主導
+[99768fe7] AI 尺寸與合身工具讓退貨率降低好幾個百分點：重信任的品類會更早向 AI 探索開放
+[ee70d3c2] 不成立：提早一年把服飾和居家納入 AI 探索的打法
+[d53b8046] <b>會員</b><br><span class="st-zh">留存率、跨通路回購</span>
+[da0aedd5] 會員回購率和跨通路購買成長，同時新客成本上升：會員就是護城河
+[ab6d8ea8] 留存率持平，AI 助理卻帶來更多首購：對品牌的忠誠度在減弱
+[32cd6e9b] 不成立：投資在讓助理選擇你（資料、評論、供貨），而不是忠誠度方案
+[5031fce0] 同一次檢查中，如果有三個以上的指標判定為「不成立」，就重寫 2028 年的看法，而不是微調。每年第四季（10–11 月）用當年的實際數字把預測往前推一年。限制：Adobe 和 NRF 的數字是美國資料；公司公布的 AI 銷售各自使用不同的歸因期間；品類分數混合了證據和判斷。
+[6de09e96] <a href="https://news.adobe.com/news/2026/01/adobe-holiday-shopping-season" target="_blank" rel="noopener">Adobe Analytics, 2025 holiday season</a> · B 級
+[5882b24f] <a href="https://www.marketingdive.com/news/ai-has-changed-holiday-shopping-heres-what-the-numbers-say/810265/" target="_blank" rel="noopener">Adobe Analytics, Quarterly AI Traffic Report</a> · B 級
+[aff770ed] <a href="https://blog.adobe.com/en/publish/2025/03/17/adobe-analytics-traffic-to-us-retail-websites-from-generative-ai-sources-jumps-1200-percent" target="_blank" rel="noopener">Adobe Analytics, March 2025</a> · B 級
+[8ab2a051] <a href="https://www.ecommercebytes.com/1sqo" target="_blank" rel="noopener">Amazon Q4 2025 results (via EcommerceBytes)</a> · A 級
+[786e018c] <a href="https://ppc.land/amazons-ad-revenue-hits-21-3b-as-prime-video-reaches-315m-viewers/" target="_blank" rel="noopener">Amazon Q4 2025 results (via PPC Land)</a> · A 級
+[3ce21984] <a href="https://www.axios.com/2025/09/29/openai-shopping-chatgpt" target="_blank" rel="noopener">OpenAI announcement (via Axios)</a> · A 級
+[9b3f7bd0] <a href="https://www.retaildive.com/news/walmart-sparky-chatgpt-instant-checkout/" target="_blank" rel="noopener">Retail Dive</a> · B 級
+[6bb4a5f1] <a href="https://www.retailtouchpoints.com/news/nrf-forecasts-nearly-850-billion-in-returns-in-2025-slight-decrease-from-2024" target="_blank" rel="noopener">NRF &amp; Happy Returns, 2025 Retail Returns Landscape</a> · B 級
+[2a44066a] <a href="https://nrf.com/media-center/press-releases/consumers-expected-to-return-nearly-850-billion-in-merchandise-in-2025" target="_blank" rel="noopener">NRF &amp; Happy Returns, 2025 Retail Returns Landscape</a> · B 級
+[87beb1fe] <a href="https://news.adobe.com/news/downloads/pdfs/2026/01/010726-holiday-shopping-season-2025.pdf" target="_blank" rel="noopener">Adobe Analytics, 2025 holiday season</a> · B 級
+[27f175bf] <a class="view-all" href="https://github.com/ss22169a/sylviaho-portfolio/tree/main/ai-commerce-sql">GitHub 上的輸入資料表與評分模型 <span>→</span></a>
+[347d3137] 八個產品品類依 AI 探索與補貨潛力分布，圓點大小代表退貨風險
+[ffbefb68] 電子產品與家電 | 打法：在 AI 探索中勝出 | AI 探索 2/2（Adobe：AI 導流最多的品類之一；AI 轉換率最高） | 補貨 0/2（判斷） | 退貨／信任風險 1/2（判斷）
+[82acddba] 玩具與電玩 | 打法：在 AI 探索中勝出 | AI 探索 2/2（Adobe：AI 導流最多的品類之一，2025 購物季） | 補貨 0/2（判斷） | 退貨／信任風險 0.5/2（判斷）
+[14c4cf1c] 個人護理與美妝 | 打法：AI 探索 + 自動補貨 | AI 探索 1.5/2（Adobe：個人護理是 AI 導流最多的品類之一） | 補貨 1.5/2（判斷） | 退貨／信任風險 1/2（判斷）
+[bd6e3704] 寵物與保健食品 | 打法：自動補貨 | AI 探索 1/2（判斷） | 補貨 2/2（判斷） | 退貨／信任風險 0.5/2（判斷）
+[ace430db] 食品雜貨與居家消耗品 | 打法：自動補貨 | AI 探索 0.5/2（Adobe：AI 導流轉換率最低） | 補貨 2/2（判斷） | 退貨／信任風險 0.5/2（判斷）
+[7638ca98] 服飾與鞋類 | 打法：品牌與體驗主導 | AI 探索 0.5/2（Adobe：AI 導流轉換率最低） | 補貨 0.5/2（判斷） | 退貨／信任風險 2/2（NRF：網路退貨率 19.3%；一次買多個尺碼、穿過再退）
+[0a0f345f] 居家與家具 | 打法：品牌與體驗主導 | AI 探索 0.5/2（Adobe：AI 導流轉換率最低） | 補貨 0/2（判斷） | 退貨／信任風險 1.5/2（判斷）
+[d52f3afa] 依適用車型挑選的替換零件 | 打法：在 AI 探索中勝出 | AI 探索 1.5/2（判斷：依規格與適用車型搜尋） | 補貨 1/2（判斷） | 退貨／信任風險 1/2（判斷：買錯尺寸的退貨）

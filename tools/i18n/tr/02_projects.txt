@@ -1,0 +1,66 @@
+[35408cc2] 分析專案：Google 搜尋在 AI 時代的創新者兩難、用 SQL 做的漏斗與歸因分析，以及 Amazon 品類情報。
+[65469573] 分析專案 | Sylvia Ho
+[62e329ef] <a href="index.html" class="nav-item">總覽</a>⏎<a href="projects.html" class="nav-item active" aria-current="page"><span class="nav-ind" aria-hidden="true"></span><span class="arrow">→</span>分析專案</a>⏎<a href="work.html" class="nav-item">案例研究</a>⏎<a href="ai.html" class="nav-item">我怎麼用 AI</a>⏎<a href="about.html" class="nav-item">關於我</a>⏎<a href="certifications.html" class="nav-item">證照</a>⏎<a href="resume.html" class="nav-item">履歷</a>
+[3323f974] 分析專案
+[8481fce4] 這些是我覺得問題有意思、自己動手做的研究，做完一個就放上來一個。查詢語法、假設和限制都寫出來；來自工作的資料已去識別化，只呈現占比或指數。
+[09dc00c0] <span class="kcard-label">全部專案</span><span class="kcard-num">8</span>
+[0dffffae] <span class="kcard-label">電商</span><span class="kcard-num">06</span>
+[0ffbc7f0] <span class="kcard-label">汽車零件</span><span class="kcard-num">03</span>
+[8083d360] <span class="kcard-label">氫能市場與設備</span><span class="kcard-num">01</span>
+[067b0e42] <span class="case-kicker">對應：Google · AI 搜尋</span>
+[40a01bfe] 搜尋的創新者兩難：AI 回答 vs. 廣告點擊
+[8ce0cd00] <span class="tag tag-blue">分析完成</span><span class="tag">電商</span>
+[002ff598] 問題
+[72fe3f5b] AI 摘要讓使用者留在 Google 搜尋結果頁，卻也拿掉了廣告收入賴以維生的點擊。這些點擊跑去哪裡？生成式回答和搜尋廣告能不能並存？
+[e5e429bc] 資料
+[01ba4c27] 2025–2026 年的公開研究（Pew、Seer Interactive、SparkToro/Similarweb、Ahrefs），以及 Alphabet 2026 年第三季財報。
+[d87a3ab1] 產出
+[59663042] 跨研究的點擊分析、一個可互動的廣告點擊率模型，以及分別給 Google 和品牌的五個實驗。
+[f592ff19] <a class="btn btn-dark proj-open" href="search-dilemma.html">閱讀分析 <span>→</span></a>
+[6d48c344] <span class="case-kicker">對應：Google · Amazon</span>
+[04b4b813] 用 SQL 做電商漏斗與歸因分析
+[d766ed26] <span class="tag tag-lime">分析完成</span><span class="tag">電商</span><span class="tag">汽車零件</span>
+[e4213a3b] 付費流量在走到 Amazon 訂單之前，在哪裡流失？營收裡有多少真的是廣告帶來的？下一塊錢該花在哪？
+[0b6e0991] 一家美國車用售後零件賣家的 Google Ads 資料（廣告群組 × 日）與 Amazon Seller Central 資料（ASIN × 日、訂單明細），在 DuckDB SQL 中建模。不揭露金額，只呈現占比與指數。
+[2793cb26] 六階段漏斗、四種歸因角度、預算與需求的對照，以及四個附目標值的改善方向。
+[321cd033] <a class="btn btn-dark proj-open" href="funnel-analysis.html">閱讀分析 <span>→</span></a>
+[4f9f3c12] <span class="case-kicker">對應：Amazon</span>
+[06fad235] Amazon 品類情報
+[68383c88] <span class="tag tag-orange">分析完成</span><span class="tag">電商</span><span class="tag">汽車零件</span>
+[c29ad2a5] 一家賣家在 Amazon 上架約 580 個汽車零件，每月卻只賣出幾件。問題出在需求、價格、庫存，還是商品頁本身？該先修哪一個？
+[5b19902a] Amazon Product Opportunity Explorer（品類、相似商品與未滿足需求資料）、賣家的全品項上架報表與 22 個月訂單，在 DuckDB SQL 中以 LESTER / OE 料號串接。
+[20f89e36] 發電機、啟動馬達與 NOx 感測器的「需求 vs. 目錄」對照，以及依可觸及需求排序的六項修正。
+[eb6461c3] <a class="btn btn-dark proj-open" href="category-intelligence.html">閱讀分析 <span>→</span></a>
+[6c7f6179] 燃油車零件生命週期：加碼、收割還是退出
+[f12a1a83] <span class="tag tag-lime">分析完成</span><span class="tag">汽車零件</span>
+[2d1128ce] 電動車在新車銷售的占比越來越高，哪些售後零件 SKU 還有獲利的維修期？哪些該停止補貨？
+[8483ee33] NHTSA 車輛存活率表、S&amp;P Global Mobility 車齡資料與 IEA / Cox Automotive 電動車資料，在 DuckDB SQL 中與 96 個料號和搜尋意圖的 Amazon 需求串接。
+[a27925a2] 大部分庫存壓在車齡偏高、需求偏低的車型上；成長最強的 20 條產品線中，有 19 條是賣家沒有賣的零件。
+[fb048a1c] <a class="btn btn-dark proj-open" href="lifecycle-matrix.html">閱讀分析 <span>→</span></a>
+[79d01f36] <span class="case-kicker">對應：市場規模估算</span>
+[45000d8f] AI 資料中心會讓氫能提早起飛嗎？
+[b356f69e] <span class="tag tag-lilac">分析完成</span><span class="tag">氫能市場與設備</span>
+[8b77afa3] AI 資料中心需要電力的速度，比電網能併網的速度快。這會不會帶來燃料電池、電解槽與氫氣的實際需求？供應商該從哪裡切入？
+[57fb90e6] IEA 的資料中心與氫能報告、柏克萊實驗室的電網併網排隊資料，以及燃料電池公司的財報，組成「由上而下需求、由下而上供給」的情境模型。
+[1ab4e603] 資料中心現在確實在買燃料電池，但大多燒天然氣；來自資料中心的氫氣需求，2030 年前不太可能出現。
+[c7498e55] <a class="btn btn-dark proj-open" href="hydrogen-data-centers.html">閱讀分析 <span>→</span></a>
+[568f81c9] 成長停滯之後：台灣電商
+[50ea50b1] <span class="tag tag-lime">分析完成</span><span class="tag">電商</span>
+[fad378aa] 台灣網路零售真的停滯了嗎？如果是，在酷澎和跨境平台重新洗牌的時候，品牌賣家的通路預算該放在哪？
+[a7fb33d3] 經濟部 2019–2025 年零售統計、上市櫃平台財報、Coupang 財報、以海關資料估算的跨境數據，以及 DMA 數位廣告市場數字，並在 DuckDB 中做停滯檢定。
+[4ee92043] 網路零售年成長從 29% 掉到 3% 以下，占零售比重自 2021 年起停在 13–14%；新的成長流向酷澎、跨境進口、有實體門市的零售商和零售媒體。
+[ae7c30bf] <a class="btn btn-dark proj-open" href="taiwan-ecommerce.html">閱讀分析 <span>→</span></a>
+[8407e8c5] <span class="case-kicker">對應：預測</span>
+[9e320a93] AI 如何改變消費電商，2026–2028
+[fe58e4d0] <span class="tag tag-lilac">分析完成</span><span class="tag">電商</span>
+[c6413cfc] AI 助理已經能替消費者推薦、比價，甚至直接結帳。哪些品類會先被改變？哪些品類還是靠品牌信任和實際體驗成交？
+[f2eee951] Amazon 與 OpenAI 的公開資訊、Adobe 的 AI 導流數據與 NRF 退貨數據，在 DuckDB 中建立八個品類的評分模型，每個分數都標明是證據還是判斷。
+[c4e7f72b] 看規格買的品類會在 AI 搜尋中分出勝負，日常消耗品會轉向自動補貨，服飾和居家用品仍然留在消費者信任的品牌手上。
+[ec014763] <a class="btn btn-dark proj-open" href="ai-ecommerce-2028.html">閱讀分析 <span>→</span></a>
+[57e331b9] <span class="case-kicker">對應：趨勢預測</span>
+[5fa59d90] 在下一波包款流行傳到台灣之前先看見它
+[e564c380] 以設計風格為主的包款品牌，能不能在熱賣之前就看到下一波流行？未來 12 個月在台灣，哪些款式該放大、該測試、該停掉？
+[535ed3a1] 四年的 Google Trends 每週資料（2021 年 11 月 – 2025 年 11 月），涵蓋 12 個台灣與 5 個全球包款特徵，在 DuckDB 中做動能、起飛點與領先落後檢定。
+[fc7ee4c1] 台灣的包款搜尋大約落後全球三個月。主力款式持平；成長在包包吊飾、保齡球包和大容量托特包，麂皮則是還沒傳到台灣的下一個訊號。
+[c0ceb029] <a class="btn btn-dark proj-open" href="style-signals.html">閱讀分析 <span>→</span></a>
+[b59f5dc8] 依市場篩選專案

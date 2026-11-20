@@ -1,0 +1,42 @@
+[2046179c] Sylvia Ho 的履歷：行銷與市場進入（GTM）策略專家。
+[6eb0d5b6] 履歷 | Sylvia Ho
+[206603c6] <a href="index.html" class="nav-item">總覽</a>⏎<a href="projects.html" class="nav-item">分析專案</a>⏎<a href="work.html" class="nav-item">案例研究</a>⏎<a href="ai.html" class="nav-item">我怎麼用 AI</a>⏎<a href="about.html" class="nav-item">關於我</a>⏎<a href="certifications.html" class="nav-item">證照</a>⏎<a href="resume.html" class="nav-item active" aria-current="page"><span class="nav-ind" aria-hidden="true"></span><span class="arrow">→</span>履歷</a>
+[b3bd0b5a] 履歷
+[df12f2c2] 行銷與 GTM 策略專家 · 半導體 · 車用 · 電商
+[e5540ce6] 下載 PDF ↓
+[5b5aafe6] 工作經歷
+[7c9cd5fd] <span class="job-when">2026 年 8 月 – 至今</span>⏎<span class="job-year">2026</span>
+[92e918a7] 專案經理
+[c81131e4] <span class="tag tag-dark">現職</span>
+[3ea5dfff] <b>e-Vehicle Semiconductor</b> · 新竹 · 車用 IC 設計
+[60685174] 負責車用售後零件的 Amazon 北美銷售。以指定商品與車款的關鍵字重建 Google Ads，點擊到商品頁的比例從 5% 提高到 22%，Amazon 每週營收比投廣告前的基準成長 139%（2026 年 10 月 7 日 – 11 月 15 日）；2026 年 10 月是賣場兩年來業績最好的一個月（年增 73%）。
+[4c45413c] 建立行銷分析架構（Google Ads、GA4、Windsor.ai、Power BI、Google Sheets），把廣告花費和 Amazon 工作階段、訂單串起來，並建立損益兩平模型作為預算決策依據。
+[4d6b27ab] 為 MEMS 氫氣感測建立有證據分級的市場情報追蹤表：市場規模估算、經多個獨立來源交叉比對的需求指標，以及競品規格與上市階段。
+[f4549c9b] 建立 6 個有人把關的 AI agent 工作流程，以及管理 14 個 agent 的規則，每一次帳戶修改都要經過核准並留下紀錄。這些 agent 找出價格落差（同料號競品便宜 72–273%），因此暫停了一條表現不佳產品線的廣告；也在 2 個網頁上找出 13 個 SEO 問題，其中 7 個出在模板。
+[4f57b9e6] 把研發規格轉成產品文案與規格文件；負責國際新聞稿與 LinkedIn 經營，並編製中英半導體術語表。
+[a615e236] <span class="job-when">2025 年 8 月 – 2026 年 7 月</span>⏎<span class="job-year">2025</span>
+[f1b34bf6] 網站營運企劃
+[5d61060f] <b>Tellus Materials</b> · 氫能設備 · B2B
+[0ed6bd30] 建立政策與標案追蹤表（淨零策略、補助、國營事業示範計畫），讓 B2B 電子報的寄送時間對上買家的採購週期。
+[376ed295] 導入 GA4 事件追蹤，依買家會問的問題重做產品頁，產品頁跳出率從 68% 降到 42%。
+[afb706ee] 依公司財報和新聞，為標案合作夥伴與展覽潛在客戶寄送分眾 EDM：開信率 50–60%，詢價轉換率從 0.2% 提高到 2.5%。
+[6a6c0278] 在 Shopify 建立中英雙語 B2B 網站與 6 個產業應用頁；上線後 28 天內，自然搜尋工作階段從 2 增加到 104。
+[1e2518a0] 用 Claude API 建立一條從頭到尾的行銷自動化流程。
+[a3c38b40] <span class="job-when">2024 年 12 月 – 2025 年 7 月</span>⏎<span class="job-year">2024</span>
+[97d1490d] 行銷專案經理
+[24191973] <b>SecuX</b> · 硬體資安
+[8696182c] 負責 PUFido 的上市研究，SecuX 稱它是全球第一支採用 PUF 技術的 FIDO2 安全金鑰：拆解競品、用 Google Trends 和 SEMrush 預估關鍵字，並做痛點問卷。上市 30 天內進入 Amazon 類別前 5 名（2025）。
+[04186ff3] 依市場和受眾分配美國與歐洲的付費搜尋、社群廣告預算。
+[2b077397] 用 SEMrush 的品牌提及資料建立四級的品牌聲譽回應機制。
+[0127e239] <span class="job-when">2020 年 12 月 – 2024 年 7 月</span>⏎<span class="job-year">2020</span>
+[8fc73cc6] 共同創辦人
+[0a239b94] <b>BLANK SPACE</b> · 時尚電商與零售
+[e609872e] 共同創辦網路包款品牌，三年內開出 5 個百貨專櫃；建立展店規劃用的單店營收與毛利模型。
+[f82d87aa] 分析消費者的購買路徑和競品促銷，推出 O2O 快閃店：新增 2,000 名會員（目標的 120%），第一個月門市營收新台幣 250 萬元。
+[cb7a5856] 經營媒體與 KOL 合作（50 位以上），分散通路，獲客成本降低 35%；優化 Shopify 使用體驗，平均停留時間從 35 秒拉長到 2 分 18 秒，轉換率提高 67%。
+[e79d3b44] 視覺設計與電商
+[aa3834a2] <b>加州椰子 · 連成鞋業 · STAYREAL</b> · 早期經歷
+[aaf87fe5] 學歷
+[d515de29] 亞東科技大學 工商業設計系 學士（2010 – 2014）
+[db07be18] 語言
+[24804aea] 中文（母語）· 英文（工作流利）· 日文（基礎）

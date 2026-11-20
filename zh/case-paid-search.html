@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>付費搜尋在 Amazon 划算嗎？ | Sylvia Ho</title>
+  <meta name="description" content="Google Ads 導流到 Amazon 商店的漏斗與損益兩平分析，附 Looker Studio 加碼／停損儀表板。" />
+  <link rel="canonical" href="https://ss22169a.github.io/sylviaho-portfolio/zh/case-paid-search.html" />
+  <link rel="alternate" hreflang="en" href="https://ss22169a.github.io/sylviaho-portfolio/case-paid-search.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://ss22169a.github.io/sylviaho-portfolio/zh/case-paid-search.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ss22169a.github.io/sylviaho-portfolio/case-paid-search.html" />
+  <meta name="author" content="Sylvia Ho" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#262626" />
+  <link rel="icon" href="../favicon.ico" sizes="48x48" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+  <link rel="manifest" href="../site.webmanifest" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Sylvia Ho" />
+  <meta property="og:locale" content="zh_TW" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:title" content="付費搜尋在 Amazon 划算嗎？ | Sylvia Ho" />
+  <meta property="og:description" content="Google Ads 導流到 Amazon 商店的漏斗與損益兩平分析，附 Looker Studio 加碼／停損儀表板。" />
+  <meta property="og:url" content="https://ss22169a.github.io/sylviaho-portfolio/zh/case-paid-search.html" />
+  <meta property="og:image" content="https://ss22169a.github.io/sylviaho-portfolio/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Sylvia Ho，行銷與 GTM 策略專家" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="付費搜尋在 Amazon 划算嗎？ | Sylvia Ho" />
+  <meta name="twitter:description" content="Google Ads 導流到 Amazon 商店的漏斗與損益兩平分析，附 Looker Studio 加碼／停損儀表板。" />
+  <meta name="twitter:image" content="https://ss22169a.github.io/sylviaho-portfolio/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&family=Stack+Sans+Headline:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css?v=d810ae13" />
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="../js/matter.min.js" defer></script>
+  <script src="../js/posts.js?v=616e883b" defer></script>
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="side-top">
+      <a href="index.html" class="logo"><span class="logo-mark" aria-hidden="true"><svg class="lm lm-1" viewBox="-50 -50 100 100"><circle cx="-22" cy="-22" r="24"/><circle cx="22" cy="-22" r="24"/><circle cx="-22" cy="22" r="24"/><circle cx="22" cy="22" r="24"/><circle cx="0" cy="0" r="32"/></svg><svg class="lm lm-2" viewBox="-50 -50 100 100"><circle cx="0" cy="-20" r="27"/><circle cx="20" cy="0" r="27"/><circle cx="0" cy="20" r="27"/><circle cx="-20" cy="0" r="27"/></svg><svg class="lm lm-3" viewBox="-50 -50 100 100"><rect x="-46" y="-46" width="92" height="92" rx="14"/></svg><svg class="lm lm-4" viewBox="-50 -50 100 100"><circle cx="0" cy="0" r="49"/></svg></span>Sylvia Ho</a>
+      <button type="button" class="menu-btn" data-menu aria-label="開啟選單" aria-expanded="false"><svg viewBox="0 0 16 16" width="18" height="18"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5"/></svg></button>
+    </div>
+    <nav class="nav" aria-label="主選單">
+      <a href="index.html" class="nav-item">總覽</a>
+      <a href="projects.html" class="nav-item">分析專案</a>
+      <a href="work.html" class="nav-item active" aria-current="page"><span class="nav-ind" aria-hidden="true"></span><span class="arrow">→</span>案例研究</a>
+      <a href="ai.html" class="nav-item">我怎麼用 AI</a>
+      <a href="about.html" class="nav-item">關於我</a>
+      <a href="certifications.html" class="nav-item">證照</a>
+      <a href="resume.html" class="nav-item">履歷</a>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="lang-switch" role="group" aria-label="語言"><a href="../case-paid-search.html" lang="en" hreflang="en">EN</a><a href="case-paid-search.html" lang="zh-Hant" hreflang="zh-Hant" class="on" aria-current="true">中文</a></div>
+      <a href="mailto:werr2010@gmail.com" class="nav-item">Email</a>
+      <a href="https://www.linkedin.com/in/zi-yin-ho-4795a02a6/" class="nav-item">LinkedIn</a>
+      <div class="user">
+        <img class="avatar avatar-img" src="../img/avatar.jpg" alt="Sylvia Ho" width="42" height="42" />
+        <div class="user-info"><strong>Sylvia Ho</strong><small>台灣新竹</small></div>
+      </div>
+    </div>
+  </aside>
+
+  <div class="page">
+    <main class="main">
+
+      <div class="page-head">
+        <div>
+          <a href="work.html#amazon-paid-search" class="back-link"><span aria-hidden="true">←</span> 案例研究</a>
+          <span class="case-kicker">案例 01 · 車用售後零件品牌 · Amazon 美國站</span>
+          <h1 class="page-title">付費搜尋在 Amazon 划算嗎？</h1>
+          <p class="page-sub">從漏斗和損益兩平的角度看 Google Ads 導到 Amazon 商店的流量，以及由此訂出的加碼／停損規則。</p>
+        </div>
+      </div>
+
+      <div class="tldr">
+        <div>職務<b>專案經理</b></div>
+        <div>期間<b>2026 年 10 月 7 日 – 11 月 15 日</b></div>
+        <div>工具<b>Google Ads · Windsor.ai · Sheets · Looker Studio</b></div>
+        <div>結果<b>流量品質 ×4，尚未損益兩平 → 訂出加碼／停損規則</b></div>
+      </div>
+
+      <section class="section">
+        <div class="prose fn-answer">
+          <h3>簡短結論</h3>
+          <p>改用品類頁和車款頁重建廣告活動後，流量走到商品頁的機率變成四倍，每次商品頁造訪的成本降低 73%。但帳戶還是沒有賺錢：商品頁的轉換率下降，每週營收只達損益兩平門檻的 <b>65%</b>。所以下一個決定不是預算多少，而是訂出什麼情況下才能動預算的規則。</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>1 · 看起來像勝利的指標</h2><span class="muted-note">S1 10 月 7–20 日 · S2 10 月 21 日 – 11 月 15 日</span></div>
+        <div class="fn-two">
+          <div class="prose">
+            <table class="fn-table c1-table">
+              <thead><tr><th></th><th>S1 · 賣場首頁，廣泛關鍵字</th><th>S2 · 品類與車款頁</th></tr></thead>
+              <tbody><tr><th>點擊 → 商品頁</th><td>5.3%</td><td class="c1-win">22.3%</td></tr><tr><th>每次商品頁工作階段成本（指數）</th><td>100</td><td class="c1-win">27</td></tr><tr><th>商品頁 → 訂單</th><td class="c1-win">7.7%</td><td>1.8%</td></tr><tr><th>每塊廣告費的增量報酬</th><td class="c1-win">1.77</td><td>0.60</td></tr><tr><th>訂單</th><td>5</td><td>6</td></tr></tbody>
+            </table>
+            <p class="fn-caption">標色的格子 = 該列表現較好的階段。訂單只有五筆和六筆，階段比較只能看方向。</p>
+          </div>
+          <div class="prose">
+            <h3>讓我改變看法的地方</h3>
+            <p>點擊到商品頁從 5% 變成 22%，這是週報會拿來慶祝的數字。但放在漏斗的下一步旁邊，它說的是另一件事：新的著陸頁很可能把買家送進一份很長的目錄，大部分料號從來沒賣出過（111 個被造訪的商品只有 8 個有轉換），所以更多造訪最後沒有成交。</p>
+            <p>增量報酬（每塊廣告費帶來、高於投廣告前 28 天基準的營收）從 1.77 降到 0.60。損益兩平需要 2.9。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>2 · 儀表板</h2><span class="muted-note">Looker Studio · 去識別化的資料來源</span></div>
+        
+        <div class="c1-embed">
+          <iframe src="https://lookerstudio.google.com/embed/reporting/3519cf76-eaa2-4695-9b73-3ce2ed366881/page/TlJ0C" title="案例 01 加碼／停損儀表板（Looker Studio）" loading="lazy" allowfullscreen
+                  sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+        </div>
+        <div class="c1-mobile"><p>這個儀表板是為寬螢幕設計的。</p><a class="btn btn-dark" href="https://lookerstudio.google.com/reporting/3519cf76-eaa2-4695-9b73-3ce2ed366881/page/TlJ0C" target="_blank" rel="noopener">在 Looker Studio 開啟 <span>→</span></a></div>
+        <div class="fn-two">
+          <div class="prose">
+            <h3>怎麼看</h3>
+            <ul>
+              <li>用階段篩選器，把每張圖在 S1 和 S2 之間切換。</li>
+              <li>時間軸顯示每天的商品頁工作階段和投廣告前的基準；S2 從 10 月 21 日開始。</li>
+              <li>模擬器可以調整預算和兩個轉換率。預算會以同樣的倍數放大預期訂單和需要的訂單，所以只有轉換率會改變結論。</li>
+            </ul>
+          </div>
+          <div class="prose">
+            <h3>用什麼做的</h3>
+            <ul>
+              <li>五個 Google Sheets 資料來源，欄位都設定好型別和格式</li>
+              <li>計算欄位：轉換率、ROAS、損益兩平達成率、模擬達成率</li>
+              <li>假設模型用的參數和滑桿控制項</li>
+              <li>階段篩選器、對數刻度漏斗、基準線，以及配合品牌的配色主題</li>
+              <li>金額以指數呈現（1 單位 = 投廣告前的平均每日營收），所以價格和金額都不會流出公司</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>3 · 決策規則</h2><span class="muted-note">每兩週套用一次</span></div>
+        <div class="fn-lenses fn-3 c1-rules">
+          <div class="fn-lens c1-go"><span class="fn-k">加碼</span><b>≥ 100%</b><small>連續兩個兩週期間都達到損益兩平。只有這時才加預算，每次不超過 20%。</small></div>
+          <div class="fn-lens c1-hold"><span class="fn-k">維持</span><b>80–99%</b><small>預算不變；只改一件事（著陸頁、關鍵字組合或出價），看下一期的結果。</small></div>
+          <div class="fn-lens c1-nogo"><span class="fn-k">停損</span><b>&lt; 80%</b><small>縮減到只剩指定車款的廣告群組，先修轉換：有庫存的熱銷商品，以及只放少數已證明會賣的料號的著陸頁。</small></div>
+        </div>
+        <p class="fn-caption">帳戶目前在 65%，所以規則判定不擴大：先修好轉換和庫存，再加預算。</p>
+      </section>
+
+      <section class="section">
+        <div class="fn-two">
+          <div class="prose">
+            <h3>下一步</h3>
+            <ul>
+              <li>把預算移到 Amazon 站內、針對料號搜尋的廣告，這些買家已經知道自己要什麼。</li>
+              <li>Google 流量只導到有庫存、已證明會賣的商品頁，並替每個廣告群組加上 Amazon Attribution 標記。</li>
+              <li>任何預算調整之前，都先用這個儀表板做兩週一次的檢查。</li>
+            </ul>
+          </div>
+          <div class="prose">
+            <h3>背後的 SQL</h3>
+            <p>歸因角度、預算與需求的拆分，以及取消分析，都在另一個專案裡用 DuckDB SQL 建模。</p>
+            <p><a class="btn btn-light" href="funnel-analysis.html">漏斗與歸因專案 <span>→</span></a></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2>資料來源</h2><span class="muted-note">這份分析查核過的所有資料</span></div>
+        <div class="prose fn-chart">
+          <div class="fn-scroll"><table class="fn-table ds-table"><thead><tr><th>來源</th><th>提供了什麼</th><th>時間</th><th>搜尋量</th></tr></thead><tbody><tr><td><b>Google Ads，透過 Windsor.ai</b></td><td>依廣告活動與廣告群組的花費、曝光和點擊</td><td>2026 年 10 月 7 日 – 11 月 16 日</td><td>廣告群組 × 日</td></tr><tr><td><b>Amazon Seller Central · 業務報告（Sales &amp; Traffic）</b></td><td>商品頁工作階段、瀏覽數、件數和銷售額</td><td>2026 年 10 月 18 日 – 11 月 14 日</td><td>ASIN × 日</td></tr><tr><td><b>Amazon Seller Central · 訂單報表</b></td><td>下單、出貨和保留的訂單；投廣告前 28 天的基準；2025 年同期</td><td>2025 年 1 月 – 2026 年 11 月 15 日</td><td>訂單明細</td></tr><tr><td><b>Amazon Seller Central · 取消</b></td><td>取消原因，包括缺貨</td><td>2025 年 1 月 – 2026 年 11 月 15 日</td><td>訂單明細</td></tr><tr><td><b>每日追蹤表</b></td><td>廣告花費和 Amazon 工作階段、訂單並列，分成 S1 和 S2</td><td>2026 年 10 月 7 日 – 11 月 15 日</td><td>日</td></tr><tr><td><b>Amazon Attribution</b></td><td>哪些廣告群組有 Amazon 追蹤標記（當時 15 個中有 2 個）</td><td>廣告期間</td><td>廣告群組</td></tr><tr><td><b>Amazon Product Opportunity Explorer</b></td><td>各利基的搜尋量、件數、價格和退貨率；未滿足需求的搜尋清單</td><td>360 天的利基資料</td><td>利基 · 料號</td></tr><tr><td><b>Seller Central · 全品項上架報表</b></td><td>哪些料號有上架、是否在售、價格多少</td><td>快照，2026 年 11 月</td><td>SKU</td></tr><tr><td><b>Amazon 上的競品商品頁</b></td><td>其他賣家同料號的價格</td><td>抽查，2026 年 11 月</td><td>料號</td></tr></tbody></table></div>
+          <p class="fn-caption">Google Ads 看不到 Amazon 的購買，所以沒有使用它自己的轉換欄位；結果都來自 Seller Central。追蹤表有四天的資料重複，讓天數變多；上面的成長數字已用修正後的天數計算。匯率以 1 美元兌 32 新台幣換算；本頁金額以指數呈現。</p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <nav><a href="mailto:werr2010@gmail.com">werr2010@gmail.com</a><a href="https://www.linkedin.com/in/zi-yin-ho-4795a02a6/">LinkedIn</a><a href="resume.html">履歷</a><details class="dl-menu dl-foot"><summary>履歷 PDF ↓</summary><div class="dl-pop"><a href="../resume.pdf" download="Sylvia_Ho_Resume_EN.pdf">English (EN)</a><a href="../resume-zh.pdf" download="Sylvia_Ho_Resume_ZH.pdf">中文 (ZH)</a></div></details></nav>
+      <p>© 2026 Sylvia Ho。涉及保密資料的數字，本站一律以百分比或指數呈現。</p>
+    </footer>
+  </div>
+</body>
+</html>

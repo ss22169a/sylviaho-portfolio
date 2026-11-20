@@ -1,0 +1,66 @@
+[91484af0] 用數據做規劃的行銷與市場進入（GTM）策略專家：市場規模估算、追蹤儀表板與上市計畫，經驗橫跨半導體、硬體與 Amazon 電商。
+[61fe15f4] Sylvia Ho — 行銷與 GTM 策略專家｜半導體 · 電商
+[b3964cd0] =
+[4e2f2ada] <a href="index.html" class="nav-item active" aria-current="page"><span class="nav-ind" aria-hidden="true"></span><span class="arrow">→</span>總覽</a>⏎<a href="projects.html" class="nav-item">分析專案</a>⏎<a href="work.html" class="nav-item">案例研究</a>⏎<a href="ai.html" class="nav-item">我怎麼用 AI</a>⏎<a href="about.html" class="nav-item">關於我</a>⏎<a href="certifications.html" class="nav-item">證照</a>⏎<a href="resume.html" class="nav-item">履歷</a>
+[bbcc2b90] =
+[61ee5bc7] <strong>Sylvia Ho</strong><small>台灣新竹</small>
+[98b5ff9d] <span class="eyebrow">行銷與 GTM 策略專家 · 台灣新竹</span>
+[c3f347cd] 看懂市場，<br />擬好計畫，<br />一路帶到上市。
+[e2892af6] 我估算市場機會、建立追蹤成效的儀表板，並負責從產品定位到上市的整份計畫。現任 e-Vehicle Semiconductor 專案經理，負責車用售後零件的美國市場需求，以及 MEMS 氫氣感測器的市場拓展。十年經驗，橫跨半導體、硬體資安、潔淨能源與電商。
+[8d2f39b1] <a href="work.html" class="btn btn-dark">看案例研究 <span>→</span></a>⏎<a href="resume.html" class="btn btn-light">履歷</a>
+[89438070] <span class="stat-num skill">市場情報</span>
+[233580ed] <span class="stat-num skill">漏斗分析</span>
+[bc3ee5ca] <span class="stat-num skill">GTM 策略</span>
+[7f4946fc] <span class="stat-num skill">AI 工作流</span>
+[a45fcf96] 精選案例
+[1b245668] <a href="work.html" class="view-all">看全部 <span>→</span></a>
+[e9fd317e] 付費搜尋在 Amazon 划算嗎？漏斗與損益兩平分析
+[458a719c] 車用售後零件品牌 · Amazon 美國站
+[9ad824c4] <span class="tag tag-blue">漏斗分析</span><span class="tag ">車用零件</span><span class="tag ">Amazon 美國站</span>
+[eb38552c] 為 MEMS 氫氣感測器上市建立證據基礎
+[192c129b] e-Vehicle Semiconductor · MEMS 氫氣感測 · 2026 · 進行中
+[fc12f852] <span class="tag tag-lime">市場情報</span><span class="tag ">半導體</span><span class="tag ">進行中</span>
+[ef997b92] 在 Amazon 美國站推出市場上第一款同類型安全金鑰
+[4b220b07] SecuX · 硬體資安 · 2025
+[9154bec8] <span class="tag tag-lilac">上市研究</span><span class="tag ">硬體</span><span class="tag ">Amazon 美國站</span>
+[7a8263f4] <span class="row-num">前 5 名</span><span>→</span>
+[6e29c031] 把台灣氫能政策變成 B2B 電子報名單
+[4781d388] Tellus Materials · 氫能設備，B2B
+[3c702ef2] <span class="tag tag-lime">政策情報</span><span class="tag ">B2B 電子報</span><span class="tag ">潔淨能源</span>
+[5ea1e9c5] 電商品牌開實體店，漏斗不斷線
+[e725b725] BLANK SPACE · 時尚電商與零售 · 2023
+[58cf0622] <span class="tag tag-lilac">O2O 開店</span><span class="tag tag-lime">消費者研究</span><span class="tag ">零售</span>
+[f2eb0fed] 我怎麼用 AI
+[17d67576] <a href="ai.html" class="view-all">運作方式 <span>→</span></a>
+[35254e4e] 串起市場數據
+[8b1b307f] 廣告花費、Amazon 工作階段、訂單、取消與退貨放在同一個畫面，資料自動抓取，不必每週匯出再拼湊。
+[a119d6b1] =
+[9966de1f] 競品與價格情報
+[a2207381] 把自家產品目錄和 Amazon 需求、競品資料逐一比對，發現同料號的競品便宜 72–273%，於是先暫停這條產品線的廣告，等價格調整完再說。
+[dc40ae98] =
+[558a5a2d] 自動化 SEO 檢查
+[7ceaca5c] 31 項檢查（16 項規則判定、15 項由 AI 判斷），涵蓋四種語言的產品頁與新聞稿。試跑 2 個頁面就找出 13 個問題，其中 7 個出在網站模板。
+[1416a0c2] <small>Claude · 自建網頁工具</small><span class="ai-go" aria-hidden="true"><span>→</span></span></a>
+[ce7a1b9c] 有防護機制的廣告操作
+[08162423] 每天發出異常提醒，並分析搜尋字詞。每個調整建議都附上證據、預期範圍和風險，沒有經過核准就不會上線。
+[71fc4441] =
+[96990090] 產業新聞撰稿
+[d2cc9f4b] 把產業新聞和規格書寫成原創的中英文章與 LinkedIn 輪播圖文，每個規格發布前都對照原始資料核對過。
+[cd7bb2ae] =
+[20d5afd2] 職涯經歷
+[d796e6f6] <a href="about.html" class="view-all">關於我 <span>→</span></a>
+[af13682c] <span class="bar" style="--c:var(--ink)"></span><b>e-Vehicle Semiconductor</b><small>專案經理<br />2026 年 8 月 – 至今</small>
+[8abc18cf] <span class="bar" style="--c:var(--lime)"></span><b>Tellus Materials</b><small>網站營運企劃<br />2025 年 8 月 – 2026 年 7 月</small>
+[e572f81a] <span class="bar" style="--c:var(--blue)"></span><b>SecuX</b><small>行銷專案經理<br />2024 年 12 月 – 2025 年 7 月</small>
+[678ce32c] <span class="bar" style="--c:var(--orange)"></span><b>BLANK SPACE</b><small>共同創辦人<br />2020 年 12 月 – 2024 年 7 月</small>
+[e04f8511] <span class="bar" style="--c:var(--gray)"></span><b>加州椰子、連成鞋業</b><small>視覺設計與電商<br />2016 – 2020</small>
+[369491ab] 正在找行銷策略、市場進入（GTM）與行銷分析相關職缺
+[86f0d909] 市場情報 · 市場進入規劃 · 整合行銷 · 行銷分析
+[0c714b63] <a href="mailto:werr2010@gmail.com" class="btn btn-dark">聯絡我 <span>→</span></a>
+[055a15e9] <a href="mailto:werr2010@gmail.com">werr2010@gmail.com</a><a href="https://www.linkedin.com/in/zi-yin-ho-4795a02a6/">LinkedIn</a><a href="resume.html">履歷</a>
+[f219971d] 履歷 PDF ↓
+[eda0df4d] =
+[8089c6d9] © 2026 Sylvia Ho。涉及保密資料的數字，本站一律以百分比或指數呈現。
+[197101e9] 開啟選單
+[62bce942] 主選單
+[85a41785] =
