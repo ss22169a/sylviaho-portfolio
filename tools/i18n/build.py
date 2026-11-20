@@ -92,7 +92,7 @@ def build_zh(page,tr,missing):
     s=s.replace('<div class="sidebar-bottom">','<div class="sidebar-bottom">'+switch(page,True),1)
     return s
 BAD=[]
-POST={'研究內容。將查詢語法':'研究內容。<br>將查詢語法','只呈現占比或指數。部分內容':'只呈現占比或指數。<br>部分內容','title="Policy milestone"':'title="政策里程碑"','title="Tender notice"':'title="標案公告"','title="Trade-show prospect"':'title="展覽潛在客戶"','title="Nurture"':'title="持續經營"'}
+POST={'可前往視覺作品集。':'可前往<a href="#" class="text-link" data-link-todo="visual-portfolio">視覺作品集</a>。','研究內容。將查詢語法':'研究內容。<br>將查詢語法','只呈現占比或指數。部分內容':'只呈現占比或指數。<br>部分內容','title="Policy milestone"':'title="政策里程碑"','title="Tender notice"':'title="標案公告"','title="Trade-show prospect"':'title="展覽潛在客戶"','title="Nurture"':'title="持續經營"'}
 AUTO_TIP=[(r'^NOx sensor · ','NOx 感測器 · '),(r'^Starter · ','啟動馬達 · '),(r'^Alternator · ','發電機 · '),
  (r'\| MY ([0-9–]+), (\d+)% still on the road','| 年份 \\1，\\2% 仍在路上'),
  (r'([0-9,]+) search clicks / mo','每月 \\1 次搜尋點擊'),(r'([0-9,]+) market purchases / mo','每月 \\1 次市場購買'),
