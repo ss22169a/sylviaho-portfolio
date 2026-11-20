@@ -14,7 +14,7 @@
 [7f4946fc] <span class="stat-num skill">AI 工作流</span>
 [a45fcf96] 精選案例
 [1b245668] <a href="work.html" class="view-all">看全部 <span>→</span></a>
-[e9fd317e] 付費搜尋在 Amazon 划算嗎？漏斗與損益兩平分析
+[e9fd317e] Google 廣告付費搜尋幫助 Amazon 站內銷售效益大嗎？
 [458a719c] 車用售後零件品牌 · Amazon 美國站
 [9ad824c4] <span class="tag tag-blue">漏斗分析</span><span class="tag ">車用零件</span><span class="tag ">Amazon 美國站</span>
 [eb38552c] 為 MEMS 氫氣感測器上市建立證據基礎
