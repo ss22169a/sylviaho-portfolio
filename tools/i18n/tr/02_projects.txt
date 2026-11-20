@@ -35,7 +35,7 @@
 [f12a1a83] <span class="tag tag-lime">分析完成</span><span class="tag">汽車零件</span>
 [2d1128ce] 電動車在新車銷售的占比越來越高，哪些售後零件 SKU 還有獲利的維修期？哪些該停止補貨？
 [8483ee33] NHTSA 車輛存活率表、S&amp;P Global Mobility 車齡資料與 IEA / Cox Automotive 電動車資料，在 DuckDB SQL 中與 96 個料號和搜尋意圖的 Amazon 需求串接。
-[a27925a2] 大部分庫存壓在車齡偏高、需求偏低的車型上；成長最強的 20 條產品線中，有 19 條是賣家沒有賣的零件。
+[a27925a2] 結合車輛存活率與 Amazon 搜尋需求，將產品分為加碼、觀察、收割、退出四類；發現大部分庫存壓在老車型上，成長最快的 20 條產品線中有 19 條賣家沒有賣。
 [fb048a1c] <a class="btn btn-dark proj-open" href="lifecycle-matrix.html">閱讀分析 <span>→</span></a>
 [79d01f36] <span class="case-kicker">對應：市場規模估算</span>
 [45000d8f] AI 資料中心會讓氫能提早起飛嗎？
