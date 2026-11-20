@@ -123,7 +123,7 @@
 [af44b957] =
 [55a8f731] =
 [8fb0a3f8] <a class="btn btn-dark ai-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7503648848951685120" target="_blank" rel="noopener">看 LinkedIn 原文 <span>→</span></a>
-[76ecce9a] <span class="case-kicker">設計流程 · 產品型錄 → 單頁 DM</span>
+[76ecce9a] <span class="case-kicker">設計流程 · 產品型錄</span>
 [3c041118] 數位文宣設計
 [f43ad2b4] <span class="tag">LLM Agent</span><span class="tag">Figma</span><span class="tag">產品型錄</span>
 [4c290da6] 工程規格過於艱深，難以直接提供給觀展者在短時間內快速瀏覽。
