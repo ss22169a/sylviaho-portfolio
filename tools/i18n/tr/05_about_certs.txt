@@ -40,10 +40,10 @@
 [383e65e5] <b>開發：</b> HTML/CSS、JavaScript、Shopify Liquid
 [44edd445] <b>語言：</b> 中文（母語）、英文（工作流利）、日文（基礎）
 [b65e36f7] 證照
-[2c9f548a] 學習歷程共獲得 12 張證照，涵蓋數據與 AI、市場研究、行銷分析和設計。
+[237dc7be] 學習歷程共獲得 12 張證照，涵蓋數據與 AI、市場研究、行銷分析和設計。
 [ac50a2d1] <a href="certifications.html" class="view-all">看全部證照 <span>→</span></a>
 [64dd60fe] 學歷
-[2cb3824a] 工商業設計學士。商業視覺與藝術指導相關專案，可前往視覺作品集。
+[5cbaea6e] 工商業設計學士。商業視覺與藝術指導相關專案，可前往<a href="#" class="text-link" data-link-todo="visual-portfolio">視覺作品集</a>。
 [cdd4b82e] Sylvia Ho 持有的證照，涵蓋數據與 AI、市場研究、行銷分析與設計。
 [eb63be1f] 證照 | Sylvia Ho
 [3232301f] <a href="index.html" class="nav-item">總覽</a>⏎<a href="projects.html" class="nav-item">分析專案</a>⏎<a href="work.html" class="nav-item">案例研究</a>⏎<a href="ai.html" class="nav-item">我怎麼用 AI</a>⏎<a href="about.html" class="nav-item">關於我</a>⏎<a href="certifications.html" class="nav-item active" aria-current="page"><span class="nav-ind" aria-hidden="true"></span><span class="arrow">→</span>證照</a>⏎<a href="resume.html" class="nav-item">履歷</a>

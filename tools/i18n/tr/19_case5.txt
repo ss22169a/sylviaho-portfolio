@@ -1,5 +1,5 @@
 [8a85ec3d] 把快閃店設計成網路包款品牌漏斗中的一個階段：研究、O2O 循環、成果，以及以專櫃為單位的規劃模型。
-[f85c0e11] 電商品牌首次拓展實體店，怎麼串聯 OMO 體驗？ | Sylvia Ho
+[f7126027] 電商品牌首次拓展實體店，怎麼串聯 OMO 體驗？ | Sylvia Ho
 [ac8bbcdb] <a href="work.html#o2o-retail" class="back-link"><span aria-hidden="true">←</span> 案例研究</a>
 [c6aaaaef] 一個只在網路上賣的包款品牌想開實體店。風險是：實體店搶走網路商店的業績，而不是增加業績。所以快閃店被設計成線上漏斗的一個階段，而不是另一個獨立通路。
 [02f855a4] 工具<b>GA4 · Hotjar · SEMrush · LINE · Shopify</b>

@@ -2,8 +2,8 @@
 [f28227dc] 我怎麼用 AI | Sylvia Ho
 [39617243] <a href="index.html" class="nav-item">總覽</a>⏎<a href="projects.html" class="nav-item">分析專案</a>⏎<a href="work.html" class="nav-item">案例研究</a>⏎<a href="ai.html" class="nav-item active" aria-current="page"><span class="nav-ind" aria-hidden="true"></span><span class="arrow">→</span>我怎麼用 AI</a>⏎<a href="about.html" class="nav-item">關於我</a>⏎<a href="certifications.html" class="nav-item">證照</a>⏎<a href="resume.html" class="nav-item">履歷</a>
 [00de71c3] 我怎麼用 AI
-[216d045a] 以下是我把 AI 用在工作上的實際案例。
-[9383bcdf] <a class="kcard" style="background:var(--lilac)" href="#connected-data"><span class="kcard-label">串聯市場數據</span><span class="kcard-num">01</span></a><a class="kcard" style="background:var(--lime)" href="#pricing-intel"><span class="kcard-label">分析競品與價格情報</span><span class="kcard-num">02</span></a><a class="kcard" style="background:var(--blue);color:#fff" href="#seo-audit"><span class="kcard-label">自動 SEO 審查</span><span class="kcard-num">03</span></a><a class="kcard" style="background:var(--orange)" href="#ad-ops"><span class="kcard-label">在防護機制下的廣告操作</span><span class="kcard-num">04</span></a><a class="kcard" style="background:var(--lime)" href="#agent-spec"><span class="kcard-label">多 agent 流程設定</span><span class="kcard-num">05</span></a><a class="kcard" style="background:var(--ink);color:#fff" href="#trend-writing"><span class="kcard-label">產業新聞撰稿</span><span class="kcard-num">06</span></a><a class="kcard" style="background:var(--blue);color:#fff" href="#press-release"><span class="kcard-label">外部媒體稿</span><span class="kcard-num">07</span></a><a class="kcard" style="background:var(--lilac)" href="#digital-publication"><span class="kcard-label">數位文宣設計</span><span class="kcard-num">08</span></a>
+[7af1f62a] 以下是我把 AI 用在工作上的實際案例。
+[ddc37180] <a class="kcard" style="background:var(--lilac)" href="#connected-data"><span class="kcard-label">串聯市場數據</span><span class="kcard-num">01</span></a><a class="kcard" style="background:var(--lime)" href="#pricing-intel"><span class="kcard-label">分析競品與價格情報</span><span class="kcard-num">02</span></a><a class="kcard" style="background:var(--blue);color:#fff" href="#seo-audit"><span class="kcard-label">自動 SEO 審查</span><span class="kcard-num">03</span></a><a class="kcard" style="background:var(--orange)" href="#ad-ops"><span class="kcard-label">在防護機制下的廣告操作</span><span class="kcard-num">04</span></a><a class="kcard" style="background:var(--lime)" href="#agent-spec"><span class="kcard-label">多 agent 流程設定</span><span class="kcard-num">05</span></a><a class="kcard" style="background:var(--ink);color:#fff" href="#trend-writing"><span class="kcard-label">產業新聞撰稿</span><span class="kcard-num">06</span></a><a class="kcard" style="background:var(--blue);color:#fff" href="#press-release"><span class="kcard-label">外部媒體稿</span><span class="kcard-num">07</span></a><a class="kcard" style="background:var(--lilac)" href="#digital-publication"><span class="kcard-label">數位文宣設計</span><span class="kcard-num">08</span></a>
 [3c0a0105] 運作原則
 [28fb8e0e] 每個 agent 都會被指定一個自主層級。
 [d778d683] <span>人工控制較多</span><span>自動化較多</span>
@@ -26,21 +26,21 @@
 [a9ac3437] 第一週串起來的資料顯示，Google 點擊只有約 6% 變成 Amazon 商品頁工作階段，原因是廣告導到賣場首頁而不是商品頁。修正導流路徑後，點擊到商品頁的比例提高到 22%。
 [aed5ea18] <span class="case-kicker">市場分析 · Amazon 品類資料</span>
 [97aa3ab8] =
-[1fb23efe] 產品清單與市場競品做分析，得在市場上逐一比對價格與規格資訊。
+[3326c711] 產品清單與市場競品做分析，得在市場上逐一比對價格與規格資訊。
 [d93f202e] 把 Product Opportunity Explorer 匯出的發電機、啟動馬達和 NOx 感測器資料分組，再和自家的歷史訂單比對。分析會標出賣過但已下架的零件、停產車型，以及同料號競品的價格。
 [57e8becd] 發現
 [f995bea4] 10 個 NOx 感測器 SKU 全都有同料號競品，價格低 72–273%。問題在價格，不在曝光，所以這條產品線的廣告先暫停。發電機占營收約 93%，現在預算和廣告群組都以發電機和啟動馬達優先。
 [e874520e] 原始資料由我下載，策略由我決定；分組和比對交給 agent。
 [d55b7863] <span class="case-kicker">網站品質 · 產品頁與新聞稿</span>
 [22533c63] <span class="tag">LLM Agent</span><span class="tag">自建網頁工具</span><span class="tag">Markdown 報告</span>
-[4651a34e] 問題
-[02b48a00] 人工逐頁審查或只靠 SEO 工具，抓得出錯，卻排不出該先改哪裡；每次跑出的分數不一致，沒辦法跟上週比；報告也很難直接交給網站廠商處理。全站 4 個語系，工作量更是翻倍。
-[b226f4a8] 每次檢查一個網頁。有標準答案的項目（例如網頁標題、圖片說明）用固定規則檢查，結果穩定、可以每週比較；需要看內容判斷的項目（例如規格是否完整、用詞是否符合客戶搜尋習慣）交給 AI，但 AI 只能用頁面原有的資料修改。每個問題都標出急迫程度和負責人，需要廠商處理的直接附上請求信草稿。技術面的問題（例如網頁速度）交給專業工具處理。
+[1baa06b4] 問題
+[e5a300ae] 人工逐頁審查或只靠 SEO 工具，抓得出錯，卻排不出該先改哪裡；每次跑出的分數不一致，沒辦法跟上週比；報告也很難直接交給網站廠商處理。全站 4 個語系，工作量更是翻倍。
+[8dfb743e] 每次檢查一個網頁。有標準答案的項目（例如網頁標題、圖片說明）用固定規則檢查，結果穩定、可以每週比較；需要看內容判斷的項目（例如規格是否完整、用詞是否符合客戶搜尋習慣）交給 AI，但 AI 只能用頁面原有的資料修改。每個問題都標出急迫程度和負責人，需要廠商處理的直接附上請求信草稿。技術面的問題（例如網頁速度）交給專業工具處理。
 [3c769675] 試跑
-[d79bacf5] 2026 年 10 月 13 日在 2 個頁面上找出 13 個問題，其中 7 個出在共用模板：meta description 重複、缺少 H1、四種語言共用同一個網址，以及 cookie 聲明寫著別家公司的名字。只修單頁沒有用，所以之後加了彙整功能，把各頁的同類問題歸到同一個模板，一次修好。
-[07f923a3] 頁面原始碼由我貼上，要採用哪些修正、改到什麼程度由我決定，最後也由我進 CMS 更新。
+[d0959dee] 2026 年 10 月 13 日在 2 個頁面上找出 13 個問題，其中 7 個出在共用模板：meta description 重複、缺少 H1、四種語言共用同一個網址，以及 cookie 聲明寫著別家公司的名字。只修單頁沒有用，所以之後加了彙整功能，把各頁的同類問題歸到同一個模板，一次修好。
+[b3b4ff7e] 頁面原始碼由我貼上，要採用哪些修正、改到什麼程度由我決定，最後也由我進 CMS 更新。
 [bc981983] 下一步
-[3d405d1a] 記錄每次檢查與人工修正各花多少時間，算出平均修好一個問題的工時；重新提交 sitemap.xml，並接上 Search Console，追蹤修正後多久反映在排名上。
+[d8fa2ad0] 記錄每次檢查與人工修正各花多少時間，算出平均修好一個問題的工時；重新提交 sitemap.xml，並接上 Search Console，追蹤修正後多久反映在排名上。
 [b8ff0289] 模組
 [69c0b815] 權重
 [046403d1] 檢查內容
@@ -51,12 +51,12 @@
 [fbfc006e] B2B 技術內容
 [24b0669c] 工程師會搜尋的用詞、規格是否完整、規格書下載路徑、應用情境、詢價路徑
 [3a0413c2] E-E-A-T 與可信度
-[65a8a8f6] 作者與更新日期、主張是否有證據、聯絡資訊是否一致、有沒有殘留的模板文字
+[64e4ba3e] 作者與更新日期、主張是否有證據、聯絡資訊是否一致、有沒有殘留的模板文字
 [56e7eac5] 多語系與 AI 搜尋
 [f0e8ce32] 每種語言一個網址、hreflang、在地化的 meta、可被引用的摘要、FAQ、AI 爬蟲是否讀得到
 [5eff6935] <span class="case-kicker">Google Ads 自動化 · 管理員帳戶</span>
 [e456a065] =
-[db6bf3cf] 監控的數值與儀表板過多，容易發生未在第一時刻察覺異常，每次修改關鍵字時，也難以將異動紀錄與決策因素完整綁定。
+[24bee383] 監控的數值與儀表板過多，容易發生未在第一時刻察覺異常，每次修改關鍵字時，也難以將異動紀錄與決策因素完整綁定。
 [e09cb4e7] 腳本在管理員帳戶層級執行，用一份 Google Sheet 當控制台。模組 1 把昨天的數字和 7 天、14 天平均比較，花費、點擊或點擊率超過門檻就寄信提醒。模組 2 依意圖分類搜尋字詞，用 n-gram 分析找出浪費預算的字根。兩個模組都是唯讀。下一步是預算建議和 AI 草擬的廣告文案。
 [2dd5f894] 防護機制
 [2827eae9] 每一步調整上限 ±20%；建議 7 天後失效；每次變更都記下原始數值和核准人；不同帳戶的資料絕不混用；新廣告一律以暫停狀態建立。每個建議都要寫出觀察、原因、動作、預期範圍，以及反面證據。
@@ -68,7 +68,7 @@
 [70c19e2f] 多 agent 流程設定
 [82b11a8f] <span class="tag">LLM Agent</span><span class="tag">MCP 連接器</span><span class="tag">Google Sheets</span>
 [21e2caea] 為什麼
-[985c6b27] 多 agent 的協作如果交接全靠臨時下的提示，很容易出錯。所以針對每個 agent 都會制定每個角色與職責、精簡內文與結構化格式的 md、批判與審閱的機制、留下整個思考過程紀錄與備註、定義人工審核點，讓輸出可以預期，也清楚寫明什麼時候要交回給我。
+[d3fb5151] 多 agent 的協作如果交接全靠臨時下的提示，很容易出錯。所以針對每個 agent 都會制定每個角色與職責、精簡內文與結構化格式的 md、批判與審閱的機制、留下整個思考過程紀錄與備註、定義人工審核點，讓輸出可以預期，也清楚寫明什麼時候要交回給我。
 [cd0eeb7e] 一件工作怎麼流動
 [5644a442] 有衝突或要發布 → 交給我
 [94563ec3] 我
@@ -98,11 +98,11 @@
 [b72fa8cf] 每一列都有來源時才交接；來源互相衝突，或任何東西要被發布或修改時就停下來
 [b40e4c60] <span class="case-kicker">內容流程 · 產業新聞 → 中英文章與 LinkedIn 貼文</span>
 [c15195a5] =
-[14b53436] 技術規格書充滿工程參數與測試條件，LinkedIn 上則有不同背景的讀者；如果直接把硬規格丟出去，很容易變成工程自嗨或漏掉關鍵脈絡，光靠人工逐篇拆解也很吃力。
-[31a215ef] 我先擬定新聞稿審查流程、建立 AI 知識庫，並把公司技術文件用詞、引用來源權重與判斷審查層級寫成規則。寫稿或看產業素材時，我負責選題、定切角與撰寫對外內容，讓 AI 當審查與分析角色：依這套規則拆解規格參數與測試條件、比對技術術語是否一致、檢視引用資料權重，並標出需要人工介入的審查層級與疑點。
+[d91195bc] 技術規格書充滿工程參數與測試條件，LinkedIn 上則有不同背景的讀者；如果直接把硬規格丟出去，很容易變成工程自嗨或漏掉關鍵脈絡，光靠人工逐篇拆解也很吃力。
+[404b1551] 我先擬定新聞稿審查流程、建立 AI 知識庫，並把公司技術文件用詞、引用來源權重與判斷審查層級寫成規則。寫稿或看產業素材時，我負責選題、定切角與撰寫對外內容，讓 AI 當審查與分析角色：依這套規則拆解規格參數與測試條件、比對技術術語是否一致、檢視引用資料權重，並標出需要人工介入的審查層級與疑點。
 [0f01ed56] 範例
 [d109739c] 一組 MEMS 氫氣感測器的輪播圖文：70 ms 內完成啟動（比市場常見的 390 ms 快 5.5 倍）；0–40,000 ppm 範圍內 2 秒內即時偵測；在 −35 °C 到 +105 °C 的工作溫度下功耗低於 200 mW；以半導體矽微加工做到 2.0 mm 的小尺寸（約為傳統 15 mm 設計的百分之一）。
-[21658879] AI 的審查建議與風險標記協助校對內容，所有技術數據、測試條件、用詞統一，均由我提供原始文件核對，確認後發布。
+[19b8cb25] AI 的審查建議與風險標記協助校對內容，所有技術數據、測試條件、用詞統一，均由我提供原始文件核對，確認後發布。
 [14843d08] =
 [47b44fba] =
 [354d1fcf] =
@@ -123,11 +123,11 @@
 [af44b957] =
 [55a8f731] =
 [8fb0a3f8] <a class="btn btn-dark ai-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7503648848951685120" target="_blank" rel="noopener">看 LinkedIn 原文 <span>→</span></a>
-[76ecce9a] <span class="case-kicker">設計流程 · 規劃產品型錄</span>
+[706a7166] <span class="case-kicker">設計流程 · 規劃產品型錄</span>
 [3c041118] 數位文宣設計
 [f43ad2b4] <span class="tag">LLM Agent</span><span class="tag">Figma</span><span class="tag">產品型錄</span>
-[4c290da6] 工程規格過於艱深，難以直接提供給觀展者在短時間內快速瀏覽。
-[f68c03d6] 先抓出看到型錄幾秒內要讓人記住的重點與採購關心的數字，由 AI 依方向從型錄萃取文案、六項規格數據與應用；依 CIS 規範建好設計準則後，用 Figma 固定網格排版並支援多語系套用。
+[b52e682d] 工程規格過於艱深，難以直接提供給觀展者在短時間內快速瀏覽。
+[f08c951d] 先抓出看到型錄幾秒內要讓人記住的重點與採購關心的數字，由 AI 依方向從型錄萃取文案、六項規格數據與應用；依 CIS 規範建好設計準則後，用 Figma 固定網格排版並支援多語系套用。
 [0ba7efdd] 每個數字都對照型錄核對過，每項主張旁邊都保留它的測試條件。版面和最終文字在印刷前都由人確認。
 [f1f4e330] <span class="ms-cap">版面拆解 · 點選區塊</span>
 [785d3c9f] <b>01</b><span><strong>主視覺</strong>產品名稱、一句話主張和產品照，隔著展覽走道也看得清楚。</span>
@@ -172,3 +172,10 @@
 [67ce8fa9] 刊出當天（2026 年 11 月 20 日）在 Google 搜尋「氫能偵測器」，AI 摘要已直接以 HN01001 為例，並引用這篇經濟日報報導；答案旁的來源清單也把它列在第一則。
 [8525cc4e] 2026 年 11 月 20 日，Google 搜尋「氫能偵測器」的 AI 摘要畫面
 [34fa1299] Google 搜尋「氫能偵測器」的 AI 摘要，以 HN01001 為例並引用經濟日報報導
+[dd047e75] 審查方式
+[bfce6a6d] 試跑結果
+[16d101b1] 未通過時由誰修
+[b5fc2708] 我或網站管理者
+[cac1796b] 網站管理者
+[f9cf02fb] 內容撰寫者
+[21d2c844] 開發人員或網站管理者

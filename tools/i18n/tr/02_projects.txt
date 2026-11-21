@@ -2,40 +2,40 @@
 [65469573] 分析專案 | Sylvia Ho
 [62e329ef] <a href="index.html" class="nav-item">總覽</a>⏎<a href="projects.html" class="nav-item active" aria-current="page"><span class="nav-ind" aria-hidden="true"></span><span class="arrow">→</span>分析專案</a>⏎<a href="work.html" class="nav-item">案例研究</a>⏎<a href="ai.html" class="nav-item">我怎麼用 AI</a>⏎<a href="about.html" class="nav-item">關於我</a>⏎<a href="certifications.html" class="nav-item">證照</a>⏎<a href="resume.html" class="nav-item">履歷</a>
 [3323f974] 分析專案
-[8481fce4] 這些是我覺得問題有意思、自己動手做的研究內容。將查詢語法、假設和限制都寫出來；只呈現占比或指數。部分內容已去識別化。
+[3c957daf] 這些是我覺得問題有意思、自己動手做的研究內容。將查詢語法、假設和限制都寫出來；只呈現占比或指數。部分內容已去識別化。
 [09dc00c0] <span class="kcard-label">全部專案</span><span class="kcard-num">8</span>
 [0dffffae] <span class="kcard-label">電商</span><span class="kcard-num">06</span>
 [0ffbc7f0] <span class="kcard-label">汽車零件</span><span class="kcard-num">03</span>
 [8083d360] <span class="kcard-label">氫能市場與設備</span><span class="kcard-num">01</span>
 [067b0e42] <span class="case-kicker">對應：Google · AI 搜尋</span>
-[40a01bfe] AI 搜尋時代來臨，Google 如何兼顧 AI 答案與廣告點擊？
+[e82cff9d] AI 搜尋時代來臨，Google 如何兼顧 AI 答案與廣告點擊？
 [8ce0cd00] <span class="tag tag-blue">分析完成</span><span class="tag">電商</span>
 [002ff598] 問題
 [72fe3f5b] AI 摘要讓使用者留在 Google 搜尋結果頁，卻也拿掉了廣告收入賴以維生的點擊。這些點擊跑去哪裡？生成式回答和搜尋廣告能不能並存？
 [e5e429bc] 資料
 [01ba4c27] 2025–2026 年的公開研究（Pew、Seer Interactive、SparkToro/Similarweb、Ahrefs），以及 Alphabet 2026 年第三季財報。
 [d87a3ab1] 產出
-[59663042] 比對多份公開研究找出點擊流向、用模型推估 AI 摘要對廣告點擊的影響，再提出給 Google 和品牌的五個實驗。
+[b8cc7b22] 比對多份公開研究找出點擊流向、用模型推估 AI 摘要對廣告點擊的影響，再提出給 Google 和品牌的五個實驗。
 [f592ff19] <a class="btn btn-dark proj-open" href="search-dilemma.html">閱讀分析 <span>→</span></a>
 [6d48c344] <span class="case-kicker">對應：Google · Amazon</span>
 [04b4b813] 用 SQL 做電商漏斗與歸因分析
 [d766ed26] <span class="tag tag-lime">分析完成</span><span class="tag">電商</span><span class="tag">汽車零件</span>
-[e4213a3b] 付費流量在哪段途徑遺失掉轉換？營收裡有多少是廣告帶來的？
-[0b6e0991] 使用 Google 廣告每天的花費與點擊，以及 Amazon 每天的商品銷售與訂單，用 SQL 串在一起分析。不顯示實際金額，只用比例和指數呈現。
-[2793cb26] 從漏斗找出流失點、計算廣告的真實貢獻、比對預算與需求，再依這些發現訂出四個附目標值的改善方向。
+[cf9bf7c4] 付費流量在哪段途徑遺失掉轉換？營收裡有多少是廣告帶來的？
+[d235598c] 使用 Google 廣告每天的花費與點擊，以及 Amazon 每天的商品銷售與訂單，用 SQL 串在一起分析。不顯示實際金額，只用比例和指數呈現。
+[f4d1aab8] 從漏斗找出流失點、計算廣告的真實貢獻、比對預算與需求，再依這些發現訂出四個附目標值的改善方向。
 [321cd033] <a class="btn btn-dark proj-open" href="funnel-analysis.html">閱讀分析 <span>→</span></a>
 [4f9f3c12] <span class="case-kicker">對應：Amazon</span>
-[06fad235] 車子零件料號齊全，但為什麼轉換率仍低落？
+[0e6b187f] 車子零件料號齊全，但為什麼轉換率仍低落？
 [68383c88] <span class="tag tag-orange">分析完成</span><span class="tag">電商</span><span class="tag">汽車零件</span>
-[c29ad2a5] 在 Amazon 販售品相足夠，銷售狀況不佳的情況，認為問題出在需求、價格、庫存，還是商品頁本身？優化的優先順序又是？
+[fb85db42] 在 Amazon 販售品相足夠，銷售狀況不佳的情況，認為問題出在需求、價格、庫存，還是商品頁本身？優化的優先順序又是？
 [5b19902a] Amazon Product Opportunity Explorer（品類、相似商品與未滿足需求資料）、賣家的全品項上架報表與 22 個月訂單，在 DuckDB SQL 中以 LESTER / OE 料號串接。
-[20f89e36] 抓出三個品類的市場需求，用料號比對自家商品並和實際銷售對帳，再依可觸及的需求大小，排出六項修正的優先順序。
+[a1bf8540] 抓出三個品類的市場需求，用料號比對自家商品並和實際銷售對帳，再依可觸及的需求大小，排出六項修正的優先順序。
 [eb6461c3] <a class="btn btn-dark proj-open" href="category-intelligence.html">閱讀分析 <span>→</span></a>
 [6c7f6179] 燃油車零件生命週期：加碼、收割還是退出
 [f12a1a83] <span class="tag tag-lime">分析完成</span><span class="tag">汽車零件</span>
 [2d1128ce] 電動車在新車銷售的占比越來越高，哪些售後零件 SKU 還有獲利的維修期？哪些該停止補貨？
 [8483ee33] NHTSA 車輛存活率表、S&amp;P Global Mobility 車齡資料與 IEA / Cox Automotive 電動車資料，在 DuckDB SQL 中與 96 個料號和搜尋意圖的 Amazon 需求串接。
-[a27925a2] 結合車輛存活率與 Amazon 搜尋需求，將產品分為加碼、觀察、收割、退出四類；發現大部分庫存壓在老車型上，成長最快的 20 條產品線中有 19 條賣家沒有賣。
+[27b6150d] 結合車輛存活率與 Amazon 搜尋需求，將產品分為加碼、觀察、收割、退出四類；發現大部分庫存壓在老車型上，成長最快的 20 條產品線中有 19 條賣家沒有賣。
 [fb048a1c] <a class="btn btn-dark proj-open" href="lifecycle-matrix.html">閱讀分析 <span>→</span></a>
 [79d01f36] <span class="case-kicker">對應：市場規模估算</span>
 [45000d8f] AI 資料中心會讓氫能提早起飛嗎？

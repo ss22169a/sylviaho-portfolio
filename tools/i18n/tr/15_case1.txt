@@ -1,7 +1,7 @@
 [b4f909e8] Google Ads 導流到 Amazon 商店的漏斗與損益兩平分析，附 Looker Studio 加碼／停損儀表板。
-[8d5b03e9] Google 廣告付費搜尋幫助 Amazon 站內銷售效益大嗎？ | Sylvia Ho
+[cf6d82ee] Google 廣告付費搜尋幫助 Amazon 站內銷售效益大嗎？ | Sylvia Ho
 [518dfc9b] <a href="work.html#amazon-paid-search" class="back-link"><span aria-hidden="true">←</span> 案例研究</a>⏎<span class="case-kicker">案例 01 · 車用售後零件品牌 · Amazon 美國站</span>
-[932f53e5] Google 廣告付費搜尋幫助 Amazon 站內銷售效益大嗎？
+[cc0849c0] Google 廣告付費搜尋幫助 Amazon 站內銷售效益大嗎？
 [1ab0d01c] 從漏斗和損益兩平的角度看 Google Ads 導到 Amazon 商店的流量，以及由此訂出的加碼／停損規則。
 [e4f17ce7] 期間<b>2026 年 10 月 7 日 – 11 月 15 日</b>
 [207bdc48] 工具<b>Google Ads · Windsor.ai · Sheets · Looker Studio</b>
