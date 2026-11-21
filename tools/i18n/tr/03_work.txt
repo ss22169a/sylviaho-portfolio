@@ -27,7 +27,7 @@
 [8a68bcb6] 點擊到商品頁的比例從 5% 提高到 22%，每次商品頁造訪成本降低 73%；和投廣告前的基準相比，Amazon 每週營收 +139%、訂單 +54%（2026 年 10 月 7 日 – 11 月 15 日）。營收仍只達損益兩平的 65%，所以現在預算調整依照兩週一次的加碼／維持／停損規則。
 [5346d0ec] 下一步
 [a5820c5b] 把預算移到 Amazon 站內、針對料號搜尋的廣告，這些買家已經知道自己要什麼；Google Ads 則繼續用損益兩平模型判斷要不要投。
-[caf8d6d7] <a class="btn btn-dark case-cta" href="case-paid-search.html">看完整案例與 Looker Studio 儀表板 <span>→</span></a>
+[caf8d6d7] <a class="btn btn-dark case-cta" href="case-paid-search.html">看完整案例與數據儀表板 <span>→</span></a>
 [6c8e1748] <span class="case-kicker">e-Vehicle Semiconductor · MEMS 氫氣感測 · 2026 · 進行中</span>
 [04df181f] 市場情報</span>
 [d1fa9ac4] 期間<b>2026 年 11 月 – 至今</b>
@@ -40,7 +40,7 @@
 [4adf7c01] 各家市場規模報告最多差到 24.2 倍，反應速度也只是業界平均水準，所以上市主張要建立在氫能設施的穩定需求，以及可以用數據證明的差異上。
 [bae7d5be] 狀態
 [636d12d6] 第三方驗證進行中。上市主張已分成「現在可以說」和「等測試結果出來再說」兩類，結果一到，素材就能用。
-[d85e9203] <a class="btn btn-dark case-cta" href="case-hydrogen-evidence.html">看完整案例與 Looker Studio 儀表板 <span>→</span></a>
+[d85e9203] <a class="btn btn-dark case-cta" href="case-hydrogen-evidence.html">看完整案例與數據儀表板 <span>→</span></a>
 [34cffef9] <span class="case-kicker">SecuX · 硬體資安 · 2025</span>
 [a8d6f783] 市場進入策略</span>
 [b12f8563] 職務<b>行銷專案經理</b>
@@ -52,7 +52,7 @@
 [087e514a] 使用者怕忘記密碼、怕帳號被盜，對無密碼登入有興趣，但看不懂它是什麼。所以卡住的是教育，不是需求。
 [e75862f6] 分兩條線定位：對一般使用者講「不用裝 App、Google 和 Facebook 都能用、很簡單」；對資安專業人士講「FIDO2/U2F、跨平台、硬體級安全」。依市場分配美國與歐洲預算，並用品牌提及資料建立四級的聲譽回應機制。
 [71512d28] 上市 30 天內進入 Amazon 類別前 5 名（依當時內部追蹤；原始紀錄已無法取得）。
-[f5a87b53] <a class="btn btn-dark case-cta" href="case-pufido-launch.html">看完整案例與 Looker Studio 儀表板 <span>→</span></a>
+[f5a87b53] <a class="btn btn-dark case-cta" href="case-pufido-launch.html">看完整案例與數據儀表板 <span>→</span></a>
 [4c039c82] <span class="case-kicker">Tellus Materials · 氫能設備，B2B</span>
 [9be2b364] 職務<b>網站營運規劃師</b>
 [f9bcc7c1] 期間<b>建置 2 個月，之後每月寄送 · 2025–26</b>
@@ -63,7 +63,7 @@
 [9842f73f] 在還很早期的市場，政策和標案的時程就是買家的採購時程。在標案開出時寄到、又講到對方自己專案的信，才會被打開來看。
 [e73297ac] 兩條名單管道併成一份：一條是依政策時程、寄給可能投標廠商的標案信；另一條是針對能源與氫能展覽上認識的潛在客戶，先研究過對方再寫的客製信。
 [d9a97b3e] 分眾電子報開信率 50–60%，詢價轉換率從 0.2% 提高到 2.5%。同時改版的產品頁讓跳出率從 68% 降到 42%，新網站上線後 28 天內自然搜尋工作階段從 2 增加到 104。
-[4b90cc7d] <a class="btn btn-dark case-cta" href="case-policy-edm.html">看完整案例與 Looker Studio 儀表板 <span>→</span></a>
+[4b90cc7d] <a class="btn btn-dark case-cta" href="case-policy-edm.html">看完整案例與數據儀表板 <span>→</span></a>
 [974db47d] <span class="case-kicker">BLANK SPACE · 時尚電商與零售 · 2023</span>
 [fa68f7a1] 職務<b>共同創辦人</b>
 [10e00a94] 期間<b>2023 年 6 月起約 3 個月</b>
@@ -74,4 +74,4 @@
 [b373d052] 買較高價位包款的年輕消費者，走的是「線上研究 → 實體試背 → 線上下單」的路徑；而多數競品只做線上折扣，店內體驗這一塊沒人做。
 [a0c3bf23] 把快閃店設計成 O2O 循環：線上邀請（LINE、email、廣告、合作媒體）→ 到店體驗並加入會員 → 線上回購優惠。
 [a2fc05be] 新增 2,000 名會員（目標的 120%），社群互動 +30%，第一個月門市營收新台幣 250 萬元。品牌整體：三年內開出五個百貨專櫃，獲客成本 −35%，Shopify 轉換率 +67%。我的門市模型估算，年營收要達到新台幣 1 億元大約需要 8–9 個專櫃；品牌後來確實開到這個數量。
-[1e353a1b] <a class="btn btn-dark case-cta" href="case-o2o-popup.html">看完整案例與 Looker Studio 儀表板 <span>→</span></a>
+[1e353a1b] <a class="btn btn-dark case-cta" href="case-o2o-popup.html">看完整案例與數據儀表板 <span>→</span></a>
