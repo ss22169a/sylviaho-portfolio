@@ -2,7 +2,7 @@
 [58bb5202] 關於我 | Sylvia Ho
 [60d90568] <a href="index.html" class="nav-item">總覽</a>⏎<a href="projects.html" class="nav-item">分析專案</a>⏎<a href="work.html" class="nav-item">案例研究</a>⏎<a href="ai.html" class="nav-item">我怎麼用 AI</a>⏎<a href="about.html" class="nav-item active" aria-current="page"><span class="nav-ind" aria-hidden="true"></span><span class="arrow">→</span>關於我</a>⏎<a href="certifications.html" class="nav-item">證照</a>⏎<a href="resume.html" class="nav-item">履歷</a>
 [6b21fb79] 關於我
-[71eb364c] 用分析師的嚴謹看市場，用企劃的責任感推進計畫，用設計師的眼光把數據講清楚。
+[aca6acc9] 用分析師的嚴謹看市場，用企劃的規劃與創新推專案，用設計師的眼光呈現視覺化。
 [252d7c07] <span class="ab-k">從設計到零售</span>
 [32bac861] 我從視覺設計起步，在分析各平台後台數據的過程中，看懂了每一張視覺素材背後的數據邏輯。之後在競爭激烈的市場裡共同創辦了一個零售電商品牌，做出聲量，三年內開到五家實體門市。
 [b2b9c88f] <span class="ab-k">國際 B2B 科技業</span>
