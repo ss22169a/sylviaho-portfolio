@@ -33,7 +33,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&family=Stack+Sans+Headline:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=31617ca9" />
+  <link rel="stylesheet" href="style.css?v=f1d53083" />
   <script>document.documentElement.classList.add("js");</script>
   <script src="js/matter.min.js" defer></script>
   <script src="js/posts.js?v=616e883b" defer></script>
@@ -102,7 +102,7 @@
       </article>
       <article class="case ai-case" id="pricing-intel" style="--c:var(--lime)">
         <div class="case-head"><div><span class="case-kicker">Market analysis · Amazon category data</span><h2>Analyzing competitors &amp; pricing</h2><div class="tags"><span class="tag">Amazon Product Opportunity Explorer</span><span class="tag">LLM Agent</span><span class="tag">Google Sheets</span></div></div></div>
-        <dl class="case-body"><dt>Problem</dt><dd>Analyzing our product list against market competitors meant comparing prices and specs one by one.</dd><dt>How it works</dt><dd>Product Opportunity Explorer exports for alternators, starters and NOx sensors are grouped and matched against our own order history. The analysis flags parts we have sold but no longer list, discontinued models, and same-part competitor prices.</dd><dt>Finding</dt><dd class="impact">All 10 NOx sensor SKUs had same-part competitors priced 72–273% lower. The problem was price, not visibility, so ads for that line were paused. Alternators made up about 93% of revenue, so budget and ad groups now prioritize alternators and starters.</dd><dt>Human in the loop</dt><dd>I download the source data and decide the strategy; the agent does the grouping and comparison.</dd></dl>
+        <dl class="case-body"><dt>Problem</dt><dd>Comparing our product list with competitor prices and specs one by one was slow, making it hard to spot loss-making or ineffective items quickly.</dd><dt>How it works</dt><dd>I export Amazon Product Opportunity Explorer data (alternators, starters and NOx sensors) by hand. An LLM agent working with Google Sheets groups it automatically and cross-checks it against order history, flagging delisted parts, discontinued models and price gaps with same-part competitors.</dd><dt>Key findings and decisions</dt><dd class="impact"><ul><li><b>NOx sensors:</b> All 10 SKUs had same-part competitors priced 72–273% lower. The core issue was price competitiveness, not visibility, so ads for this line were paused first.</li><li><b>Focusing resources:</b> Alternators made up about 93% of revenue, so ad groups and budget now go first to alternators and starters.</li></ul></dd><dt>Division of work</dt><dd>Data export and strategy decisions stay with a person; grouping, cross-checking and anomaly flagging go to the LLM agent.</dd></dl>
         
       </article>
       <article class="case ai-case" id="seo-audit" style="--c:var(--blue)">

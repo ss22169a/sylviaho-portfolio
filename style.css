@@ -2181,3 +2181,7 @@ html[lang="zh-Hant"] .btn { white-space: nowrap; }
 .pet-cmp td:nth-child(2) { min-width: 14em; }
 .ds-table.pet-cmp.pet-cmp td:nth-child(3) { white-space: normal; display: block; color: inherit; font-size: inherit; }
 @media (min-width: 900px) { .ds-table.pet-cmp.pet-cmp td:nth-child(3) { display: table-cell; } }
+.case-body dd.impact ul { margin: 0; padding-left: 1.2em; list-style: disc; }
+.case-body dd.impact li { font-weight: 400; }
+.case-body dd.impact li + li { margin-top: 6px; }
+.case-body dd.impact li b { font-weight: 600; }
