@@ -2271,3 +2271,5 @@ html[lang="zh-Hant"] .btn { white-space: nowrap; }
 .z-tb .z-on { color: var(--ink); font-weight: 600; }
 .z-tb .z-on i { border-color: var(--ink); background: var(--lime); }
 .z-fab { position: absolute; right: 16px; bottom: 78px; width: 48px; height: 48px; border-radius: 50%; background: var(--ink); color: #fff; font-size: 26px; display: flex; align-items: center; justify-content: center; }
+
+.pc-sub { font-size: 20px; font-weight: 500; color: var(--ink); margin: 36px 0 12px; }

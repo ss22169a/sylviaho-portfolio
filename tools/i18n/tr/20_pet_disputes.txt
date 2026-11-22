@@ -1,0 +1,10 @@
+[82224acf] 紀錄不足的代價：寵物醫療糾紛
+[fc3ffb4d] <span class="fn-k">全國申訴</span><b>72 件</b><small>2025 年行政院消保處收到的寵物醫療申訴，在寵物相關申訴中排第二。</small>
+[0f5c52b2] <span class="fn-k">臺北每年爭議</span><b>12–16 件</b><small>近 5 年臺北市法務局受理的寵物醫療爭議，共 73 件。</small>
+[f433d744] <span class="fn-k">新北轉介調解</span><b>18 件</b><small>2024–2025 年新北市動保處轉介調解，其中 15 件和解。</small>
+[54eb8a3c] 各單位歸納的主因很接近：收費超出預期、病情與治療說明不清楚。我追蹤的 9 件公開判決與報導中，8 件的爭議和紀錄或溝通有關。法院判決也顯示，舉證責任在飼主身上，沒有紀錄就很難說明發生了什麼。
+[e9090a05] 糾紛案例取自公開判決與新聞報導，不是隨機抽樣；案例追蹤表持續累積中。
+[5693a56a] <a href="https://www.ctee.com.tw/news/20260215700085-430503" target="_blank" rel="noopener">行政院消保處 2025 年寵物相關消費申訴（工商時報）</a> · B 級
+[ec74f317] <a href="https://udn.com/news/story/7323/9453146" target="_blank" rel="noopener">臺北市法務局近 5 年寵物醫療爭議統計（聯合新聞網）</a> · B 級
+[cf7ad2e1] <a href="https://www.ctee.com.tw/news/20260126701334-431401" target="_blank" rel="noopener">新北市動保處 2024–2025 年寵物醫療調解（工商時報）</a> · B 級
+[cc9670d3] <a href="https://judgment.judicial.gov.tw/FILES/SJEV/111%2c%e9%87%8d%e7%b0%a1%2c236%2c20240321%2c2.pdf" target="_blank" rel="noopener">三重簡易庭 111 年度重簡字第 236 號判決（術前說明義務）</a> · A 級
