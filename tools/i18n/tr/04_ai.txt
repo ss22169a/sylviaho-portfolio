@@ -11,7 +11,7 @@
 [9c204f1e] <span class="bar"></span><b>L1</b><strong>草擬</strong><small>準備報告、改寫稿和建議，等人審閱。</small>
 [6ae5ce1a] <span class="bar"></span><b>L2</b><strong>核准後執行</strong><small>必須由指定的人核准後，才能做任何變更。</small>
 [1632bcd0] <span class="bar"></span><b>L3</b><strong>自動</strong><small>只用在低風險、可以復原的工作。</small>
-[ced79542] <span class="pr-label">一定要人工核准</span>⏎<span class="tag">發布</span><span class="tag">帳號設定</span><span class="tag">花錢</span>⏎<span class="pr-note">每個 agent 也都有一份書面守則（可以做 · 要先問 · 絕對不做），以及資料分級（公開 · 內部 · 機密）。</span>
+[fccb6dfc] <span class="pr-label">一定要人工核准</span>⏎<span class="tag">發布</span><span class="tag">帳號設定</span><span class="tag">花錢</span>⏎<span class="pr-note">每個 Agent 都有明確的行動邊界（可做、需先確認、禁止做）與資料權限分級（公開、內部、機密）。</span>
 [64ff1023] <span class="case-kicker">資料串接 · Amazon 美國站汽車零件</span>
 [defe00c8] =
 [1baa06b4] 問題
