@@ -179,11 +179,11 @@
 [cac1796b] 網站管理者
 [f9cf02fb] 內容撰寫者
 [21d2c844] 開發人員或網站管理者
-[26b585c7] <span class="case-kicker">產品開發 · 寵物照護 App</span>
-[16fc0095] 從零開發一款產品
-[d0491b4f] <span class="tag">SwiftUI</span><span class="tag">Firebase</span><span class="tag">政府公開資料 API</span>
+[f70dab86] <span class="case-kicker">快速驗證 · 寵物照護 App</span>
+[39c1c255] 從想法到市場驗證
+[2587c2f5] <span class="tag">Vibe coding</span><span class="tag">SwiftUI</span><span class="tag">Firebase</span><span class="tag">政府公開資料 API</span>
 [f8c94a3b] 這是什麼
-[0d1cc7e1] 我也用 AI 從零開發產品：一款寵物照護 App，從市場數據、競品分析到功能規劃和 iOS 開發都自己完成。
+[c1c5e430] 我用 AI 快速驗證產品想法：從想法、市場分析，到用 vibe coding 快速做出產品，再拿到市場上驗證。驗證後依實際數據與使用者反饋，決定是否投入更多金錢與人力。目前以一款寵物照護 App 實作，市場分析已完成，產品開發中。
 [6d31727f] 逐一比對產品清單與市場競品價格、規格費時耗力，難以快速抓出虧損或無效品項。
 [ba145f6f] 手動匯出 Amazon Product Opportunity Explorer（發電機、啟動馬達、NOx 感測器）資料，由 LLM Agent 結合 Google Sheets 自動分組，並交叉比對歷史訂單，標記已下架零件、停產車型與同料號競品價差。
 [90c98ee7] 關鍵發現與決策
