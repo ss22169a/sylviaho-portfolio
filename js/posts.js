@@ -98,13 +98,15 @@
     blob: '<circle cx="-22" cy="-22" r="24"/><circle cx="22" cy="-22" r="24"/><circle cx="-22" cy="22" r="24"/><circle cx="22" cy="22" r="24"/><circle cx="0" cy="0" r="32"/>',
     clover: '<circle cx="0" cy="-24" r="24"/><circle cx="24" cy="0" r="24"/><circle cx="0" cy="24" r="24"/><circle cx="-24" cy="0" r="24"/><circle cx="0" cy="0" r="16"/>',
     square: '<rect x="-46" y="-46" width="92" height="92" rx="10"/>',
-    dot: '<circle cx="0" cy="0" r="49"/>'
+    dot: '<circle cx="0" cy="0" r="49"/>',
+    ring: '<path fill-rule="evenodd" d="M0-49a49 49 0 1 0 0.01 0ZM0-25a25 25 0 1 0 0.01 0Z"/>'
   };
   var SET = [
     ["flower", "var(--lilac)", 0.20, 2],
     ["blob", "var(--lime)", 0.15, 3],
     ["square", "var(--blue)", 0.07, 3],
-    ["dot", "var(--orange)", 0.048, 3]
+    ["dot", "var(--orange)", 0.048, 3],
+    ["ring", "var(--ink)", 0.09, 2]
   ];
 
   function setupPhysics() {
@@ -146,7 +148,7 @@
         var common = { restitution: 0.25, friction: 0.3, frictionAir: 0.012, density: 0.0015 };
         var body = type === "square"
           ? Bodies.rectangle(x, y, size * 0.92, size * 0.92, Object.assign({ chamfer: { radius: size * 0.1 } }, common))
-          : Bodies.circle(x, y, size * { flower: 0.46, blob: 0.45, clover: 0.44, dot: 0.49 }[type], common);
+          : Bodies.circle(x, y, size * { flower: 0.46, blob: 0.45, clover: 0.44, dot: 0.49, ring: 0.49 }[type], common);
         Body.setAngle(body, rand(0, Math.PI * 2));
         Body.setAngularVelocity(body, rand(-0.05, 0.05));
         var el = h('<div class="pshape" data-k="' + type + '" style="width:' + size + "px;height:" + size + 'px"><svg viewBox="-50 -50 100 100" style="fill:' + s[1] + '">' + ART[type] + "</svg></div>");

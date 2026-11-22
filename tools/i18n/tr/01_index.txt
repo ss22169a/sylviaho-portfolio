@@ -64,3 +64,4 @@
 [197101e9] 開啟選單
 [62bce942] 主選單
 [85a41785] =
+[5b399117] <span class="stat-num skill">快速驗證</span>

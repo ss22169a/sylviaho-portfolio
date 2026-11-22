@@ -2185,3 +2185,11 @@ html[lang="zh-Hant"] .btn { white-space: nowrap; }
 .case-body dd.impact li { font-weight: 400; }
 .case-body dd.impact li + li { margin-top: 6px; }
 .case-body dd.impact li b { font-weight: 600; }
+
+/* Overview: fifth skill card, Rapid Validation (full-width row) */
+.stats { grid-template-rows: minmax(339px, 1fr) minmax(339px, 1fr) 99px; }
+@media (max-width: 1100px) { .stats { grid-template-rows: 240px 240px 84px; } }
+.stat-rapid { grid-column: 1 / -1; background: var(--ink); flex-direction: row-reverse; align-items: center; justify-content: space-between; }
+.stat-rapid .sk-top { margin-bottom: 0; }
+.stat-rapid .stat-num.skill { align-self: center; }
+.hero[data-hl="ring"] .pshape[data-k="ring"] { opacity: 1; }
