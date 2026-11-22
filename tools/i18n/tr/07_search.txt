@@ -67,7 +67,7 @@
 [1b549c19] 每週固定在 Google AI 摘要、ChatGPT 與 Perplexity 上，實測一組高潛力買家問題，紀錄品牌「有沒有被引用、排名、競品與流量影響」，作為 AI 流量的數據來源。
 [66b4eae8] 引用占比會比品牌搜尋和直接流量早幾週出現變化
 [dfe74182] 有時間落差的相關性連續 2 季都成立
-[b38c7dfc] 這兩個實驗可參考我的其他篇研究，<a href="ai.html#seo-audit">SEO 審查流程</a>持續產出「結構化、易被引用的內容」，<a href="category-intelligence.html">品類分析</a>則證實買家習慣用「精確料號與年份」搜尋，兩者完美展現出 AI 摘要偏好引用精確事實的特性。
+[fa70a3e0] 這兩個實驗可參考我的其他篇研究，<a href="ai.html#seo-audit">SEO 審查流程</a>持續把內容調整成「結構化、易被引用」的格式，<a href="category-intelligence.html">品類分析</a>則證實買家習慣用「精確料號與年份」搜尋，兩者剛好對上 AI 摘要偏好引用精確事實的特性。
 [cf232710] 來源與限制
 [2eb56be3] 來源
 [92ea21eb] =
