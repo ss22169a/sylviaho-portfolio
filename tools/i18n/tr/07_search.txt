@@ -7,7 +7,7 @@
 [dd70989f] 證據<b>Pew · Seer · SparkToro · Ahrefs · Alphabet 財報</b>
 [3ea8a70a] 方法<b>次級資料分析 · 點擊率估算模型</b>
 [9b07b18a] 產出<b>分別給 Google 和品牌的五個實驗</b>
-[cc835fe3] 簡短結論
+[e39262de] 結論
 [b45d73a4] 點擊沒有消失，只是換了地方。出現 AI 摘要時，傳統連結的點擊變少，但被 AI 搜尋結果提到的品牌，廣告點擊多了 41%。不應死守傳統搜尋結果，而是把「被 AI <b>引用</b>」變成可以爭取、量化和販售的東西。
 [c2a5a82e] 1 · 四個數字看懂這個兩難
 [2a3ef001] <span class="fn-k">零點擊搜尋</span><b>68%</b><small>2026 年 1–4 月，美國 Google 搜尋中沒有任何點擊就結束的比例，2024 年約為 60%（SparkToro，Similarweb 樣本）。</small>
