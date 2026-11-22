@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>從看醫生的困擾到一款 App：產品規劃過程 | Sylvia Ho</title>
+  <meta name="description" content="一款寵物照護 App 從個人痛點到產品規劃的過程：旅程地圖、市場驗證、心智圖、影響力 × 開發難度排序、Roadmap 與重點 App 畫面。" />
+  <link rel="canonical" href="https://ss22169a.github.io/sylviaho-portfolio/zh/pet-product.html" />
+  <link rel="alternate" hreflang="en" href="https://ss22169a.github.io/sylviaho-portfolio/pet-product.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://ss22169a.github.io/sylviaho-portfolio/zh/pet-product.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ss22169a.github.io/sylviaho-portfolio/pet-product.html" />
+  <meta name="author" content="Sylvia Ho" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#262626" />
+  <link rel="icon" href="../favicon.ico" sizes="48x48" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+  <link rel="manifest" href="../site.webmanifest" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Sylvia Ho" />
+  <meta property="og:locale" content="zh_TW" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:title" content="從看醫生的困擾到一款 App：產品規劃過程 | Sylvia Ho" />
+  <meta property="og:description" content="一款寵物照護 App 從個人痛點到產品規劃的過程：旅程地圖、市場驗證、心智圖、影響力 × 開發難度排序、Roadmap 與重點 App 畫面。" />
+  <meta property="og:url" content="https://ss22169a.github.io/sylviaho-portfolio/zh/pet-product.html" />
+  <meta property="og:image" content="https://ss22169a.github.io/sylviaho-portfolio/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Sylvia Ho，行銷與 GTM 策略專家" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="從看醫生的困擾到一款 App：產品規劃過程 | Sylvia Ho" />
+  <meta name="twitter:description" content="一款寵物照護 App 從個人痛點到產品規劃的過程：旅程地圖、市場驗證、心智圖、影響力 × 開發難度排序、Roadmap 與重點 App 畫面。" />
+  <meta name="twitter:image" content="https://ss22169a.github.io/sylviaho-portfolio/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&family=Stack+Sans+Headline:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css?v=f5498f49" />
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="../js/matter.min.js" defer></script>
+  <script src="../js/posts.js?v=82277f51" defer></script>
+  <script src="../js/lifecycle.js?v=616e883b" defer></script>
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="side-top">
+      <a href="index.html" class="logo"><span class="logo-mark" aria-hidden="true"><svg class="lm lm-1" viewBox="-50 -50 100 100"><circle cx="-22" cy="-22" r="24"/><circle cx="22" cy="-22" r="24"/><circle cx="-22" cy="22" r="24"/><circle cx="22" cy="22" r="24"/><circle cx="0" cy="0" r="32"/></svg><svg class="lm lm-2" viewBox="-50 -50 100 100"><circle cx="0" cy="-20" r="27"/><circle cx="20" cy="0" r="27"/><circle cx="0" cy="20" r="27"/><circle cx="-20" cy="0" r="27"/></svg><svg class="lm lm-3" viewBox="-50 -50 100 100"><rect x="-46" y="-46" width="92" height="92" rx="14"/></svg><svg class="lm lm-4" viewBox="-50 -50 100 100"><circle cx="0" cy="0" r="49"/></svg></span>Sylvia Ho</a>
+      <button type="button" class="menu-btn" data-menu aria-label="開啟選單" aria-expanded="false"><svg viewBox="0 0 16 16" width="18" height="18"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5"/></svg></button>
+    </div>
+    <nav class="nav" aria-label="主選單">
+      <a href="index.html" class="nav-item">總覽</a>
+      <a href="projects.html" class="nav-item">分析專案</a>
+      <a href="work.html" class="nav-item">案例研究</a>
+      <a href="ai.html" class="nav-item active" aria-current="page"><span class="nav-ind" aria-hidden="true"></span><span class="arrow">→</span>我怎麼用 AI</a>
+      <a href="about.html" class="nav-item">關於我</a>
+      <a href="certifications.html" class="nav-item">證照</a>
+      <a href="resume.html" class="nav-item">履歷</a>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="lang-switch" role="group" aria-label="語言"><a href="../pet-product.html" lang="en" hreflang="en">EN</a><a href="pet-product.html" lang="zh-Hant" hreflang="zh-Hant" class="on" aria-current="true">中文</a></div>
+      <a href="mailto:werr2010@gmail.com" class="nav-item">Email</a>
+      <a href="https://www.linkedin.com/in/zi-yin-ho-4795a02a6/" class="nav-item">LinkedIn</a>
+      <div class="user">
+        <img class="avatar avatar-img" src="../img/avatar.jpg" alt="Sylvia Ho" width="42" height="42" />
+        <div class="user-info"><strong>Sylvia Ho</strong><small>台灣新竹</small></div>
+      </div>
+    </div>
+  </aside>
+
+    <div class="page">
+    <main class="main">
+
+      <div class="page-head">
+        <div>
+          <a href="ai.html#pet-app" class="back-link"><span aria-hidden="true">←</span> 我怎麼用 AI</a>
+          <h1 class="page-title">從看醫生的困擾到一款 App：產品規劃過程</h1>
+          <p class="page-sub">快速驗證產品想法的六個步驟：發現問題、驗證市場、發想功能、決定優先順序、規劃路線、設計產品。</p>
+        </div>
+      </div>
+
+      <div class="tldr fn-tldr">
+        <div>起點<b>看醫生時說不清寵物平常的狀況</b></div>
+        <div>方法<b>市場數據 → 功能取捨 → vibe coding</b></div>
+        <div>目前進度<b>市場分析完成，產品開發中</b></div>
+        <div>下一步<b>飼主與獸醫師訪談</b></div>
+      </div>
+
+      <section class="section">
+        <div class="section-head"><h2>1 · 發現問題：看醫生的旅程</h2></div>
+        <div class="prose"><p>痛點集中在兩個時刻：回想最近的狀況，以及被醫師問到細節時。這兩個時刻，就是 App 要解決的地方。</p></div>
+        <div class="pp-dg"><svg viewBox="0 0 1000 330" font-size="14">
+          <g font-size="13" fill="#666"><text x="0" y="96">在做什麼</text><text x="0" y="196">卡在哪裡</text><text x="0" y="286">機會</text></g><g>
+          <rect x="90" y="20" width="170" height="40" rx="20" fill="#262626"/><text x="175" y="45" text-anchor="middle" fill="#fff" font-weight="600">發現異狀</text>
+          <rect x="270" y="20" width="170" height="40" rx="20" fill="#262626"/><text x="355" y="45" text-anchor="middle" fill="#fff" font-weight="600">回想最近狀況</text>
+          <rect x="450" y="20" width="170" height="40" rx="20" fill="#262626"/><text x="535" y="45" text-anchor="middle" fill="#fff" font-weight="600">找醫院、預約</text>
+          <rect x="630" y="20" width="170" height="40" rx="20" fill="#262626"/><text x="715" y="45" text-anchor="middle" fill="#fff" font-weight="600">看診被問</text>
+          <rect x="810" y="20" width="170" height="40" rx="20" fill="#262626"/><text x="895" y="45" text-anchor="middle" fill="#fff" font-weight="600">回家照護、回診</text>
+          </g><g fill="#262626" font-size="13">
+          <text x="175" y="90" text-anchor="middle">吃得少、精神差</text><text x="175" y="110" text-anchor="middle">決定帶去看醫生</text>
+          <text x="355" y="90" text-anchor="middle">想最近吃了什麼</text><text x="355" y="110" text-anchor="middle">什麼時候開始的</text>
+          <text x="535" y="90" text-anchor="middle">查哪間有開、</text><text x="535" y="110" text-anchor="middle">有沒有急診</text>
+          <text x="715" y="90" text-anchor="middle">醫師問吃多少、</text><text x="715" y="110" text-anchor="middle">喝多少、排泄</text>
+          <text x="895" y="90" text-anchor="middle">記得吃藥、</text><text x="895" y="110" text-anchor="middle">下次回診時間</text>
+          </g><g>
+          <rect x="100" y="160" width="150" height="56" rx="10" fill="#f2f2f2"/>
+          <text x="175" y="193" text-anchor="middle" fill="#666">還好</text>
+          <rect x="280" y="160" width="150" height="56" rx="10" fill="#ff925a"/>
+          <text x="355" y="185" text-anchor="middle" fill="#262626" font-weight="600">沒有紀錄</text>
+          <text x="355" y="205" text-anchor="middle" font-size="12" fill="#262626">只能憑印象</text>
+          <rect x="460" y="160" width="150" height="56" rx="10" fill="#f2f2f2"/>
+          <text x="535" y="185" text-anchor="middle" fill="#262626">資訊分散</text>
+          <text x="535" y="205" text-anchor="middle" font-size="12" fill="#666">要一間間查</text>
+          <rect x="640" y="160" width="150" height="56" rx="10" fill="#ff925a"/>
+          <text x="715" y="185" text-anchor="middle" fill="#262626" font-weight="600">答不出來</text>
+          <text x="715" y="205" text-anchor="middle" font-size="12" fill="#262626">醫師難判斷</text>
+          <rect x="820" y="160" width="150" height="56" rx="10" fill="#f2f2f2"/>
+          <text x="895" y="185" text-anchor="middle" fill="#262626">容易忘記</text>
+          <text x="895" y="205" text-anchor="middle" font-size="12" fill="#666">紀錄又斷掉</text>
+          </g><g font-size="13">
+          <rect x="280" y="258" width="150" height="40" rx="20" fill="#c4ff67"/><text x="355" y="283" text-anchor="middle" fill="#262626">每日快速紀錄</text>
+          <rect x="460" y="258" width="150" height="40" rx="20" fill="#c4ff67"/><text x="535" y="283" text-anchor="middle" fill="#262626">醫院資料庫</text>
+          <rect x="640" y="258" width="150" height="40" rx="20" fill="#c4ff67"/><text x="715" y="283" text-anchor="middle" fill="#262626">看診摘要</text>
+          <rect x="820" y="258" width="150" height="40" rx="20" fill="#c4ff67"/><text x="895" y="283" text-anchor="middle" fill="#262626">提醒與趨勢</text>
+          </g></svg></div>
+        <p class="fn-caption">橘色是主要痛點。旅程的五個步驟，整理自我自己帶寵物看醫生的經驗。</p>
+      </section>
+      <section class="section">
+        <div class="section-head"><h2>2 · 驗證市場：這個問題值得解決嗎</h2></div>
+        <div class="fn-lenses fn-3">
+          <div class="fn-lens"><span class="fn-k">家中犬貓</span><b>320 萬</b><small>2025 年，四年增加約 109 萬隻。</small></div>
+          <div class="fn-lens"><span class="fn-k">醫療支出占比</span><b>16%</b><small>飼主年度支出第二高，僅次於食品。</small></div>
+          <div class="fn-lens"><span class="fn-k">競品空白</span><b>中立紀錄層</b><small>五家大型業者都沒做跨通路、跨醫院的照護紀錄。</small></div>
+        </div>
+        <p class="fn-caption">完整數據與競品比較，請見<a href="pet-care.html">市場與競品分析</a>。</p>
+      </section>
+      <section class="section">
+        <div class="section-head"><h2>3 · 發想功能：心智圖</h2></div>
+        <div class="prose"><p>以「看診時說得清楚」為中心，往外展開四個方向。</p></div>
+        <div class="pp-dg"><svg viewBox="0 0 1000 440" font-size="13">
+          <g stroke="#262626" stroke-width="1.5" fill="none"><path d="M500 220 L300 110"/><path d="M500 220 L700 110"/><path d="M500 220 L300 330"/><path d="M500 220 L700 330"/><path d="M230 110 L120 60"/><path d="M230 110 L120 160"/><path d="M770 110 L880 60"/><path d="M770 110 L880 160"/><path d="M230 330 L120 280"/><path d="M230 330 L210 330"/><path d="M230 330 L120 380"/><path d="M770 330 L880 280"/><path d="M770 330 L880 380"/></g>
+          <circle cx="500" cy="220" r="80" fill="#262626"/>
+          <g fill="#fff" font-size="16" font-weight="600" text-anchor="middle"><text x="500" y="214">看診時</text><text x="500" y="238">說得清楚</text></g>
+          <g font-weight="600" text-anchor="middle" font-size="14">
+          <rect x="220" y="88" width="160" height="44" rx="22" fill="#c4ff67"/><text x="300" y="115" fill="#262626">日常紀錄</text>
+          <rect x="620" y="88" width="160" height="44" rx="22" fill="#6b87ff"/><text x="700" y="115" fill="#fff">看醫生</text>
+          <rect x="220" y="308" width="160" height="44" rx="22" fill="#e9bcff"/><text x="300" y="335" fill="#262626">長期照護</text>
+          <rect x="620" y="308" width="160" height="44" rx="22" fill="#ff925a"/><text x="700" y="335" fill="#262626">帳號與分享</text>
+          </g>
+          <g fill="#262626" text-anchor="middle">
+          <rect x="10" y="40" width="200" height="40" rx="8" fill="#fff" stroke="#c7c7c7"/><text x="110" y="65">飲食飲水（食品資料庫）</text>
+          <rect x="10" y="140" width="200" height="40" rx="8" fill="#fff" stroke="#c7c7c7"/><text x="110" y="165">體重、排泄、嘔吐、照片</text>
+          <rect x="790" y="40" width="200" height="40" rx="8" fill="#fff" stroke="#c7c7c7"/><text x="890" y="65">找醫院（醫院資料庫）</text>
+          <rect x="790" y="140" width="200" height="40" rx="8" fill="#fff" stroke="#c7c7c7"/><text x="890" y="165">看診摘要、結果記回</text>
+          <rect x="10" y="260" width="200" height="40" rx="8" fill="#fff" stroke="#c7c7c7"/><text x="110" y="285">疫苗、驅蟲、回診提醒</text>
+          <rect x="10" y="310" width="200" height="40" rx="8" fill="#fff" stroke="#262626" stroke-width="1.5"/><text x="110" y="335" font-weight="600">居家醫療照護</text>
+          <rect x="10" y="360" width="200" height="40" rx="8" fill="#fff" stroke="#c7c7c7"/><text x="110" y="385">體重與食量趨勢圖</text>
+          <rect x="790" y="260" width="200" height="40" rx="8" fill="#fff" stroke="#c7c7c7"/><text x="890" y="285">多寵物檔案</text>
+          <rect x="790" y="360" width="200" height="40" rx="8" fill="#fff" stroke="#c7c7c7"/><text x="890" y="385">家人共享</text>
+          </g>
+        </svg></div>
+        <p class="fn-caption">分支依規劃功能和兩個資料庫整理。居家醫療照護指在家自行打皮下點滴、量血糖、打胰島素等，老年寵物最需要。</p>
+      </section>
+      <section class="section">
+        <div class="section-head"><h2>4 · 決定優先順序：影響力 × 開發難度</h2></div>
+        <div class="prose"><p>左上角影響力高、難度低的功能先放進 MVP；右上角值得投資但比較難，排到第二階段。</p></div>
+        <div class="pp-dg"><svg viewBox="0 0 1000 470" font-size="14">
+          <rect x="120" y="20" width="420" height="200" fill="#c4ff67" opacity=".45"/><rect x="540" y="20" width="420" height="200" fill="#e9bcff" opacity=".45"/><rect x="120" y="220" width="420" height="200" fill="#f2f2f2"/><rect x="540" y="220" width="420" height="200" fill="#f2f2f2"/>
+          <g fill="#666" font-size="13"><text x="132" y="40">先做（MVP）</text><text x="552" y="40">值得投資，排第二階段</text><text x="132" y="242">有空再做</text><text x="552" y="242">暫不做</text></g>
+          <line x1="120" y1="420" x2="960" y2="420" stroke="#262626" stroke-width="1.5"/><line x1="120" y1="20" x2="120" y2="420" stroke="#262626" stroke-width="1.5"/>
+          <text x="540" y="452" text-anchor="middle" fill="#262626">開發難度 →</text>
+          <text x="70" y="220" text-anchor="middle" fill="#262626" transform="rotate(-90 70 220)">對看診的影響力 →</text>
+          <g fill="#262626"><circle cx="200" cy="80" r="7"/><text x="214" y="85">飲食飲水紀錄（資料庫已建）</text><circle cx="260" cy="130" r="7"/><text x="274" y="135">看診摘要</text><circle cx="200" cy="180" r="7"/><text x="214" y="185">多寵物檔案</text><circle cx="380" cy="58" r="7"/><text x="394" y="63" font-weight="600">居家醫療照護</text><circle cx="620" cy="80" r="7"/><text x="634" y="85">身體狀況紀錄＋照片</text><circle cx="680" cy="140" r="7"/><text x="694" y="145">找醫院、結果記回醫院</text><circle cx="220" cy="300" r="7"/><text x="234" y="305">疫苗、驅蟲、回診提醒</text><circle cx="640" cy="290" r="7"/><text x="654" y="295">體重與食量趨勢圖</text><circle cx="760" cy="360" r="7"/><text x="774" y="365">家人共享</text></g>
+        </svg></div>
+        <p class="fn-caption">居家醫療照護放在 MVP：對看診影響力最高（老年寵物回診最頻繁），開發上和飲食紀錄一樣是「時間＋數值」的紀錄，難度中等，所以靠近分界線。</p>
+      </section>
+      <section class="section">
+        <div class="section-head"><h2>5 · 規劃路線：Roadmap</h2></div>
+        <div class="prose"><p>功能分批推出，每個階段都有一個要驗證的指標，達標才進下一階段。</p></div>
+        <div class="pp-dg"><svg viewBox="0 0 1000 300" font-size="14">
+          <rect x="0" y="20" width="300" height="200" rx="12" fill="#c4ff67"/><rect x="350" y="20" width="300" height="200" rx="12" fill="#6b87ff"/><rect x="700" y="20" width="300" height="200" rx="12" fill="#e9bcff"/>
+          <g fill="#262626"><text x="20" y="52" font-size="13">第一階段</text><text x="20" y="80" font-size="19" font-weight="600">MVP：記得下來</text><text x="20" y="114">多寵物檔案</text><text x="20" y="138">飲食飲水紀錄</text><text x="20" y="162">看診摘要</text><text x="20" y="186">居家醫療照護紀錄</text></g>
+          <g fill="#fff"><text x="370" y="52" font-size="13">第二階段</text><text x="370" y="80" font-size="19" font-weight="600">連到醫院</text><text x="370" y="114">身體狀況紀錄＋照片</text><text x="370" y="138">醫院資料庫找醫院</text><text x="370" y="162">看診結果記回醫院、提醒</text></g>
+          <g fill="#262626"><text x="720" y="52" font-size="13">第三階段</text><text x="720" y="80" font-size="19" font-weight="600">長期照護與營收</text><text x="720" y="114">趨勢圖、家人共享</text><text x="720" y="138">訂閱制</text><text x="720" y="162">品牌、保險合作</text></g>
+          <g font-size="13" fill="#262626">
+          <polygon points="325,236 337,248 325,260 313,248" fill="#262626"/><text x="325" y="282" text-anchor="middle">第 4 週留存達標</text>
+          <polygon points="675,236 687,248 675,260 663,248" fill="#262626"/><text x="675" y="282" text-anchor="middle">看診前匯出摘要的比例</text>
+          <polygon points="25,236 37,248 25,260 13,248" fill="#ff925a"/><text x="45" y="252">開始前：飼主與獸醫師訪談</text>
+          </g>
+        </svg></div>
+        <p class="fn-caption">沒有寫日期：下一階段何時開始，取決於前一階段的指標。</p>
+      </section>
+      <section class="section">
+        <div class="section-head"><h2>6 · 設計產品：Sitemap 與 App 畫面</h2></div>
+        <div class="prose"><p>底部五個分頁，對應心智圖的四個方向加上首頁。下面是五個重點畫面。</p></div>
+        <div class="pp-dg"><svg viewBox="0 0 1000 300" font-size="13">
+          <rect x="420" y="10" width="160" height="44" rx="22" fill="#262626"/><text x="500" y="37" text-anchor="middle" fill="#fff" font-weight="600" font-size="14">寵物照護 App</text>
+          <g stroke="#262626" stroke-width="1.5" fill="none"><path d="M500 54 V80 H100 V100"/><path d="M500 80 H900 V100"/><path d="M300 80 V100"/><path d="M500 80 V100"/><path d="M700 80 V100"/></g>
+          <rect x="30" y="100" width="140" height="40" rx="8" fill="#ff925a"/><text x="100" y="125" text-anchor="middle" fill="#262626" font-weight="600" font-size="14">首頁</text>
+          <g fill="#262626" text-anchor="middle"><text x="100" y="172">今日紀錄</text><text x="100" y="196">提醒</text><text x="100" y="220">寵物切換</text></g>
+          <rect x="230" y="100" width="140" height="40" rx="8" fill="#c4ff67"/><text x="300" y="125" text-anchor="middle" fill="#262626" font-weight="600" font-size="14">紀錄</text>
+          <g fill="#262626" text-anchor="middle"><text x="300" y="172">飲食飲水</text><text x="300" y="196">身體狀況</text><text x="300" y="220">居家醫療照護</text><text x="300" y="244">歷史紀錄、趨勢</text></g>
+          <rect x="430" y="100" width="140" height="40" rx="8" fill="#6b87ff"/><text x="500" y="125" text-anchor="middle" fill="#fff" font-weight="600" font-size="14">醫院</text>
+          <g fill="#262626" text-anchor="middle"><text x="500" y="172">搜尋、地圖</text><text x="500" y="196">營業時間、急診</text><text x="500" y="220">醫院詳情</text></g>
+          <rect x="630" y="100" width="140" height="40" rx="8" fill="#6b87ff"/><text x="700" y="125" text-anchor="middle" fill="#fff" font-weight="600" font-size="14">看診</text>
+          <g fill="#262626" text-anchor="middle"><text x="700" y="172">看診摘要</text><text x="700" y="196">看診紀錄</text><text x="700" y="220">回診提醒</text></g>
+          <rect x="830" y="100" width="140" height="40" rx="8" fill="#e9bcff"/><text x="900" y="125" text-anchor="middle" fill="#262626" font-weight="600" font-size="14">我的</text>
+          <g fill="#262626" text-anchor="middle"><text x="900" y="172">寵物檔案</text><text x="900" y="196">家人共享</text><text x="900" y="220">訂閱、設定</text></g>
+          </svg></div>
+        <div class="z-phones">
+        <div class="z-wrap"><div class="z-ph"><div class="z-sb"><span>9:41</span><i></i><span>100%</span></div><div class="z-in">
+          <div class="z-top"><div class="z-pet"><b></b><div><strong>米糕</strong><small>12 歲 · 居家照護中 ▾</small></div></div></div>
+          <div class="z-card z-lime"><div class="z-lbl">今天吃了</div><div class="z-row"><span class="z-big">2 / 3 餐</span><span>約 52 g</span></div></div>
+          <div class="z-g2"><div class="z-card"><div class="z-lbl">飲水</div><div class="z-big">180<small> ml</small></div></div>
+            <div class="z-card z-lilac"><div class="z-lbl">居家照護</div><div class="z-strong">點滴待做</div><div class="z-lbl">今晚 20:00</div></div></div>
+          <div class="z-card"><div class="z-row"><span><b>提醒</b>　回診 · 腎指數複檢</span><span class="z-lbl">3 天後</span></div></div>
+          <div class="z-card"><div class="z-lbl z-mb">今天的紀錄</div><ul class="z-tl">
+            <li><em>18:10</em><span class="z-dot" style="background:#c4ff67"></span>晚餐 · 腎臟處方罐 1/2 罐</li>
+            <li><em>14:30</em><span class="z-dot" style="background:#ff925a"></span>嘔吐 1 次 · 附照片</li>
+            <li><em>08:00</em><span class="z-dot" style="background:#e9bcff"></span>皮下點滴 100 ml</li>
+            <li><em>07:45</em><span class="z-dot" style="background:#c4ff67"></span>早餐 · 乾糧 25 g</li></ul></div>
+        </div><div class="z-fab">+</div><div class="z-tb"><div class="z-on"><i></i>首頁</div><div><i></i>紀錄</div><div><i></i>醫院</div><div><i></i>看診</div><div><i></i>我的</div></div></div>
+        <div class="z-cap">首頁<span>一眼看完今天：吃、喝、照護、提醒</span></div></div>
+        <div class="z-wrap"><div class="z-ph"><div class="z-sb"><span>9:41</span><i></i><span>100%</span></div><div class="z-in">
+          <div class="z-top"><span class="z-back">← 取消</span><h4>記錄飲食</h4><span class="z-sp"></span></div>
+          <div class="z-search">搜尋品牌或品項</div>
+          <div><span class="z-chip z-on">常吃</span><span class="z-chip">主食罐</span><span class="z-chip">乾糧</span><span class="z-chip">處方</span></div>
+          <div class="z-card z-sel"><div class="z-food"><b></b><div><strong>品牌 A 腎臟處方罐</strong><div class="z-tags"><span class="z-tag">處方</span><span class="z-tag">低磷</span><span class="z-tag">85 g</span></div></div></div></div>
+          <div class="z-card"><div class="z-food"><b></b><div><strong>品牌 B 熟齡貓乾糧</strong><div class="z-tags"><span class="z-tag">乾糧</span><span class="z-tag">蛋白質 32%</span></div></div></div></div>
+          <div class="z-lbl z-h">份量</div>
+          <div class="z-step"><span>1/4</span><span class="z-on">1/2</span><span>1</span><span>自訂</span></div>
+          <div class="z-lbl z-h">吃完了嗎</div>
+          <div class="z-step"><span>全吃完</span><span class="z-on">剩一半</span><span>沒吃</span></div>
+          <div class="z-card z-mt"><div class="z-row"><span>時間</span><b>今天 18:10</b></div></div>
+        </div><div class="z-btn">儲存</div></div>
+        <div class="z-cap">記錄飲食<span>從 780+ 筆食品資料庫選，連吃剩多少都記</span></div></div>
+        <div class="z-wrap"><div class="z-ph"><div class="z-sb"><span>9:41</span><i></i><span>100%</span></div><div class="z-in">
+          <div class="z-top"><span class="z-back">← 紀錄</span><h4>居家醫療照護</h4><span class="z-sp"></span></div>
+          <div class="z-seg"><span class="z-on">血糖</span><span>胰島素</span><span>皮下點滴</span></div>
+          <div class="z-card"><div class="z-row"><span class="z-lbl">今日血糖曲線（mg/dL）</span><span class="z-lbl">目標 100–250</span></div>
+            <svg viewBox="0 0 240 110" class="z-chart" role="img" aria-label="一天的血糖曲線">
+              <rect x="24" y="22" width="212" height="52" fill="#c4ff67" opacity=".35"/><line x1="24" y1="96" x2="236" y2="96" stroke="#e5e5e5"/>
+              <g font-size="9" fill="#999"><text x="0" y="26">250</text><text x="0" y="78">100</text><text x="24" y="108">08</text><text x="88" y="108">12</text><text x="152" y="108">16</text><text x="216" y="108">20</text></g>
+              <polyline points="30,18 62,30 94,52 126,66 158,58 190,40 222,24" fill="none" stroke="#262626" stroke-width="2"/>
+              <g fill="#262626" stroke="#fff" stroke-width="2"><circle cx="30" cy="18" r="4"/><circle cx="94" cy="52" r="4"/><circle cx="126" cy="66" r="4"/><circle cx="158" cy="58" r="4"/><circle cx="222" cy="24" r="4"/></g>
+            </svg></div>
+          <div class="z-card"><ul class="z-tl">
+            <li><em>20:00</em><span class="z-dot" style="background:#262626"></span>血糖 238 · 打胰島素前</li>
+            <li><em>14:00</em><span class="z-dot" style="background:#262626"></span>血糖 132</li>
+            <li><em>12:00</em><span class="z-dot" style="background:#262626"></span>血糖 118 · 最低點</li>
+            <li><em>08:30</em><span class="z-dot" style="background:#6b87ff"></span>胰島素 1.5 U</li>
+            <li><em>08:00</em><span class="z-dot" style="background:#262626"></span><span>血糖 <span class="z-flag">276</span> · 高於目標</span></li></ul></div>
+          <div class="z-card z-lilac"><div class="z-row"><span><b>下一次</b>　胰島素 1.5 U</span><span>20:30</span></div></div>
+        </div><div class="z-btn">新增一筆</div></div>
+        <div class="z-cap">居家醫療照護<span>血糖、胰島素、皮下點滴，時間和數值都留下</span></div></div>
+        <div class="z-wrap"><div class="z-ph"><div class="z-sb"><span>9:41</span><i></i><span>100%</span></div><div class="z-in">
+          <div class="z-top"><span class="z-back">← 看診</span><h4>看診摘要</h4><span class="z-lbl">近 14 天 ▾</span></div>
+          <div class="z-card z-blue"><div class="z-lbl">需要醫師注意</div><div class="z-hl">食量下降 30%、嘔吐 3 次</div><div class="z-lbl">與前 14 天相比</div></div>
+          <div class="z-g2"><div class="z-card"><div class="z-lbl">體重</div><div class="z-big z-md">4.2→4.0<small> kg</small></div></div>
+            <div class="z-card"><div class="z-lbl">每日飲水</div><div class="z-big z-md">≈190<small> ml</small></div></div></div>
+          <div class="z-card"><div class="z-lbl z-mb">居家醫療照護</div><ul class="z-tl">
+            <li><em>點滴</em>100 ml × 14 次，未漏</li>
+            <li><em>血糖</em>平均 168，最高 276</li>
+            <li><em>胰島素</em>1.5 U，每日 2 次</li></ul></div>
+          <div class="z-card"><div class="z-lbl z-mb">異常事件（附照片）</div>
+            <div class="z-pics"><b style="background:#e9bcff"></b><b style="background:#ffd2b8"></b><b></b></div></div>
+        </div><div class="z-btn2"><span>匯出 PDF</span><span class="z-k">給醫師看</span></div></div>
+        <div class="z-cap">看診摘要<span>把兩週的紀錄整理成一頁，看診時直接給醫師</span></div></div>
+        <div class="z-wrap"><div class="z-ph"><div class="z-sb"><span>9:41</span><i></i><span>100%</span></div><div class="z-in">
+          <div class="z-top"><h4>找醫院</h4><span class="z-lbl">竹北市 ▾</span></div>
+          <div class="z-search">搜尋醫院名稱或地址</div>
+          <div><span class="z-chip z-on">營業中</span><span class="z-chip">24 小時急診</span><span class="z-chip">距離</span></div>
+          <div class="z-map"><svg viewBox="0 0 268 150" aria-hidden="true"><g stroke="#fff" stroke-width="6"><path d="M0 60 H268"/><path d="M90 0 V150"/><path d="M0 120 L268 90"/><path d="M190 0 L210 150"/></g>
+            <circle cx="134" cy="80" r="7" fill="#6b87ff" stroke="#fff" stroke-width="3"/><g fill="#262626"><circle cx="60" cy="40" r="6"/><circle cx="210" cy="50" r="6"/><circle cx="170" cy="118" r="6"/></g><circle cx="110" cy="105" r="8" fill="#ff925a" stroke="#262626" stroke-width="2"/></svg></div>
+          <div class="z-card z-sel"><div class="z-row"><strong>動物醫院 A</strong><span class="z-lbl">0.8 km</span></div><div class="z-tags"><span class="z-tag z-er">24 小時急診</span><span class="z-tag">營業中</span></div><div class="z-lbl z-mt4">上次就診：10/28 · 腎指數複檢</div></div>
+          <div class="z-card"><div class="z-row"><strong>動物醫院 B</strong><span class="z-lbl">1.6 km</span></div><div class="z-tags"><span class="z-tag">營業中 · 至 21:00</span></div></div>
+        </div><div class="z-tb"><div><i></i>首頁</div><div><i></i>紀錄</div><div class="z-on"><i></i>醫院</div><div><i></i>看診</div><div><i></i>我的</div></div></div>
+        <div class="z-cap">找醫院<span>全台醫院資料庫，急診和營業時間一眼篩出</span></div></div>
+        </div>
+        <p class="fn-caption">示意畫面：寵物名、品牌、醫院和所有數字都是範例，不是真實資料，也不是正式 App 截圖。</p>
+      </section>
+      <section class="section">
+        <div class="section-head"><h2>資料來源</h2></div>
+        <div class="prose"><ol class="h2-src">
+          <li><a href="https://news.pts.org.tw/article/804498" target="_blank" rel="noopener">農業部 2025 年犬貓飼養數量調查（公視新聞）</a> · A 級</li>
+          <li><a href="https://www.moa.gov.tw/ws.php?id=2516176" target="_blank" rel="noopener">農業部：台灣寵物市場概況（2021–2023 年數量、台經院市場規模、支出結構）</a> · A 級</li>
+          <li><a href="pet-care.html">市場與競品分析（完整來源）</a></li>
+        </ol></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <nav><a href="mailto:werr2010@gmail.com">werr2010@gmail.com</a><a href="https://www.linkedin.com/in/zi-yin-ho-4795a02a6/">LinkedIn</a><a href="resume.html">履歷</a><details class="dl-menu dl-foot"><summary>履歷 PDF ↓</summary><div class="dl-pop"><a href="../resume.pdf" download="Sylvia_Ho_Resume_EN.pdf">English (EN)</a><a href="../resume-zh.pdf" download="Sylvia_Ho_Resume_ZH.pdf">中文 (ZH)</a></div></details></nav>
+      <p>© 2026 Sylvia Ho。涉及保密資料的數字，本站一律以百分比或指數呈現。</p>
+    </footer>
+  </div>
+</body>
+</html>

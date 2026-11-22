@@ -1,0 +1,32 @@
+[dd3ae314] <a href="ai.html#pet-app" class="back-link"><span aria-hidden="true">←</span> 我怎麼用 AI</a>
+[509db53a] <em>18:10</em><span class="z-dot" style="background:#c4ff67"></span>晚餐 · 腎臟處方罐 1/2 罐
+[5f608ba1] <em>14:30</em><span class="z-dot" style="background:#ff925a"></span>嘔吐 1 次 · 附照片
+[ba3f4260] <em>08:00</em><span class="z-dot" style="background:#e9bcff"></span>皮下點滴 100 ml
+[1715fb2c] <em>07:45</em><span class="z-dot" style="background:#c4ff67"></span>早餐 · 乾糧 25 g
+[cd8f0c6b] <i></i>首頁
+[2c641965] <i></i>紀錄
+[6b796fd1] <i></i>醫院
+[311a33b5] <i></i>看診
+[8eb1e476] <i></i>我的
+[1559e73b] <span class="z-back">← 取消</span>
+[8bf68073] <span class="z-chip z-on">常吃</span><span class="z-chip">主食罐</span><span class="z-chip">乾糧</span><span class="z-chip">處方</span>
+[5ab6447e] <span>1/4</span><span class="z-on">1/2</span><span>1</span><span>自訂</span>
+[b6d5fac4] <span>全吃完</span><span class="z-on">剩一半</span><span>沒吃</span>
+[b5ef5f1e] <span class="z-back">← 紀錄</span>
+[8034d60a] <span class="z-on">血糖</span><span>胰島素</span><span>皮下點滴</span>
+[8ed2e69f] <em>20:00</em><span class="z-dot" style="background:#262626"></span>血糖 238 · 打胰島素前
+[72010954] <em>14:00</em><span class="z-dot" style="background:#262626"></span>血糖 132
+[3fb8efda] <em>12:00</em><span class="z-dot" style="background:#262626"></span>血糖 118 · 最低點
+[60aeb63f] <em>08:30</em><span class="z-dot" style="background:#6b87ff"></span>胰島素 1.5 U
+[8215a48e] <em>08:00</em><span class="z-dot" style="background:#262626"></span><span>血糖 <span class="z-flag">276</span> · 高於目標</span>
+[c3233133] <span class="z-back">← 看診</span>
+[1e698535] <span class="z-lbl">近 14 天 ▾</span>
+[269886fc] <span>匯出 PDF</span><span class="z-k">給醫師看</span>
+[d4cc2234] <span class="z-lbl">竹北市 ▾</span>
+[780ae38c] <span class="z-chip z-on">營業中</span><span class="z-chip">24 小時急診</span><span class="z-chip">距離</span>
+[cd8f0c6b] <i></i>首頁
+[2c641965] <i></i>紀錄
+[6b796fd1] <i></i>醫院
+[311a33b5] <i></i>看診
+[8eb1e476] <i></i>我的
+[a6329ecc] <a class="btn btn-dark proj-open" href="pet-product.html">閱讀分析 <span>→</span></a>
