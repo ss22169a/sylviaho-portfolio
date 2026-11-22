@@ -96,3 +96,7 @@
 [e1601a38] <a class="btn-sm btn-sm-dark" href="https://coursera.org/verify/YSUJ6NRB5Y09" target="_blank" rel="noopener">驗證
 [059b424c] <a class="btn-sm btn-sm-dark" href="https://coursera.org/verify/WBD20PPLVNYN" target="_blank" rel="noopener">驗證
 [89c78c32] <a class="btn-sm btn-sm-dark" href="https://coursera.org/verify/U3BUD4DIFN12" target="_blank" rel="noopener">驗證
+[cf1dc36b] <span class="ab-word">驗證</span>
+[7e2adfc3] 快速驗證
+[f88955c6] 先驗證想法，再決定是否下注：先做市場與競品分析，再用 vibe coding 快速做出可用的產品，最後依實際數據與使用者反饋，決定是否投入更多金錢與人力。
+[c468888f] <a href="pet-care.html">寵物照護 App</a><a href="ai.html#pet-app">我怎麼用 AI</a>

@@ -2193,3 +2193,8 @@ html[lang="zh-Hant"] .btn { white-space: nowrap; }
 .stat-rapid .sk-top { margin-bottom: 0; }
 .stat-rapid .stat-num.skill { align-self: center; }
 .hero[data-hl="ring"] .pshape[data-k="ring"] { opacity: 1; }
+
+/* About: fifth skill card, Rapid Validation (full-width) */
+.ab-skill.ab-wide { grid-column: 1 / -1; min-height: 0; }
+.ab-skill.k-dark .sk-ico { fill: #fff; }
+.ab-skill.k-dark .ab-proof a:hover { background: #fff; color: var(--ink); }
