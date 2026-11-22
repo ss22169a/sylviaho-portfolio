@@ -98,7 +98,7 @@
 
       <article class="case ai-case" id="connected-data" style="--c:var(--lilac)">
         <div class="case-head"><div><span class="case-kicker">資料串接 · Amazon 美國站汽車零件</span><h2>串聯市場數據</h2><div class="tags"><span class="tag">Windsor.ai</span><span class="tag">Google Sheets</span><span class="tag">Google Ads</span><span class="tag">Amazon Seller Central</span><span class="tag">Amazon Ads</span></div></div></div>
-        <dl class="case-body"><dt>問題</dt><dd>Google Ads 把流量導到 Amazon，卻看不到 Amazon 上的購買。每次做週報，都得從 Google Ads 和 Seller Central 匯出好幾份報表，再手動依日期對齊。</dd><dt>運作方式</dt><dd>Windsor.ai 的連接器讀取 Google Ads、Amazon Seller Central（Sales &amp; Traffic 與 All Orders 報表）和 Amazon Ads，寫進同一份 Google Sheet：每週總覽、Google 對 Amazon 比較、KPI、商品數據、取消與退貨。下一步透過 Looker Studio 接上 GA4 和 Search Console。</dd><dt>規則</dt><dd>一週固定是週一到週日。Amazon 訂單資料會延遲一到兩天，所以最近幾天標為待確認，之後再回補。Google 對 Amazon 的比較只當作時間上的相關，不當作歸因。每個數字都記下來源、查詢方式和擷取日期。</dd><dt>人工把關</dt><dd>Amazon Attribution 和 Brand Analytics 目前仍是手動匯出。Seller Central 的權限只用來讀取，AI 不會修改任何商品頁。</dd><dt>結果</dt><dd class="impact">第一週串起來的資料顯示，Google 點擊只有約 6% 變成 Amazon 商品頁工作階段，原因是廣告導到賣場首頁而不是商品頁。修正導流路徑後，點擊到商品頁的比例提高到 22%。</dd></dl>
+        <dl class="case-body"><dt>問題</dt><dd>Google Ads 把流量導到 Amazon，卻看不到 Amazon 上的購買。每次做週報，都得從 Google Ads 和 Seller Central 匯出好幾份報表，再手動依日期對齊。</dd><dt>運作方式</dt><dd>Windsor.ai 的連接器讀取 Google Ads、Amazon Seller Central（Sales &amp; Traffic 與 All Orders 報表）和 Amazon Ads，寫進同一份 Google Sheet：每週總覽、Google 對 Amazon 比較、KPI、商品數據、取消與退貨。下一步透過 Looker Studio 接上 GA4 和 Search Console。</dd><dt>規則</dt><dd>一週固定是週一到週日。Amazon 訂單資料會延遲一到兩天，所以最近幾天標為待確認，之後再回補。Google 對 Amazon 的比較只當作時間上的相關，不當作歸因。每個數字都記下來源、查詢方式和擷取日期。</dd><dt>分工原則</dt><dd>Amazon Attribution 和 Brand Analytics 目前仍是手動匯出。Seller Central 的權限只用來讀取，AI 不會修改任何商品頁。</dd><dt>結果</dt><dd class="impact">第一週串起來的資料顯示，Google 點擊只有約 6% 變成 Amazon 商品頁工作階段，原因是廣告導到賣場首頁而不是商品頁。修正導流路徑後，點擊到商品頁的比例提高到 22%。</dd></dl>
         
       </article>
       <article class="case ai-case" id="pricing-intel" style="--c:var(--lime)">
@@ -108,7 +108,7 @@
       </article>
       <article class="case ai-case" id="seo-audit" style="--c:var(--blue)">
         <div class="case-head"><div><span class="case-kicker">網站品質 · 產品頁與新聞稿</span><h2>自動 SEO 審查</h2><div class="tags"><span class="tag">LLM Agent</span><span class="tag">自建網頁工具</span><span class="tag">Markdown 報告</span></div></div></div>
-        <dl class="case-body"><dt>問題</dt><dd>人工逐頁審查或只靠 SEO 工具，抓得出錯，卻排不出該先改哪裡；每次跑出的分數不一致，沒辦法跟上週比；報告也很難直接交給網站廠商處理。全站 4 個語系，工作量更是翻倍。</dd><dt>審查方式</dt><dd>每次檢查一個網頁。有標準答案的項目（例如網頁標題、圖片說明）用固定規則檢查，結果穩定、可以每週比較；需要看內容判斷的項目（例如規格是否完整、用詞是否符合客戶搜尋習慣）交給 AI，但 AI 只能用頁面原有的資料修改。每個問題都標出急迫程度和負責人，需要廠商處理的直接附上請求信草稿。技術面的問題（例如網頁速度）交給專業工具處理。</dd><dt>試跑結果</dt><dd class="impact">2026 年 10 月 13 日在 2 個頁面上找出 13 個問題，其中 7 個出在共用模板：meta description 重複、缺少 H1、四種語言共用同一個網址，以及 cookie 聲明寫著別家公司的名字。只修單頁沒有用，所以之後加了彙整功能，把各頁的同類問題歸到同一個模板，一次修好。</dd><dt>人工把關</dt><dd>頁面原始碼由我貼上，要採用哪些修正、改到什麼程度由我決定，最後也由我進 CMS 更新。</dd><dt>下一步</dt><dd>記錄每次檢查與人工修正各花多少時間，算出平均修好一個問題的工時；重新提交 sitemap.xml，並接上 Search Console，追蹤修正後多久反映在排名上。</dd></dl>
+        <dl class="case-body"><dt>問題</dt><dd>人工逐頁審查或只靠 SEO 工具，抓得出錯，卻排不出該先改哪裡；每次跑出的分數不一致，沒辦法跟上週比；報告也很難直接交給網站廠商處理。全站 4 個語系，工作量更是翻倍。</dd><dt>審查方式</dt><dd>每次檢查一個網頁。有標準答案的項目（例如網頁標題、圖片說明）用固定規則檢查，結果穩定、可以每週比較；需要看內容判斷的項目（例如規格是否完整、用詞是否符合客戶搜尋習慣）交給 AI，但 AI 只能用頁面原有的資料修改。每個問題都標出急迫程度和負責人，需要廠商處理的直接附上請求信草稿。技術面的問題（例如網頁速度）交給專業工具處理。</dd><dt>試跑結果</dt><dd class="impact">2026 年 10 月 13 日在 2 個頁面上找出 13 個問題，其中 7 個出在共用模板：meta description 重複、缺少 H1、四種語言共用同一個網址，以及 cookie 聲明寫著別家公司的名字。只修單頁沒有用，所以之後加了彙整功能，把各頁的同類問題歸到同一個模板，一次修好。</dd><dt>分工原則</dt><dd>頁面原始碼由我貼上，要採用哪些修正、改到什麼程度由我決定，最後也由我進 CMS 更新。</dd><dt>下一步</dt><dd>記錄每次檢查與人工修正各花多少時間，算出平均修好一個問題的工時；重新提交 sitemap.xml，並接上 Search Console，追蹤修正後多久反映在排名上。</dd></dl>
         <div class="ai-table-wrap"><table class="ai-table"><thead><tr><th>模組</th><th>權重</th><th>檢查內容</th><th>未通過時由誰修</th></tr></thead><tbody><tr><td>頁面技術項目</td><td>25</td><td>標題、meta description、單一 H1、標題層級順序、canonical、替代文字、內部連結</td><td>我或網站管理者</td></tr><tr><td>結構化資料</td><td>15</td><td>Organization, Product, Article, BreadcrumbList, FAQPage</td><td>網站管理者</td></tr><tr><td>B2B 技術內容</td><td>25</td><td>工程師會搜尋的用詞、規格是否完整、規格書下載路徑、應用情境、詢價路徑</td><td>內容撰寫者</td></tr><tr><td>E-E-A-T 與可信度</td><td>15</td><td>作者與更新日期、主張是否有證據、聯絡資訊是否一致、有沒有殘留的模板文字</td><td>內容撰寫者</td></tr><tr><td>多語系與 AI 搜尋</td><td>20</td><td>每種語言一個網址、hreflang、在地化的 meta、可被引用的摘要、FAQ、AI 爬蟲是否讀得到</td><td>開發人員或網站管理者</td></tr></tbody></table></div>
       </article>
       <article class="case ai-case" id="ad-ops" style="--c:var(--orange)">
@@ -123,7 +123,7 @@
       </article>
       <article class="case ai-case" id="trend-writing" style="--c:var(--ink)">
         <div class="case-head"><div><span class="case-kicker">內容流程 · 產業新聞 → 中英文章與 LinkedIn 貼文</span><h2>產業新聞撰稿</h2><div class="tags"><span class="tag">LLM Agent</span><span class="tag">Google Trends</span><span class="tag">SEMrush</span><span class="tag">LinkedIn</span><span class="tag">CMS</span></div></div></div>
-        <dl class="case-body"><dt>問題</dt><dd>技術規格書充滿工程參數與測試條件，LinkedIn 上則有不同背景的讀者；如果直接把硬規格丟出去，很容易變成工程自嗨或漏掉關鍵脈絡，光靠人工逐篇拆解也很吃力。</dd><dt>運作方式</dt><dd>我先擬定新聞稿審查流程、建立 AI 知識庫，並把公司技術文件用詞、引用來源權重與判斷審查層級寫成規則。寫稿或看產業素材時，我負責選題、定切角與撰寫對外內容，讓 AI 當審查與分析角色：依這套規則拆解規格參數與測試條件、比對技術術語是否一致、檢視引用資料權重，並標出需要人工介入的審查層級與疑點。</dd><dt>範例</dt><dd>一組 MEMS 氫氣感測器的輪播圖文：70 ms 內完成啟動（比市場常見的 390 ms 快 5.5 倍）；0–40,000 ppm 範圍內 2 秒內即時偵測；在 −35 °C 到 +105 °C 的工作溫度下功耗低於 200 mW；以半導體矽微加工做到 2.0 mm 的小尺寸（約為傳統 15 mm 設計的百分之一）。</dd><dt>人工把關</dt><dd>AI 的審查建議與風險標記協助校對內容，所有技術數據、測試條件、用詞統一，均由我提供原始文件核對，確認後發布。</dd></dl>
+        <dl class="case-body"><dt>問題</dt><dd>技術規格書充滿工程參數與測試條件，LinkedIn 上則有不同背景的讀者；如果直接把硬規格丟出去，很容易變成工程自嗨或漏掉關鍵脈絡，光靠人工逐篇拆解也很吃力。</dd><dt>運作方式</dt><dd>我先擬定新聞稿審查流程、建立 AI 知識庫，並把公司技術文件用詞、引用來源權重與判斷審查層級寫成規則。寫稿或看產業素材時，我負責選題、定切角與撰寫對外內容，讓 AI 當審查與分析角色：依這套規則拆解規格參數與測試條件、比對技術術語是否一致、檢視引用資料權重，並標出需要人工介入的審查層級與疑點。</dd><dt>範例</dt><dd>一組 MEMS 氫氣感測器的輪播圖文：70 ms 內完成啟動（比市場常見的 390 ms 快 5.5 倍）；0–40,000 ppm 範圍內 2 秒內即時偵測；在 −35 °C 到 +105 °C 的工作溫度下功耗低於 200 mW；以半導體矽微加工做到 2.0 mm 的小尺寸（約為傳統 15 mm 設計的百分之一）。</dd><dt>分工原則</dt><dd>AI 的審查建議與風險標記協助校對內容，所有技術數據、測試條件、用詞統一，均由我提供原始文件核對，確認後發布。</dd></dl>
         
         <div class="ms-deck" data-mems>
           <div class="ms-head"><span class="ms-cap"></span>
@@ -189,7 +189,7 @@
       </article>
       <article class="case ai-case" id="digital-publication" style="--c:var(--lilac)">
         <div class="case-head"><div><span class="case-kicker">設計流程 · 規劃產品型錄</span><h2>數位文宣設計</h2><div class="tags"><span class="tag">LLM Agent</span><span class="tag">Figma</span><span class="tag">產品型錄</span></div></div></div>
-        <dl class="case-body"><dt>問題</dt><dd>工程規格過於艱深，難以直接提供給觀展者在短時間內快速瀏覽。</dd><dt>運作方式</dt><dd>先抓出看到型錄幾秒內要讓人記住的重點與採購關心的數字，由 AI 依方向從型錄萃取文案、六項規格數據與應用；依 CIS 規範建好設計準則後，用 Figma 固定網格排版並支援多語系套用。</dd><dt>人工把關</dt><dd>每個數字都對照型錄核對過，每項主張旁邊都保留它的測試條件。版面和最終文字在印刷前都由人確認。</dd></dl>
+        <dl class="case-body"><dt>問題</dt><dd>工程規格過於艱深，難以直接提供給觀展者在短時間內快速瀏覽。</dd><dt>運作方式</dt><dd>先抓出看到型錄幾秒內要讓人記住的重點與採購關心的數字，由 AI 依方向從型錄萃取文案、六項規格數據與應用；依 CIS 規範建好設計準則後，用 Figma 固定網格排版並支援多語系套用。</dd><dt>分工原則</dt><dd>每個數字都對照型錄核對過，每項主張旁邊都保留它的測試條件。版面和最終文字在印刷前都由人確認。</dd></dl>
         
         <div class="dm-view" data-dm>
           <div class="dm-page">
