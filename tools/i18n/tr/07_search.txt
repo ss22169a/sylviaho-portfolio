@@ -10,7 +10,7 @@
 [e39262de] 結論
 [aa493a33] 當 AI 摘要成為新常態，傳統搜尋連結的流量確實減少了；但數據顯示，被 AI 搜尋結果提及的品牌，廣告點擊率反而逆勢成長 41%。這意味著關鍵戰場已經改變：我們不該再死守傳統的 SEO 排名，而是要將「被 AI <b>引用</b>與推薦」，打造成可以被爭取、被量化、甚至被販售的新價值。
 [b200d109] 1 · 關鍵數字
-[2a3ef001] <span class="fn-k">零點擊搜尋</span><b>68%</b><small>2026 年 1–4 月，美國 Google 搜尋中沒有任何點擊就結束的比例，2024 年約為 60%（SparkToro，Similarweb 樣本）。</small>
+[0f201d3a] <span class="fn-k">零點擊搜尋</span><b>68%</b><small>每 10 個人搜尋，就有近 7 個人看完 AI 摘要就離開，流量完全留在 Google 裡。（取自 2026 年 1–4 月，美國 Google，SparkToro、Similarweb 樣本）</small>
 [e25d070e] <span class="fn-k">AI 摘要的影響</span><b>−58%</b><small>在現在會觸發 AI 摘要的關鍵字上，自然搜尋第 1 名的點擊率變化（Ahrefs，30 萬個關鍵字，2025 年 12 月）。</small>
 [95f84172] <span class="fn-k">搜尋營收</span><b>+12%</b><small>2026 年第三季年增率，前一季是 17%；同一季 Google 卻宣布查詢量成長是五年來最快。</small>
 [840f886f] <span class="fn-k">Google 的解釋</span><b>AI Mode</b><small>AI Mode 查詢的變現率較低。Google 正在擴大 AI 摘要和 AI Mode 裡的廣告，包括出現在追問裡的多輪廣告。</small>
