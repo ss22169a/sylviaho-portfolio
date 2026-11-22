@@ -241,7 +241,7 @@
               <li><b>Marts:</b> funnel by regime, ad-group economics, network leakage, ASIN traffic quality, cancellation causes, incrementality, budget–demand alignment, coverage, response lag, and break-even.</li>
               <li><b>Segments:</b> every ad group and every order is mapped to the same vehicle segment, so spend and demand can be compared without a click-level join.</li>
             </ul>
-            <h3>Limits, stated plainly</h3>
+            <h3>Limitations</h3>
             <ul>
               <li>Order counts are small, so these findings set direction rather than prove effects; the holdout in goal 04 is how to prove them.</li>
               <li>The pre-ad baseline is a single 28-day window, and the ad-platform API returns only the last 30 days.</li>
@@ -249,22 +249,6 @@
             </ul>
           </div>
           <div class="prose">
-            <h3>Two of the queries</h3>
-            <pre class="fn-sql"><code>-- A1. Incrementality vs. the 28-day pre-ad baseline
-WITH base AS (SELECT revenue_usd / days AS rev_day FROM stg_baseline),
-     agg  AS (SELECT regime, COUNT(*) AS days,
-                     SUM(revenue_usd) AS rev, SUM(spend_usd) AS spend
-              FROM stg_daily GROUP BY regime)
-SELECT regime,
-       rev / spend                          AS blended_return,
-       (rev - b.rev_day * days) / spend     AS incremental_return
-FROM agg, base b;
-
--- A3. Does the budget follow proven demand?
-SELECT segment,
-       spend_usd / SUM(spend_usd) OVER ()   AS spend_share,
-       demand_usd / SUM(demand_usd) OVER () AS demand_share
-FROM segment_spend FULL JOIN segment_demand USING (segment);</code></pre>
             <p class="fn-caption"><a class="view-all" href="https://github.com/ss22169a/sylviaho-portfolio/tree/main/funnel-sql">Full SQL model on GitHub <span>→</span></a> The source data stays private.</p>
           </div>
         </div>
