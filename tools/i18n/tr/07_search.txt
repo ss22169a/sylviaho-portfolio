@@ -1,4 +1,4 @@
-[798112fd] 分析 Google AI 摘要如何改變點擊流向、為什麼被引用的品牌占優勢，並提出兩個幫助品牌被 AI 回答引用的實驗。
+[569b7d29] 分析 Google AI 摘要如何改變點擊流向、為什麼被引用的品牌占優勢，並提出待驗證的分析方向。
 [80e9d118] AI 搜尋時代來臨，Google 如何兼顧 AI 答案與廣告點擊？ | Sylvia Ho
 [2236e17c] <a href="projects.html" class="back-link"><span aria-hidden="true">←</span> 分析專案</a>
 [e82cff9d] AI 搜尋時代來臨，Google 如何兼顧 AI 答案與廣告點擊？

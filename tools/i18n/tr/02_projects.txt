@@ -15,7 +15,7 @@
 [e5e429bc] 資料
 [01ba4c27] 2025–2026 年的公開研究（Pew、Seer Interactive、SparkToro/Similarweb、Ahrefs），以及 Alphabet 2026 年第三季財報。
 [d87a3ab1] 產出
-[b257687b] 比對多份公開研究找出點擊流向、用模型推估 AI 摘要對廣告點擊的影響，再提出兩個給品牌的實驗。
+[ac3760d8] 比對多份公開研究找出點擊流向、用模型推估 AI 摘要對廣告點擊的影響，再提出待驗證的分析方向。
 [f592ff19] <a class="btn btn-dark proj-open" href="search-dilemma.html">閱讀分析 <span>→</span></a>
 [6d48c344] <span class="case-kicker">對應：Google · Amazon</span>
 [04b4b813] 用 SQL 做電商漏斗與歸因分析
