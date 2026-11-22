@@ -15,15 +15,15 @@
 [64ff1023] <span class="case-kicker">資料串接 · Amazon 美國站汽車零件</span>
 [defe00c8] =
 [1baa06b4] 問題
-[19020d87] Google Ads 把流量導到 Amazon，卻看不到 Amazon 上的購買。每次做週報，都得從 Google Ads 和 Seller Central 匯出好幾份報表，再手動依日期對齊。
+[c5918e68] Google Ads 導流至 Amazon 卻難直接追蹤購買，週報需多方手動匯出並依日期對齊。
 [1dd6a17c] 運作方式
-[1e6f269a] Windsor.ai 的連接器讀取 Google Ads、Amazon Seller Central（Sales &amp; Traffic 與 All Orders 報表）和 Amazon Ads，寫進同一份 Google Sheet：每週總覽、Google 對 Amazon 比較、KPI、商品數據、取消與退貨。下一步透過 Looker Studio 接上 GA4 和 Search Console。
+[67edece9] 用 Windsor.ai 連接器把 Google Ads、Amazon Seller Central（Sales &amp; Traffic、All Orders）與 Amazon Ads 寫入同一份 Google Sheet（含每週總覽、Google 與 Amazon 比較、KPI、商品數據、取消與退貨），後續銜接 Looker Studio、GA4 與 Search Console。
 [bb11a8e3] 規則
-[013305c0] 一週固定是週一到週日。Amazon 訂單資料會延遲一到兩天，所以最近幾天標為待確認，之後再回補。Google 對 Amazon 的比較只當作時間上的相關，不當作歸因。每個數字都記下來源、查詢方式和擷取日期。
+[5806825d] 以週一至週日為週期；Amazon 訂單延遲 1–2 天先標記待確認再回補；Google 與 Amazon 交叉比對僅視為時間相關而非歸因；每筆數據皆記錄來源、查詢方式與擷取日期。
 [24b4ddcc] 人工把關
-[afa28054] Amazon Attribution 和 Brand Analytics 目前仍是手動匯出。Seller Central 的權限只用來讀取，AI 不會修改任何商品頁。
+[a3a49779] Amazon Attribution 與 Brand Analytics 維持手動匯出；Seller Central 採唯讀權限，AI 不修改商品頁。
 [5faa59d4] 結果
-[a9ac3437] 第一週串起來的資料顯示，Google 點擊只有約 6% 變成 Amazon 商品頁工作階段，原因是廣告導到賣場首頁而不是商品頁。修正導流路徑後，點擊到商品頁的比例提高到 22%。
+[79c7319a] 首週數據顯示 Google 點擊僅約 6% 轉為商品頁工作階段（主因導流至賣場首頁），調整為導向商品頁後，點擊到商品頁比例升至 22%。
 [aed5ea18] <span class="case-kicker">市場分析 · Amazon 品類資料</span>
 [97aa3ab8] =
 [3326c711] 產品清單與市場競品做分析，得在市場上逐一比對價格與規格資訊。
