@@ -98,12 +98,12 @@
 
       <article class="case ai-case" id="connected-data" style="--c:var(--lilac)">
         <div class="case-head"><div><span class="case-kicker">資料串接 · Amazon 美國站汽車零件</span><h2>串聯市場數據</h2><div class="tags"><span class="tag">Windsor.ai</span><span class="tag">Google Sheets</span><span class="tag">Google Ads</span><span class="tag">Amazon Seller Central</span><span class="tag">Amazon Ads</span></div></div></div>
-        <dl class="case-body"><dt>問題</dt><dd>Google Ads 把流量導到 Amazon，卻看不到 Amazon 上的購買。每次做週報，都得從 Google Ads 和 Seller Central 匯出好幾份報表，再手動依日期對齊。</dd><dt>運作方式</dt><dd>Windsor.ai 的連接器讀取 Google Ads、Amazon Seller Central（Sales &amp; Traffic 與 All Orders 報表）和 Amazon Ads，寫進同一份 Google Sheet：每週總覽、Google 對 Amazon 比較、KPI、商品數據、取消與退貨。下一步透過 Looker Studio 接上 GA4 和 Search Console。</dd><dt>規則</dt><dd>一週固定是週一到週日。Amazon 訂單資料會延遲一到兩天，所以最近幾天標為待確認，之後再回補。Google 對 Amazon 的比較只當作時間上的相關，不當作歸因。每個數字都記下來源、查詢方式和擷取日期。</dd><dt>分工原則</dt><dd>Amazon Attribution 和 Brand Analytics 目前仍是手動匯出。Seller Central 的權限只用來讀取，AI 不會修改任何商品頁。</dd><dt>結果</dt><dd class="impact">第一週串起來的資料顯示，Google 點擊只有約 6% 變成 Amazon 商品頁工作階段，原因是廣告導到賣場首頁而不是商品頁。修正導流路徑後，點擊到商品頁的比例提高到 22%。</dd></dl>
+        <dl class="case-body"><dt>問題</dt><dd>Google Ads 把流量導到 Amazon，卻看不到 Amazon 上的購買。每次做週報，都得從 Google Ads 和 Seller Central 匯出好幾份報表，再手動依日期對齊。</dd><dt>方法</dt><dd>Windsor.ai 的連接器讀取 Google Ads、Amazon Seller Central（Sales &amp; Traffic 與 All Orders 報表）和 Amazon Ads，寫進同一份 Google Sheet：每週總覽、Google 對 Amazon 比較、KPI、商品數據、取消與退貨。下一步透過 Looker Studio 接上 GA4 和 Search Console。</dd><dt>規則</dt><dd>一週固定是週一到週日。Amazon 訂單資料會延遲一到兩天，所以最近幾天標為待確認，之後再回補。Google 對 Amazon 的比較只當作時間上的相關，不當作歸因。每個數字都記下來源、查詢方式和擷取日期。</dd><dt>分工原則</dt><dd>Amazon Attribution 和 Brand Analytics 目前仍是手動匯出。Seller Central 的權限只用來讀取，AI 不會修改任何商品頁。</dd><dt>結果</dt><dd class="impact">第一週串起來的資料顯示，Google 點擊只有約 6% 變成 Amazon 商品頁工作階段，原因是廣告導到賣場首頁而不是商品頁。修正導流路徑後，點擊到商品頁的比例提高到 22%。</dd></dl>
         
       </article>
       <article class="case ai-case" id="pricing-intel" style="--c:var(--lime)">
         <div class="case-head"><div><span class="case-kicker">市場分析 · Amazon 品類資料</span><h2>分析競品與價格情報</h2><div class="tags"><span class="tag">Amazon Product Opportunity Explorer</span><span class="tag">LLM Agent</span><span class="tag">Google Sheets</span></div></div></div>
-        <dl class="case-body"><dt>問題</dt><dd>逐一比對產品清單與市場競品價格、規格費時耗力，難以快速抓出虧損或無效品項。</dd><dt>運作方式</dt><dd>手動匯出 Amazon Product Opportunity Explorer（發電機、啟動馬達、NOx 感測器）資料，由 LLM Agent 結合 Google Sheets 自動分組，並交叉比對歷史訂單，標記已下架零件、停產車型與同料號競品價差。</dd><dt>關鍵發現與決策</dt><dd class="impact"><ul><li><b>NOx 感測器：</b>10 個 SKU 皆出現同料號競品，價格低 72–273%。判斷核心問題在價格競爭力而非曝光，決議先暫停該線廣告。</li><li><b>資源集中：</b>發電機占營收約 93%，後續廣告群組與預算優先配置於發電機與啟動馬達。</li></ul></dd><dt>分工原則</dt><dd>資料匯出與策略決策由人工把關；資料分組、交叉比對與異常標記交由 LLM Agent 處理。</dd></dl>
+        <dl class="case-body"><dt>問題</dt><dd>逐一比對產品清單與市場競品價格、規格費時耗力，難以快速抓出虧損或無效品項。</dd><dt>方法</dt><dd>手動匯出 Amazon Product Opportunity Explorer（發電機、啟動馬達、NOx 感測器）資料，由 LLM Agent 結合 Google Sheets 自動分組，並交叉比對歷史訂單，標記已下架零件、停產車型與同料號競品價差。</dd><dt>關鍵發現與決策</dt><dd class="impact"><ul><li><b>NOx 感測器：</b>10 個 SKU 皆出現同料號競品，價格低 72–273%。判斷核心問題在價格競爭力而非曝光，決議先暫停該線廣告。</li><li><b>資源集中：</b>發電機占營收約 93%，後續廣告群組與預算優先配置於發電機與啟動馬達。</li></ul></dd><dt>分工原則</dt><dd>資料匯出與策略決策由人工把關；資料分組、交叉比對與異常標記交由 LLM Agent 處理。</dd></dl>
         
       </article>
       <article class="case ai-case" id="seo-audit" style="--c:var(--blue)">
@@ -113,7 +113,7 @@
       </article>
       <article class="case ai-case" id="ad-ops" style="--c:var(--orange)">
         <div class="case-head"><div><span class="case-kicker">Google Ads 自動化 · 管理員帳戶</span><h2>在防護機制下的廣告操作</h2><div class="tags"><span class="tag">Google Ads Scripts</span><span class="tag">Windsor.ai</span><span class="tag">Google Sheets</span></div></div></div>
-        <dl class="case-body"><dt>問題</dt><dd>監控的數值與儀表板過多，容易發生未在第一時刻察覺異常，每次修改關鍵字時，也難以將異動紀錄與決策因素完整綁定。</dd><dt>運作方式</dt><dd>腳本在管理員帳戶層級執行，用一份 Google Sheet 當控制台。模組 1 把昨天的數字和 7 天、14 天平均比較，花費、點擊或點擊率超過門檻就寄信提醒。模組 2 依意圖分類搜尋字詞，用 n-gram 分析找出浪費預算的字根。兩個模組都是唯讀。下一步是預算建議和 AI 草擬的廣告文案。</dd><dt>防護機制</dt><dd>每一步調整上限 ±20%；建議 7 天後失效；每次變更都記下原始數值和核准人；不同帳戶的資料絕不混用；新廣告一律以暫停狀態建立。每個建議都要寫出觀察、原因、動作、預期範圍，以及反面證據。</dd><dt>經核准後執行過的</dt><dd>排除關鍵字、9 個指定車款的廣告群組、回應式搜尋廣告、CPC 上限、暫停一條表現不佳的產品線，以及地區設定。</dd></dl>
+        <dl class="case-body"><dt>問題</dt><dd>監控的數值與儀表板過多，容易發生未在第一時刻察覺異常，每次修改關鍵字時，也難以將異動紀錄與決策因素完整綁定。</dd><dt>方法</dt><dd>腳本在管理員帳戶層級執行，用一份 Google Sheet 當控制台。模組 1 把昨天的數字和 7 天、14 天平均比較，花費、點擊或點擊率超過門檻就寄信提醒。模組 2 依意圖分類搜尋字詞，用 n-gram 分析找出浪費預算的字根。兩個模組都是唯讀。下一步是預算建議和 AI 草擬的廣告文案。</dd><dt>防護機制</dt><dd>每一步調整上限 ±20%；建議 7 天後失效；每次變更都記下原始數值和核准人；不同帳戶的資料絕不混用；新廣告一律以暫停狀態建立。每個建議都要寫出觀察、原因、動作、預期範圍，以及反面證據。</dd><dt>經核准後執行過的</dt><dd>排除關鍵字、9 個指定車款的廣告群組、回應式搜尋廣告、CPC 上限、暫停一條表現不佳的產品線，以及地區設定。</dd></dl>
         <div class="al-demo" role="status" aria-live="polite"><div class="al-pop"><span class="al-ico" aria-hidden="true">!</span><div><b>帳戶提醒：需要人工確認</b><p>花費超過 7 天平均的門檻，請人工檢查並修正。</p></div><button type="button" class="al-x" aria-label="關閉提醒">×</button></div></div>
       </article>
       <article class="case ai-case" id="agent-spec" style="--c:var(--lime)">
@@ -123,7 +123,7 @@
       </article>
       <article class="case ai-case" id="trend-writing" style="--c:var(--ink)">
         <div class="case-head"><div><span class="case-kicker">內容流程 · 產業新聞 → 中英文章與 LinkedIn 貼文</span><h2>產業新聞撰稿</h2><div class="tags"><span class="tag">LLM Agent</span><span class="tag">Google Trends</span><span class="tag">SEMrush</span><span class="tag">LinkedIn</span><span class="tag">CMS</span></div></div></div>
-        <dl class="case-body"><dt>問題</dt><dd>技術規格書充滿工程參數與測試條件，LinkedIn 上則有不同背景的讀者；如果直接把硬規格丟出去，很容易變成工程自嗨或漏掉關鍵脈絡，光靠人工逐篇拆解也很吃力。</dd><dt>運作方式</dt><dd>我先擬定新聞稿審查流程、建立 AI 知識庫，並把公司技術文件用詞、引用來源權重與判斷審查層級寫成規則。寫稿或看產業素材時，我負責選題、定切角與撰寫對外內容，讓 AI 當審查與分析角色：依這套規則拆解規格參數與測試條件、比對技術術語是否一致、檢視引用資料權重，並標出需要人工介入的審查層級與疑點。</dd><dt>範例</dt><dd>一組 MEMS 氫氣感測器的輪播圖文：70 ms 內完成啟動（比市場常見的 390 ms 快 5.5 倍）；0–40,000 ppm 範圍內 2 秒內即時偵測；在 −35 °C 到 +105 °C 的工作溫度下功耗低於 200 mW；以半導體矽微加工做到 2.0 mm 的小尺寸（約為傳統 15 mm 設計的百分之一）。</dd><dt>分工原則</dt><dd>AI 的審查建議與風險標記協助校對內容，所有技術數據、測試條件、用詞統一，均由我提供原始文件核對，確認後發布。</dd></dl>
+        <dl class="case-body"><dt>問題</dt><dd>技術規格書充滿工程參數與測試條件，LinkedIn 上則有不同背景的讀者；如果直接把硬規格丟出去，很容易變成工程自嗨或漏掉關鍵脈絡，光靠人工逐篇拆解也很吃力。</dd><dt>方法</dt><dd>我先擬定新聞稿審查流程、建立 AI 知識庫，並把公司技術文件用詞、引用來源權重與判斷審查層級寫成規則。寫稿或看產業素材時，我負責選題、定切角與撰寫對外內容，讓 AI 當審查與分析角色：依這套規則拆解規格參數與測試條件、比對技術術語是否一致、檢視引用資料權重，並標出需要人工介入的審查層級與疑點。</dd><dt>範例</dt><dd>一組 MEMS 氫氣感測器的輪播圖文：70 ms 內完成啟動（比市場常見的 390 ms 快 5.5 倍）；0–40,000 ppm 範圍內 2 秒內即時偵測；在 −35 °C 到 +105 °C 的工作溫度下功耗低於 200 mW；以半導體矽微加工做到 2.0 mm 的小尺寸（約為傳統 15 mm 設計的百分之一）。</dd><dt>分工原則</dt><dd>AI 的審查建議與風險標記協助校對內容，所有技術數據、測試條件、用詞統一，均由我提供原始文件核對，確認後發布。</dd></dl>
         
         <div class="ms-deck" data-mems>
           <div class="ms-head"><span class="ms-cap"></span>
@@ -189,7 +189,7 @@
       </article>
       <article class="case ai-case" id="digital-publication" style="--c:var(--lilac)">
         <div class="case-head"><div><span class="case-kicker">設計流程 · 規劃產品型錄</span><h2>數位文宣設計</h2><div class="tags"><span class="tag">LLM Agent</span><span class="tag">Figma</span><span class="tag">產品型錄</span></div></div></div>
-        <dl class="case-body"><dt>問題</dt><dd>工程規格過於艱深，難以直接提供給觀展者在短時間內快速瀏覽。</dd><dt>運作方式</dt><dd>先抓出看到型錄幾秒內要讓人記住的重點與採購關心的數字，由 AI 依方向從型錄萃取文案、六項規格數據與應用；依 CIS 規範建好設計準則後，用 Figma 固定網格排版並支援多語系套用。</dd><dt>分工原則</dt><dd>每個數字都對照型錄核對過，每項主張旁邊都保留它的測試條件。版面和最終文字在印刷前都由人確認。</dd></dl>
+        <dl class="case-body"><dt>問題</dt><dd>工程規格過於艱深，難以直接提供給觀展者在短時間內快速瀏覽。</dd><dt>方法</dt><dd>先抓出看到型錄幾秒內要讓人記住的重點與採購關心的數字，由 AI 依方向從型錄萃取文案、六項規格數據與應用；依 CIS 規範建好設計準則後，用 Figma 固定網格排版並支援多語系套用。</dd><dt>分工原則</dt><dd>每個數字都對照型錄核對過，每項主張旁邊都保留它的測試條件。版面和最終文字在印刷前都由人確認。</dd></dl>
         
         <div class="dm-view" data-dm>
           <div class="dm-page">
