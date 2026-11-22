@@ -179,3 +179,8 @@
 [cac1796b] 網站管理者
 [f9cf02fb] 內容撰寫者
 [21d2c844] 開發人員或網站管理者
+[26b585c7] <span class="case-kicker">產品開發 · 寵物照護 App</span>
+[16fc0095] 從零開發一款產品
+[d0491b4f] <span class="tag">SwiftUI</span><span class="tag">Firebase</span><span class="tag">政府公開資料 API</span>
+[f8c94a3b] 這是什麼
+[0d1cc7e1] 我也用 AI 從零開發產品：一款寵物照護 App，從市場數據、競品分析到功能規劃和 iOS 開發都自己完成。

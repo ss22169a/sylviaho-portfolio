@@ -34,7 +34,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&family=Stack+Sans+Headline:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../style.css?v=1888e8ad" />
+  <link rel="stylesheet" href="../style.css?v=31617ca9" />
   <script>document.documentElement.classList.add("js");</script>
   <script src="../js/matter.min.js" defer></script>
   <script src="../js/posts.js?v=616e883b" defer></script>
@@ -73,12 +73,18 @@
         <div><h1 class="page-title">分析專案</h1><p class="page-sub">這些是我覺得問題有意思、自己動手做的研究內容。<br>將查詢語法、假設和限制都寫出來；只呈現占比或指數。<br>部分內容已去識別化。</p></div>
       </div>
       <div class="kcards kc-proj" aria-label="依市場篩選專案">
-        <button type="button" class="kcard k-gray on" data-filter="all" aria-pressed="true"><span class="kcard-label">全部專案</span><span class="kcard-num">8</span></button>
+        <button type="button" class="kcard k-gray on" data-filter="all" aria-pressed="true"><span class="kcard-label">全部專案</span><span class="kcard-num">9</span></button>
         <button type="button" class="kcard k-blue" data-filter="ecom" aria-pressed="false"><span class="kcard-label">電商</span><span class="kcard-num">06</span></button>
         <button type="button" class="kcard k-lilac" data-filter="auto" aria-pressed="false"><span class="kcard-label">汽車零件</span><span class="kcard-num">03</span></button>
         <button type="button" class="kcard k-lime" data-filter="h2" aria-pressed="false"><span class="kcard-label">氫能市場與設備</span><span class="kcard-num">01</span></button>
+        <button type="button" class="kcard k-orange" data-filter="pet" aria-pressed="false"><span class="kcard-label">寵物照護</span><span class="kcard-num">01</span></button>
       </div>
 
+      <article class="case" data-group="pet">
+        <div class="case-head"><div><span class="case-kicker">對應：產品 &amp; GTM</span><h2>帶寵物看醫生，卻說不清牠平常的狀況</h2><div class="tags"><span class="tag tag-orange">開發中</span><span class="tag">寵物照護</span></div></div></div>
+        <dl class="case-body"><dt>問題</dt><dd>飼主帶寵物看醫生，常說不清牠最近吃了什麼、喝多少、有什麼變化。這個需求有多大？產品該從哪裡切入？</dd><dt>資料</dt><dd>農業部犬貓飼養調查（2021–2025）、寵物登記與新生兒統計（2015–2025）、台灣經濟研究院市場推估、農業部寵物食品抽驗結果，以及五家主要業者的 App Store 資料。</dd><dt>產出</dt><dd>市場機會判斷、與五家主要業者的比較，以及一款寵物照護 App 的產品與商業規劃（開發中）。</dd></dl>
+        <a class="btn btn-dark proj-open" href="pet-care.html">閱讀分析 <span>→</span></a>
+      </article>
       <article class="case" data-group="ecom">
         <div class="case-head"><div><span class="case-kicker">對應：Google · AI 搜尋</span><h2>AI 搜尋時代來臨，Google 如何兼顧 AI 答案與廣告點擊？</h2><div class="tags"><span class="tag tag-blue">分析完成</span><span class="tag">電商</span></div></div></div>
         <dl class="case-body"><dt>問題</dt><dd>AI 摘要讓使用者留在 Google 搜尋結果頁，卻也拿掉了廣告收入賴以維生的點擊。這些點擊跑去哪裡？生成式回答和搜尋廣告能不能並存？</dd><dt>資料</dt><dd>2025–2026 年的公開研究（Pew、Seer Interactive、SparkToro/Similarweb、Ahrefs），以及 Alphabet 2026 年第三季財報。</dd><dt>產出</dt><dd>比對多份公開研究找出點擊流向、用模型推估 AI 摘要對廣告點擊的影響，再提出待驗證的分析方向。</dd></dl>

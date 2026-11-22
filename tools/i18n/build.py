@@ -2,7 +2,7 @@ import re, json, glob, os, sys, hashlib, html as H
 sys.path.insert(0,__import__('os').path.dirname(__file__)); from seg import extract
 ROOT=__import__('os').path.abspath(__import__('os').path.join(__import__('os').path.dirname(__file__),'..','..'))+'/'; BASE='https://ss22169a.github.io/sylviaho-portfolio/'
 TRDIR=__import__('os').path.join(__import__('os').path.dirname(__file__),'tr')+'/'
-ORDER=['index.html','projects.html','work.html','ai.html','about.html','certifications.html','resume.html','search-dilemma.html','funnel-analysis.html','category-intelligence.html','lifecycle-matrix.html','taiwan-ecommerce.html','ai-ecommerce-2028.html','hydrogen-data-centers.html','style-signals.html','case-paid-search.html','case-hydrogen-evidence.html','case-pufido-launch.html','case-policy-edm.html','case-o2o-popup.html']
+ORDER=['index.html','projects.html','work.html','ai.html','about.html','certifications.html','resume.html','search-dilemma.html','funnel-analysis.html','category-intelligence.html','lifecycle-matrix.html','taiwan-ecommerce.html','ai-ecommerce-2028.html','hydrogen-data-centers.html','style-signals.html','pet-care.html','case-paid-search.html','case-hydrogen-evidence.html','case-pufido-launch.html','case-policy-edm.html','case-o2o-popup.html']
 SW_RE=re.compile(r'\n?\s*<div class="lang-switch".*?</div>',re.S)
 def sid(src): return hashlib.sha1(src.encode()).hexdigest()[:8]
 def load_tr():

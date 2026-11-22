@@ -1,0 +1,105 @@
+[6da91206] 台灣寵物市場 2015–2025 年數據、與五家主要業者的比較，以及一款開發中寵物照護 App 的產品與商業規劃。
+[866f67c6] 帶寵物看醫生，卻說不清牠平常的狀況 | Sylvia Ho
+[16e1e197] 帶寵物看醫生，卻說不清牠平常的狀況
+[38808c35] 從台灣寵物市場數據，找到日常照護紀錄的缺口。
+[2907711c] 視角<b>帶寵物看醫生的飼主</b>
+[c3207e30] 期間<b>2015–2025</b>
+[702a0c49] 資料來源<b>農業部調查、台經院推估、App Store 資料 · A/B</b>
+[d4f30054] 產出<b>市場判斷、競品比較、產品與商業規劃</b>
+[1043ca43] 台灣家中犬貓四年增加約 <b>109 萬隻</b>，帶寵物定期回診也越來越普遍，但飼主記錄寵物日常狀況的方式，大多還是靠記憶。大型業者各自受限於自己的商業模式，都沒有補上這個缺口。我把它做成一款照護 App：讓飲食、飲水和身體狀況可以快速記下來，看醫生時直接拿給醫師看。
+[dc0e0883] 1 · 前情提要
+[9ddf744c] 每次帶寵物去看醫生，醫師都會問：最近吃什麼？吃多少？水喝得多嗎？什麼時候開始不對勁？我常常答不出來，只能憑印象。但醫師判斷病情，最需要的就是這些日常細節。我想知道這是不是很多飼主都有的問題，所以先去看了市場數據。
+[2bf81655] 2 · 關鍵數字
+[33943f4e] <span class="muted-note">農業部、台經院 · A/B 級</span>
+[8382bcda] <span class="fn-k">家中犬貓數量</span><b>320 萬</b><small>2025 年數據，2021 年約 211 萬隻。家貓數量首度超過家犬（農業部）。</small>
+[da8dec18] <span class="fn-k">寵物市場規模</span><b>631 億元</b><small>2023 年台灣寵物市場規模，其中食品最大，占 308 億元（台經院）。</small>
+[26fc5089] <span class="fn-k">醫療與健檢</span><b>16%</b><small>在飼主年度寵物支出中的占比，僅次於食品（農業部調查）。</small>
+[d0ed752c] 台灣家中犬貓數量（萬隻）
+[a492327b] 犬貓新登記數 vs 新生兒人數（千）
+[8080e2c7] <span class="o3-y">2015 新生兒</span>
+[b25ea1b0] <span class="o3-y">2015 犬貓</span>
+[7c91bb54] <span class="o3-y">2025 新生兒</span>
+[a6828ba8] <span class="o3-y">2025 犬貓</span>
+[868a3dbf] 十年間，新生兒減少約一半，犬貓新登記數卻翻倍。成長主力是貓：貓的新登記數從 4.08 萬隻增加到 17.45 萬隻，狗則從 8.2 萬隻降到 7.7 萬隻。
+[c70e2e56] 3 · 市場問題：寵物變多、看病變多，紀錄跟不上
+[67b2b285] <span class="fn-k">寵物越養越久</span><b>40%</b><small>的飼主養同一隻寵物超過 10 年。老年寵物定期回診看慢性病，已經是寵物醫療的主流。</small>
+[024eac42] <span class="fn-k">一個人照顧好幾隻</span><b>多貓家庭</b><small>家貓數量已超過家犬，養兩隻貓以上的家庭比例也在增加。</small>
+[26fd8f23] <span class="fn-k">食品資訊不透明</span><b>91.6%</b><small>2025 年寵物食品抽驗的包裝標示合格率。食品是飼主最大的支出，寵物食品專法卻還在草案階段。</small>
+[8d9b62bb] 官方的「寵物身分證」記錄的是登記、絕育和狂犬病疫苗。寵物每天吃了什麼、身體有什麼變化，沒有地方記。
+[b4ae4384] 4 · 我怎麼發現的
+[c94fcd7a] 先從自己的經驗出發，再用公開數據確認規模。寵物數量、回診需求和醫療支出都在上升，但現有工具只涵蓋登記和疫苗。看醫生時最需要的日常紀錄，正好是沒人在處理的空白。
+[28b1714a] 5 · 競品分析：大公司為什麼不會做這件事
+[118980b9] <span class="muted-note">企業公告、App Store 資料</span>
+[e53407cf] 對手
+[24d3e4fd] 強項
+[9e233033] 為什麼「不會做」
+[6bd35e00] <b>農業部寵物身分證</b><br>政府
+[9c7b1a9a] 官方、具強制力
+[69ecbfe9] 職責只到身分和防疫，不管日常照護。
+[bb08334f] <b>東森寵物雲</b><br>台灣最大寵物連鎖
+[dcb8835b] 119 家門市，約占寵物線下通路 10%（2021 年）；App 可以預約自家寵物醫院
+[26029f86] App 是會員和導購工具，只連到自家門市和醫院。評價 3.7 顆星。
+[4aabd420] <b>寵物公園（萬達寵物）</b><br>上櫃連鎖
+[a87e78e0] 145 間以上門市、百萬會員、OMO 服務
+[d55c6b75] 記錄的是在門市買了什麼，不是寵物每天的狀況。
+[7db0e579] <b>PETKIT 小佩</b><br>智慧寵物用品
+[82f5ab34] 全球超過 600 萬飼主使用；自動記錄進食、飲水和如廁
+[6784534e] 要先買硬體才有資料（智能餵食器售價 NT$2,988–3,517），而且記的是吃了多少，不是吃了哪個產品。
+[6679a1ea] <b>PetDesk</b><br>北美標竿
+[e1088da3] 超過 12,000 家獸醫院、700 萬名以上飼主
+[1b504297] 證明了飼主和醫院之間的連結有價值，但只在北美營運。
+[9c1cc664] 每個大型業者都被自己的商業模式限制住了。台灣目前沒有一個跨通路、跨醫院保持中立、不用買硬體的照護紀錄工具。小型紀錄 App 已經能匯出看診 PDF，所以看診摘要是必備功能，不是優勢。
+[84c0524a] 6 · 切入點：當「中立的紀錄層」
+[c60902a2] 中立的食品資料庫
+[2bc90381] 連鎖通路只會收錄自家賣的品牌，這裡收錄全台常見品牌，不管飼主在哪裡買。記錄一餐用點選的，不用手打。
+[237a9caf] 中立的醫院資料庫
+[dd44d089] 連鎖 App 只能預約自家醫院，這裡收錄全台立案的動物醫院。飼主換醫院或掛急診時，紀錄跟著寵物走。
+[2ee76440] 只要一支手機
+[70ee00fc] 不用先花幾千元買設備，門檻最低。
+[4479ea7c] 以看診為核心
+[0e1279d2] 把日常紀錄整理好，在飼主最有感的看診時刻派上用場，這也是 PetDesk 證明過有價值的連結點。
+[a43d5a08] 數據指向的方向：以貓為優先，因為貓是成長主力、多貓家庭也在增加；每筆紀錄幾秒內完成，因為太花時間的紀錄不會持續。
+[28744347] 7 · 我做了什麼
+[d5fa2a52] 建立 780 筆以上的貓狗食品資料庫。
+[e844f42b] 建立全台動物醫院資料庫，透過 API 串接政府公開的立案資料，收錄地址、營業時間、24 小時急診與價格區間。專科目前還未區分。
+[83e9cadc] 規劃 App 架構、畫出介面線框圖，並建立設計系統。
+[782df9b2] 用 SwiftUI + Firebase 開發 iOS 版本，目前開發中。
+[9013be90] 8 · App 規劃功能
+[04a85fe0] <span class="fn-k">寵物檔案</span><b>多寵物</b><small>一個帳號管理多隻貓狗。</small>
+[6108eaba] <span class="fn-k">飲食與飲水紀錄</span><b>點選記錄</b><small>從食品資料庫點選，記下吃什麼、吃多少。</small>
+[a5427691] <span class="fn-k">身體狀況紀錄</span><b>可附照片</b><small>體重、排泄、嘔吐、精神狀況，可以附照片。</small>
+[01426b26] <span class="fn-k">找動物醫院</span><b>全台</b><small>依營業時間、24 小時急診找立案的動物醫院。</small>
+[172277c5] <span class="fn-k">看診摘要</span><b>一鍵整理</b><small>看診時把近期紀錄整理給醫師看，看完再把結果記回這間醫院底下。</small>
+[5a12be38] <span class="fn-k">提醒與趨勢</span><b>趨勢圖</b><small>疫苗、驅蟲、回診提醒，以及體重和食量的變化。</small>
+[7b08a71c] 9 · 商業模式
+[c9b6b5ab] 台灣寵物市場規模推估已超過 <b>800 億元</b>，其中寵物食品約占 53%，醫療是飼主第二大的支出。這個 App 記錄的正好是這兩塊：吃什麼、身體狀況怎麼樣。
+[d4f2c022] 訂閱制（先做）
+[aab60de6] 基本紀錄免費，讓飼主先養成習慣。付費功能：更多寵物、趨勢圖、看診摘要匯出、家人共享。定價參考：國外同類 App 月費約 HK$68、年費約 HK$288。
+[88856cf9] 寵物食品品牌合作
+[69c92aaf] 在匿名、彙總、飼主同意的前提下，品牌可以合作新品試吃或成分資訊。品牌付費不能影響資料庫的排序和內容。
+[0d4f66f4] 寵物保險合作
+[9f846a49] 寵物險市場還小但在成長：2026 年前五個月簽單保費年增 8.77%，保單件數年增 17.28%。紀錄可以幫助理賠，但也可能被當成既往症的依據，所以資料只在飼主主動同意時才分享。
+[3e119182] 推廣策略：先鎖定都會區的養貓族群；在動物醫院診間放 QR Code 合作，並與寵物連鎖通路合作（全台寵物用品店已突破 3,500 家）。要驗證的指標：第 4 週留存率、看診前匯出摘要的使用者比例、免費轉付費的轉換率。
+[24d554af] 2021、2023、2025 年的調查方法不完全相同（2023 年起加入手機樣本），數量的成長有一部分來自調查方式的改變。
+[89b8ab53] 競品功能來自 App Store 說明和企業公告，沒有提到的功能不代表一定沒有。
+[4be6e008] 目前還沒有做飼主或獸醫師訪談。下一步會先訪談，驗證這些功能是不是真的需要。
+[278ac43f] App 名稱暫不公開，醫院資料庫的專科分類也還沒完成。
+[0ce58655] <a href="https://news.pts.org.tw/article/804498" target="_blank" rel="noopener">農業部 2025 年全國家犬貓飼養數量調查（公視新聞）</a> · A 級
+[8d437410] <a href="https://www.moa.gov.tw/ws.php?id=2516176" target="_blank" rel="noopener">農業部：我國寵物市場發展現況（2021–2023 飼養數、台經院市場規模、消費結構）</a> · A 級
+[02aba947] <a href="https://www.moa.gov.tw/ws.php?id=2517704" target="_blank" rel="noopener">農業部：我國寵物登記制度之發展歷程與現況（含寵物身分證）</a> · A 級
+[8b060fe8] <a href="https://www.moa.gov.tw/ws.php?id=2517529" target="_blank" rel="noopener">農業部 2025 年年報：寵物食品抽驗結果</a> · A 級
+[77cec74a] <a href="https://www.ctee.com.tw/news/20260225700188-430503" target="_blank" rel="noopener">內政部、農業部、國發會新生兒與寵物登記數據分析（工商時報）</a> · B 級
+[c4e441e6] <a href="https://wantrich.chinatimes.com/news/20260701900682-420101" target="_blank" rel="noopener">台經院市場推估（中時旺得富）</a> · B 級
+[85e00165] <a href="https://news.ltn.com.tw/news/focus/breakingnews/4508065" target="_blank" rel="noopener">農業部飼主消費調查（Taipei Times）</a> · B 級
+[5919eb51] <a href="https://www.thenewslens.com/article/201423" target="_blank" rel="noopener">動物醫院與伴侶動物獸醫師（中央社，關鍵評論網轉載）</a> · B 級
+[f0419541] <a href="https://www.ctee.com.tw/news/20260807700331-439901" target="_blank" rel="noopener">2026 年 1–5 月寵物險保費統計（工商時報）</a> · B 級
+[ac3fe6c7] <a href="https://udn.com/news/story/7238/9380786" target="_blank" rel="noopener">財政部寵物用品店家數統計（聯合報）</a> · B 級
+[7494b246] <a href="https://finance.ettoday.net/news/2185113" target="_blank" rel="noopener">東森寵物雲門市數與市占（ETtoday）</a> · B 級
+[dddcc0b9] <a href="https://apps.apple.com/tw/app/%E6%9D%B1%E6%A3%AE%E5%AF%B5%E7%89%A9/id1596215526" target="_blank" rel="noopener">東森寵物 App（App Store）</a> · A 級
+[43598c93] <a href="https://www.fubon.com/insurance/info/news/news_20260630.html" target="_blank" rel="noopener">富邦產險 × 寵物公園新聞稿</a> · A 級
+[fca0caf5] <a href="https://apps.apple.com/tw/app/%E5%AF%B5%E7%89%A9%E5%85%AC%E5%9C%92/id6448940325" target="_blank" rel="noopener">寵物公園 App（App Store）</a> · A 級
+[58221b58] <a href="https://apps.apple.com/app/id994053492" target="_blank" rel="noopener">PETKIT App（App Store）</a> · A 級
+[c4ff0277] <a href="https://www.momoshop.com.tw/product/10181189" target="_blank" rel="noopener">PETKIT 智能餵食器售價（momo）</a> · B 級
+[9db01bca] <a href="https://petdesk.com/veterinary-mobile-app" target="_blank" rel="noopener">PetDesk</a> · A 級
+[57d66754] <a href="https://apps.apple.com/app/id6761115958" target="_blank" rel="noopener">Pawjot 看診 PDF 報告（App Store）</a> · A 級
+[2f1d8722] <a href="https://apps.apple.com/hk/app/pet-health/id6462903750" target="_blank" rel="noopener">Pet Health 訂閱定價（App Store）</a> · A 級

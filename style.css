@@ -2062,7 +2062,7 @@ a.em-link { color:var(--ink); }
   .ds-table.st-plan.ai-sig td:nth-child(4)::before { content: "Then: "; }
 }
 .section:not(.two-col):not(.fn-two) > .prose + .prose, .section:not(.two-col):not(.fn-two) > .prose + .fn-scroll, .section:not(.two-col):not(.fn-two) > .fn-scroll + .prose { margin-top: 4.5px; }
-.kc-proj { grid-template-columns: 1.4fr repeat(3, 1fr); margin-bottom: 18px; }
+.kc-proj { grid-template-columns: 1.4fr repeat(4, 1fr); margin-bottom: 18px; }
 @media (max-width: 760px) { .kc-proj { grid-template-columns: repeat(2, 1fr); } }
 /* Filter tiles: no outline; the chosen tile stays in color, the rest fade (same motion as Career path) */
 button.kcard, button.kcard:hover, button.kcard.on, button.kcard.on:hover,
@@ -2173,3 +2173,11 @@ html[lang="zh-Hant"] .btn { white-space: nowrap; }
 .press-shot { margin: 6px 0 24px; }
 .press-shot img { display: block; width: 100%; height: auto; border-radius: var(--radius); border: 1px solid var(--line); }
 .press-shot figcaption { font-size: 14px; color: var(--muted); margin-top: 8px; }
+
+/* pet-care page */
+.o3-wide .o3-bar { grid-template-columns: 92px minmax(0, 1fr) 46px; }
+.pet-cmp td { white-space: normal; }
+.pet-cmp td:first-child { min-width: 10em; }
+.pet-cmp td:nth-child(2) { min-width: 14em; }
+.ds-table.pet-cmp.pet-cmp td:nth-child(3) { white-space: normal; display: block; color: inherit; font-size: inherit; }
+@media (min-width: 900px) { .ds-table.pet-cmp.pet-cmp td:nth-child(3) { display: table-cell; } }
