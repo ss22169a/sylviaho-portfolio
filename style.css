@@ -2291,3 +2291,8 @@ html[lang="zh-Hant"] .btn { white-space: nowrap; }
   .pipeline.row-between { flex-direction: column; align-items: flex-start; }
   .pipeline.row-between .btn { height: 56px; }
 }
+
+/* Chinese hero: two lines (洞察市場、擬定策略， / 並推動產品順利上市) */
+html[lang="zh-Hant"] .hero { container-type: inline-size; }
+html[lang="zh-Hant"] .hero h1 br:first-of-type { display: none; }
+html[lang="zh-Hant"] .hero h1 { font-size: min(51px, 9.6cqi); }
