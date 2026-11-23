@@ -72,7 +72,7 @@
 [803683b2] 3 · 決策形成過程
 [d5c5650b] <span class="muted-note">發散 → 篩選 → 收斂 → 結果</span>
 [b541d23d] <span class="px-date c2-tag-diverge">發散</span>
-[9d5fc7d3] 先把每個問題都攤開
+[cf6ce0a1] 列出研究範圍
 [18588721] 在蒐集任何數字之前，我先列出買家、代理商和投資人各自最在意的問題，再依這些問題決定要找哪些資料。
 [5ea759a1] <i></i><i></i><i></i><span>00_README · 問題地圖</span>
 [8b9931b2] <span>市場規模</span><span>需求</span><span>感測原理</span>⏎<span>競品與上市</span><span>價格與成本</span><span>認證</span>
