@@ -69,7 +69,7 @@
 [15829bb2] <em>④</em>成熟，推出改款
 [886d7a8b] <b>New Cosmos</b><span>KD-12 系列，2008 年起</span>
 [8adc2b3e] 新品多從第 ② 階段起步（含 Infineon 車規 TCI-B、New Cosmos 新模組）；代理商上架是跨入第 ③ 階段的門檻，第 ④ 階段標竿品 New Cosmos KD-12 系列則自 2008 年起售。
-[0d9c7358] 3 · 思考怎麼一步步推進
+[803683b2] 3 · 決策形成過程
 [d5c5650b] <span class="muted-note">發散 → 篩選 → 收斂 → 結果</span>
 [b541d23d] <span class="px-date c2-tag-diverge">發散</span>
 [9d5fc7d3] 先把每個問題都攤開
