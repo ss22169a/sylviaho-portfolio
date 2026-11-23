@@ -171,3 +171,15 @@
 [a08ad12c] <a href="https://aimg.as-1.co.jp/c/69/8921/49/69892144cat.pdf" target="_blank" rel="noopener">理研計器：SD-1 系列型錄</a> · A 級
 [19cecd60] <a href="https://www.draeger.com/Content/Documents/Products/Polytron-8200-CAT-pi-101865-en-MASTER.pdf" target="_blank" rel="noopener">Dräger：Polytron 8200 CAT 產品資料</a> · A 級
 [b0356243] <a href="https://www.manualslib.com/manual/1465038/H2scan-Hy-Optima-2710.html" target="_blank" rel="noopener">H2scan：HY-OPTIMA 2700 系列 ATEX 操作手冊（ManualsLib 託管）</a> · A 級
+[ea6c3f32] <b>Infineon</b><span>XENSIV TCI-B 車規氫氣感測器</span>
+[7f1a19fa] <b>New Cosmos</b><span>CSD-04/05 氫氣感測模組</span>
+[f67e519e] <b>GASTECH</b><span>GTF-H2 固定式氫氣偵測器</span>
+[a011099c] <b>Infineon</b><span>XENSIV TCI 工業用氣體感測器</span>
+[891f7155] <b>Sensirion</b><span>STC42A 熱失控氫氣感測器</span>
+[b1425aa8] <b>Honeywell</b><span>HLD 氫洩漏偵測模組</span>
+[c5a2c052] <b>Posifa</b><span>PGS5100 氫氣感測器</span>
+[d08ffd15] <b>Figaro</b><span>TGS2616 氫氣感測器</span>
+[106dd8dd] <b>New Cosmos</b><span>KD-12 系列可燃氣體偵測器（2008 年起）</span>
+[efe99a46] <b>Riken Keiki</b><span>SD-1 固定式氣體偵測器</span>
+[52d4329e] <b>Dräger</b><span>Polytron 8000 系列可燃氣體偵測器</span>
+[c1184840] <b>H2scan</b><span>HY-OPTIMA 2700 氫氣分析儀</span>
