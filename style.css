@@ -2275,3 +2275,19 @@ html[lang="zh-Hant"] .btn { white-space: nowrap; }
 .pc-sub { font-size: 20px; font-weight: 500; color: var(--ink); margin: 36px 0 12px; }
 .tw-apps td, .tw-apps th { white-space: normal; text-align: left; }
 .tw-apps td:first-child { min-width: 8em; }
+
+/* Section head: keep the heading on one line; let a side note drop below when space runs out */
+.section-head { flex-wrap: wrap; gap: 6px 24px; }
+.section-head h2 { flex-shrink: 0; }
+.section-head .muted-note { margin-top: 0; }
+@media (max-width: 640px) {
+  .section-head:has(.muted-note) { flex-direction: column; align-items: flex-start; }
+}
+
+/* Contact card: give the text room, stack the button under it on narrow screens */
+.pipeline.row-between { gap: 24px; }
+.pipeline.row-between > div { flex: 1 1 auto; min-width: 0; }
+@media (max-width: 720px) {
+  .pipeline.row-between { flex-direction: column; align-items: flex-start; }
+  .pipeline.row-between .btn { height: 56px; }
+}
