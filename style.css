@@ -1530,7 +1530,7 @@ a.ai-card:hover .ai-go span { transform: translateX(5px); }
 .px-ok { color: var(--ink); font-weight: 600; }
 .px-note { font-size: 13.5px; color: var(--muted); margin-top: 10px; line-height: 1.45; }
 .px-tag { display: inline-block; border-radius: 30px; padding: 2px 9px; font-size: 12.75px; white-space: nowrap; }
-.t-orange { background: var(--orange); } .t-lilac { background: var(--lilac); } .t-blue { background: var(--blue); color: #fff; }
+.t-lime { background: var(--lime); } .t-orange { background: var(--orange); } .t-lilac { background: var(--lilac); } .t-blue { background: var(--blue); color: #fff; }
 .px-paths, .px-lenses { display: grid; gap: 6px; }
 .px-paths div, .px-lenses div { background: var(--card); border-radius: 6px; padding: 10px 12px; display: grid; gap: 2px; font-size: 14.25px; }
 .px-paths b, .px-lenses b { font-weight: 600; }
