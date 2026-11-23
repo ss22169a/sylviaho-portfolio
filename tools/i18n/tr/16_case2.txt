@@ -3,7 +3,7 @@
 [7d46589d] <a href="work.html#hydrogen-sensing" class="back-link"><span aria-hidden="true">←</span> 案例研究</a>⏎<span class="case-kicker">案例 02 · e-Vehicle Semiconductor · MEMS 氫氣感測</span>
 [b313fd58] 以數據收斂問題，把市場情報轉化為精準上市決策。
 [d9d38888] 工具<b>Google Sheets · 規格書 · IEA 與產業資料 · Claude</b>
-[2a580c8f] 市調估算口徑與可信度落差大，因此改以公開財報與法規判斷需求：目前穩健動能在氫能設施與警報器法規，燃料電池車量小波動大，反應速度則屬業界同級。上市主張先鎖定<b>設施端需求與可驗證差異</b>，第三方驗證同步推進。（來源：日本上市氣體偵測廠財報、IEA、SNE Research）
+[f3d121e6] 市調估算口徑與可信度落差大，因此改以公開財報與法規判斷需求：目前穩健動能在氫能設施與警報器法規，燃料電池車量小波動大，反應速度則屬業界同級。上市主張先鎖定<b>設施端需求與可驗證差異</b>，第三方驗證同步推進。
 [2e372107] 1 · 從發散到收斂
 [1256fa12] <b>6</b><span>個待解問題</span>
 [1bb71b80] <small>市場規模、需求、感測原理、競品、價格、認證</small>
@@ -35,7 +35,7 @@
 [67e24765] <span>工業用固定式偵測器</span>
 [edd9edab] <span>攜帶式偵測器</span>
 [ecc32e04] 需求判斷不靠單一的市場規模數字，而是看買家實際付給偵測專業廠商多少錢。成長集中在<b>設施端和新法規帶動的警報器</b>，工業用固定式偵測器則持平。氫氣方面，New Cosmos 表示已向燃料電池巴士、卡車和堆高機廠商提供車用偵測器樣品，2026 年 3 月也取得電池式家用氫氣警報器的認證，但同時提到歐洲氫能市場的進展比預期慢。
-[b319948d] 為什麼沒有市場規模數字：七份商業報告對氫氣感測器的估計從 2,000 萬到 4.94 億美元都有，因為範圍定義不同而差到 24.2 倍。這些全是 C 級，所以一個都不引用。更大的背景：MEMS 市場 2025 年為 171 億美元，2031 年將達 240 億美元（Yole Group，B 級）。
+[240d9442] 為什麼沒有市場規模數字：七份商業報告對氫氣感測器的估計從 2,000 萬到 4.94 億美元都有，因為範圍定義不同而差到 24.2 倍。這些全是 C 級，所以一個都不引用。更大的背景：MEMS 市場 2025 年為 171 億美元，2031 年將達 240 億美元。
 [b09f7e20] 氫氣需求規模大，低碳氫佔比仍少
 [850b9ad0] <b>&gt;100 Mt</b><small>2025 年全球氫氣需求</small>
 [222d630a] <b>~1 Mt</b><small>其中的低碳氫，年增 20%</small>
@@ -50,7 +50,7 @@
 [7a69dba2] <span>中國</span>
 [bde1dd1e] <span>日本</span>
 [31416b96] <span>美國</span>
-[bf8a87de] 燃料電池車銷量比 2022 年高峰低 41%，加氫站和在路車輛數卻持續增加。所以撐起銷量計畫的是設施，不是車。來源：IEA Global Hydrogen Review 2026 與 Advanced Fuel Cells TCP（A）、LBST H2stations.org（A）、SNE Research（B）。
+[dea228f1] 燃料電池車銷量比 2022 年高峰低 41%，加氫站和在路車輛數卻持續增加。所以撐起銷量計畫的是設施，不是車。
 [2428fbd4] 來源可信度分布
 [7eb0f1c2] 141 個來源。本頁只引用 A 和 B 級（財報、IEA 與政府統計、廠商規格書、研究機構新聞稿）。商業市場規模報告幾乎都是 C 級，所以只留在內部使用。
 [cdd82a04] 上市主打產品規格
@@ -68,7 +68,7 @@
 [19707619] <em>③</em>透過代理商銷售
 [15829bb2] <em>④</em>成熟，推出改款
 [886d7a8b] <b>New Cosmos</b><span>KD-12 系列，2008 年起</span>
-[b7fe03b9] 新品多從第 ② 階段起步（含 Infineon 車規 TCI-B、New Cosmos 新模組）；代理商上架是跨入第 ③ 階段的門檻，第 ④ 階段標竿品則自 2008 年起售。（來源：廠商新聞稿與產品頁 A–B；代理商上架僅判第 ③ 階段）
+[0b893574] 新品多從第 ② 階段起步（含 Infineon 車規 TCI-B、New Cosmos 新模組）；代理商上架是跨入第 ③ 階段的門檻，第 ④ 階段標竿品則自 2008 年起售。
 [0d9c7358] 3 · 思考怎麼一步步推進
 [d5c5650b] <span class="muted-note">發散 → 篩選 → 收斂 → 結果</span>
 [b541d23d] <span class="px-date c2-tag-diverge">發散</span>
@@ -148,3 +148,26 @@
 [37812527] 17 · 稽核紀錄（27 筆中的 2 筆）
 [4366601b] 14 · 結論，各自標上最弱的等級
 [12284724] 15 · 上市計畫
+[bbd92f53] 公司財報
+[4028653d] <a href="https://www.new-cosmos.co.jp/images/ir-library-statement/20260515.pdf" target="_blank" rel="noopener">新コスモス電機：2026 年 3 月期決算短信</a> · A 級
+[6d272296] <a href="https://www2.jpx.co.jp/disc/77340/081220260513528085_tse-acedjpsm-77340-20260513377340-ixbrl.htm" target="_blank" rel="noopener">理研計器：2026 年 3 月期決算短信（JPX）</a> · A 級
+[2611daf9] <a href="https://www.draeger.com/Content/Documents/Content/annual-report-2025-EmA4R7Xhj6.pdf" target="_blank" rel="noopener">Dräger：2025 年報</a> · A 級
+[eb685154] 市場與需求
+[99a33bc5] <a href="https://www.iea.org/reports/global-hydrogen-review-2026/demand" target="_blank" rel="noopener">IEA：Global Hydrogen Review 2026（需求）</a> · A 級
+[2c3e3787] <a href="https://epflicht.ulb.uni-bonn.de/download/pdf/780400" target="_blank" rel="noopener">IEA 燃料電池 TCP：燃料電池車與加氫站部署 2024 年更新</a> · A 級
+[fbd7108d] <a href="https://www.h2stations.org/?p=5357" target="_blank" rel="noopener">LBST H2stations.org：第 17 次年度加氫站統計</a> · A 級
+[8f071459] <a href="https://www.sneresearch.com/en/insight/release_view/592/page/0" target="_blank" rel="noopener">SNE Research：2025 全球燃料電池車市場</a> · B 級
+[7d904149] <a href="https://www.i40today.com/mems-industry-ai-drives-a-growth-resurgence/" target="_blank" rel="noopener">Yole Group：Status of the MEMS Industry 2026（i4.0 Today 轉載）</a> · B 級
+[d55d841f] 產品與規格
+[d84c6473] <a href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/8893/448_TCIBXTMA1.pdf" target="_blank" rel="noopener">Infineon：XENSIV TCI-B 規格書</a> · A 級
+[31107f48] <a href="https://www.mouser.ee/infineon-xensiv-tci-integrated-gas-sensor" target="_blank" rel="noopener">Infineon XENSIV TCI（Mouser 新品頁）</a> · B 級
+[4b4c03ab] <a href="https://prtimes.jp/main/html/rd/p/000000132.000077903.html" target="_blank" rel="noopener">新コスモス電機：CSD-04/05 氫氣感測模組發售（PR TIMES）</a> · B 級
+[41821a0c] <a href="https://www.new-cosmos.co.jp/wp/wp-content/uploads/ind/kd12IIpd12II_cat.pdf" target="_blank" rel="noopener">新コスモス電機：KD-12II／PD-12II 型錄</a> · A 級
+[87ffd038] <a href="https://gastech.com.tw/mobile/catalog_gtf-h2.html" target="_blank" rel="noopener">育強科技 GASTECH：GTF-H2 型錄與規格</a> · A 級
+[f8268c64] <a href="https://www.mouser.com/en/new/sensirion/sensirion-stc42a-hydrogen-thermal-runaway-sensor" target="_blank" rel="noopener">Sensirion STC42A（Mouser 新品頁）</a> · B 級
+[f729b238] <a href="https://www.mouser.com/en/ProductDetail/Honeywell/HLD-111-130-001?qs=LnCj936TGbXyFWTHg2RZlA%3D%3D" target="_blank" rel="noopener">Honeywell HLD（Mouser 上架頁）</a> · C 級
+[830f7f2c] <a href="https://www.globenewswire.com/news-release/2026/04/21/3278195/0/en/Posifa-Technologies-Introduces-PGS5100-Series-Hydrogen-Sensors-for-EV-Battery-Safety-and-Leak-Monitoring.html" target="_blank" rel="noopener">Posifa：PGS5100 發表（GlobeNewswire）</a> · B 級
+[9e04d858] <a href="https://www.figarosensor.com/product/docs/tgs2616-c00_product%20information%28fusa%29rev02.pdf" target="_blank" rel="noopener">Figaro：TGS2616-C00 產品資料</a> · A 級
+[a08ad12c] <a href="https://aimg.as-1.co.jp/c/69/8921/49/69892144cat.pdf" target="_blank" rel="noopener">理研計器：SD-1 系列型錄</a> · A 級
+[19cecd60] <a href="https://www.draeger.com/Content/Documents/Products/Polytron-8200-CAT-pi-101865-en-MASTER.pdf" target="_blank" rel="noopener">Dräger：Polytron 8200 CAT 產品資料</a> · A 級
+[b0356243] <a href="https://www.manualslib.com/manual/1465038/H2scan-Hy-Optima-2710.html" target="_blank" rel="noopener">H2scan：HY-OPTIMA 2700 系列 ATEX 操作手冊（ManualsLib 託管）</a> · A 級
