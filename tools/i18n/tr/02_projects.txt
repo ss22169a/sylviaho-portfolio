@@ -32,9 +32,9 @@
 [eb6461c3] <a class="btn btn-dark proj-open" href="category-intelligence.html">閱讀分析 <span>→</span></a>
 [40c12842] 評估燃油車零件週期，決定擴大投資、維持現狀變現，還是退出？
 [f12a1a83] <span class="tag tag-lime">分析完成</span><span class="tag">汽車零件</span>
-[2d1128ce] 電動車在新車銷售的占比越來越高，哪些售後零件 SKU 還有獲利的維修期？哪些該停止補貨？
-[8483ee33] NHTSA 車輛存活率表、S&amp;P Global Mobility 車齡資料與 IEA / Cox Automotive 電動車資料，在 DuckDB SQL 中與 96 個料號和搜尋意圖的 Amazon 需求串接。
-[27b6150d] 結合車輛存活率與 Amazon 搜尋需求，將產品分為加碼、觀察、收割、退出四類；發現大部分庫存壓在老車型上，成長最快的 20 條產品線中有 19 條賣家沒有賣。
+[49bcb3ea] 隨著電動車普及，盤點哪些燃油車零件還有獲利空間，哪些該停止補貨。
+[b3411db6] 在 DuckDB SQL 中整合車齡存活率（NHTSA、S&amp;P Global Mobility）與電動車趨勢數據（IEA、Cox Automotive），並與 96 個料號的 Amazon 搜尋需求進行交叉比對。
+[e539fbdc] 建立「加碼、觀察、變現、退出」四象限分類；揭露賣家目前多數庫存積壓在需求萎縮的老舊車型，且市場成長最快的 20 條產品線中，有 19 條尚未布局。
 [fb048a1c] <a class="btn btn-dark proj-open" href="lifecycle-matrix.html">閱讀分析 <span>→</span></a>
 [79d01f36] <span class="case-kicker">對應：市場規模估算</span>
 [45000d8f] AI 資料中心會讓氫能提早起飛嗎？
