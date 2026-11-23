@@ -1,7 +1,7 @@
 [4d1c8e5c] 一份涵蓋 141 個來源的市場追蹤表，如何把六個未解的問題收斂成 MEMS 氫氣感測器的三個上市決策。
 [f5c1d2cf] MEMS 氫氣感測器 Go-to-Market 策略 | Sylvia Ho
 [7d46589d] <a href="work.html#hydrogen-sensing" class="back-link"><span aria-hidden="true">←</span> 案例研究</a>⏎<span class="case-kicker">案例 02 · e-Vehicle Semiconductor · MEMS 氫氣感測</span>
-[5ba5cf0f] 以 141 個來源的市場追蹤表為基礎，把待解問題收斂成上市決策，並明確界定可立即對外的主張邊界。
+[b313fd58] 以數據收斂問題，把市場情報轉化為精準上市決策。
 [d9d38888] 工具<b>Google Sheets · 規格書 · IEA 與產業資料 · Claude</b>
 [2a580c8f] 市調估算口徑與可信度落差大，因此改以公開財報與法規判斷需求：目前穩健動能在氫能設施與警報器法規，燃料電池車量小波動大，反應速度則屬業界同級。上市主張先鎖定<b>設施端需求與可驗證差異</b>，第三方驗證同步推進。（來源：日本上市氣體偵測廠財報、IEA、SNE Research）
 [2e372107] 1 · 從發散到收斂
