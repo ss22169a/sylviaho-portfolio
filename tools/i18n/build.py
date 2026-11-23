@@ -98,7 +98,7 @@ AUTO_TIP=[(r'^NOx sensor · ','NOx 感測器 · '),(r'^Starter · ','啟動馬�
  (r'([0-9,]+) search clicks / mo','每月 \\1 次搜尋點擊'),(r'([0-9,]+) market purchases / mo','每月 \\1 次市場購買'),
  (r' · price gap ',' · 價差 '),
  (r'Not carried →','沒有賣 →'),(r'Different part no\. →','料號不同 →'),(r'Delisted →','已下架 →'),(r'In stock →','有庫存 →'),
- (r'→ Reprice or exit$','→ 調價或退出'),(r'→ Watch$','→ 觀察'),(r'→ Invest$','→ 加碼'),(r'→ Harvest$','→ 收割'),(r'→ Exit$','→ 退出')]
+ (r'→ Reprice or exit$','→ 調價或退出'),(r'→ Watch$','→ 觀察'),(r'→ Invest$','→ 加碼'),(r'→ Harvest$','→ 變現'),(r'→ Exit$','→ 退出')]
 def auto_tip(v):
     for a,b in AUTO_TIP: v=re.sub(a,b,v)
     return v
