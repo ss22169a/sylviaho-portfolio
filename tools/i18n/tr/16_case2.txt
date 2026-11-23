@@ -93,7 +93,7 @@
 [1ef8b01f] <span class="px-tag t-gray">ppm 級參考</span>
 [b8e4cf1b] 涵蓋主要產地與不同感測原理。表格僅列部分。
 [4c1d9458] <span class="px-date c2-tag-filter">篩選</span>
-[a03dc8b0] 每個數字用之前先分級
+[75dc07ac] 建立證據分級
 [304198ee] 每個數字都標上 A–D 的證據等級和查核日期。只有 A 和 B 能對外使用。這條規則對結論的影響，比任何單一來源都大。
 [88126878] <i></i><i></i><i></i><span>證據等級 · 每個數字都要遵守的規則</span>
 [7261b1ec] <b>A</b><span>政府、IEA、廠商規格書</span><em>可對外</em>
