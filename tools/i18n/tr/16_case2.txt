@@ -51,7 +51,7 @@
 [bde1dd1e] <span>日本</span>
 [31416b96] <span>美國</span>
 [bf8a87de] 燃料電池車銷量比 2022 年高峰低 41%，加氫站和在路車輛數卻持續增加。所以撐起銷量計畫的是設施，不是車。來源：IEA Global Hydrogen Review 2026 與 Advanced Fuel Cells TCP（A）、LBST H2stations.org（A）、SNE Research（B）。
-[62884cbd] 證據組成
+[2428fbd4] 來源可信度分布
 [7eb0f1c2] 141 個來源。本頁只引用 A 和 B 級（財報、IEA 與政府統計、廠商規格書、研究機構新聞稿）。商業市場規模報告幾乎都是 C 級，所以只留在內部使用。
 [2e7ef5f3] 上市主張地圖
 [db94b378] <span class="c2-chip c2-blue">以同級水準陳述</span><b>反應時間</b><small>和最快的觸媒式、電化學式偵測器相當，所以只說「同等水準」，絕不說獨家。</small>
