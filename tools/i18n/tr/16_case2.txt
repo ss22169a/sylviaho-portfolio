@@ -92,7 +92,7 @@
 [e38e03e6] <span class="px-tag t-orange">直接對手</span>
 [a3cff6b1] 電化學式
 [1ef8b01f] <span class="px-tag t-gray">ppm 級參考</span>
-[47fd0757] 七個國家、六種感測原理的 25 家廠商，從晶片廠到防爆偵測器品牌。
+[93e1c4b4] 競品從上游晶片廠一路比到防爆偵測器品牌，涵蓋主要產地與不同感測原理。
 [4c1d9458] <span class="px-date c2-tag-filter">篩選</span>
 [a03dc8b0] 每個數字用之前先分級
 [304198ee] 每個數字都標上 A–D 的證據等級和查核日期。只有 A 和 B 能對外使用。這條規則對結論的影響，比任何單一來源都大。
