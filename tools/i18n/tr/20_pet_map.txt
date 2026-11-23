@@ -34,7 +34,6 @@
 [fb558887] ← 中立：不綁通路、不需硬體
 [45cafba9] 綁定自家通路、硬體或保險 →
 [9144b5d6] 不記錄日常照護 ← → 記錄日常照護
-[753d2f8a] 位置是我依上表、App Store 與各官網資料做的定性判斷，不是量化分數。有兩點值得注意。第一，Pettify 等新一代 App 已內建給醫師看的報告，看診前的結構化摘要已是基本配備，不是優勢。第二，左上角並不空白：小型紀錄 App 已能記錄體重、飲食與用藥，其中一款也能記錄血糖等居家數值。但從各 App 的公開說明看，它們都沒有台灣市售食品資料庫或台灣醫院資料庫，也沒有大型業者在這一區；這些在地資料，就是這款 App 的競爭點。
 [4c591a41] <a href="https://www.pettifyapp.com/" target="_blank" rel="noopener">Pettify（官方網站）</a> · A 級
 [b3fc0f83] <a href="https://www.beomelo.com/" target="_blank" rel="noopener">Omelo（官方網站）</a> · A 級
 [405ef1ab] <a href="https://www.petriage.com/" target="_blank" rel="noopener">Petriage（官方網站）</a> · A 級

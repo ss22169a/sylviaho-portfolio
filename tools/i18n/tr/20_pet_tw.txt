@@ -1,0 +1,37 @@
+[d8881012] 策略收斂：以成長動能最強的貓與多貓家庭為首發族群，並以「數秒內完成單筆紀錄」為核心體驗，確保長期留存。
+[8457fbe2] 我從自己的經驗出發，再用公開數據確認規模。寵物數量、回診與醫療支出都在增加，但大型業者的工具只涵蓋登記、疫苗與自家消費紀錄；看診最需要的日常紀錄，目前只有小型 App 各做一部分，還沒有人整合。
+[d8e2c850] 每家大型業者都受限於自己的商業模式，沒有一家提供跨通路、跨醫院、不需硬體的中立照護紀錄。小型紀錄 App 已能匯出給醫師的 PDF 報告，所以看診摘要是基本盤，不是優勢。
+[f055141d] 位置是我依上表、App Store 與各官網資料做的定性判斷，不是量化分數。有兩點值得注意。第一，Pettify 等新一代 App 已內建給醫師看的報告，看診前的結構化摘要已是基本配備，不是優勢。第二，左上角並不空白，台灣也一樣：小型 App 各做一塊，例如貓食資料庫加看診 PDF（mowfun）、整理上千款貓罐（喵世代）、動物醫院地圖（Memoark、PetView）。但從公開說明看，還沒有一款把這些整合起來，缺口見下表。
+[6f91304d] mowfun 貓飯
+[13b8f93f] 僅貓
+[9712fc4f] ✓ 上千筆濕食
+[27cc4e71] ✓ PDF
+[8d0577c4] 喵世代 Purrzilla
+[93fd2b36] ✓ 上千款貓罐
+[a3a73b6d] Meow
+[0f4a9f18] 飼主自行輸入
+[a1270321] Memoark
+[4a49147c] 犬貓
+[01b83d9f] ✓ 地圖
+[b4640a92] PetView
+[48cddccc] ✓ 健康紀錄
+[af641725] ✓ 找附近醫院
+[b0e99fe4] 小跑貓嗚嗚
+[bf3abb14] ✓ 2019 年後未更新
+[2db61e46] <b>這款 App</b>
+[4455979f] ✓ 780+ 筆犬貓食品
+[bb3448b9] ✓ 政府立案醫院
+[75967d06] 台灣已有的小型 App
+[fc4a695f] App
+[83a72388] 物種
+[a42e58a1] 台灣市售食品資料庫
+[5bfc639d] 日常紀錄
+[0f2a516f] 居家醫療照護
+[6cea1e37] 醫院資料
+[4fa66f83] 看診匯出
+[94e8fbb8] – 表示公開說明沒有提到。居家醫療照護指皮下點滴、血糖、胰島素等紀錄。我沒有實際安裝測試，只在 Google Play 上架的 App 也可能沒查到。查得到評分數的，都不到 100 則。
+[5ccf1d9a] <a href="https://apps.apple.com/tw/app/mowfun/id6754154873" target="_blank" rel="noopener">mowfun 貓飯（App Store 或官方網站）</a> · A 級
+[ef909732] <a href="https://apps.apple.com/app/id6759451898" target="_blank" rel="noopener">喵世代 Purrzilla（App Store 或官方網站）</a> · A 級
+[91e08b5f] <a href="https://apps.apple.com/tw/app/meow-%E9%9A%A8%E6%99%82%E9%9A%A8%E5%9C%B0%E8%A8%98%E9%8C%84%E4%BD%A0%E7%9A%84%E5%AF%B5%E7%89%A9/id6642659345" target="_blank" rel="noopener">Meow（App Store 或官方網站）</a> · A 級
+[536ac69f] <a href="https://www.petview.app/" target="_blank" rel="noopener">PetView（App Store 或官方網站）</a> · A 級
+[d12731bf] <a href="https://apps.apple.com/tw/app/id875707529" target="_blank" rel="noopener">小跑貓嗚嗚（App Store 或官方網站）</a> · A 級
