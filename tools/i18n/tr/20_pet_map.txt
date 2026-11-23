@@ -1,25 +1,4 @@
-[c078223b] 這款 App
-[03c337f2] 寵物筆記
-[2386cc9e] 鏟屎官日記（中國）
-[720f9974] 11pets
-[b9adc7e9] Memoark AI
-[4e96e532] 陪胖日記（香港保險）
-[624d7f9b] PETKIT
-[ad577f83] Tractive
-[a721e5c7] 農業部寵物身分證
-[d1874c54] PetDesk（北美）
-[516d9db3] 寵物公園
-[3f64b1b9] 大樹藥局（連鎖藥局）
-[3d70aad8] 東森寵物雲
-[95b05594] 紀錄類 App、政府系統
 [9c43b097] 醫院或保險
-[b76ab659] 硬體
-[5efa5cc0] 連鎖通路
-[68679305] 競品定位圖
-[03a7071a] 競品定位圖：是否綁定自家通路或硬體，以及是否記錄日常照護
-[fb558887] ← 中立：不綁通路、不需硬體
-[45cafba9] 綁定自家通路、硬體或保險 →
-[9144b5d6] 不記錄日常照護 ← → 記錄日常照護
 [9a4bdc41] <a href="https://apps.apple.com/tw/app/petnoteplus-%E5%8F%AF%E5%85%B1%E4%BA%AB%E7%9A%84%E5%AF%B5%E7%89%A9%E5%81%A5%E5%BA%B7%E7%B4%80%E9%8C%84%E6%87%89%E7%94%A8%E7%A8%8B%E5%BC%8F/id1553584485" target="_blank" rel="noopener">寵物筆記 PetnotePlus（App Store）</a> · A 級
 [5d4193a1] <a href="https://apps.apple.com/mo/app/%E9%8F%9F%E5%B1%8E%E5%AE%98%E6%97%A5%E8%A8%98-%E5%AF%B5%E7%89%A9%E6%97%A5%E5%B8%B8%E8%A8%98%E9%8C%84%E5%B7%A5%E5%85%B7-%E7%8C%AB%E7%8B%97%E9%A3%9F%E8%AD%9C%E7%86%9F%E8%87%AA%E8%A3%BD/id1599108594" target="_blank" rel="noopener">鏟屎官日記（App Store）</a> · A 級
 [81fc2a2a] <a href="https://apps.apple.com/tw/app/11pets-pet-care/id1232470530" target="_blank" rel="noopener">11pets（App Store）</a> · A 級
@@ -28,3 +7,37 @@
 [b53e3d8d] <a href="https://www.chewy.com/tractive-dog-gps-tracker-activity/dp/1665054" target="_blank" rel="noopener">Tractive 追蹤器與訂閱（Chewy）</a> · B 級
 [cc219118] <a href="https://www.peoplenews.tw/?p=23444" target="_blank" rel="noopener">大樹將寵物服務擴展到 400 多家藥局（民報）</a> · B 級
 [2c9bffc9] 位置是我依上表與 App Store 資料做的定性判斷，不是量化分數。左上角並不空白：小型紀錄 App 已能記錄體重、飲食與用藥，其中一款也能記錄血糖等居家數值。但從 App Store 說明看，它們都沒有台灣市售食品資料庫或台灣醫院資料庫，也沒有大型業者在這一區；這款 App 要競爭的就是這裡。
+[c078223b] 這款 App
+[ddb25be5] Pettify
+[03c337f2] 寵物筆記
+[a8c163b5] Omelo
+[2386cc9e] 鏟屎官日記（中國）
+[720f9974] 11pets
+[b9adc7e9] Memoark AI
+[4e96e532] 陪胖日記（香港保險）
+[624d7f9b] PETKIT
+[ad577f83] Tractive
+[01c3de51] Petriage
+[d1874c54] PetDesk（北美）
+[016ea28b] VitusVet
+[516d9db3] 寵物公園
+[3f64b1b9] 大樹藥局（連鎖藥局）
+[3d70aad8] 東森寵物雲
+[a721e5c7] 農業部寵物身分證
+[32982b36] 線上獸醫（Pawp、Airvet）
+[95b05594] 紀錄類 App、政府系統
+[90a92337] 醫院、遠距醫療或保險
+[b76ab659] 硬體
+[5efa5cc0] 連鎖通路
+[68679305] 競品定位圖
+[03a7071a] 競品定位圖：是否綁定自家通路或硬體，以及是否記錄日常照護
+[fb558887] ← 中立：不綁通路、不需硬體
+[45cafba9] 綁定自家通路、硬體或保險 →
+[9144b5d6] 不記錄日常照護 ← → 記錄日常照護
+[753d2f8a] 位置是我依上表、App Store 與各官網資料做的定性判斷，不是量化分數。有兩點值得注意。第一，Pettify 等新一代 App 已內建給醫師看的報告，看診前的結構化摘要已是基本配備，不是優勢。第二，左上角並不空白：小型紀錄 App 已能記錄體重、飲食與用藥，其中一款也能記錄血糖等居家數值。但從各 App 的公開說明看，它們都沒有台灣市售食品資料庫或台灣醫院資料庫，也沒有大型業者在這一區；這些在地資料，就是這款 App 的競爭點。
+[4c591a41] <a href="https://www.pettifyapp.com/" target="_blank" rel="noopener">Pettify（官方網站）</a> · A 級
+[b3fc0f83] <a href="https://www.beomelo.com/" target="_blank" rel="noopener">Omelo（官方網站）</a> · A 級
+[405ef1ab] <a href="https://www.petriage.com/" target="_blank" rel="noopener">Petriage（官方網站）</a> · A 級
+[49c5ac8f] <a href="https://vitusvet.com/" target="_blank" rel="noopener">VitusVet（官方網站）</a> · A 級
+[3362a50c] <a href="https://pawp.com/" target="_blank" rel="noopener">Pawp（官方網站）</a> · A 級
+[8117f682] <a href="https://airvet.com/" target="_blank" rel="noopener">Airvet（官方網站）</a> · A 級
