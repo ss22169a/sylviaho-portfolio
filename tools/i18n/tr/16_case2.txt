@@ -68,7 +68,7 @@
 [19707619] <em>③</em>透過代理商銷售
 [15829bb2] <em>④</em>成熟，推出改款
 [886d7a8b] <b>New Cosmos</b><span>KD-12 系列，2008 年起</span>
-[0b893574] 新品多從第 ② 階段起步（含 Infineon 車規 TCI-B、New Cosmos 新模組）；代理商上架是跨入第 ③ 階段的門檻，第 ④ 階段標竿品則自 2008 年起售。
+[8adc2b3e] 新品多從第 ② 階段起步（含 Infineon 車規 TCI-B、New Cosmos 新模組）；代理商上架是跨入第 ③ 階段的門檻，第 ④ 階段標竿品 New Cosmos KD-12 系列則自 2008 年起售。
 [0d9c7358] 3 · 思考怎麼一步步推進
 [d5c5650b] <span class="muted-note">發散 → 篩選 → 收斂 → 結果</span>
 [b541d23d] <span class="px-date c2-tag-diverge">發散</span>
@@ -179,7 +179,7 @@
 [b1425aa8] <b>Honeywell</b><span>HLD 氫洩漏偵測模組</span>
 [c5a2c052] <b>Posifa</b><span>PGS5100 氫氣感測器</span>
 [d08ffd15] <b>Figaro</b><span>TGS2616 氫氣感測器</span>
-[106dd8dd] <b>New Cosmos</b><span>KD-12 系列可燃氣體偵測器（2008 年起）</span>
+[1a5914c3] <b>New Cosmos</b><span>KD-12 系列可燃氣體偵測器</span>
 [efe99a46] <b>Riken Keiki</b><span>SD-1 固定式氣體偵測器</span>
 [52d4329e] <b>Dräger</b><span>Polytron 8000 系列可燃氣體偵測器</span>
 [c1184840] <b>H2scan</b><span>HY-OPTIMA 2700 氫氣分析儀</span>
