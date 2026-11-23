@@ -29,7 +29,7 @@
 [0f2a516f] 居家醫療照護
 [6cea1e37] 醫院資料
 [4fa66f83] 看診匯出
-[94e8fbb8] – 表示公開說明沒有提到。居家醫療照護指皮下點滴、血糖、胰島素等紀錄。我沒有實際安裝測試，只在 Google Play 上架的 App 也可能沒查到。查得到評分數的，都不到 100 則。
+[e72f0071] – 代表公開說明未提及；居家醫療照護指皮下點滴、血糖、胰島素等紀錄。未實際安裝測試，亦可能遺漏僅上架 Google Play 的 App；可查到評分的皆低於 100 則。
 [5ccf1d9a] <a href="https://apps.apple.com/tw/app/mowfun/id6754154873" target="_blank" rel="noopener">mowfun 貓飯（App Store 或官方網站）</a> · A 級
 [ef909732] <a href="https://apps.apple.com/app/id6759451898" target="_blank" rel="noopener">喵世代 Purrzilla（App Store 或官方網站）</a> · A 級
 [91e08b5f] <a href="https://apps.apple.com/tw/app/meow-%E9%9A%A8%E6%99%82%E9%9A%A8%E5%9C%B0%E8%A8%98%E9%8C%84%E4%BD%A0%E7%9A%84%E5%AF%B5%E7%89%A9/id6642659345" target="_blank" rel="noopener">Meow（App Store 或官方網站）</a> · A 級
