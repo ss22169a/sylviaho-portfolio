@@ -95,7 +95,7 @@
 [4c1d9458] <span class="px-date c2-tag-filter">篩選</span>
 [75dc07ac] 建立證據分級
 [413e4853] 所有數據依 A–D 分級並記錄查核日期，對外僅採 A、B 級，確保結論建立在可驗證的來源上。
-[88126878] <i></i><i></i><i></i><span>證據等級 · 每個數字都要遵守的規則</span>
+[77a6b6bb] <i></i><i></i><i></i><span>證據等級與使用範圍</span>
 [7261b1ec] <b>A</b><span>政府、IEA、廠商規格書</span><em>可對外</em>
 [bda84e0e] <b>B</b><span>研究機構或廠商新聞稿</span><em>可對外，需註明出處</em>
 [9f7de91b] <b>C</b><span>報告摘要頁、產業媒體、經銷商</span><em class="c2-no">僅限內部</em>
@@ -185,3 +185,4 @@
 [c1184840] <b>H2scan</b><span>HY-OPTIMA 2700 氫氣分析儀</span>
 [03f52599] <span class="px-tag t-lime">自家產品</span>
 [1cbfa6de] 05 · 全球廠商調查
+[73443c10] 證據等級與使用範圍
