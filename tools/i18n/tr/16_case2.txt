@@ -54,10 +54,10 @@
 [2428fbd4] 來源可信度分布
 [7eb0f1c2] 141 個來源。本頁只引用 A 和 B 級（財報、IEA 與政府統計、廠商規格書、研究機構新聞稿）。商業市場規模報告幾乎都是 C 級，所以只留在內部使用。
 [cdd82a04] 上市主打產品規格
-[db94b378] <span class="c2-chip c2-blue">以同級水準陳述</span><b>反應時間</b><small>和最快的觸媒式、電化學式偵測器相當，所以只說「同等水準」，絕不說獨家。</small>
-[515c7f47] <span class="c2-chip c2-lilac">點名比較對象再說</span><b>功耗</b><small>比某個具名對手低，但不是同級最低。主張裡要寫出贏過誰。</small>
-[8e7eec4f] <span class="c2-chip c2-orange">等測試報告</span><b>準確度</b><small>規格的單位和對手不同，公平比較需要在相同條件下以 vol% 測試。</small>
-[444f5ea2] <span class="c2-chip c2-orange">等測試報告</span><b>使用壽命</b><small>相對於 3–5 年壽命的觸媒式感測器，這是最有潛力的差異點，所以要先有證明。</small>
+[e15f5f8b] <span class="c2-chip c2-blue">可主張同級</span><b>反應時間</b><small>與最快的觸媒式、電化學式偵測器相當，僅主張「同等水準」，不宣稱獨家。</small>
+[579129c3] <span class="c2-chip c2-lilac">需具名比較</span><b>功耗</b><small>低於特定對手，但非同級最低；對外主張需明確點出比較對象。</small>
+[e477573f] <span class="c2-chip c2-orange">待測試佐證</span><b>準確度</b><small>與對手的規格單位不同，需在相同條件下以 vol% 測試，才能公平比較。</small>
+[4f3e725c] <span class="c2-chip c2-orange">待測試佐證</span><b>使用壽命</b><small>相較於觸媒式感測器的 3–5 年壽命，這是最具潛力的差異點，需先取得測試證明。</small>
 [49dfb9f2] 產品商業化階段：各競品目前產品上市階段分佈
 [a5d462c0] <em>①</em>開發／樣品
 [72a07f2d] <span>（未追蹤）</span>
