@@ -1,8 +1,7 @@
 [60e080d2] AI 協助電商比價與廣告監控 | Sylvia Ho
 [0e11cb05] AI 協助電商比價與廣告監控
 [686d94c2] 由我制定規格，讓 AI 負責整理資料、找出異常，最後由我驗證與查核內容。
-[5fa69856] 關鍵數字
-[9ec1ba92] 每天看報表、調整廣告要花不少時間，成效不好時花得更久。料號很多，競品價格沒辦法一一比對，賠錢的商品常常很晚才被發現。
+[9ec1ba92] 每天看報表、調整廣告要花不少時間，成效不好時花得更久。料號很多，競品價格難以全面比對，賠錢的商品常常很晚才被發現。
 [fe4d9a48] 可量化的異常用固定規則提醒，例如花費暴增；需要判斷的工作交給 AI，例如辨識同一料號、分類搜尋意圖，這類工作例外多、數量大，規則和人工都難以負荷。
 [5b9332d0] 把廣告和 Amazon 後台的數據自動匯進同一份表，不用每天手動整理。資料本身也有問題，訂單會延遲、有時會重複，所以每筆都記下來源和日期，有疑問時能回頭查。
 [1298f3c3] 分兩層看：
@@ -15,15 +14,15 @@
 [33dd69d0] 期間<b>2026 年 10 月起</b>
 [05a1010e] 工具<b>Windsor.ai · Google Sheets · Google Ads Scripts · Seller Central · LLM Agent</b>
 [d59d0708] 結果<b>點擊進商品頁 6% → 22%</b>
-[13a6d3f6] <b>1–2 小時</b><small>導入前，每天看報表與調整廣告的時間（估計）</small>
-[07937e33] <b>900+</b><small>需要比價的料號</small>
-[cb8a71bb] <b>6% → 22%</b><small>廣告點進商品頁的比例</small>
-[6e3f7fd8] <b>高 72–273%</b><small>一條產品線比同料號競品貴出的幅度，因此暫停其廣告</small>
-[3f59a72b] <b>±20%</b><small>AI 每次調整的上限，超過一律人工核准</small>
 [8f41ece5] <span class="ak-step ak-c1">01</span>問題
+[e1d7f7d6] <b>1–2 小時</b><small>導入前每天看報表、調整廣告的時間（估計）</small>
+[07937e33] <b>900+</b><small>需要比價的料號</small>
 [3f56278b] <span class="ak-step ak-c2">02</span>為什麼用 AI
 [78e02e58] <span class="ak-step ak-c3">03</span>資料
 [97b86717] <span class="ak-step ak-c4">04</span>怎麼判斷有沒有用
+[3f838dea] <b>6% → 22%</b><small>廣告點進商品頁的比例</small>
+[dd917c63] <b>高 72–273%</b><small>一條產品線比同料號競品貴出的幅度，已暫停其廣告</small>
 [916ce5a0] <span class="ak-step ak-c1">05</span>刻意不讓 AI 做的事
 [daf45aca] <span class="ak-step ak-c2">06</span>風險與把關
+[1ea9bfc2] <b>±20%</b><small>每次調整的上限，超過須由我核准</small>
 [acd95741] <span class="ak-step ak-c3">07</span>學到的事

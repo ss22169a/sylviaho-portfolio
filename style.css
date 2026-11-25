@@ -2310,3 +2310,7 @@ html[lang="zh-Hant"] .hero h1 { font-size: min(51px, 9.6cqi); }
 .ak-kpis div small { color: var(--ink-dark); }
 .ak-step { display: inline-block; font-size: 14px; font-weight: 600; padding: 2px 10px; border-radius: 999px; margin-right: 8px; vertical-align: 3px; color: var(--ink); }
 .ak-c1 { background: var(--lime); } .ak-c2 { background: var(--lilac); } .ak-c3 { background: var(--blue); } .ak-c4 { background: var(--orange); }
+.ak-nums { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 4.5px; margin: 4px 0 14px; }
+.ak-nums div { border-radius: 4.5px; padding: 12px 14px; }
+.ak-nums b { display: block; font-size: 22px; font-weight: 600; line-height: 1.2; margin-bottom: 4px; color: var(--ink); }
+.ak-nums small { display: block; font-size: 13.5px; line-height: 1.45; color: var(--ink-dark); }
