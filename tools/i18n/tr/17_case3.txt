@@ -1,7 +1,7 @@
 [39e02503] 一支採用 PUF 技術的 FIDO2 安全金鑰的上市研究與雙軌定位，搭配 FIDO Alliance 的市場資料。
 [a719575d] 在 Amazon 北美市場推出第一款 PUF + FIDO 安全金鑰：怎麼做定位？ | Sylvia Ho
 [dab4f8a1] <a href="work.html#pufido-launch" class="back-link"><span aria-hidden="true">←</span> 案例研究</a>
-[782c98d3] PUFido，SecuX 稱它是全球第一支採用 PUF（物理不可複製功能）技術的 FIDO2 安全金鑰，要打進一個由知名品牌主導的類別，該怎麼找到定位？
+[812ac574] 面對既有領導品牌高度集中的安全金鑰市場，SecuX 旗下首款 PUF + FIDO2 金鑰 PUFido 如何建立差異化定位並打開北美聲量？
 [c24ea2a1] 工具<b>Google Trends · SEMrush · 問卷 · GA4 · Hotjar</b>
 [e4236706] 結果<b>30 天內進入 Amazon 類別前 5 名*</b>
 [6844c422] 障礙不在需求。大家怕忘記密碼、怕帳號被盜，也對無密碼登入有興趣，但多數人不懂安全金鑰怎麼運作。所以上市以教育為主軸，分成兩條線：對一般使用者講白話的「插上、輕觸、完成」，對專業人士講標準和硬體安全。這支金鑰 <b>30 天內進入 Amazon 類別前 5 名</b>。*
