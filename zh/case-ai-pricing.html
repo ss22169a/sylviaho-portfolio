@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>用 AI 協助電商比價與廣告監控，關鍵決定仍由人把關 | Sylvia Ho</title>
+  <meta name="description" content="How an AI workflow took over data gathering and anomaly flagging for an automotive parts store on Amazon, while spending, listings and settings stayed behind human approval." />
+  <link rel="canonical" href="https://ss22169a.github.io/sylviaho-portfolio/zh/case-ai-pricing.html" />
+  <link rel="alternate" hreflang="en" href="https://ss22169a.github.io/sylviaho-portfolio/case-ai-pricing.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://ss22169a.github.io/sylviaho-portfolio/zh/case-ai-pricing.html" />
+  <link rel="alternate" hreflang="x-default" href="https://ss22169a.github.io/sylviaho-portfolio/case-ai-pricing.html" />
+  <meta name="author" content="Sylvia Ho" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#262626" />
+  <link rel="icon" href="../favicon.ico" sizes="48x48" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+  <link rel="manifest" href="../site.webmanifest" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Sylvia Ho" />
+  <meta property="og:locale" content="zh_TW" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:title" content="用 AI 協助電商比價與廣告監控，關鍵決定仍由人把關 | Sylvia Ho" />
+  <meta property="og:description" content="How an AI workflow took over data gathering and anomaly flagging for an automotive parts store on Amazon, while spending, listings and settings stayed behind human approval." />
+  <meta property="og:url" content="https://ss22169a.github.io/sylviaho-portfolio/zh/case-ai-pricing.html" />
+  <meta property="og:image" content="https://ss22169a.github.io/sylviaho-portfolio/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Sylvia Ho，行銷與 GTM 策略專家" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="用 AI 協助電商比價與廣告監控，關鍵決定仍由人把關 | Sylvia Ho" />
+  <meta name="twitter:description" content="How an AI workflow took over data gathering and anomaly flagging for an automotive parts store on Amazon, while spending, listings and settings stayed behind human approval." />
+  <meta name="twitter:image" content="https://ss22169a.github.io/sylviaho-portfolio/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&family=Stack+Sans+Headline:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css?v=d45a7108" />
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="../js/matter.min.js" defer></script>
+  <script src="../js/posts.js?v=82277f51" defer></script>
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="side-top">
+      <a href="index.html" class="logo"><span class="logo-mark" aria-hidden="true"><svg class="lm lm-1" viewBox="-50 -50 100 100"><circle cx="-22" cy="-22" r="24"/><circle cx="22" cy="-22" r="24"/><circle cx="-22" cy="22" r="24"/><circle cx="22" cy="22" r="24"/><circle cx="0" cy="0" r="32"/></svg><svg class="lm lm-2" viewBox="-50 -50 100 100"><circle cx="0" cy="-20" r="27"/><circle cx="20" cy="0" r="27"/><circle cx="0" cy="20" r="27"/><circle cx="-20" cy="0" r="27"/></svg><svg class="lm lm-3" viewBox="-50 -50 100 100"><rect x="-46" y="-46" width="92" height="92" rx="14"/></svg><svg class="lm lm-4" viewBox="-50 -50 100 100"><circle cx="0" cy="0" r="49"/></svg></span>Sylvia Ho</a>
+      <button type="button" class="menu-btn" data-menu aria-label="開啟選單" aria-expanded="false"><svg viewBox="0 0 16 16" width="18" height="18"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5"/></svg></button>
+    </div>
+    <nav class="nav" aria-label="主選單">
+      <a href="index.html" class="nav-item">總覽</a>
+      <a href="projects.html" class="nav-item">分析專案</a>
+      <a href="work.html" class="nav-item active" aria-current="page"><span class="nav-ind" aria-hidden="true"></span><span class="arrow">→</span>案例研究</a>
+      <a href="ai.html" class="nav-item">我怎麼用 AI</a>
+      <a href="about.html" class="nav-item">關於我</a>
+      <a href="certifications.html" class="nav-item">證照</a>
+      <a href="resume.html" class="nav-item">履歷</a>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="lang-switch" role="group" aria-label="語言"><a href="../case-ai-pricing.html" lang="en" hreflang="en">EN</a><a href="case-ai-pricing.html" lang="zh-Hant" hreflang="zh-Hant" class="on" aria-current="true">中文</a></div>
+      <a href="mailto:werr2010@gmail.com" class="nav-item">Email</a>
+      <a href="https://www.linkedin.com/in/zi-yin-ho-4795a02a6/" class="nav-item">LinkedIn</a>
+      <div class="user">
+        <img class="avatar avatar-img" src="../img/avatar.jpg" alt="Sylvia Ho" width="42" height="42" />
+        <div class="user-info"><strong>Sylvia Ho</strong><small>台灣新竹</small></div>
+      </div>
+    </div>
+  </aside>
+
+  <div class="page">
+    <main class="main">
+
+      <div class="page-head">
+        <div>
+          <a href="work.html" class="back-link"><span aria-hidden="true">←</span> 案例研究</a>
+          <span class="case-kicker">車用售後零件品牌 · Amazon 美國站 · AI 產品</span>
+          <h1 class="page-title">用 AI 協助電商比價與廣告監控，關鍵決定仍由人把關</h1>
+          <p class="page-sub">讓 AI 負責整理資料、找出異常，我專心做需要判斷的決定。</p>
+        </div>
+      </div>
+
+      <div class="tldr">
+        <div>職務<b>專案經理</b></div>
+        <div>期間<b>2026 年 10 月起</b></div>
+        <div>工具<b>Windsor.ai · Google Sheets · Google Ads Scripts · Seller Central · LLM Agent</b></div>
+        <div>結果<b>點擊進商品頁 6% → 22%</b></div>
+      </div>
+
+      <section class="section">
+        <div class="section-head"><h2>關鍵數字</h2></div>
+        <div class="ak-kpis">
+          <div><b>1–2 小時</b><small>導入前，每天看報表與調整廣告的時間（估計）</small></div>
+          <div><b>900+</b><small>需要比價的料號</small></div>
+          <div><b>6% → 22%</b><small>廣告點進商品頁的比例</small></div>
+          <div><b>高 72–273%</b><small>一條產品線比同料號競品貴出的幅度，因此暫停其廣告</small></div>
+          <div><b>±20%</b><small>AI 每次調整的上限，超過一律人工核准</small></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="fn-two">
+          <div class="prose">
+            <h3>1 · 問題</h3>
+            <p>每天看報表、調整廣告要花不少時間，成效不好時花得更久。料號很多，競品價格沒辦法一一比對，賠錢的商品常常很晚才被發現。</p>
+          </div>
+          <div class="prose">
+            <h3>2 · 為什麼用 AI</h3>
+            <p>有明確標準的事，例如花費突然暴增，用固定規則提醒就好。需要判斷的事，例如兩個商品是不是同一款、搜尋字詞代表什麼購買意圖，規則寫不完、人工也做不完，所以交給 AI。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="fn-two">
+          <div class="prose">
+            <h3>3 · 資料</h3>
+            <p>把廣告和 Amazon 後台的數據自動匯進同一份表，不用每天手動整理。資料本身也有問題，訂單會延遲、有時會重複，所以每筆都記下來源和日期，有疑問時能回頭查。</p>
+          </div>
+          <div class="prose">
+            <h3>4 · 怎麼判斷有沒有用</h3>
+            <p>分兩層看：</p>
+            <ul>
+              <li><b>AI 有沒有判斷對：</b>我會抽查幾筆，核對競品價格和規格。</li>
+              <li><b>生意有沒有變好：</b>看廣告導流和產品線的損益。</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="fn-two">
+          <div class="prose">
+            <h3>5 · 刻意不讓 AI 做的事</h3>
+            <p>AI 不能改商品頁，也還不能決定預算。先讓它把監控和比價做穩，再慢慢開放。</p>
+          </div>
+          <div class="prose">
+            <h3>6 · 風險與把關</h3>
+            <p>花錢、上架、改設定，一定要我核准才能執行。我實際遇過 AI 分類錯誤，也遇過它照著有錯的原始資料下結論，所以我不只檢查 AI 的答案，也檢查它讀進去的資料。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="prose">
+          <h3>7 · 學到的事</h3>
+          <p>AI 出錯，很多時候是因為資料本身有問題。下一步會固定抽查並記錄錯誤，把常犯的錯寫成規則交回給 AI，等穩定後再讓它協助提預算建議。</p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <nav><a href="mailto:werr2010@gmail.com">werr2010@gmail.com</a><a href="https://www.linkedin.com/in/zi-yin-ho-4795a02a6/">LinkedIn</a><a href="resume.html">履歷</a><details class="dl-menu dl-foot"><summary>履歷 PDF ↓</summary><div class="dl-pop"><a href="../resume.pdf" download="Sylvia_Ho_Resume_EN.pdf">English (EN)</a><a href="../resume-zh.pdf" download="Sylvia_Ho_Resume_ZH.pdf">中文 (ZH)</a></div></details></nav>
+      <p>© 2026 Sylvia Ho。涉及保密資料的數字，本站一律以百分比或指數呈現。</p>
+    </footer>
+  </div>
+</body>
+</html>
