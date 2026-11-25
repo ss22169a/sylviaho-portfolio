@@ -2319,3 +2319,6 @@ html[lang="zh-Hant"] .hero h1 { font-size: min(51px, 9.6cqi); }
 .ak-shots img { display: block; width: 100%; height: 220px; object-fit: cover; object-position: top left; border-radius: 3px; border: 1px solid var(--bg); }
 .ak-shots figcaption { font-size: 14px; color: var(--muted); margin-top: 8px; line-height: 1.45; }
 @media (max-width: 800px) { .ak-shots { grid-template-columns: 1fr; } .ak-shots img { height: auto; } }
+.ak-price { background: #fff; border-radius: 4.5px; }
+.ak-price td:last-child { font-weight: 600; white-space: nowrap; }
+.ak-price td:first-child { font-weight: 600; }

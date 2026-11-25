@@ -86,3 +86,9 @@
 [12d8f8fd] 花錢、上架、改設定一律人工核准，每次調整上限 ±20%；AI 不能改商品頁，也還不能決定預算。
 [f96be6e9] 廣告點進商品頁的比例從 6% 提高到 22%；一條比同料號競品貴 72–273% 的產品線，先暫停廣告。
 [13426aa0] <a class="btn btn-dark case-cta" href="case-ai-pricing.html">看完整案例 <span>→</span></a>
+
+[6d91b6c7] <span class="kcard-label">AI 流程</span><span class="kcard-num">01</span>
+
+[4aa0d531] <span class="case-kicker">車用售後零件品牌 · Amazon 美國站 · AI 流程設計</span>
+
+[8d4a4f3b] <span class="tag tag-orange">AI 流程</span><span class="tag ">人機協作</span><span class="tag ">Amazon 美國站</span>

@@ -12,10 +12,26 @@
 [1298f3c3] 分兩層看：
 [69e20ae9] <b>AI 有沒有判斷對：</b>我會抽查幾筆，核對競品價格和規格。
 [f0781a81] <b>生意有沒有變好：</b>看廣告導流和產品線的損益。
+[466265bd] 比價實例
+[6a024632] AI 先判斷競品和自家是不是同一料號，只有同料號才比價。
+[93cd1fa0] 自家料號
+[c724782a] 適用車型
+[545a6b29] AI 對應判斷
+[bc8bc6bb] 自家售價 vs. 競品
+[f0ecf77f] Mercedes-Benz Sprinter
+[9f172371] 同料號
+[dc67c0aa] Ram 6.7L Cummins 2013–2015
+[7f7e8c26] Cummins ISX15 2013–2018
+[214002ce] Ram 6.7L Cummins（上游）
+[6c918552] Ram 6.7L 2013–2018
+[221bf6a5] 同車款、不同料號：不比價
+[7d62089a] GM 原廠件（未列車型）
+[8fbed1ff] 自家無對應料號
+[df46aa64] 依 NOx 感測器比價表重製（2026 年 11 月）。自家料號以字母代替，售價、品牌與 ASIN 不公開。
 [fa774777] AI 不能改商品頁，也還不能決定預算。先讓它把監控和比價做穩，再慢慢開放。
 [2407ae9b] 花錢、上架、改設定，一定要我核准才能執行。我實際遇過 AI 分類錯誤，也遇過它照著有錯的原始資料下結論，所以我不只檢查 AI 的答案，也檢查它讀進去的資料。
 [914422fb] AI 出錯，很多時候是因為資料本身有問題。下一步會固定抽查並記錄錯誤，把常犯的錯寫成規則交回給 AI，等穩定後再讓它協助提預算建議。
-[85e6d5d7] <a href="work.html" class="back-link"><span aria-hidden="true">←</span> 案例研究</a>⏎<span class="case-kicker">車用售後零件品牌 · Amazon 美國站 · AI 產品</span>
+[05e51389] <a href="work.html" class="back-link"><span aria-hidden="true">←</span> 案例研究</a>⏎<span class="case-kicker">車用售後零件品牌 · Amazon 美國站 · AI 流程設計</span>
 [33dd69d0] 期間<b>2026 年 10 月起</b>
 [05a1010e] 工具<b>Windsor.ai · Google Sheets · Google Ads Scripts · Seller Central · LLM Agent</b>
 [d59d0708] 結果<b>點擊進商品頁 6% → 22%</b>
