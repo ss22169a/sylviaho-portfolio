@@ -2341,6 +2341,9 @@ html[lang="zh-Hant"] .hero h1 { font-size: min(51px, 9.6cqi); }
 .wf-arr { display: flex; flex-direction: column; justify-content: center; align-items: center; color: #888; font-size: 14px; }
 .wf-arr3 { justify-content: space-around; }
 .wf-loop { font-size: 13px; color: #666; margin-top: 10px; }
+.wf-back { grid-column: 3 / 12; grid-row: 2; position: relative; height: 30px; margin: 4px 8% 14px; border: 1.5px dashed #9a9a9a; border-top: none; border-radius: 0 0 8px 8px; }
+.wf-back::before { content: ""; position: absolute; left: -6px; top: -7px; border: 5px solid transparent; border-bottom: 8px solid #9a9a9a; border-top: 0; }
+.wf-back span { position: absolute; left: 50%; bottom: -12px; transform: translateX(-50%); white-space: nowrap; background: var(--lilac); color: var(--ink); font-size: 13px; font-weight: 600; padding: 4px 12px; border-radius: 4.5px; }
 .wf-hint { display: none; font-size: 12px; color: #888; margin: 0 0 6px; }
 @media (max-width: 900px) {
   .wf-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 4.5px; }
