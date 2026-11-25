@@ -14,9 +14,6 @@
 [2c32fb74] <b>90%</b><small>State of Passkeys · 10 個國家 11,000 人</small>
 [e5c18859] PUFido 在 2025 年 5 月上市（標色處）。各年的調查樣本不同，請當作方向來看，而不是精確的趨勢線。
 [fd4cb262] 這對上市代表什麼
-[07160881] <b>標準已經就緒。</b> 2025 年全球前 100 大網站已有 48% 支援 passkey，所以金鑰在大家常用的帳號上都能用。
-[0743ca9a] <b>痛點是真的。</b> 48% 的受訪消費者曾經因為忘記密碼而放棄網購。
-[5d68aeda] <b>知道 ≠ 了解。</b> 聽過「passkey」這個詞，不等於信任一支 USB 金鑰。上市要補的就是這個落差。
 [8ccf0c74] 來源：FIDO Alliance，Consumer Password &amp; Passkey Trends（World Passkey Day 2025）與 The State of Passkeys 2026。
 [1cc7de20] 2 · 三條研究線，一個洞察
 [bfa912e5] <span class="fn-k">競品拆解</span><b>規格 vs. 故事</b><small>知名品牌的金鑰靠標準和認證在賣。很少有人用白話說明，金鑰對一般帳號到底有什麼用。</small>
@@ -100,3 +97,4 @@
 [68325e06] 匯出評論，每月分類
 [b73b9da3] 來源：<a href="https://www.amazon.com/s?k=fido2+security+key" target="_blank" rel="noopener">Amazon 美國站「fido2 security key」搜尋結果</a>，以及各產品的<a href="https://www.amazon.com/product-reviews/B0F32FWR2N/?filterByStar=critical" target="_blank" rel="noopener">負評頁面</a>，查看日期 2026 年 11 月 19 日。
 [2167354b] Amazon 美國站 FIDO2 安全金鑰的價格與上個月售出量
+[b8363f01] 主流網站支援度已提升（2025 年全球前 100 大網站已有 48% 支援 passkey），加上 48% 受訪消費者曾因忘記密碼放棄網購，代表需求與環境都已具備；但聽過 passkey 不代表懂得或信任 USB 金鑰，這正是上市策略需要切入的缺口。
