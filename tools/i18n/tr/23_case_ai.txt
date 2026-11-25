@@ -32,5 +32,24 @@
 [870d3dd9] ① 搜尋一個原廠料號（同一種零件的通用編號）。② 同一個零件有很多賣家在賣，價格從約 75 到 178 美元不等。AI 每天要做的，就是從這些結果中找出和我們同料號的商品，算出價格差距。
 [3f660554] 涉及商品頁內容調整與廣告預算配置等高風險動作，目前維持人工審核，不交由 AI 自動寫入。先讓價格比對與異常監控穩定下來，再逐步導入輔助建議。
 [9d191d9f] 涉及預算花費、商品上架與系統設定的變更，皆須經我核准後方可執行。實務上曾遇過 AI 分類失準，也遇過原始資料有誤導致誤判，因此把關會同時查核「輸入的原始資料」與「AI 的輸出結果」。
-[914422fb] AI 出錯，很多時候是因為資料本身有問題。下一步會固定抽查並記錄錯誤，把常犯的錯寫成規則交回給 AI，等穩定後再讓它協助提預算建議。
+[6ce40c12] AI 誤判往往源自底層資料品質不佳。後續將建立定期抽查與錯誤日誌，把高頻誤判轉化為檢核規則回寫至流程中；待穩定度達標後，再逐步開放預算調整建議。
 [010a56c8] 讓 AI 整理資料、標記異常，涉及預算花費、商品上架與系統設定的變更，皆須經我核准：一個車用零件 Amazon 賣場的 AI 流程設計。
+[05e51389] <a href="work.html" class="back-link"><span aria-hidden="true">←</span> 案例研究</a>⏎<span class="case-kicker">車用售後零件品牌 · Amazon 美國站 · AI 流程設計</span>
+[33dd69d0] 期間<b>2026 年 10 月起</b>
+[05a1010e] 工具<b>Windsor.ai · Google Sheets · Google Ads Scripts · Seller Central · LLM Agent</b>
+[d59d0708] 結果<b>點擊進商品頁 6% → 22%</b>
+[8f41ece5] <span class="ak-step ak-c1">01</span>問題
+[e1d7f7d6] <b>1–2 小時</b><small>導入前每天看報表、調整廣告的時間（估計）</small>
+[07937e33] <b>900+</b><small>需要比價的料號</small>
+[3f56278b] <span class="ak-step ak-c2">02</span>為什麼用 AI
+[78e02e58] <span class="ak-step ak-c3">03</span>資料
+[97b86717] <span class="ak-step ak-c4">04</span>怎麼判斷有沒有用
+[3f838dea] <b>6% → 22%</b><small>廣告點進商品頁的比例</small>
+[4a1b576a] <b>高出約 1–2.5 倍</b><small>一條產品線比同料號競品貴出的幅度，已暫停其廣告</small>
+[629f7246] <span class="ak-step ak-c1">05</span>高風險操作不讓AI介入
+[daf45aca] <span class="ak-step ak-c2">06</span>風險與把關
+[1ea9bfc2] <b>±20%</b><small>每次調整的上限，超過須由我核准</small>
+[acd95741] <span class="ak-step ak-c3">07</span>學到的事
+[1371344d] Google Ads 廣告活動總覽
+[6e921cf0] Amazon Seller Central 業務報告
+[8df256dd] 每週追蹤試算表
