@@ -2314,3 +2314,8 @@ html[lang="zh-Hant"] .hero h1 { font-size: min(51px, 9.6cqi); }
 .ak-nums div { border-radius: 4.5px; padding: 12px 14px; }
 .ak-nums b { display: block; font-size: 22px; font-weight: 600; line-height: 1.2; margin-bottom: 4px; color: var(--ink); }
 .ak-nums small { display: block; font-size: 13.5px; line-height: 1.45; color: var(--ink-dark); }
+.ak-shots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.ak-shots figure { margin: 0; background: #fff; border-radius: 4.5px; padding: 10px; }
+.ak-shots img { display: block; width: 100%; height: 220px; object-fit: cover; object-position: top left; border-radius: 3px; border: 1px solid var(--bg); }
+.ak-shots figcaption { font-size: 14px; color: var(--muted); margin-top: 8px; line-height: 1.45; }
+@media (max-width: 800px) { .ak-shots { grid-template-columns: 1fr; } .ak-shots img { height: auto; } }
