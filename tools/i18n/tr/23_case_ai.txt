@@ -40,7 +40,7 @@
 [33dd69d0] 期間<b>2026 年 10 月起</b>
 [05a1010e] 工具<b>Windsor.ai · Google Sheets · Google Ads Scripts · Seller Central · LLM Agent</b>
 [90e4f1e1] 結果<b>找出貴出約 1–2.5 倍的產品線</b>
-[03ad1a93] <b>資料匯入同一份表</b><small>Google Ads + Amazon 後台</small>
+[799f9e24] <b>資料匯入表單</b><small>Google Ads + Amazon 後台</small>
 [7589fba4] <b>固定規則</b><small>可量化的異常</small>
 [eb9989da] <b>AI：辨識同料號</b><small>競品市場偵測</small>
 [408c3c77] <b>AI：分類搜尋意圖</b><small>哪些搜尋字有效</small>
