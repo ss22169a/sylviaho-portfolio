@@ -28,7 +28,7 @@
 [7d62089a] GM 原廠件（未列車型）
 [8fbed1ff] 自家無對應料號
 [7434c15d] 依 NOx 感測器比價表重製。自家料號以字母代替，售價、品牌與 ASIN 不公開。
-[fa774777] AI 不能改商品頁，也還不能決定預算。先讓它把監控和比價做穩，再慢慢開放。
+[3f660554] 涉及商品頁內容調整與廣告預算配置等高風險動作，目前維持人工審核，不交由 AI 自動寫入。先讓價格比對與異常監控穩定下來，再逐步導入輔助建議。
 [2407ae9b] 花錢、上架、改設定，一定要我核准才能執行。我實際遇過 AI 分類錯誤，也遇過它照著有錯的原始資料下結論，所以我不只檢查 AI 的答案，也檢查它讀進去的資料。
 [914422fb] AI 出錯，很多時候是因為資料本身有問題。下一步會固定抽查並記錄錯誤，把常犯的錯寫成規則交回給 AI，等穩定後再讓它協助提預算建議。
 [05e51389] <a href="work.html" class="back-link"><span aria-hidden="true">←</span> 案例研究</a>⏎<span class="case-kicker">車用售後零件品牌 · Amazon 美國站 · AI 流程設計</span>
@@ -43,7 +43,7 @@
 [97b86717] <span class="ak-step ak-c4">04</span>怎麼判斷有沒有用
 [3f838dea] <b>6% → 22%</b><small>廣告點進商品頁的比例</small>
 [4a1b576a] <b>高出約 1–2.5 倍</b><small>一條產品線比同料號競品貴出的幅度，已暫停其廣告</small>
-[916ce5a0] <span class="ak-step ak-c1">05</span>刻意不讓 AI 做的事
+[629f7246] <span class="ak-step ak-c1">05</span>高風險操作不讓AI介入
 [daf45aca] <span class="ak-step ak-c2">06</span>風險與把關
 [1ea9bfc2] <b>±20%</b><small>每次調整的上限，超過須由我核准</small>
 [acd95741] <span class="ak-step ak-c3">07</span>學到的事
