@@ -97,4 +97,4 @@
 [68325e06] 匯出評論，每月分類
 [b73b9da3] 來源：<a href="https://www.amazon.com/s?k=fido2+security+key" target="_blank" rel="noopener">Amazon 美國站「fido2 security key」搜尋結果</a>，以及各產品的<a href="https://www.amazon.com/product-reviews/B0F32FWR2N/?filterByStar=critical" target="_blank" rel="noopener">負評頁面</a>，查看日期 2026 年 11 月 19 日。
 [2167354b] Amazon 美國站 FIDO2 安全金鑰的價格與上個月售出量
-[b8363f01] 主流網站支援度已提升（2025 年全球前 100 大網站已有 48% 支援 passkey），加上 48% 受訪消費者曾因忘記密碼放棄網購，代表需求與環境都已具備；但聽過 passkey 不代表懂得或信任 USB 金鑰，這正是上市策略需要切入的缺口。
+[27aa6727] 主流網站支援度已提升（2025 年全球前 100 大網站已有 48% 支援 passkey），加上 48% 受訪者表示，可能因忘記密碼而放棄購物或登入，代表需求與環境都已具備；但聽過 passkey 不代表懂得或信任 USB 金鑰，這正是上市策略需要切入的缺口。
