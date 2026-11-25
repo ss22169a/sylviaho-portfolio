@@ -49,7 +49,7 @@
 [629f7246] <span class="ak-step ak-c1">05</span>高風險操作不讓AI介入
 [daf45aca] <span class="ak-step ak-c2">06</span>風險與把關
 [1ea9bfc2] <b>±20%</b><small>每次調整的上限，超過須由我核准</small>
-[acd95741] <span class="ak-step ak-c3">07</span>學到的事
+[d065eae9] <span class="ak-step ak-c3">07</span>規則迭代與優化
 [1371344d] Google Ads 廣告活動總覽
 [6e921cf0] Amazon Seller Central 業務報告
 [8df256dd] 每週追蹤試算表
