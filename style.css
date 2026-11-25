@@ -2322,3 +2322,10 @@ html[lang="zh-Hant"] .hero h1 { font-size: min(51px, 9.6cqi); }
 .ak-price { background: #fff; border-radius: 4.5px; }
 .ak-price td:last-child { font-weight: 600; white-space: nowrap; }
 .ak-price td:first-child { font-weight: 600; }
+.ak-amz { margin: 16px 0 0; background: #fff; border-radius: 4.5px; padding: 12px; }
+.ak-amz img { display: block; width: 100%; height: auto; border-radius: 3px; border: 1px solid var(--bg); }
+.ak-amz figcaption { font-size: 13px; color: var(--muted, #666); margin-top: 8px; }
+.ak-amz-img { position: relative; }
+.ak-amz-tag { position: absolute; top: 1%; right: 1%; max-width: 42%; background: var(--orange); color: var(--ink); font-size: 13px; line-height: 1.4; padding: 6px 10px; border-radius: 4.5px; }
+.ak-amz-tag b { font-weight: 700; }
+@media (max-width: 720px) { .ak-amz-tag { position: static; max-width: none; margin-top: 8px; } }
