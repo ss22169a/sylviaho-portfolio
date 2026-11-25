@@ -39,7 +39,7 @@
 [05e51389] <a href="work.html" class="back-link"><span aria-hidden="true">←</span> 案例研究</a>⏎<span class="case-kicker">車用售後零件品牌 · Amazon 美國站 · AI 流程設計</span>
 [33dd69d0] 期間<b>2026 年 10 月起</b>
 [05a1010e] 工具<b>Windsor.ai · Google Sheets · Google Ads Scripts · Seller Central · LLM Agent</b>
-[90e4f1e1] 結果<b>找出貴出約 1–2.5 倍的產品線</b>
+[3c9c634a] 結果<b>建立價格競爭力監測，將預算集中於具價格競爭力的品項</b>
 [799f9e24] <b>資料匯入表單</b><small>Google Ads + Amazon 後台</small>
 [7589fba4] <b>固定規則</b><small>可量化的異常</small>
 [eb9989da] <b>AI：辨識同料號</b><small>競品市場偵測</small>
