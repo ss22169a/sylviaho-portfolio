@@ -3,12 +3,6 @@
 [139fe690] <a href="index.html" class="nav-item">總覽</a>⏎<a href="projects.html" class="nav-item">分析專案</a>⏎<a href="work.html" class="nav-item active" aria-current="page"><span class="nav-ind" aria-hidden="true"></span><span class="arrow">→</span>案例研究</a>⏎<a href="ai.html" class="nav-item">我怎麼用 AI</a>⏎<a href="about.html" class="nav-item">關於我</a>⏎<a href="certifications.html" class="nav-item">證照</a>⏎<a href="resume.html" class="nav-item">履歷</a>
 [43a94b1c] 案例研究
 [1f40cd80] 商業問題 → 資料 → 洞察 → 決策 → 成果。
-[1bf2576c] <span class="kcard-label">全部案例</span><span class="kcard-num" data-count="5">5</span>
-[4165063b] <span class="kcard-label">車用零件 · Amazon 美國站</span><span class="kcard-num">01</span>
-[df5094f0] <span class="kcard-label">MEMS 感測</span><span class="kcard-num">02</span>
-[25454827] <span class="kcard-label">安全金鑰上市</span><span class="kcard-num">03</span>
-[c135c1db] <span class="kcard-label">潔淨能源 B2B</span><span class="kcard-num">04</span>
-[7c97cafc] <span class="kcard-label">零售 O2O</span><span class="kcard-num">05</span>
 [d666f6d7] <span class="case-kicker">車用售後零件品牌 · Amazon 美國站</span>
 [8ca92b4e] 漏斗分析</span>
 [98b6fda8] 職務<b>專案經理</b>
@@ -75,3 +69,20 @@
 [a0c3bf23] 把快閃店設計成 O2O 循環：線上邀請（LINE、email、廣告、合作媒體）→ 到店體驗並加入會員 → 線上回購優惠。
 [a2fc05be] 新增 2,000 名會員（目標的 120%），社群互動 +30%，第一個月門市營收新台幣 250 萬元。品牌整體：三年內開出五個百貨專櫃，獲客成本 −35%，Shopify 轉換率 +67%。我的門市模型估算，年營收要達到新台幣 1 億元大約需要 8–9 個專櫃；品牌後來確實開到這個數量。
 [e3202de2] <a class="btn btn-dark case-cta" href="case-o2o-popup.html">看完整案例與數據儀表板 <span>→</span></a>
+[bbafe6db] <span class="kcard-label">全部案例</span><span class="kcard-num" data-count="6">6</span>
+[2a6e90b4] <span class="kcard-label">AI 產品</span><span class="kcard-num">01</span>
+[7fcdef87] <span class="kcard-label">付費搜尋</span><span class="kcard-num">02</span>
+[02c121f9] <span class="kcard-label">MEMS 感測</span><span class="kcard-num">03</span>
+[29ec9a85] <span class="kcard-label">安全金鑰上市</span><span class="kcard-num">04</span>
+[1f176ad9] <span class="kcard-label">潔淨能源 B2B</span><span class="kcard-num">05</span>
+[16a06d8a] <span class="kcard-label">零售 O2O</span><span class="kcard-num">06</span>
+[12ef7347] <span class="case-kicker">車用售後零件品牌 · Amazon 美國站 · AI 產品</span>
+[c25a7ded] <span class="tag tag-orange">AI 產品</span><span class="tag ">人機協作</span><span class="tag ">Amazon 美國站</span>
+[1853cc07] AI 工作流</span>
+[157e535f] 工具<b>Windsor.ai、Google Ads Scripts、LLM Agent</b>
+[4dfa0e74] 每天看報表、調整廣告很花時間，900 多個料號中賠錢的商品也常常很晚才被發現。
+[77757380] 廣告與 Amazon 數據自動匯進同一份表；有明確標準的用固定規則提醒，需要判斷的（例如是不是同一料號）交給 AI。
+[a0719b4e] AI 出錯，很多是因為原始資料本身有問題，所以要同時檢查 AI 的答案和它讀進去的資料。
+[12d8f8fd] 花錢、上架、改設定一律人工核准，每次調整上限 ±20%；AI 不能改商品頁，也還不能決定預算。
+[f96be6e9] 廣告點進商品頁的比例從 6% 提高到 22%；一條比同料號競品貴 72–273% 的產品線，先暫停廣告。
+[13426aa0] <a class="btn btn-dark case-cta" href="case-ai-pricing.html">看完整案例 <span>→</span></a>

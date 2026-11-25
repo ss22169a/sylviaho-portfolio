@@ -1212,8 +1212,8 @@ body.plain .footer { padding-left: 519px; }
 @media (prefers-reduced-motion: reduce) {
   .row:hover, .ai-card:hover, .cert:hover, .job:hover, .step:hover { transform: none; }
 }
-.kc-work { grid-template-columns: 1.4fr repeat(5, 1fr); }
-@media (max-width: 1100px) { .kc-work { grid-template-columns: repeat(3, 1fr); } }
+.kc-work { grid-template-columns: 1.2fr repeat(6, 1fr); }
+@media (max-width: 1100px) { .kc-work { grid-template-columns: repeat(4, 1fr); } }
 @media (max-width: 600px) { .kc-work { grid-template-columns: repeat(2, 1fr); } }
 
 /* =========================================================
