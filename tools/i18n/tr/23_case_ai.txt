@@ -42,7 +42,7 @@
 [78e02e58] <span class="ak-step ak-c3">03</span>資料
 [97b86717] <span class="ak-step ak-c4">04</span>怎麼判斷有沒有用
 [3f838dea] <b>6% → 22%</b><small>廣告點進商品頁的比例</small>
-[1d9ccc04] <b>高 48–228%</b><small>一條產品線比同料號競品貴出的幅度，已暫停其廣告</small>
+[4a1b576a] <b>高出約 1–2.5 倍</b><small>一條產品線比同料號競品貴出的幅度，已暫停其廣告</small>
 [916ce5a0] <span class="ak-step ak-c1">05</span>刻意不讓 AI 做的事
 [daf45aca] <span class="ak-step ak-c2">06</span>風險與把關
 [1ea9bfc2] <b>±20%</b><small>每次調整的上限，超過須由我核准</small>
