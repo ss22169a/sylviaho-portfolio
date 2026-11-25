@@ -13,7 +13,7 @@
 [44d9fdb3] <b>75%</b><small>World Passkey Day 報告 · 5 個國家 1,389 人</small>
 [2c32fb74] <b>90%</b><small>State of Passkeys · 10 個國家 11,000 人</small>
 [e5c18859] PUFido 在 2025 年 5 月上市（標色處）。各年的調查樣本不同，請當作方向來看，而不是精確的趨勢線。
-[fd4cb262] 這對上市代表什麼
+[81606f8e] 市場訊號與定位切角
 [8ccf0c74] 來源：FIDO Alliance，Consumer Password &amp; Passkey Trends（World Passkey Day 2025）與 The State of Passkeys 2026。
 [1cc7de20] 2 · 三條研究線，一個洞察
 [bfa912e5] <span class="fn-k">競品拆解</span><b>規格 vs. 故事</b><small>知名品牌的金鑰靠標準和認證在賣。很少有人用白話說明，金鑰對一般帳號到底有什麼用。</small>
