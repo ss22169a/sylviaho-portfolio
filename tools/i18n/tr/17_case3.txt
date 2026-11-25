@@ -51,7 +51,7 @@
 [8e9b3988] 價格（對數刻度）
 [13ae3596] 上個月售出（對數）
 [a985784c] Amazon 顯示的「上個月售出」是下限（例如 6K+），所以數值都是最低估計。沒有這個標示的商品不列入。PUFido 在「fido2 security key」的自然排名第 4，價格落在和 Yubico 基本款相同的 $26–33 價格帶，而那些基本款也有 NFC。
-[4763a5ac] 負評在抱怨什麼
+[84a744dc] 售後負評分析
 [4b964724] <span><i style="background:var(--ink)"></i>五個競品（50 則評論）</span><span><i style="background:var(--lilac)"></i>PUFido（10 則評論）</span>
 [b0ffec09] <span class="pf-lab">設定與說明</span>
 [a5797203] <span class="pf-lab">不能用或壞掉</span>
