@@ -113,3 +113,7 @@
 [b13b57e3] <span class="tag">Amazon SEO</span><span class="tag">Amazon 廣告</span><span class="tag">關鍵字研究</span>
 [aca5ae27] <a class="btn-sm btn-sm-dark" href="https://coursera.org/verify/2C8LLJQWDCAI" target="_blank" rel="noopener">驗證
 [fba2aec1] 學習歷程共獲得 14 張證照，涵蓋數據與 AI、市場研究、行銷分析和設計。
+[5ed52767] <span class="kcard-label">全部證照</span><span class="kcard-num" data-count="11">11</span>
+[c52d81c3] <span class="kcard-label">數據與 AI</span><span class="kcard-num" data-count="1">1</span>
+[7fe31138] <span class="kcard-label">市場研究與產品</span><span class="kcard-num" data-count="4">4</span>
+[dc8a9785] 學習歷程共獲得 11 張證照，涵蓋數據與 AI、市場研究、行銷分析和設計。
