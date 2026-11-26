@@ -100,3 +100,16 @@
 [7e2adfc3] 快速驗證
 [f88955c6] 先驗證想法，再決定是否下注：先做市場與競品分析，再用 vibe coding 快速做出可用的產品，最後依實際數據與使用者反饋，決定是否投入更多金錢與人力。
 [c468888f] <a href="pet-care.html">寵物照護 App</a><a href="ai.html#pet-app">我怎麼用 AI</a>
+[9b94d305] <span class="kcard-label">全部證照</span><span class="kcard-num" data-count="14">14</span>
+[98a919a9] <span class="kcard-label">市場研究與產品</span><span class="kcard-num" data-count="5">5</span>
+[68c386fd] <span class="kcard-label">行銷分析</span><span class="kcard-num" data-count="4">4</span>
+[f5d2f14c] <span class="cert-date">2026 年 11 月</span>
+[c81e3e62] =
+[738a9b43] =
+[2a04e484] <span class="tag">生成式 AI</span><span class="tag">產品管理</span><span class="tag">提示工程</span>
+[8b1ab319] <a class="btn-sm btn-sm-dark" href="https://coursera.org/verify/specialization/4BZTYLF6RE9Q" target="_blank" rel="noopener">驗證
+[13d5fae8] =
+[b8b614a9] =
+[b13b57e3] <span class="tag">Amazon SEO</span><span class="tag">Amazon 廣告</span><span class="tag">關鍵字研究</span>
+[aca5ae27] <a class="btn-sm btn-sm-dark" href="https://coursera.org/verify/2C8LLJQWDCAI" target="_blank" rel="noopener">驗證
+[fba2aec1] 學習歷程共獲得 14 張證照，涵蓋數據與 AI、市場研究、行銷分析和設計。
